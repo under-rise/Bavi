@@ -1,0 +1,45 @@
+@charset "utf-8";
+@media screen and (max-width:680px){
+
+/* #search */
+#search{
+	padding-bottom:20%;
+	background-size:150% auto;
+}
+#search h2{
+	margin-bottom:20px;
+}
+#search h2 + div{
+	width:94%;
+}
+#search h2 + div h3{
+	width:60%;
+}
+#search h2 + div p{
+	width:40%;
+	margin:-2.5% 0 -38% 15%;
+	padding:4% 0 3%;
+	font-size:3.8vw;
+	font-weight:900;
+	color:#e50054;
+	background-size:100% auto;
+	transform:rotate(-8deg);
+}
+#search h2 + div p span{
+	font-size:2.3vw;
+}
+
+
+/* #news */
+#news{
+	padding-bottom:30px;
+	background-size:50px auto;
+}
+#news h2 + p{
+	font-size:12px;
+}
+
+/* Add 20210412 */
+.top_kuchikomi_btn { position: absolute;  top: 85%; width: 140px; right: 0;}
+    
+}

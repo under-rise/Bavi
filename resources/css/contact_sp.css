@@ -1,0 +1,64 @@
+@charset "utf-8";
+@media screen and (max-width:680px){
+
+/* .cont */
+.cont h2{
+	margin-bottom:10px;
+}
+.cont h2 + p{
+	padding:0 3%;
+	display:inline-block;
+	text-align:left;
+	font-size:12px;
+}
+.cont dl{
+	width:94%;
+	margin:15px  auto 30px;
+}
+.cont dl dt{
+	margin-top:10px;
+	padding:0 3%;
+	font-size:14px;
+}
+.cont dl dd{
+	padding:5px 3% 10px;
+}
+.cont dl dd ul{
+	width:auto;
+	margin:auto;
+}
+.cont dl dd ul li{
+	width:auto;
+	margin:5px 0 0;
+	display:block;
+	font-size:12px;
+}
+
+
+/* 確定ボタン */
+.confirm_btn{
+	display:block;
+	width:94%;
+	line-height:50px;
+	margin:0 auto;
+	font-size:12px;
+}
+.confirm_btn:after{
+	border-width: 6px 0 6px 10px;
+}
+
+
+/* 戻るボタン */
+.back_btn{
+	display:block;
+	width:240px;
+	line-height:45px;
+	margin:30px auto 0;
+	font-size:12px;
+}
+
+
+
+}
+
+

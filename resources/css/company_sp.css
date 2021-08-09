@@ -1,0 +1,48 @@
+@charset "utf-8";
+@media screen and (max-width:680px){
+
+/* .cont */
+article.cont{
+	margin-top:20px;
+}
+
+.cont h3{
+	width:94%;
+	margin:0 auto 15px;
+	padding:3px 0 3px 5px;
+	font-size:4.5vw;
+	border-left:4px solid #e50054;
+}
+
+.cont dl{
+	width:94%;
+}
+.cont dl dt{
+	margin-top:10px;
+	padding:0 3%;
+	font-size:14px;
+}
+.cont dl dd{
+	padding:5px 8%;
+	font-size:12px;
+}
+.cont div{
+	width:94%;
+	margin:0 auto 5px;
+	position:relative;
+	height:0;
+	padding-top:60%;
+}
+.cont div iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100% !important;
+	height:100% !important;
+}
+
+
+
+}
+
+

@@ -1,0 +1,80 @@
+@charset "utf-8";
+@media screen and (max-width:680px){
+
+/* .result_list > form */
+.result_list > form > ul{
+	height:60px;
+	padding:0 3%;
+}
+.result_list > form > ul > li{
+	width:48%;
+	height:40px;
+	line-height:40px;
+	padding:0 5px;
+	border-radius:3px;
+	font-size:12px;
+	background-size:12px auto;
+}
+
+
+/* .cont */
+.cont{
+}
+.cont table{
+	width:94%;
+}
+.cont table th,
+.cont table td{
+	padding:5px;
+	font-size:11px;
+}
+.cont table th{
+	white-space:nowrap;
+}
+.cont table + p{
+	margin:20px 0 30px;
+	font-size:14px;
+}
+.cont h2{
+	width:94%;
+	padding:3px 0 3px 5px;
+	font-size:4.5vw;
+	border-left:4px solid #e50054;
+}
+.cont h2 + nav{
+	width:260px;
+	margin:10px auto;
+}
+.cont h2 + nav ul li a{
+	font-size:14px;
+}
+
+.cont > ul{
+	width:94%;
+}
+.cont > ul li{
+	display:inline-block;
+	vertical-align:top;
+	width:48%;
+	margin:8px 0;
+}
+.cont > ul li:nth-child(odd){
+	margin-right:1%;
+}
+.cont > ul li a{
+	box-shadow:2px 2px 0 #d1cacd;
+}
+.cont > ul li a h3{
+	font-size:12px;
+}
+.cont > ul li a p{
+	margin-bottom:5px;
+	font-size:12px;
+}
+    
+/*Add style 20210524*/
+.cont > ul li .colona_icon { position: absolute; width: 22%; top 5px; top:auto;}
+
+}
+
+

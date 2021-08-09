@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* clearfix */
+.clearfix:after { content: " "; display: block; visibility: hidden; clear: both; height: 0.1px; font-size: 0.1em; line-height: 0; } 
+*1257897500* html .clearfix { display: inline-block; } 
+*1257897501* html .clearfix { height: 1%; } 
+.clearfix { display: block; } 
+
+/* common */
+.inr { max-width: 640px; margin: 0 auto;}
+.sec_l { float: left;}
+.sec_r { float: right;}
+
+a.link_btn2 { width: 100%; background-color:#e50054; color: #fff; padding: 8px 30px; border-radius: 5px;}
+
+/*--20210802ここから--*/
+/* ーーーーーーーーーーーーーーーーー
+table
+ーーーーーーーーーーーーーーーーー*/
+.table { display: table; width: 100%; margin: 25px 0 40px 0;}
+.table dl{ display:table-row;}
+.table dt { display: table-cell; font-size: 11px; padding-right: 20px;}
+.table dd { text-align: left;}
+.table dd a { color: #e50054;}
+.table dt,.table dd { border-bottom: 2px #eee solid; padding: 8px 0;}
+/*--20210802ここまで--*/
+
+/* ーーーーーーーーーーーーーーーーー
+top
+ーーーーーーーーーーーーーーーーー*/
+#about { }
+#about .sec_l { width: 48%;}
+#about .sec_r { width: 50%; text-align: left;}
+#about .sec_r h3 { font-size: 18px; margin-bottom: 6px;}
+#about .sec_r p { line-height: 2;}
+#about img,.ad_banner img { width: 100%; height: auto; }
+
+.ad_banner { background:url("../images/bg_pink.png"); border-radius: 6px; border: 3px #fff solid; margin-top: 30px; }
+.ad_banner .sec_l { width: 36%; float: left; padding-left: 20px;position: relative; top: -20px;  box-sizing: border-box;}
+.ad_banner .sec_r { width: 60%; float: right; padding-right: 10px;  box-sizing: border-box; text-align: left;}
+.ad_banner .sec_r p { margin-top: 6px;}
+
+/*--20210802ここから--*/
+/* ーーーーーーーーーーーーーーーーー
+topic_detail
+ーーーーーーーーーーーーーーーーー*/
+
+#topic_detail .topic_list { margin-top: 50px;}
+#topic_detail .topic_list h2 { font-size: 20px;}
+/*--20210802ここまで--*/
+
+@media screen and (max-width:680px){
+
+.inr { max-width: 100%; margin: 0 auto;}
+    
+/* top */
+#about {  }
+#about .sec_l { width: 60%; float: none; margin: 0 auto;}
+#about .sec_r { width: 75%;  float: none; margin: 20px auto; text-align:center;}
+
+.ad_banner { margin: 30px 10px; }
+.ad_banner .sec_l { width: 50%; float:none; padding-left: 0; margin: 0 auto; top: -10px;}
+.ad_banner .sec_r { width: 80%; float:none;  margin: 0 auto 20px auto;}
+.ad_banner .sec_r p { margin-top: 6px;}
+    
+
+/* ーーーーーーーーーーーーーーーーー
+table
+ーーーーーーーーーーーーーーーーー*/
+.table {  width: 96%; margin: 25px 2% 45px 2%;}
+.table dt { display: block; border-bottom:none; text-align: left; padding-bottom: 0;}
+    
+}

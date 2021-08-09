@@ -1,0 +1,87 @@
+@charset "utf-8";
+@media screen and (max-width:680px){
+
+/* .cont */
+article.cont h2 + figure{
+	margin:30px auto 0;
+}
+article.cont h2 + figure img{
+	width:100%;
+}
+article.cont .cont{
+	padding:30px 0;
+	overflow:hidden;
+}
+article.cont .cont:first-of-type{
+	background-image: none;
+}
+article.cont .cont:nth-of-type(2){
+	background-image: none;
+}
+article.cont .cont:last-of-type{
+	background-image: none;
+}
+
+article.cont .cont div{
+	width:auto;
+	margin:0 auto;
+	padding-right:0;
+}
+article.cont .cont:nth-of-type(even) div{
+	padding-right:0;
+	padding-left:0;
+}
+article.cont .cont h3{
+	margin:0 auto 10px;
+	padding:0 3%;
+	font-size:4.5vw;
+}
+article.cont .cont img{
+	width:50%;
+	float:right;
+	margin:0 0 0 5px;
+}
+article.cont .cont:first-of-type img{
+	width:35%;
+}
+article.cont .cont:nth-of-type(even) img{
+	float:left;
+	margin:0 5px 0 0;
+}
+article.cont .cont p{
+	margin:0 auto 2em;
+	padding:0 3%;
+	font-size:13px;
+}
+
+article.cont > ul li{
+	width:45%;
+	display:inline-block;
+	margin:0 1%;
+}
+article.cont > ul li a{
+	display:block;
+	width:100%;
+	line-height:50px;
+	margin:0 auto;
+	font-size:12px;
+}
+article.cont > ul li a:after{
+	border-width: 6px 0 6px 10px;
+}
+
+
+
+
+}
+
+
+@media screen and (max-width:400px){
+article.cont > ul li{
+	width:200px;
+	display:block;
+	margin:10px auto;
+}
+}
+
+

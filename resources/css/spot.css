@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* #search */
+#search{
+	padding-bottom:140px;
+	background:url(../images/spot/search_bg.png)no-repeat center bottom;
+	background-size:900px auto;
+	transform: none;
+}
+@media screen and (min-width:900px){
+	#search{
+		background-size:100% auto;
+	}
+}
+#search h2{
+	margin-bottom:20px;
+	transform: rotate(0.03deg);
+
+}
+#search h2 + div{
+	width:643px;
+	margin:auto;
+    position: relative;
+}
+#search h2 + div img{
+	width:100%;
+}
+#search h2 + div h3{
+	width:388px;
+}
+#search h2 + div p{
+	width:300px;
+	margin:-15px 0 -230px 85px;
+	padding:20px 0 15px;
+	font-size:38px;
+	font-weight:900;
+	color:#e50054;
+	background:url(../images/spot/search_num.png)no-repeat center center;
+	background-size:300px auto;
+	transform:rotate(-8deg);
+}
+#search h2 + div p span{
+	font-size:23px;
+}
+#search h2 + div area{
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+
+
+/* #news */
+#news{
+	padding-bottom:60px;
+	background:url(../images/bg_gray.png);
+	background-size:85px auto;
+}
+#news h2 + p{
+	font-size:16px;
+}
+
+.top_kuchikomi_btn { position: absolute;right: 0; top: 85%; width: 220px;}

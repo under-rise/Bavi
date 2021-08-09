@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* .cont */
+.cont h2{
+	margin-bottom:20px;
+}
+
+.cont dl{
+	width:640px;
+	margin:30px  auto 50px;
+	text-align:left;
+}
+.cont dl dt{
+	margin-top:10px;
+	padding:0 30px;
+	font-size:16px;
+	font-weight:bold;
+	color:#e50054;
+}
+.cont dl dd{
+	padding:10px 30px 20px;
+	border-bottom:1px solid #e9e9e9;
+}
+.cont dl dd ul{
+	width:75%;
+	margin:auto;
+}
+.cont dl dd ul li{
+	width:48%;
+	margin:3px 1% 0 0;
+	display:inline-block;
+	vertical-align:top;
+}
+
+/* ラジオボタン */
+input[type="radio"]{
+	margin-right:5px;
+}
+
+/* テキストボックス */
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+	width:100%;
+	height:45px;
+	padding:0 10px;
+	background-color:#fff;
+	border:1px solid #000;
+	font-size:16px;
+}
+
+/* テキストエリア */
+textarea{
+	width:100%;
+	height: 140px;
+	padding:5px 10px;
+	border-radius: 2px;
+	background-color:#fff;
+	border:1px solid #000;
+	vertical-align:bottom;
+	font-size:16px;
+}
+
+/* 確定ボタン */
+.confirm_btn{
+	display:block;
+	width:100%;
+	max-width:640px;
+	line-height:68px;
+	margin:0 auto;
+	font-size:18px;
+	color:#fff;
+	background-color:#e50054;
+	border-radius:8px;
+	position:relative;
+}
+.confirm_btn:after{
+	content:'';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 0 8px 12px;
+	border-color: transparent transparent transparent #fff;
+	position:absolute;
+	right:20px;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+/* 戻るボタン */
+.back_btn{
+	display:block;
+	width:305px;
+	line-height:60px;
+	margin:40px auto 0;
+	font-size:16px;
+	color:#6c6c6c;
+	background-color:#e9e9e9;
+	border-radius:8px;
+}
