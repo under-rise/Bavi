@@ -466,65 +466,6 @@ table th,table td {  border-color: #bbb!important;}
 .coupon_sec .expiration { font-size: 12px; text-align: center!important;}
 .coupon_sec p.info { font-size: 12px;}
 
-/*▼▼▼20210729追加*/
-.gallery_sec li { width: 100%; margin-bottom: 10px;}
-.gallery_sec li img { width: 100%; height: auto;}
-
-.shopdetail_sec .main img { width: 40%; display: inline-block;}
-.shopdetail_sec .main p { width: 55%; display: inline-block; float: right;}
-
-.shopdetail_sec .info { clear: both; padding-top: 10px;}
-.shopdetail_sec .info .item { display: flex; border: 1px #ccc solid; margin-bottom: 10px; }
-.shopdetail_sec .info .checkbox_sec { width: 8%; background: #f1f1f1; text-align: center; display: flex;}
-.shopdetail_sec .info .checkbox_sec input[type="checkbox"] { margin: auto auto;}
-.shopdetail_sec .info .item dl { width: 100%;  padding: 10px; box-sizing: border-box; }
-.shopdetail_sec .info .item:after { content: " "; display: block; visibility: hidden; clear: both; height: 0.1px; font-size: 0.1em; line-height: 0; } 
-.shopdetail_sec .info dt { font-weight: bold; font-size: 1.0rem;}
-.shopdetail_sec .info .price { text-align: right; font-weight: bold; font-size: 0.9rem;}
-.shopdetail_sec .info .price span { font-size: 10px; }
-.shopdetail_sec .info .caption { font-size: 0.8rem;}
-
-ul.order_btn_sec { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px 0; }
-ul.order_btn_sec li:not(.order_btn) { margin: 5px;}
-ul.order_btn_sec li a { display: block; padding: 8px 0px; color: #fff; text-align: center; box-sizing: border-box;}
-ul.order_btn_sec li.all_buy_btn { background: #4d8e5f; width: 50%;}
-ul.order_btn_sec li.order_btn { background: #cf2e56; width: 100%; padding: 8px; margin-top: 20px; font-weight: bold;}
-ul.order_btn_sec li.clear_btn { background: #b0adad; width: 35%;}
-
-.double_slick .cursol { position: absolute; z-index: 10000; left: 10px; top: 10px; color: #000; font-size: 9px;}
-
-input[type="checkbox"],input[type="radio"] {
-	position: relative;
-	-webkit-appearance: none;
-	appearance: none;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 22px;
-	height: 22px;
-	content: "";
-	background-color: #FFFFFF;
-	border: 1px solid #999999;
-	vertical-align: middle;
-	cursor: pointer;
-}
-
-input[type="checkbox"]:checked + span,input[type="radio"]:checked + span {
-	color: #e50054;
-	font-weight: bold;
-}
-
-input[type="checkbox"]:checked:after,input[type="radio"]:checked:after {
-	display: block;
-	position: absolute;
-	top: 3px;
-	left: 3px;
-	content: "";
-	width: 14px;
-	height: 14px;
-	background: #e50054;
-}
-/*20210729ここまで*/
-
 @media screen and (max-width:680px){
 
 .coupon_sec .ticket { padding: 30px 10px; }
@@ -536,24 +477,5 @@ input[type="checkbox"]:checked:after,input[type="radio"]:checked:after {
 .coupon_sec p.info { font-size: 11px; padding: 5px 10px;}
    
     
-/*--20210729追加--*/
-.shopdetail_sec .main p { font-size: 0.8rem;}
-.shopdetail_sec .info dt { font-size: 0.8rem;}
-.shopdetail_sec .info .price {  font-size: 0.8rem;}
-.shopdetail_sec .info .caption { font-size: 0.6rem;}
-    
-    ul.order_btn_sec li.all_buy_btn a,ul.order_btn_sec li.clear_btn a { font-size: 11px;}
 
-
-input[type="checkbox"],input[type="radio"] {
-	width: 16px; height: 16px;
-}
-    
-input[type="checkbox"]:checked:after,input[type="radio"]:checked:after {
-	top: 2px;left: 2px;width: 10px;height: 10px;
-}
-    
-.shopdetail_sec.modal_sec .inr { padding: 30px 15px;}
-/*20210729ここまで*/
-    
 }
