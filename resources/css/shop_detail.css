@@ -441,17 +441,7 @@
 
 
 /*Add 20210609*/
-.news_sec { background:url(../images/bg_pink.png); background-size: 40px;}
-.news_sec ul { max-height: 250px; overflow-y:auto;}
-.news_sec ul { }
-.news_sec ul li { display: flex; justify-content: space-between;  margin-bottom: 15px; padding-bottom: 15px; }
-.news_sec ul li:not(:last-child) { border-bottom: 1px dashed #999;   }
-.news_sec ul li .img { width:30%; }
-.news_sec ul li .img img { width: 100%; height: auto;}
-.news_sec ul li .txt { width:65%; padding-right: 5px; }
-#shop .news_sec ul li .txt h4 { font-weight:bold!important; font-size: 13px; margin-bottom: 4px;}
-#shop .news_sec ul li .txt p { font-size: 11px;}
-#shop .news_sec ul li .txt p.day { font-size: 10px; margin-bottom: 3px;}
+
 
 
 /*▼▼▼20210729追加*/
