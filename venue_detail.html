@@ -32,7 +32,7 @@
 	<script type="text/javascript" src="resources/js/jquery.rwdImageMaps.js"></script>
 	<script type="text/javascript" src="resources/slick/slick.min.js"></script>
    
- 
+    <script type="text/javascript" src="resources/js/shop_spot.js"></script>  <!--20210729追加-->
     
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
@@ -130,13 +130,14 @@
 
 			<section>
 				<div class="double_slick">
-                   
+                    <!--20210729追加-->
+                    <div class="cursol">▶︎</div>
                     <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店"/></div>
 					<div class="main_slick">
-                     
-						<div class="modal" ><img src="resources/images/venue/venue1.png" alt="" /></div>
-						<div class="modal" ><img src="resources/images/venue/spot2.png" alt="" /></div>
-						<div class="modal" ><img src="resources/images/venue/venue3.png" alt="" /></div>
+                         <!--20210728 add　class="modal" data-name=".gallery_sec"追加-->
+						<div class="modal" data-name=".gallery_sec"><img src="resources/images/venue/venue1.png" alt="" /></div>
+						<div class="modal" data-name=".gallery_sec"><img src="resources/images/venue/spot2.png" alt="" /></div>
+						<div class="modal" data-name=".gallery_sec"><img src="resources/images/venue/venue3.png" alt="" /></div>
 					</div>
 					
 					<ul class="slick_nav">
@@ -264,6 +265,25 @@
 		
         </section>
 		
+        <!--20210729 add-->
+        <div class="gallery_sec modal_sec" style="display: none;">
+
+            <div class="inr">
+
+             <span class="close">+</span>
+
+             <h3>多摩川緑地バーベキュー広場</h3>
+             <ul>
+                <li><img src="resources/images/venue/venue1.png" alt="" /></li>
+                <li><img src="resources/images/venue/spot2.png" alt="" /></li>
+                <li><img src="resources/images/venue/venue3.png" alt="" /></li>
+            </ul>
+
+            </div>
+            <!--inr end-->
+
+        </div>
+        <!--20210729 ここまで-->
         
 		<section id="detail" class="cont">
 			<h2>会場詳細</h2>
@@ -589,10 +609,84 @@
 					<td><span class="bold">要確認</span></td>
 				</tr>
 			</table>
-			
+			<!--20210729変更-->
+			<a href="javascript:void(0)"  class="modal more_btn" data-name=".shopdetail_sec">商品を注文する</a>
 		</section>
 		
-      
+        <!--20210729追加-->
+        <div class="shopdetail_sec modal_sec" style="display: none;">
+
+                 <div class="inr">
+                     
+                  <span class="close">+</span>
+                    
+                     <h3>売店情報タイトル売店情報タイトル売店情報タイトル売店情報</h3>
+                     
+                     <div class="main">
+                     <img src="resources/images/venue/shop1.png" alt="" />
+				     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+                     </div>
+                     
+                     <div class="info clearfix">
+                         
+                          <div class="item">
+                              <div class="checkbox_sec">
+                                  <input type="checkbox" name="menu_item[]">
+                              </div>
+                              <dl>
+                             <dt>焼肉セット（800g）</dt>
+                             <dd class="price">¥10,000円<span>（税込）</span></dd>
+                             <dd class="caption">500文字以内のテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</dd>
+                             </dl>
+                         </div>
+                         
+                         <div class="item">
+                              <div class="checkbox_sec">
+                                  <input type="checkbox" name="menu_item[]">
+                              </div>
+                              <dl>
+                             <dt>焼肉セット（800g）</dt>
+                             <dd class="price">¥10,000円<span>（税込）</span></dd>
+                             <dd class="caption">500文字以内のテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</dd>
+                             </dl>
+                         </div>
+                         
+                         <div class="item">
+                              <div class="checkbox_sec">
+                                  <input type="checkbox" name="menu_item[]">
+                              </div>
+                              <dl>
+                             <dt>焼肉セット（800g）</dt>
+                             <dd class="price">¥10,000円<span>（税込）</span></dd>
+                             <dd class="caption">500文字以内のテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</dd>
+                             </dl>
+                         </div>
+                         
+                         <div class="item">
+                              <div class="checkbox_sec">
+                                  <input type="checkbox" name="menu_item[]">
+                              </div>
+                              <dl>
+                             <dt>焼肉セット（800g）</dt>
+                             <dd class="price">¥10,000円<span>（税込）</span></dd>
+                             <dd class="caption">500文字以内のテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</dd>
+                             </dl>
+                         </div>
+                        
+                        
+                         <ul class="order_btn_sec">
+                       　 <li class="clear_btn"><a href="javascript:void(0);" >チェッククリア</a></li>
+                         <li class="all_buy_btn"><a href="javascript:void(0);">すべてチェック</a></li>
+                         <li class="order_btn"><a href="#">注文する</a></li>
+                         </ul>
+                         
+                         
+                         
+                     </div>
+                     
+                </div>
+         </div>
+        <!--20210729追加ここまで-->
 		
         <!--▼▼▼20210621変更-->
 		<section id="coupon" class="cont coupon_sec">
