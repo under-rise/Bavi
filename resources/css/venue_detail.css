@@ -525,6 +525,29 @@ input[type="checkbox"]:checked:after,input[type="radio"]:checked:after {
 }
 /*20210729ここまで*/
 
+/*▼▼▼20210818追加*/
+/* #youtube */
+#youtube{
+	background:url(../images/bg_pink.png);
+	background-size:85px auto;
+}
+
+#youtube .movie {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*▲▲▲20210818ここまで*/
+
 @media screen and (max-width:680px){
 
 .coupon_sec .ticket { padding: 30px 10px; }
@@ -555,5 +578,13 @@ input[type="checkbox"]:checked:after,input[type="radio"]:checked:after {
     
 .shopdetail_sec.modal_sec .inr { padding: 30px 15px;}
 /*20210729ここまで*/
+    
+    
+/*▼▼▼20210818追加*/
+/* #youtube */
+#youtube .inr {
+  width: 98%;
+}
+/*▲▲▲20210818ここまで*/
     
 }
