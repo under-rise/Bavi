@@ -357,9 +357,11 @@ header h1{
 }
 header h1 + a{
 	width:35%;
-	display:inline-block;
-	padding-bottom:5px;
+    display:block;
+	padding:0 0 5px 5px;
 }
+    
+header h1 + a img { width: 100%; height: auto;}
 
 
 header div{
