@@ -604,7 +604,10 @@ footer p{
 /*Add 20210601*/
 /*SNS*/
 .sns_sec li a {  padding: 2px 0; font-size: 15px;}
-
+    
+/*bottom_line_btn*/
+#bottom_line_btn { bottom: 20vw; right: 5px; width:33vw;}
+    
 }
 
 

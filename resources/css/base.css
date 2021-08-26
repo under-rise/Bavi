@@ -1000,3 +1000,7 @@ table.table_style td.btn_td { width: 80px;}
 .sns_sec li.facebook a { background: #1877f2;}
 .sns_sec li.twitter a { background: #1DA1F2;}
 .sns_sec li.sns_line a { background: #00B900;}
+
+
+/*bottom_line_btn*/
+#bottom_line_btn { position: fixed; bottom: 110px; right: 10%; width: 220px;}
