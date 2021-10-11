@@ -239,6 +239,15 @@
 	font-weight:bold;
 }
 
+/*▼▼▼20211011*/
+#news{
+	padding-bottom:60px;
+	background:url(../images/bg_pink.png);
+	background-size:85px auto;
+}
+#news h2 { white-space: nowrap; }
+/*▲▲▲▲20211011*/
+
 
 /*▼▼▼20210616変更*/
 /* #campaign */
@@ -441,6 +450,7 @@ table th,table td {  border-color: #bbb!important;}
 #venue .news_sec ul li .txt h4 { font-weight:bold!important; font-size: 13px; margin-bottom: 4px;}
 #venue .news_sec ul li .txt p { font-size: 11px;}
 #venue .news_sec ul li .txt p.day { font-size: 10px; margin-bottom: 3px;}
+
 
 
 /*▼▼▼20210621変更*/
