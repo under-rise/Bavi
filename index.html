@@ -55,6 +55,20 @@
 				swipe:false,
 			});
 		});
+        
+        //追加
+        window.addEventListener('load', function() {
+          var maxHeight = 0;
+          $('.slick .item a').each(function(idx, elem) {
+            var height = $(elem).height();
+            if(maxHeight < height) {
+              maxHeight = height;
+            }
+          });
+          $('.slick .item a').height(maxHeight);
+        });
+        
+        
 	</script>
 </head>
 <body>
