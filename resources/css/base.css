@@ -499,7 +499,8 @@ figure.chubu,
 figure.kinki,
 figure.chugoku,
 figure.shikoku,
-figure.kyusyu{
+figure.kyusyu,
+figure.okinawa{
 	position:relative;
 }
 figure.hokkaido:after,
@@ -509,7 +510,8 @@ figure.chubu:after,
 figure.kinki:after,
 figure.chugoku:after,
 figure.shikoku:after,
-figure.kyusyu:after{
+figure.kyusyu:after,
+figure.okinawa:after{
 	display:block;
 	width:38px;
 	line-height:15px;
@@ -554,6 +556,10 @@ figure.shikoku:after{
 figure.kyusyu:after{
 	content:'九州';
 	background-color:#8a6c8e;
+}
+figure.okinawa:after{
+	content:'沖縄';
+	background-color:#5b6ca4;
 }
 
 
