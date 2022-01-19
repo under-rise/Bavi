@@ -48,6 +48,10 @@
 	cursor:pointer;
 }
 
+/* #mainVisual */
+#mainVisual.cont { padding: 10px 0 10px 0;}
+
+
 
 /* #news */
 #news{

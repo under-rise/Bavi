@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<title>日本最大級のBBQプラットフォーム Bavi</title>
 	<link rel="stylesheet" href="resources/css/sanitize.css">
-	<link rel="stylesheet" href="resources/css/base.css">
+	<link rel="stylesheet" href="resources/css/base.css?1.1">
 	<link rel="stylesheet" href="resources/css/base_sp.css">
 	<link rel="stylesheet" href="resources/css/top.css?1.2">
 	<link rel="stylesheet" href="resources/css/top_sp.css?1.5">
@@ -54,6 +54,22 @@
 				cssEase: 'linear',
 				swipe:false,
 			});
+
+			$('.slider').slick({
+				autoplay: true,
+				autoplaySpeed: 5000,
+				speed: 800,
+				infinite: true,
+				fade:false,
+				arrows: true,
+				dots: true,
+				pauseOnHover: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				cssEase: 'linear',
+				swipe:true,
+			});
+
 		});
         
         //追加
@@ -91,6 +107,18 @@
 	
 	
 	<article>
+
+		<section id="mainVisual" class="cont">
+        
+			<div class="inr clearfix">
+						<ul class="slider">
+								<li><a href="https://bavi.jp/spot?pref_id=47"><img src="resources/images/top/slider_001.jpg"></a></li>
+								<li><a href="https://bavi.jp/spot?pref_id%5B%5D=13&option_id%5B11%5D%5B%5D=30&word=&order="><img src="resources/images/top/slider_002.jpg"></a></li>
+								<li><a href="https://bavi.jp/about"><img src="resources/images/top/slider_003.jpg"></a></li>
+						</ul>
+				</div>
+		</section>
+
 		<section id="search" class="cont">
 			<h2><img src="resources/images/top/search_h2.png" alt="BBQ場" />BBQ場</h2>
 			
