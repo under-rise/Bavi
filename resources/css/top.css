@@ -51,7 +51,11 @@
 /* #mainVisual */
 #mainVisual.cont { padding: 10px 0 10px 0;}
 
-
+/* location*/
+#location { }
+#location ul { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#location ul li { width: 49.5%; margin-bottom: 2%; padding: 5px; border-radius: 7px; background: #fff; }
+#location ul li p { font-size: 11px; margin-top: 3px;}
 
 /* #news */
 #news{
