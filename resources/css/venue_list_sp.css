@@ -37,8 +37,8 @@
 }
 .cont h2{
 	width:94%;
-	padding:3px 0 3px 5px;
-	font-size:4.5vw;
+	padding:3px 0 3px 10px;
+	font-size:16px;
 	border-left:4px solid #e50054;
 }
 .cont h2 + nav{
@@ -49,31 +49,31 @@
 	font-size:14px;
 }
 
-.cont > ul{
+.cont ul.shop{
 	width:94%;
 }
-.cont > ul li{
+.cont ul.shop li{
 	display:inline-block;
 	vertical-align:top;
 	width:48%;
 	margin:8px 0;
 }
-.cont > ul li:nth-child(odd){
+.cont ul.shop li:nth-child(odd){
 	margin-right:1%;
 }
-.cont > ul li a{
+.cont ul.shop li a{
 	box-shadow:2px 2px 0 #d1cacd;
 }
-.cont > ul li a h3{
+.cont ul.shop li a h3{
 	font-size:12px;
 }
-.cont > ul li a p{
+.cont ul.shop li a p{
 	margin-bottom:5px;
 	font-size:12px;
 }
     
 /*Add style 20210524*/
-.cont > ul li .colona_icon { position: absolute; width: 22%; top 5px; top:auto;}
+.cont ul.shop li .colona_icon { position: absolute; width: 22%; top 5px; top:auto;}
 
 }
 
