@@ -50,6 +50,9 @@ topic_detail
 #topic_detail .topic_list h2 { font-size: 20px;}
 /*--20210802ここまで--*/
 
+table.table { width: 100%;}
+table.table th,table.table td { border: 1px solid #999; padding: 5px;}
+
 @media screen and (max-width:680px){
 
 .inr { max-width: 100%; margin: 0 auto;}
