@@ -30,3 +30,41 @@
  #topic h3.page_ttl { text-align: left; font-size: 16px;}
  #topic h3.page_ttl br { display: none;}
 }
+
+/*cameraman*/
+#cameraman h3.page_ttl {
+ margin-bottom: 20px;
+ margin:0 auto 10px;
+ font-size:18px;
+ font-weight:bold;
+ color: #e50054;
+}
+#cameraman h4.ttl {
+ padding-top: 20px;
+ border-top: 2px solid #eee;
+ margin-bottom: 20px;
+ margin:30px auto 10px;
+ font-size:17px;
+ font-weight:bold;
+ color: #e50054;
+}
+
+#cameraman table.type01 th { background: url("../images/bg_pink.png"); background-size: 30px;}
+#cameraman table.type02 th { background-color:#eee; background-size: 30px;}
+
+#cameraman .sec01 li { border-bottom: 1px dashed #e50054; padding: 5px 0; }
+#cameraman .sec02 h5 { color: #e50054; font-size: 20px; margin-bottom: 5px; }
+#cameraman .sec02 h5 span { background: linear-gradient(transparent 50%, rgb(242, 250, 171) 50%); padding: 0 30px; }
+
+#cameraman .sec03 ul { display: flex; justify-content: space-between; flex-wrap: wrap;}
+#cameraman .sec03 ul li { width: 32%; border: 1px solid #999; margin-bottom: 8px; padding: 4px 0; }
+#cameraman .sec03 ul::after { content: "";  width: 32%;}
+
+ul.list_style  { text-align: left; margin-bottom: 20px;  }
+.list_style span {   background-color: #000; color: #fff; text-align: center; width: 18px; height: 18px; display: inline-block; margin-right: 8px; border-radius: 50%; line-height: 1.3; margin-bottom: 5px;}
+
+@media screen and (max-width:680px){
+ #cameraman .read_copy { text-align:left;}
+ #cameraman .read_copy br { display: none;}
+ #cameraman .sec04 li { text-align: left;}
+}

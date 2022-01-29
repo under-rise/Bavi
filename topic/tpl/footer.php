@@ -81,7 +81,8 @@
 				
 				<dt>その他</dt>
             <dd><a href="#">Baviについて</a></dd>
-            <dd><a href="#">Bavi特別タイアップについて</a></dd>
+            <dd><a href="/topic/tieup.php">Bavi特別タイアップについて</a></dd>
+												<dd><a href="/topic/recruitment_cameramen.php">撮影カメラマン募集について</a></dd>
             <dd><a href="#">Baviモデルのご紹介</a></dd>
 			</dl>
 		</div>
