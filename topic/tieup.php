@@ -10,7 +10,7 @@
     <title>Bavi 特別タイアッププラン | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/../topic/tpl/head.php'; ?>
-    <link rel="stylesheet" href="/topic/css/topic.css">
+    <link rel="stylesheet" href="/topic/tpl/css/topic.css">
 
 </head>
 
