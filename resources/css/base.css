@@ -424,7 +424,6 @@ transform:rotate(45deg);
 	border-radius: 10px;
 }
 
-
 /* .slick */
 .slick{
 	max-width:650px;
@@ -499,7 +498,8 @@ figure.chubu,
 figure.kinki,
 figure.chugoku,
 figure.shikoku,
-figure.kyusyu{
+figure.kyusyu,
+figure.okinawa{
 	position:relative;
 }
 figure.hokkaido:after,
@@ -509,7 +509,8 @@ figure.chubu:after,
 figure.kinki:after,
 figure.chugoku:after,
 figure.shikoku:after,
-figure.kyusyu:after{
+figure.kyusyu:after,
+figure.okinawa:after{
 	display:block;
 	width:38px;
 	line-height:15px;
@@ -554,6 +555,10 @@ figure.shikoku:after{
 figure.kyusyu:after{
 	content:'九州';
 	background-color:#8a6c8e;
+}
+figure.okinawa:after{
+	content:'沖縄';
+	background-color:#5b6ca4;
 }
 
 
@@ -731,10 +736,11 @@ article.fixed.result_list{
 	padding:40px 0 60px;
 	transform: rotate(0.03deg);
 }
-.cont h2{
-	width:231px;
+.cont h2 {
+	display: inline-block;
+	padding: 0 30px 0 30px;
 	margin:0 auto 40px;
-	font-size:32px;
+	font-size:24px;
 	font-weight:900;
 	color:#e50054;
 	border-bottom:3px solid #e50054;
@@ -1000,3 +1006,7 @@ table.table_style td.btn_td { width: 80px;}
 .sns_sec li.facebook a { background: #1877f2;}
 .sns_sec li.twitter a { background: #1DA1F2;}
 .sns_sec li.sns_line a { background: #00B900;}
+
+
+/*bottom_line_btn*/
+#bottom_line_btn { position: fixed; bottom: 110px; right: 10%; width: 220px;}

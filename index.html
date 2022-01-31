@@ -8,9 +8,9 @@
 	<meta name="description" content="">
 	<title>日本最大級のBBQプラットフォーム Bavi</title>
 	<link rel="stylesheet" href="resources/css/sanitize.css">
-	<link rel="stylesheet" href="resources/css/base.css">
-	<link rel="stylesheet" href="resources/css/base_sp.css">
-	<link rel="stylesheet" href="resources/css/top.css?1.1">
+	<link rel="stylesheet" href="resources/css/base.css?1.3">
+	<link rel="stylesheet" href="resources/css/base_sp.css?1.1">
+	<link rel="stylesheet" href="resources/css/top.css?1.2">
 	<link rel="stylesheet" href="resources/css/top_sp.css?1.5">
 	<link rel="stylesheet" href="resources/slick/slick.css" />
 	<link rel="stylesheet" href="resources/slick/slick-theme.css" />
@@ -54,7 +54,37 @@
 				cssEase: 'linear',
 				swipe:false,
 			});
+
+			$('.slider').slick({
+				autoplay: true,
+				autoplaySpeed: 5000,
+				speed: 800,
+				infinite: true,
+				fade:false,
+				arrows: true,
+				dots: true,
+				pauseOnHover: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				cssEase: 'linear',
+				swipe:true,
+			});
+
 		});
+        
+        //追加
+        window.addEventListener('load', function() {
+          var maxHeight = 0;
+          $('.slick .item a').each(function(idx, elem) {
+            var height = $(elem).height();
+            if(maxHeight < height) {
+              maxHeight = height;
+            }
+          });
+          $('.slick .item a').height(maxHeight);
+        });
+        
+        
 	</script>
 </head>
 <body>
@@ -77,8 +107,22 @@
 	
 	
 	<article>
+
+		<section id="mainVisual" class="cont">
+        
+			<div class="inr clearfix">
+						<ul class="slider">
+							 <li><a href="/topic/recruitment_cameramen.php"><img src="topic/images/cameraman.jpg"></a></li>
+        <li><a href="/topic/tieup.php"><img src="topic/images/tieup_title.jpg"></a></li>
+								<li><a href="https://bavi.jp/spot?pref_id=47"><img src="resources/images/top/slider_001.jpg"></a></li>
+								<li><a href="https://bavi.jp/spot?pref_id%5B%5D=13&option_id%5B11%5D%5B%5D=30&word=&order="><img src="resources/images/top/slider_002.jpg"></a></li>
+								<li><a href="https://bavi.jp/about"><img src="resources/images/top/slider_003.jpg"></a></li>
+						</ul>
+				</div>
+		</section>
+
 		<section id="search" class="cont">
-			<h2><img src="resources/images/top/search_h2.png" alt="BBQ場" />BBQ場</h2>
+			<h2><img src="resources/images/top/search_h2.png" alt="BBQ場" />地図から検索</h2>
 			
 			
 			<div>
@@ -86,7 +130,7 @@
 				
 				<p>1,230<span>件</span></p>
 				
-				<img src="resources/images/map.png" usemap="#image-map">
+				<img src="resources/images/map.png?1.1" usemap="#image-map">
 				
 				<map name="image-map">
 					<area target="" alt="北海道" title="北海道" class="hokkaido" coords="1030,11,1157,123,1217,128,1221,181,1251,208,1071,322,1004,256,917,260,940,327,870,350,845,263,893,185,956,189" shape="poly">
@@ -97,10 +141,12 @@
 					<area target="" alt="中国" title="中国" class="chugoku" coords="173,795,387,790,390,863,410,863,408,950,246,994,170,989,159,957,276,877,168,879" shape="poly">
 					<area target="" alt="四国" title="四国" class="shikoku" coords="253,1019,413,973,429,1032,323,1092,497,1094,501,1178,284,1176,276,1105" shape="poly">
 					<area target="" alt="九州" title="九州" class="kyusyu" coords="44,1066,124,986,230,1064,193,1151,221,1153,221,1233,6,1236,8,1154,99,1151,118,1094,97,1083,63,1105" shape="poly">
-					<area target="" alt="九州" title="九州" class="kyusyu" coords="70,640,148,697,246,612,168,530" shape="poly">
+					<area target="" alt="沖縄" title="沖縄" class="okinawa" coords="182,490,336,456,321,704,29,848,0,803,6,613" shape="poly">
 				</map>
                 
+                <!--
                 <div class="top_kuchikomi_btn"><a href="question.html"><img src="resources/images/kuchikomi_btn.png" alt=""/></a></div>
+                -->
                 
 			</div>
 			
@@ -179,35 +225,82 @@
 						<dd><a href="">大分県</a></dd>
 						<dd><a href="">宮崎県</a></dd>
 						<dd><a href="">鹿児島県</a></dd>
-						<dd><a href="">沖縄県</a></dd>
+					</dl>
+                    
+     <dl class="okinawa">
+						<dt>沖縄エリア</dt>
+						<dd><a href="/venue_list.html">沖縄本島</a></dd>
+						<dd><a href="/venue_list.html">離島</a></dd>
 					</dl>
 				</div>
 			</div>
 		</section>
         
-        <section id="about" class="cont">
-        
-            <div class="inr clearfix">
-                
-                <h2>What's Bavi</h2>
-                
-                <div class="sec_l">
-                <img src="resources/images/top/about_img.png">
-                </div>
-                
-                <div class="sec_r">
-                    <h3>あなたのの最適なBBQ場を検索するBavi。</h3>
-                    <p>会場や食材店舗へ一直線。コロナ対策バッチリの会場を探し、LIKEや口コミを書いて会場を盛り上げよう！
-予約や注文もお任せ、最新NEWSで混雑状況やお知らせを見よう！</p>
-                </div>
+       
+		<section id="location" class="cont">
+			<h2>ロケーションから検索</h2>
+            
+            <p>あなたにあったロケーションからBBQ場を検索！</p>
+            
+            <div class="inr">
+            <ul>
+            <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=1&word=&order="><img src="resources/images/top/location_001.jpg" alt="川×BBQ"></a><p>川遊びや自然を満喫</p></li>
+            <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=2&word=&order="><img src="resources/images/top/location_002.jpg" alt="海×BBQ"></a><p>海と波音で過ごす贅沢BBQ</p></li>
+            <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=3&word=&order="><img src="resources/images/top/location_003.jpg" alt="都心×BBQ"></a><p>夜景やアクセスも魅力</p></li>
+            <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=4&word=&order="><img src="resources/images/top/location_004.jpg" alt="静か×BBQ"></a><p>自分だけの贅沢時間に</p></li>
+            <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=5&word=&order="><img src="resources/images/top/location_005.jpg" alt="公園×BBQ"></a><p>整った設備や施設でお子様も安心</p></li>
+            <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=32&word=&order="><img src="resources/images/top/location_006.jpg" alt="山×BBQ"></a><p>大自然と景観を楽しむ！</p></li>
+            </ul>
                 
             </div>
-                
-      
             
         </section>
-		
-		
+        
+       
+        <!--▼▼▼20210818追加-->
+		<section id="youtube" class="cont">
+			<h2>動画から検索</h2>
+            
+            <p>BBQ会場の新着紹介ムービー</p>
+            
+            <div class="inr">
+                
+                     <div class="movie">
+                         <div class="movie_item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                         <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
+                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
+                    </div>
+
+                     <div class="movie">
+                         <div class="movie_item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                         <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
+                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
+                    </div>
+                
+                     <div class="movie">
+                             <div class="movie_item">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                             </div>
+                             <p><a href="venue_detail.html">会場名</a></p>
+                            <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
+                     </div>
+                
+                     <div class="movie">
+                         <div class="movie_item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                         <p><a href="venue_detail.html">会場名</a></p>
+                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
+                    </div>
+               
+            </div>
+            
+        </section>
+        <!--▲▲▲20210818ここまで-->
         
 		<section id="news" class="cont">
 			<h2>Pick UP!</h2>
@@ -393,10 +486,18 @@
 				<dd><a href="">周辺店舗新着</a></dd>
 				
 				<dt>その他</dt>
-				<dd><a href="">Baviについて</a></dd>
+				<dd><a href="#">Baviについて</a></dd>
+            <dd><a href="/topic/tieup.php">Bavi特別タイアップについて</a></dd>
+												<dd><a href="/topic/recruitment_cameramen.php">撮影カメラマン募集について</a></dd>
+            <dd><a href="#">Baviモデルのご紹介</a></dd>
+				
 			</dl>
 		</div>
 	</nav>
+    
+    <div id="bottom_line_btn">
+    <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="resources/images/line_btn.gif" alt="LINEでお気軽相談"/></a>
+    </div>
 </div>
 </body>
 </html>

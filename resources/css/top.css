@@ -48,6 +48,14 @@
 	cursor:pointer;
 }
 
+/* #mainVisual */
+#mainVisual.cont { padding: 10px 0 10px 0;}
+
+/* location*/
+#location { }
+#location ul { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#location ul li { width: 49.5%; margin-bottom: 2%; padding: 5px; border-radius: 7px; background: #fff; }
+#location ul li p { font-size: 11px; margin-top: 3px;}
 
 /* #news */
 #news{
@@ -61,3 +69,64 @@
 
 .top_kuchikomi_btn { position: absolute;right: 0; top: 85%; width: 220px;}
 
+
+/*▼▼▼20210818追加*/
+/* #youtube */
+#youtube{
+	background:url(../images/bg_pink.png);
+	background-size:50px auto;
+}
+
+#youtube .inr { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px;}
+
+
+#youtube .movie {
+  background: #fff;
+  width: 49%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+#youtube .movie_item {
+ position: relative;
+ padding-top: 56.25%;
+ width: 100%;
+}
+
+#youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#youtube .movie p {  margin-top: 5px; font-size: 12px;}
+#youtube .movie p a { color:#e50054;}
+
+
+#youtube .movie .btn a { background: #f1f1f1; color: #e50054; display: inline-block; font-size: 11px; margin:10px 0 5px 0; border-radius: 5px; padding: 1px 15px; box-sizing: border-box;}
+
+/*変更　20211022*/
+.slick div figure { position: relative; height: 200px; overflow: hidden; }
+
+.slick div.item a img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:680px){
+    #youtube .movie .btn a { font-size: 9px; margin: 5px 0; width: 100%; padding: 4px 0;}  
+    
+    /*変更　20211022*/
+    .slick div figure { position: relative; height: 120px; overflow: hidden; }
+}
