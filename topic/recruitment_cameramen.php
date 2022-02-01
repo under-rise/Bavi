@@ -10,7 +10,7 @@
     <title>撮影カメラマン大募集!! | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/../topic/tpl/head.php'; ?>
-    <link rel="stylesheet" href="/topic/css/topic.css?1.1">
+    <link rel="stylesheet" href="/topic/css/topic.css?1.2">
 
 </head>
 
@@ -66,7 +66,8 @@
                     <ul>
                         <li>1. Baviのサイトに掲載してある、お近くの会場の見つける。</li>
                         <li>2. 現地に行き、写真撮影。</li>
-                        <li>3. 当社に納品（jpegにて）1枚は1M〜10M程度。</li>
+                        <li>3. 当社に納品（jpegにて）1枚は1M〜10M程度。<br>
+（印刷物使用も考慮し4,000px x 6,000px以上）</li>
                     </ul>
 
                     </div>
@@ -106,6 +107,7 @@
                         <li>・撮影する際に、管理の人などがいれば、お声がけして撮影すること。</li>
                         <li>・撮影した写真は、ご自身のSNSと当社のWEBサイト、当社SNSで使用する旨お伝えください。</li>
                         <li>・無断で敷地内に入らないこと。入れない場合は外から撮影のみでOKです。</li>
+                        <li>・当社でお支払いを完了した時点でデータの使用許可を認めたものと致します。使用する場所は当社が運営する各WEBサイト、各SNSとなります。予めご了承ください。</li>
                     </ul>
                     </div>
                     
