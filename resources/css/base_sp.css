@@ -399,6 +399,9 @@ header nav + div input::-ms-input-placeholder{
 	color:#6d6b6b;
 }
 
+/*login_sec*/
+header .login_sec { right: 10px; top: 36px; width: 45px;}
+header .login_sec p { font-size: 9px; margin-top: 5px;}
 
 /* article */
 article{
@@ -580,7 +583,7 @@ footer p{
 	width:120px;
 }
 #overlay_nav div dl dt{
-	margin-top:15px;
+	margin-top:25px;
 	font-size:16px;
 	font-weight:bold;
 	color:#e50054;
@@ -593,7 +596,7 @@ footer p{
 	transform: rotate(0.03deg);
 }
 #overlay_nav div dl dd a{
-	padding:4px 15px;
+	padding:15px 15px;
 	display:block;
 	font-size:14px;
 	color:#000;

@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="/resources/css/sanitize.css">
-<link rel="stylesheet" href="/resources/css/base.css?1.3">
-<link rel="stylesheet" href="/resources/css/base_sp.css?1.1">
+<link rel="stylesheet" href="/resources/css/base.css?1.7">
+<link rel="stylesheet" href="/resources/css/base_sp.css?1.5">
 <link rel="stylesheet" href="/resources/slick/slick.css" />
 <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
 
-<link rel="stylesheet" href="/resources/css/style.css?1.1" />
+<link rel="stylesheet" href="/resources/css/style.css?1.2" />
 
 <script type="text/javascript" src="/resources/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/resources/js/config.js"></script>
+<script type="text/javascript" src="/resources/js/config.js?1.2"></script>
 <script type="text/javascript" src="/resources/js/smoothScroll.js"></script>
 <script type="text/javascript" src="/resources/js/jquery.rwdImageMaps.js"></script>
 <script type="text/javascript" src="/resources/slick/slick.min.js"></script>

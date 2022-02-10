@@ -1,0 +1,90 @@
+/*common*/
+.login_btn { margin-top: 15px; background: #e50054; color: #fff; font-weight: bold; padding: 15px; border-radius: 5px; width: 100%; border-bottom: 4px solid #991747;}
+.login_btn:hover { background: #e50054;}
+
+.register_btn { background: #9ccaae; padding: 15px; border-radius: 5px; width: 100%; border-bottom: 4px solid #6b917a;}
+.register_btn:hover { background: #87bb9b;}
+
+/*header*/
+#my_page header div{ height:auto;padding: 0;}
+header #navi_btn { display:block; position: fixed; left: 10px; top: 30px; z-index: 100; width: 50px; cursor: pointer;}
+
+/*overlay_nav*/
+
+#overlay_nav.myPage span.ttl { font-size: 14px; font-weight: bold; color: #e50054; padding-left: 10px; vertical-align: bottom;}
+
+/*form*/
+
+.form { box-shadow: 0 0 2px #999; padding: 30px 20px; margin: 20px 1%; border-radius: 5px;}
+.form dl { margin-bottom: 20px;}
+.form dt { font-weight: bold; margin-bottom: 10px;}
+.form input[type="text"] { border: 1px solid #999; background: #fafafa; width: 90%; margin: 0 auto; border-radius: 5px; padding: 12px; text-align: center;}
+.form input::placeholder { text-align: center; font-size: 12px;}
+
+/*top*/
+
+#top h3 { margin-top: 30px; margin-bottom: 10px; background: #f1f1f1; padding: 10px 0;}
+#top .point { color: #e50054; font-weight: bold; font-size: 19px; }
+#top dl { display: flex; padding: 13px 0; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd;}
+#top dl dt { width: 25%;  color: #555; }
+#top dl dd { width: 75%; text-align: left;}
+#top dl dd a {color: #e50054; text-decoration: underline;}
+#top dl dd .get_point { transform: translateY(-2px); font-size: 12px; background:  #e50054; display: inline-block; border-radius: 2px; padding: 3px 5px; color: #fff; line-height: 1;}
+
+#top dl.type01 dt { width: 25%;   }
+#top dl.type01 dd:nth-of-type(1) { width: 12%;  text-align: left;}
+#top dl.type01 dd:nth-of-type(2) { width: 70%; text-align: left;}
+
+/*setting*/
+.setting dl dd input[type="text"]{
+	width:100%;
+	font-size:14px;
+	padding:10px 10px;
+	border-radius: 5px;
+	background-color:#fff;
+	border:1px solid #939393;
+	vertical-align:bottom;
+}
+
+.setting  dl dd select{
+	width:100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	padding:12px 15px;
+	border:1px solid #939393;
+	color:#000;
+	background: url(select_arrow.png)no-repeat right 20px center;
+	background-size:14px auto;
+	font-size:14px;
+	border-radius: 5px;
+}
+
+.setting  dl dd select::-ms-expand {
+	display: none;
+}
+.setting  dl dd select option{
+	background:#fff;
+}
+
+
+@media screen and (max-width:680px){
+
+	/*header*/
+	.form input[type="text"] {  width: 100%;}
+
+	#top dl dt { font-size: 11px; }
+	#top dl dd { font-size: 13px;}
+
+	/*setting*/
+.setting dl dd input[type="text"]{
+	width:95%;
+}
+.setting  dl dd select{
+	width:95%;
+	background: url(select_arrow.png)no-repeat right 10px center;
+	background-size:8px auto;
+}
+
+}

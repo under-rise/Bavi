@@ -7,24 +7,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="">
 	<title>日本最大級のBBQプラットフォーム Bavi</title>
-	<link rel="stylesheet" href="resources/css/sanitize.css">
-	<link rel="stylesheet" href="resources/css/base.css?1.3">
-	<link rel="stylesheet" href="resources/css/base_sp.css?1.1">
+
+	<?php include __DIR__ . '/tpl/head.php'; ?>
+
 	<link rel="stylesheet" href="resources/css/top.css?1.2">
 	<link rel="stylesheet" href="resources/css/top_sp.css?1.5">
-	<link rel="stylesheet" href="resources/slick/slick.css" />
-	<link rel="stylesheet" href="resources/slick/slick-theme.css" />
-    
-    <link rel="stylesheet" href="resources/css/style.css?1.1" />
-    
-	<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="resources/js/config.js"></script>
-	<script type="text/javascript" src="resources/js/smoothScroll.js"></script>
-	<script type="text/javascript" src="resources/js/jquery.rwdImageMaps.js"></script>
-	<script type="text/javascript" src="resources/slick/slick.min.js"></script>
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
-	<![endif]-->
+
     
     <meta property="og:title" content="日本最大級のBBQプラットフォーム Bavi" >
     <meta property="og:image" content="http://bavi.tank.jp/resources/images/apple-touch-icon.png" >

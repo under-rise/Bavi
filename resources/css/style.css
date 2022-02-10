@@ -11,6 +11,9 @@
 .inr { max-width: 640px; margin: 0 auto;}
 .sec_l { float: left;}
 .sec_r { float: right;}
+.txt_bl { color: #000;}
+.txt_pink { color: #e50054;}
+
 
 a.link_btn2 { width: 100%; background-color:#e50054; color: #fff; padding: 8px 30px; border-radius: 5px;}
 

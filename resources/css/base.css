@@ -710,6 +710,11 @@ header div input::-ms-input-placeholder{
 	color:#6d6b6b;
 }
 
+/*login_sec*/
+header .login_sec { position: absolute; right: 10px; top: 50px; color: #e50054; width: 90px;}
+header .login_sec .img { width: 50%; display: block; margin: 0 auto;}
+header .login_sec p { text-align: center; color: #e50054; font-size: 12px; margin-top: 5px;}
+
 
 /* article */
 article{

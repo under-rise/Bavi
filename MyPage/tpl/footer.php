@@ -93,3 +93,24 @@
     </div>
 </div>
 
+<nav id="overlay_nav" class="myPage" >
+		<span id="close">+</span>
+		
+		<div>
+			<a href="/"><img src="/resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /><span class="ttl">マイページ</span></a>
+		
+			<dl>
+				<dt>CONTENTS</dt>
+				<dd><a href="/MyPage/index.php">トップページ</a></dd>
+                <dd><a href="/MyPage/use_list.php">利用履歴</a></dd>
+				<dd><a href="/MyPage/voice_list.php">口コミ履歴</a></dd>
+				
+				<dt>ユーザー設定</dt>
+				<dd><a href="/MyPage/setting.php"">登録情報設定</a></dd>
+				
+				<dt>その他</dt>
+                <dd><a onclick="logout()">ログアウト</a></dd>
+                <dd><a href="/MyPage/delete.php">退会する</a></dd>
+			</dl>
+		</div>
+	</nav>

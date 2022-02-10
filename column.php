@@ -7,21 +7,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="">
 	<title></title>
-	<link rel="stylesheet" href="resources/css/sanitize.css">
-	<link rel="stylesheet" href="resources/css/base.css">
-	<link rel="stylesheet" href="resources/css/base_sp.css">
-	<link rel="stylesheet" href="resources/css/column.css?1.1">
+
+    <?php include __DIR__ . '/tpl/head.php'; ?>
+
+    <link rel="stylesheet" href="resources/css/column.css?1.1">
 	<link rel="stylesheet" href="resources/css/column_sp.css">
-    <link rel="stylesheet" href="resources/css/add_column.css?1.8">
-	<link rel="stylesheet" href="resources/slick/slick.css" />
-	<link rel="stylesheet" href="resources/slick/slick-theme.css" />
-	<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="resources/js/config.js"></script>
-	<script type="text/javascript" src="resources/js/smoothScroll.js"></script>
-	<script type="text/javascript" src="resources/slick/slick.min.js"></script>
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
-	<![endif]-->
+    
 	
 	<script type="text/javascript">
 		$(function() {
@@ -56,20 +47,7 @@
 <body>
 <div id="loading"></div>
 <div id="wrapper">
-	<header>
-		<h1>日本最大級のBBQプラットフォーム Bavi</h1>
-		
-		<a href="/"><img src="resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
-		
-		<div>
-			<p>今が旬のお役立ち情報満載！</p>
-			
-			<form>
-				<input type="text" placeholder="フリーワード">
-				<input type="submit" value="検 索">
-			</form>
-		</div>
-	</header>
+<?php include __DIR__ . '/tpl/header_serach.php'; ?>
 	
 	
 	<article>
