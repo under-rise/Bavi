@@ -1,0 +1,82 @@
+#management_page {
+  font-size: 13px;
+}
+
+/*search_sec*/
+#search_sec {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.sort_btn {
+  cursor: pointer;
+}
+
+#search_sec h2 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+#search_sec th {
+  width: 10%;
+}
+
+/*member_sec*/
+#member_sec .table_style {
+  border-bottom: 1px solid #999;
+}
+
+#member_sec .main_info td {
+  border-bottom: none;
+  position: relative;
+}
+
+#member_sec .main_info td {
+  border-top: 1px solid #266698;
+}
+
+#member_sec .user_contact > td {
+  border-bottom: none;
+  border-top: 1px dashed #999;
+}
+
+.btn_sec {
+  padding: 10px 0;
+}
+
+.btn_sec button.btn_type02 {
+  background: #ccc;
+  width: 200px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+.btn_sec button.btn_type02.detail {
+  background: #266698;
+}
+
+.btn_sec button.btn_type02.delete {
+  background: #ad0202;
+}
+
+/*guest_sec*/
+.guest_sec .table_style th {
+  width: 10%;
+}
+
+.guest_sec .table_style td {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex > div {
+  margin: 0 10px;
+}
