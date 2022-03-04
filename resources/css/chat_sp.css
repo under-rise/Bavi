@@ -1,0 +1,21 @@
+@media screen and (max-width:680px){
+
+ #chat_sec {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+ }
+
+ .message_sec {
+  padding-bottom: 200px;
+ }
+
+ .message_sec .send_area {
+  width: 80%;
+ }
+
+ #message_send_area { width: 100%; display: flex; justify-content: space-between; align-items: stretch; padding: 10px;}
+ #message_send_area textarea { border: 1px solid #999; padding: 5px; width: 78%;  min-height: 80px;  box-sizing: border-box;}
+ #message_send_area button { width: 20%; box-sizing: border-box; background-image: none; margin: 0;  }
+}
+

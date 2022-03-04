@@ -1,0 +1,145 @@
+/* #question */
+
+#order h3 {
+ margin: 0 auto;
+ padding-bottom: 10px;
+width:320px;
+ text-align: center;
+margin-bottom:40px;
+ font-size: 18px;
+ font-weight:900;
+color:#e50054;
+border-bottom:2px solid #e50054;
+}
+
+#order form { width: 640px; margin: 0 auto;}
+#order dl{
+	margin:50px 0 50px;
+}
+#order dl dt{
+	margin:20px 0 10px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:left;
+}
+#order dl dt span{
+	margin-right:10px;
+	font-size:20px;
+	color:#e50054;
+}
+
+#order dl dd ul.order {
+	margin-bottom:25px;
+	display: -webkit-flex;
+	display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+#order dl dd ul.order li { cursor: pointer; width: 48%; padding: 20px; 	border:1px solid #939393; border-radius: 5px; position:relative; margin-bottom: 20px; text-align: left;}
+#order dl dd ul.order li.selected { border-color:#e50054; background-color: #faf2f9; }
+#order dl dd ul li label {
+ cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px; 
+  border-bottom: 1px dashed #999; padding-bottom: 5px;
+}
+
+#order dl dd ul li .price {  font-weight: bold; color:#e50054; text-align: right; font-size: 16px; margin-top: 10px;}
+#order dl dd ul li label input[type="checkbox"] + span{
+ margin-left: 10px;
+	cursor:pointer;
+}
+#order dl dd ul li label input[type="checkbox"]:checked + span{
+	color:#e50054;
+}
+#order dl dd ul li label  {
+pointer-events: none;
+
+}
+
+#order dl dd textarea{
+	width:100%;
+	min-height: 130px;
+	font-size:14px;
+	padding:10px 10px;
+	border-radius: 5px;
+	background-color:#fff;
+	border:1px solid #939393;
+	vertical-align:bottom;
+}
+#order dl dd textarea.large{
+	min-height: 290px;
+}
+
+#order dl dd input[type="text"],#order dl dd input[type="tel"],#order dl dd input[type="mail"]{
+	width:100%;
+	font-size:14px;
+	padding:10px 10px;
+	border-radius: 5px;
+	background-color:#fff;
+	border:1px solid #939393;
+	vertical-align:bottom;
+}
+
+#order dl dd label.calendar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border:1px solid #939393;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#order dl dd label.calendar input[type="date"] {
+  position: relative;
+  padding: 10px 10px;
+  width: 100%;
+  padding:10px 10px;
+  background: transparent;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#order dl dd label.calendar input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+
+#order dl dd select{
+	width:100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height:60px;
+	padding:0 30px 0 20px;
+	border:1px solid #939393;
+	color:#000;
+	background: url(select_arrow.png)no-repeat right 20px center;
+	background-size:14px auto;
+	font-size:14px;
+	border-radius: 5px;
+}
+
+#order dl dd select::-ms-expand {
+	display: none;
+}
+#order dl dd select option{
+	background:#fff;
+}
+
+#order dl dd label.calendar input[type="date"] {
+
+ background:url("../images/calendar.svg") no-repeat 98% center; background-size: 20px;
+
+}
+
+#order #userinfo_copy_btn { margin: 0; padding: 0; }
+#order #userinfo_copy_btn button { width: 80%; border: 1px solid #999; padding: 8px 15px; border-radius: 5px; background: #f9f9f9; }
+#order #userinfo_copy_btn button:hover { opacity: 0.6;}

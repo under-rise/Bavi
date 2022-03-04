@@ -1,0 +1,77 @@
+@charset "utf-8";
+@media screen and (max-width:680px){
+
+/* #order */
+#order form{
+	width:auto;
+}
+
+#order h2 + p{
+	display:inline-block;
+	padding:0 3%;
+	font-size:11px;
+	text-align:left;
+}
+#order dl{
+	margin:25px 3% 25px;
+}
+#order dl dt{
+	margin:20px 0 5px;
+	font-size:2.5vw;
+}
+#order dl dt span{
+	margin-right:1%;
+	font-size:3vw;
+}
+
+#order dl dd ul{
+	margin-bottom:15px;
+}
+#order dl dd ul li label input[type="radio"] + span{
+	line-height:1.3;
+	padding:5px 0 0 0;
+	font-size:7vw;
+}
+#order dl dd ul li label input[type="radio"] + span span{
+	margin-top:0;
+	font-size:2.3vw;
+	letter-spacing:-0.05em;
+}
+#order dl dd ul.five li label input[type="radio"] + span span{
+	height:2.8em;
+}
+#order dl dd textarea{
+	min-height: 100px;
+}
+#order dl dd textarea.large{
+	min-height: 180px;
+}
+
+#order dl dd select{
+	width:100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height:40px;
+	padding:0 20px 0 10px;
+	border:1px solid #939393;
+	color:#000;
+	background:#ececec url(select_arrow.png)no-repeat right 10px center;
+	background-size:13px auto;
+	font-size:12px;
+	border-radius: 5px;
+}
+#order dl dd select::-ms-expand {
+	display: none;
+}
+#order dl dd select option{
+	background:#fff;
+}
+    
+#order dl dd label.calendar input[type="date"] {
+  font-size: 13px;
+  background:url("../images/calendar.svg") no-repeat 98% center; background-size: 20px;
+    height: 40px;
+}
+
+}
