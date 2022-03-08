@@ -84,6 +84,8 @@
                         <dd>2022年2月1日</dd>
                     </dl>
 
+                    <p class="btn" style="text-align: right; padding: 5px 3px;"><a href="/MyPage/setting.php">情報を変更する</a></p>
+
                     <h3>利用履歴</h3>
 
                     <dl class="type01">
