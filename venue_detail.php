@@ -17,8 +17,8 @@
 	<title>多摩川緑地バーベキュー広場 | 日本最大級のBBQプラットフォーム Bavi</title>
 
 	<?php include __DIR__ . '/tpl/head.php'; ?>
-	<link rel="stylesheet" href="resources/css/venue_detail.css?1.9">
-	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?1.3">
+	<link rel="stylesheet" href="resources/css/venue_detail.css?2.9">
+	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.3">
     
 	<link rel="stylesheet" href="resources/slick/slick.css" />
 	<link rel="stylesheet" href="resources/slick/slick-theme.css" />
@@ -93,11 +93,8 @@
 <body>
 <div id="loading"></div>
 <div id="wrapper">
-	<header>
-		<h1>日本最大級のBBQプラットフォーム Bavi</h1>
-		
-		<a href="/"><img src="resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
-	</header>
+
+	<?php include __DIR__ . '/tpl/header.php'; ?>
 	
 	
 	<article class="detail">

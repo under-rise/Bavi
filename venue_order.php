@@ -45,10 +45,7 @@
 
 		});
 
-		function userCopy(){
-			alert("会員はログインされていれば、ボタン表示。\nログインしていない場合はログインページへ移動。");
-		}
-
+	
 			
 	</script>
 
@@ -195,7 +192,7 @@
 					<dl id="user_information_form">
 			
 						<div id="userinfo_copy_btn">
-							<button type="button" onClick="userCopy()">会員情報をコピー</button>
+							<button type="button">会員情報をコピー</button>
 						</div>
 
 						<dt><span>◯</span>お名前</dt>
