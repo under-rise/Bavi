@@ -83,41 +83,7 @@
                             <dd><input type="text" value="1590094"></dd>
                         </dl>
 
-                        <h3>ワクチン接種状況</h3>
-
-                        <p style="font-size: 12px; margin: 15px 0 10px;">ワクチン接種情報を登録し、安全で快適なBBQのご協力を宜しくお願いいたします。</p>
-
-                        <dl>
-                            <dt>第一回</dt>
-                            <dd>
-                                <label class="calendar">
-                                    <input name="" type="date" value=""  >
-                                </label>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt>第二回</dt>
-                            <dd>
-                                <label class="calendar">
-                                    <input name="" type="date" value=""　>
-                                </label>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt>第三回</dt>
-                            <dd>
-                                <label class="calendar">
-                                    <input name="use_date" type="date" value="">
-                                </label
-                            </dd>
-                        </dl>
-
-                        <ul style="font-size: 12px; text-align: left; margin-top: 5px;">
-                            <li>※接種していない方は登録必要ありません。</li>
-                            <li>※偽りの情報を登録した場合には強制解約とさせていただきます。</li>
-                        </ul>
+                        
 
                         <button type="submit" class="link_btn">情報を変更する</button>
 
