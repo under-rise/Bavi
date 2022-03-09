@@ -187,6 +187,22 @@ header #navi_btn {
   opacity: 0;
 }
 
+
+.setting_status { background: #f6edf5; padding: 10px; margin-bottom: 20px; border-radius: 5px;}
+.setting_status .status { width: 100%;  display: flex; align-items: center;   justify-content:center; gap: 0 30px; }
+.setting_status p {  font-size: 12px;  font-weight: bold; }
+.setting_status .graph {  flex-basis: 50%; width: 100%; background-color: #ead9e0; height: 8px; position: relative;  margin: 5px 0; border-radius: 20px; }
+.setting_status .graph span { position:absolute; background: #e50054; left: 0; height: 8px;  border-radius: 20px;}
+.setting_status .step .value {   color: #e50054; font-weight: bold; font-size: 17px; margin-top: 5px; }
+.setting_status .step .maxvalue {  font-weight: bold; font-size: 14px; margin-top: 5px; }
+.setting_status .step .done { color: #e50054; text-align: center; font-size: 15px; font-weight: bold; line-height: 1; }
+.setting_status .step .done div { font-size: 12px;}
+.setting_status .graph span {
+  background-size: auto auto;
+  background-color: rgba(229, 0, 84, 1);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 4px, rgba(247, 127, 171, 0.54) 4px, rgba(247, 127, 171, 0.54) 7px );
+}
+
 @media screen and (max-width: 680px) {
   /*header*/
   .form input[type="text"] {
@@ -218,7 +234,8 @@ header #navi_btn {
   .setting dl dd label.calendar input[type="date"]::-webkit-date-and-time-value {
 	text-align: left;
   }
-  
+
+  .setting_status .graph {  flex-basis: 60%;}
 
  
 }

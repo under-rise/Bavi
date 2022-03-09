@@ -29,13 +29,48 @@
 
             <h2>ユーザー情報設定</h2>
 
+            <?php
+            $num = $_GET['value'] == '' ? 0 : $_GET['value'];
+            ?>
+            <div class="inr">
+            <div class="setting_status">
+                <div class="status">
+                        <p>設定状況</p>
+                        <div class="graph"><span></span></div>
+                        <div class="step"><span class="value"><?= $num ?></span> / <span class="maxvalue">16</span></div>
+                </div>
+            </div>
+            </div>
+               
+            <script>
+                $(function(){
+                    const el = '.setting_status .graph';
+                    const v = '.setting_status .step';
+                    const value = $(v+' .value').text();
+                    const maxValue = $(v+' .maxvalue').text();
+
+                    let num = value / maxValue*100;
+                        num = num > 100 ? 100 : num;
+                        $(el + ' span').css({'width':num + '%'});
+
+                    if(value >= maxValue){
+                        $(v).html('<span class="done">100%<div>（設定完了）</div></span>');
+                    }
+                    
+                });
+            </script>
+
+            
+
             <section class="setting">
                 <div class="inr">
 
                     <form action="/MyPage/index.php">
                         <dl>
                             <dt>名前</dt>
-                            <dd><input type="text" value="鈴木さん"></dd>
+                            <dd><input type="text" placeholder="例）山田 太郎">
+                            <p style="font-size: 11px; color: #666; margin-top: 5px;">苗字と名前の間はなるべく空白を開けるように入力ください。</p>
+                        </dd>
                         </dl>
 
                         <dl>
@@ -69,7 +104,10 @@
 
                         <dl>
                             <dt>TEL</dt>
-                            <dd><input type="text" value="090-1111-2222"></dd>
+                            <dd>
+                                <input type="text" value="" placeholder="例）09011110000">
+                                <p style="font-size: 11px; color: #666; margin-top: 5px;">「-」ハイフンはつけず数字のみで入力ください。</p>
+                            </dd>
                         </dl>
 
                         <dl>
@@ -80,7 +118,9 @@
 
                         <dl>
                             <dt>郵便番号</dt>
-                            <dd><input type="text" value="1590094"></dd>
+                            <dd><input type="text" value="" placeholder="例）1200001 ">
+                            <p style="font-size: 11px; color: #666; margin-top: 5px;">「-」ハイフンはつけず数字のみで入力ください。</p>
+                        </dd>
                         </dl>
 
                         <h3>ワクチン接種状況</h3>
