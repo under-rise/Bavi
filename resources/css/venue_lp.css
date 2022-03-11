@@ -1,0 +1,58 @@
+
+#venue section:first-of-type .double_slick{
+	width:100%;
+    margin:0 auto;
+	float:none;
+	margin:0;
+}
+
+#venue section:first-of-type .double_slick .main_slick{
+	width:90%;
+	margin:25px auto 5px auto;
+}
+
+#venue section:first-of-type .double_slick  .colona_icon { 
+     width: 80px;
+}
+
+.lp_banner { margin: 0 0 10px 0;}
+.colona_sec { background: rgba(255,255,255,0.8); padding: 15px 10px; border-radius: 5px;}
+
+.starts_like_sec { display: flex; align-items: center; justify-content: space-between;}
+.starts_like_sec .stars img { width: 24px; height: auto;}
+.starts_like_sec .like { width: 40%; background-color: #fff;}
+.news_sec { position: relative; z-index: 10;}
+
+/* venue */
+#venue.lp_sec { background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(160,241,255,1) 100%);}
+#venue.lp_sec::after { pointer-events: none; content:""; position: absolute; z-index: 0; bottom: 0px; height: 300px; padding-bottom: 200px; width: 100%; left: 0; background:url(/assets/img/lp/about_misson_bg.png) repeat-x bottom; background-size: contain; }
+#venue.lp_sec::before { pointer-events: none; content:""; position: absolute; z-index: 0; bottom:100px; height: 300px;  width: 100%; left: 0; background:url(/assets/img/lp/sky_bg.png) repeat-x bottom; background-size: contain; }
+
+/* shop */
+#shop  { background: linear-gradient(0deg, rgba(245,255,255,1) 0%, rgba(220,250,255,1) 100%);}
+#shop table td { background-color:rgba(255,255,255,0.8);}
+
+/* detail */
+#detail { background: url("../images/bg_green.jpg"); background-size: 100px;}
+#detail ul li:before { background-color: #fff; border-color: #b0e1a7;}
+#detail table td { background-color: #fff;}
+#detail table th { background-color: #5ea351; color: #fff; font-weight: bold;}
+
+/* reserve */
+
+.link_btn.reserve span { color:yellow; animation: flash 2s linear infinite; font-weight: bold;}
+@keyframes flash {
+	0%,100% {
+	  color:yellow;
+	}
+  
+	50% {
+	  color: white;
+	}
+  }
+
+  @media screen and (max-width: 680px) {
+	.link_btn.reserve span {
+	  font-size: 16px;
+	}
+  }

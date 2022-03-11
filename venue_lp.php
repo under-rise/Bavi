@@ -21,8 +21,10 @@
 	<link rel="stylesheet" href="resources/css/venue_detail.css?2.9">
 	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.3">
 
-	<link rel="stylesheet" href="resources/slick/slick.css" />
-	<link rel="stylesheet" href="resources/slick/slick-theme.css" />
+	<link rel="stylesheet" href="/resources/slick/slick.css" />
+	<link rel="stylesheet" href="/resources/slick/slick-theme.css?1.2" />
+
+	<link rel="stylesheet" href="resources/css/venue_lp.css?1.3">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -33,20 +35,6 @@
 
 	<script type="text/javascript">
 		$(function() {
-			$('.slick').slick({
-				autoplay: true,
-				autoplaySpeed: 5000,
-				speed: 800,
-				infinite: true,
-				fade: false,
-				arrows: true,
-				dots: false,
-				pauseOnHover: false,
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				cssEase: 'linear',
-				swipe: false,
-			});
 
 			$('.main_slick').slick({
 				autoplay: true,
@@ -61,7 +49,8 @@
 				slidesToScroll: 1,
 				cssEase: 'linear',
 				swipe: false,
-				asNavFor: '.slick_nav'
+				asNavFor: '.slick_nav',
+				
 			});
 
 			$('.slick_nav').slick({
@@ -70,9 +59,10 @@
 				asNavFor: '.main_slick',
 				arrows: false,
 				dots: false,
-				centerMode: false,
+				centerMode: true,
 				focusOnSelect: true,
-				swipe: false
+				swipe: false,
+				centerMode: true,
 			});
 
 			$('.slick_coupon').slick({
@@ -131,36 +121,31 @@
 				</ul>
 			</nav>
 
-			<section id="venue" class="cont">
+			<section id="venue" class="cont lp_sec">
 				<h2 class="tit"><span class="kinki">近畿</span>しい茸ランドかさや</h2>
-				<section>
-					<div class="double_slick">
-						<div class="colona_icon"><img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" /></div>
-						<div class="main_slick">
-							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></div>
-							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></div>
-							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></div>
+
+				<div class="lp_banner">
+					<div class="inr">
+					<img src="/assets/img/lp/main_banner.jpg" alt="" />
+					</div>
+				</div>
+
+				<section class="sec01">
+					<div class="starts_like_sec">
+						<div class="stars">
+							<img src="/assets/img/star.png" alt="星1個" />
+							<img src="/assets/img/star.png" alt="星1個" />
+							<img src="/assets/img/star.png" alt="星1個" />
+							<img src="/assets/img/star_half.png" alt="星半数個" />
+							<img src="/assets/img/star_none.png" alt="星無し" />
+							<span>3.8 / 5.0</span>
 						</div>
-
-						<ul class="slick_nav">
-							<li><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></li>
-							<li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
-							<li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
-						</ul>
+						<dl class="like">
+							<dt>&hearts;</dt>
+							<dd>3<span>LIKE</span></dd>
+						</dl>
 					</div>
 
-					<div class="stars">
-						<img src="/assets/img/star.png" alt="星1個" />
-						<img src="/assets/img/star.png" alt="星1個" />
-						<img src="/assets/img/star.png" alt="星1個" />
-						<img src="/assets/img/star_half.png" alt="星半数個" />
-						<img src="/assets/img/star_none.png" alt="星無し" />
-						<span>3.8 / 5.0</span>
-					</div>
-					<dl class="like">
-						<dt>&hearts;</dt>
-						<dd>3<span>LIKE</span></dd>
-					</dl>
 					<ul class="sns_sec">
 						<li class="twitter">
 							<a href="https://twitter.com/share?text=しい茸ランドかさや - バーベキュー場・食材探しならBavi&url=https://bavi.jp/spot/detail/963" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -174,7 +159,32 @@
 					</ul>
 					<h3>1年中OK！かさやの定番！無農薬で自然栽培されたしい茸狩り&amp;バーベキュー！</h3>
 					<p>兵庫県三田市の山あいにある、自然たっぷりのレジャー施設です。もぎたてのしい茸をその場でバーベキュー。しい茸がこんなに美味しか ったなんて！と実感していただけるハズ！年中楽しめます。しい茸狩りやその他にも関西屈指のあじさい園や、昆虫好きにはたまらない珍しい昆虫の標本館など色々楽しめます。ぜひ楽しい一日を満喫してください。</p>
+					
+					<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
+					<div class="double_slick">
+						<div class="colona_icon"><img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" /></div>
+						<div class="main_slick">
+							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></div>
+							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></div>
+							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></div>
+							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></div>
+							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></div>
+							<div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></div>
+						</div>
+
+						<ul class="slick_nav">
+							<li><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
+						</ul>
+					</div>
+
 				</section>
+
 				<div class="colona_sec">
 					<h3>コロナ禍における営業について</h3>
 					<div>
@@ -209,7 +219,11 @@
 								何卒、宜しくお願い致します。</dd>
 						</dl>
 					</div>
+
+					
 				</div>
+
+				
 				<section class="news_sec">
 					<h3><img src="/assets/img/icon_news.png" alt="NEW!" />会場からの新着NEWS</h3>
 					<ul>
@@ -240,26 +254,37 @@
 					</ul>
 				</section>
 				<!--<a href="javascript:void(0);" class="modal link_btn">予約する</a>-->
+
+				
 			</section>
+
 			<div class="gallery_sec modal_sec" style="display: none;">
 				<div class="inr">
 					<span class="close">+</span>
 					<h3>しい茸ランドかさや</h3>
 					<ul>
-						<li><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></li>
-						<li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
-						<li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
-						<li><img src="resources/images/venue/venue1.png" alt=""></li>
-						<li><img src="resources/images/venue/spot2.png" alt=""></li>
-						<li><img src="resources/images/venue/venue3.png" alt=""></li>
+							<li><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
+							<li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
 					</ul>
 				</div>
 				<!--inr end-->
+				
 			</div>
 
 
 			<section id="detail" class="cont">
 				<h2>会場詳細</h2>
+
+				<div class="lp_banner">
+					<div class="inr">
+					<img src="/assets/img/lp/main_banner02.jpg" alt="" />
+					</div>
+				</div>
+
 				<ul>
 					<li>
 						<figure>
@@ -337,6 +362,9 @@
 						<td colspan="2">駐車場あり：120台（内バス20台） 料金：無料</td>
 					</tr>
 				</table>
+
+				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
 			</section>
 			<div class="price_sec modal_sec" style="display: none;">
 				<div class="inr">
@@ -378,10 +406,18 @@
 					</div>
 				</div>
 			</div>
+
 			<section id="shop" class="cont">
 				<h2>売店情報</h2>
+
+				<div class="lp_banner">
+					<div class="inr">
+					<img src="/assets/img/lp/main_banner03.jpg" alt="" />
+					</div>
+				</div>
+
+			
 				<section>
-					<img src="/uploads/spots/stands/a2ff71f481799cfd4b1b29b9db6a2634.jpg" alt="" />
 					<p>※当店では、三田産黒毛和牛肉、三田牛を使用しております。<br />
 						※飲み物や食べ物の持ち込みはお断りさせていただいております。<br />
 						※お料理の写真は4人前です。<br />
@@ -453,10 +489,9 @@
 						<td>1,100円（税込）</td>
 					</tr>
 				</table>
-				<!--
-            商品購入
-            <a href="javascript:void(0)" class="modal more_btn" data-name=".shopdetail_sec">商品を詳しく見る</a>
-            -->
+
+				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
 			</section>
 			<!--
         <div class="shopdetail_sec modal_sec" style="display: none;">
@@ -606,6 +641,10 @@
 						</td>
 					</tr>
 				</table>
+				
+				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+				
+
 			</section>
 			<section id="spot" class="cont">
 				<h2>周辺スポット</h2>
