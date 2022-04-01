@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="resources/css/top.css?1.2">
 	<link rel="stylesheet" href="resources/css/top_sp.css?1.5">
 
+	<link rel="stylesheet" href="/resources/slick/slick.css" />
+<link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+
     
     <meta property="og:title" content="日本最大級のBBQプラットフォーム Bavi" >
     <meta property="og:image" content="http://bavi.tank.jp/resources/images/apple-touch-icon.png" >

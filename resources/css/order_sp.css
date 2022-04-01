@@ -30,7 +30,7 @@
 #order dl dd ul li label input[type="radio"] + span{
 	line-height:1.3;
 	padding:5px 0 0 0;
-	font-size:7vw;
+	font-size:2.8vw;
 }
 #order dl dd ul li label input[type="radio"] + span span{
 	margin-top:0;

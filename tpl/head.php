@@ -1,8 +1,7 @@
 <link rel="stylesheet" href="/resources/css/sanitize.css">
 <link rel="stylesheet" href="/resources/css/base.css?1.8">
 <link rel="stylesheet" href="/resources/css/base_sp.css?1.6">
-<link rel="stylesheet" href="/resources/slick/slick.css" />
-<link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+
 
 <link rel="stylesheet" href="/resources/css/style.css?1.2" />
 

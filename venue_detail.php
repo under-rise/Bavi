@@ -18,8 +18,10 @@
 	<title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
 	<?php include __DIR__ . '/tpl/head.php'; ?>
-	<link rel="stylesheet" href="resources/css/venue_detail.css?2.9">
+	<link rel="stylesheet" href="resources/css/venue_detail.css?3.9">
 	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.3">
+
+
 
 	<link rel="stylesheet" href="resources/slick/slick.css" />
 	<link rel="stylesheet" href="resources/slick/slick-theme.css" />
@@ -174,6 +176,10 @@
 					</ul>
 					<h3>1年中OK！かさやの定番！無農薬で自然栽培されたしい茸狩り&amp;バーベキュー！</h3>
 					<p>兵庫県三田市の山あいにある、自然たっぷりのレジャー施設です。もぎたてのしい茸をその場でバーベキュー。しい茸がこんなに美味しか ったなんて！と実感していただけるハズ！年中楽しめます。しい茸狩りやその他にも関西屈指のあじさい園や、昆虫好きにはたまらない珍しい昆虫の標本館など色々楽しめます。ぜひ楽しい一日を満喫してください。</p>
+
+					<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
+
 				</section>
 				<div class="colona_sec">
 					<h3>コロナ禍における営業について</h3>
@@ -337,6 +343,8 @@
 						<td colspan="2">駐車場あり：120台（内バス20台） 料金：無料</td>
 					</tr>
 				</table>
+				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
 			</section>
 			<div class="price_sec modal_sec" style="display: none;">
 				<div class="inr">
@@ -453,6 +461,10 @@
 						<td>1,100円（税込）</td>
 					</tr>
 				</table>
+
+				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
+
 				<!--
             商品購入
             <a href="javascript:void(0)" class="modal more_btn" data-name=".shopdetail_sec">商品を詳しく見る</a>
@@ -639,12 +651,17 @@
             <a href="javascript:void(0)" class="more_btn">口コミをもっと見る</a>
             -->
 
+			<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+
+
 				<div class="kuchikomi_btn">
 					<a href="/review/create?type=spot&id=963"><span>口コミを書きませんか？</span></a>
 				</div>
 			</section>
 			<a href="/spot/index" class="back_btn"><img src="/assets/img/back_btn.png" alt="一覧に戻る" /></a>
 			<a href="javascript:void(0);" class="like_btn" id="like_btn"><img src="/assets/img/like_btn.png" alt="LIKE!" /></a>
+
+			
 		</article>
 
 

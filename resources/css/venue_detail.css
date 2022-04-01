@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+/* reserve */
+
+.link_btn.reserve span { color:yellow; animation: flash 2s linear infinite; font-weight: bold;}
+@keyframes flash {
+	0%,100% {
+	  color:yellow;
+	}
+  
+	50% {
+	  color: white;
+	}
+  }
+
+  @media screen and (max-width: 680px) {
+	.link_btn.reserve span {
+	  font-size: 16px;
+	}
+  }
+  
 /* .detail > nav */
 .detail > nav{
 	margin-top:8px;

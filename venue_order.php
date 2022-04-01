@@ -16,8 +16,8 @@
 	<link rel="stylesheet" href="resources/css/venue_detail.css?1.9">
 	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?1.3">
 
-	<link rel="stylesheet" href="resources/css/order.css?1.9">
-	<link rel="stylesheet" href="resources/css/order_sp.css?1.3">
+	<link rel="stylesheet" href="resources/css/order.css?2.2">
+	<link rel="stylesheet" href="resources/css/order_sp.css?1.4">
 
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -120,12 +120,14 @@
 
 						<dt><span>◯</span>オプション</dt>
 						<dd>
-							<select name="stay_time">
-								<option>選択してください。</option>
-								<option>オプションA ¥2,000円（税込）</option>
-								<option>オプションB ¥3,000円（税込）</option>
-								<option>オプションC ¥4,000円（税込）</option>
-							</select>
+							<ul class="option_sec">
+								<li>
+									<div class="name">オプションA </div>
+									<div class="caption">オレンジ、りんご、お茶、ミネラル類がつきます。</div>
+									<div class="price">¥2,000円（税込）</div>
+									<input type="number" name="option_01">
+								</li>
+							</ul>
 						</dd>
 
 

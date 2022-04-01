@@ -74,7 +74,7 @@ pointer-events: none;
 	min-height: 290px;
 }
 
-#order dl dd input[type="text"],#order dl dd input[type="tel"],#order dl dd input[type="mail"]{
+#order dl dd input[type="text"],#order dl dd input[type="number"],#order dl dd input[type="tel"],#order dl dd input[type="mail"]{
 	width:100%;
 	font-size:14px;
 	padding:10px 10px;
@@ -143,3 +143,6 @@ pointer-events: none;
 #order #userinfo_copy_btn { margin: 0; padding: 0; }
 #order #userinfo_copy_btn button { width: 80%; border: 1px solid #999; padding: 8px 15px; border-radius: 5px; background: #f9f9f9; }
 #order #userinfo_copy_btn button:hover { opacity: 0.6;}
+
+/*option_sec*/
+#order .option_sec { }

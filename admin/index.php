@@ -51,7 +51,7 @@
 
           <div class="ttl">
             <h1>案件管理一覧</h1>
-            <div class="back"><a href="/index.html">一覧ページへ戻る</a></div>
+            <div class="back"><a href="https://bavi.jp/admin/">管理TOPページへ戻る</a></div>
           </div>
 
           <div id="search_sec" class="sec">
