@@ -14,10 +14,10 @@
 
 	<?php include __DIR__ . '/tpl/head.php'; ?>
 	<link rel="stylesheet" href="resources/css/venue_detail.css?1.9">
-	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?1.3">
+	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.3">
 
-	<link rel="stylesheet" href="resources/css/order.css?2.2">
-	<link rel="stylesheet" href="resources/css/order_sp.css?1.4">
+	<link rel="stylesheet" href="resources/css/order.css?3.4">
+	<link rel="stylesheet" href="resources/css/order_sp.css?3.5">
 
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -44,13 +44,10 @@
 			});
 
 		});
-
-	
-			
 	</script>
 
 	<!-- sample -->
-	
+
 </head>
 
 <body>
@@ -87,31 +84,69 @@
 					<dl>
 						<dt><span>◯</span>プラン</dt>
 						<dd>
-							<ul class="order">
+							<ul class="order_sec">
+
 								<li>
-									<label>
-										<input type="radio" name="order" value="0"><span>プランA</span>
-									</label>
-									<p>区画</p>
-									<div class="price">6,000円<span style="font-size:12px">（税込）</span></div>
+									<div>
+										<figure>
+											<img src="./assets/img/order/img01.jpg">
+										</figure>
+
+										<div class="info">
+											<div class="name">Aセット</div>
+											<p>和牛牛カルビ、豚カルビ、焼き鳥、フランク</p>
+											<div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
+											<p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+											<div class="input_sec">
+												<input type="number" name="option_02" placeholder="0" pattern="\d*">
+												<span>セット</span>
+											</div>
+
+										</div>
+									</div>
 
 								</li>
 
 								<li>
-									<label>
-										<input type="radio" name="order" value="1"><span>プランB</span>
-									</label>
-									<p>区画＋食材</p>
-									<div class="price">8,000円<span style="font-size:12px">（税込）</span></div>
+									<div>
+										<figure>
+											<img src="./assets/img/order/img02.jpg">
+										</figure>
+
+										<div class="info">
+											<div class="name">定番食材セット</div>
+											<p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
+											<div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
+											<p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+											<div class="input_sec">
+												<input type="number" name="option_02" placeholder="0" pattern="\d*">
+												<span>セット</span>
+											</div>
+
+										</div>
+									</div>
 
 								</li>
 
 								<li>
-									<label>
-										<input type="radio" name="order" value="2"><span>プランC</span>
-									</label>
-									<p>区画＋食材＋ドリンク</p>
-									<div class="price">10,000円<span style="font-size:12px">（税込）</span></div>
+									<div>
+										<figure>
+											<img src="./assets/img/order/none.jpg">
+										</figure>
+
+										<div class="info">
+											<div class="name">上記区画セット＋定番食材セット</div>
+											<p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
+											<div class="price">¥13,000円<span style="font-size:12px">（税込）</span></div>
+											<p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+
+											<div class="input_sec">
+												<input type="number" name="option_02" placeholder="0" pattern="\d*">
+												<span>セット</span>
+											</div>
+
+										</div>
+									</div>
 
 								</li>
 
@@ -120,13 +155,72 @@
 
 						<dt><span>◯</span>オプション</dt>
 						<dd>
-							<ul class="option_sec">
+							<ul class="order_sec">
+
 								<li>
-									<div class="name">オプションA </div>
-									<div class="caption">オレンジ、りんご、お茶、ミネラル類がつきます。</div>
-									<div class="price">¥2,000円（税込）</div>
-									<input type="number" name="option_01">
+									<div>
+										<figure>
+											<img src="./assets/img/order/img01.jpg">
+										</figure>
+
+										<div class="info">
+											<div class="name">Aセット</div>
+											<p>和牛牛カルビ、豚カルビ、焼き鳥、フランク</p>
+											<div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
+											<p class="order_info">◯◯◯ケ以上から予約承ります</p>
+											<div class="input_sec">
+												<input type="number" name="option_02" placeholder="0" pattern="\d*">
+												<span>セット</span>
+											</div>
+
+										</div>
+									</div>
+
 								</li>
+
+								<li>
+									<div>
+										<figure>
+											<img src="./assets/img/order/img02.jpg">
+										</figure>
+
+										<div class="info">
+											<div class="name">定番食材セット</div>
+											<p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
+											<div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
+											<p class="order_info">◯◯◯ケ以上から予約承ります</p>
+											<div class="input_sec">
+												<input type="number" name="option_02" placeholder="0" pattern="\d*">
+												<span>セット</span>
+											</div>
+
+										</div>
+									</div>
+
+								</li>
+
+								<li>
+									<div>
+										<figure>
+											<img src="./assets/img/order/none.jpg">
+										</figure>
+
+										<div class="info">
+											<div class="name">上記区画セット＋定番食材セット</div>
+											<p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
+											<div class="price">¥13,000円<span style="font-size:12px">（税込）</span></div>
+											<p class="order_info">◯◯◯ケ以上から予約承ります</p>
+											<div class="input_sec">
+												<input type="number" name="option_02" placeholder="0" pattern="\d*">
+												<span>セット</span>
+											</div>
+
+										</div>
+									</div>
+
+								</li>
+
+
 							</ul>
 						</dd>
 
@@ -192,7 +286,7 @@
 
 
 					<dl id="user_information_form">
-			
+
 						<div id="userinfo_copy_btn">
 							<button type="button">会員情報をコピー</button>
 						</div>
@@ -214,7 +308,9 @@
 
 						<dt><span>◯</span>住所</dt>
 						<dd>
-							<div style="text-align: left;"><span style="vertical-align:top; line-height: 2.5;">〒</span> <input type="text" name="zip11" size="10" maxlength="8" value="" placeholder="郵便番号" style="margin-bottom: 10px; width: 10em;" style="width: 10em; margin-bottom: 5px;" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');"></div>
+							<div style="text-align: left;"><span style="vertical-align:top; line-height: 2.5;">〒</span>
+								<input type="text" name="zip11" size="10" maxlength="8" value="" placeholder="郵便番号" style="margin-bottom: 10px; width: 10em;" style="width: 10em; margin-bottom: 5px;" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');">
+							</div>
 
 							<input type="text" name="address" value="" placeholder="住所を入力してください。">
 						</dd>
@@ -259,7 +355,7 @@
 
 		<?php include __DIR__ . '/tpl/footer.php'; ?>
 
-	
+
 
 </body>
 

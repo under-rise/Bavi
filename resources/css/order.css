@@ -74,7 +74,7 @@ pointer-events: none;
 	min-height: 290px;
 }
 
-#order dl dd input[type="text"],#order dl dd input[type="number"],#order dl dd input[type="tel"],#order dl dd input[type="mail"]{
+#order dl dd input[type="text"],#order dl dd input[type="tel"],#order dl dd input[type="mail"]{
 	width:100%;
 	font-size:14px;
 	padding:10px 10px;
@@ -121,7 +121,7 @@ pointer-events: none;
 	padding:0 30px 0 20px;
 	border:1px solid #939393;
 	color:#000;
-	background: url(select_arrow.png)no-repeat right 20px center;
+	background: url(select_arrow.png) no-repeat right 20px center;
 	background-size:14px auto;
 	font-size:14px;
 	border-radius: 5px;
@@ -145,4 +145,68 @@ pointer-events: none;
 #order #userinfo_copy_btn button:hover { opacity: 0.6;}
 
 /*option_sec*/
-#order .option_sec { }
+#order dl dd input[type="number"] {
+	width: auto;
+	font-size:14px;
+	padding:5px 10px;
+	margin-top: 5px;
+	border-radius: 3px;
+	background-color:#fff;
+	border:1px solid #939393;
+}
+#order .order_sec  li {
+	padding: 8px 0;
+	text-align: left;
+	border-bottom: 1px dashed #999;
+} 
+
+
+#order .order_sec  li > div { 
+	display: flex;
+	justify-content:space-between;
+	vertical-align:baseline;
+}
+
+#order .order_sec  li > div figure {
+	width: 40%;
+}
+
+#order .order_sec  li > div  .info {
+	width: 57%;
+}
+
+#order .order_sec  li  .info .price {
+	text-align: right;
+	margin: 0;
+}
+
+#order .order_sec  li .name {
+	font-weight: bold;
+	font-size: 14px;
+} 
+
+#order .order_sec  li p {
+	font-size: 12px;
+	margin-top: 1px;
+	font-weight: normal;
+}
+
+
+#order .order_sec  li  > .info {
+	width: 83%;
+}
+
+
+
+#order .order_sec  li .input_sec { margin-left: auto; float:right;  }
+#order .order_sec  li .input_sec input { width: 5em; text-align:center;}
+#order .order_sec  li .input_sec span { font-size: 10px; white-space: nowrap; padding-left: 5px;}
+
+#order .order_sec li .order_info {
+	color: #e50054;
+	text-align: right;
+	font-size: 11px;
+	margin-top: 3px;
+	padding-top: 3px;
+	border-top: 1px dashed #e50054;
+}

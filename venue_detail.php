@@ -18,8 +18,8 @@
 	<title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
 	<?php include __DIR__ . '/tpl/head.php'; ?>
-	<link rel="stylesheet" href="resources/css/venue_detail.css?3.9">
-	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.3">
+	<link rel="stylesheet" href="resources/css/venue_detail.css?6.92">
+	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.4">
 
 
 
@@ -29,8 +29,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<style>
-		#bottom_line_btn { display: none;}
+		#bottom_line_btn {
+			display: none;
+		}
 	</style>
+
+	<link rel="stylesheet" href="resources/css/iziModal.min.css">
+	<script src="resources/js/iziModal.min.js" type="text/javascript"></script>
 
 
 	<script type="text/javascript">
@@ -108,9 +113,6 @@
 
 		});
 	</script>
-
-
-
 
 </head>
 
@@ -387,15 +389,144 @@
 				</div>
 			</div>
 			<section id="shop" class="cont">
-				<h2>売店情報</h2>
-				<section>
+
+				<div class="inr">
+				<h2>プラン・売店情報</h2>
+
+				<!-- <section>
 					<img src="/uploads/spots/stands/a2ff71f481799cfd4b1b29b9db6a2634.jpg" alt="" />
 					<p>※当店では、三田産黒毛和牛肉、三田牛を使用しております。<br />
 						※飲み物や食べ物の持ち込みはお断りさせていただいております。<br />
 						※お料理の写真は4人前です。<br />
 						※キッズバーベキューは小学生までです。写真は2人前です。<br />
 						※当日のキャンセルは食材の関係上50％頂きます。</p>
-				</section>
+				</section> -->
+
+				<h3>プラン・メニュー</h3>
+
+				<div class="menu-plan_sec">
+					<ul>
+						<li data-iziModal-open=".modal01">
+							<figure>
+								<img src="assets/img/order/img01.jpg">
+								<p class="name">Aセット</p>
+								<dl>
+									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜、和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
+									<dd>¥3,500円<span>（税込）</span></dd>
+								</dl>
+								<p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+							</figure>
+						</li>
+
+						<li data-iziModal-open=".modal02">
+							<figure>
+								<img src="assets/img/order/img02.jpg">
+								<p class="name">定番食材セット</p>
+								<dl>
+									<dt>豚カルビ、焼き鳥、フランク</dt>
+									<dd>¥6,000円<span>（税込）</span></dd>
+								</dl>
+								<p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+							</figure>
+						</li>
+
+						<li data-iziModal-open=".modal03">
+							<figure>
+								<img src="assets/img/order/none.jpg">
+								<p class="name">上記区画セット＋定番食材セット</p>
+								<dl>
+									<dt>和牛牛カルビ、上記区画セット＋定番食材セット</dt>
+									<dd>¥5,000円<span>（税込）</span></dd>
+								</dl>
+								<p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+							</figure>
+						</li>
+
+						<li data-iziModal-open=".modal04">
+							<figure>
+								<img src="assets/img/order/img01.jpg">
+								<p class="name">Bセット</p>
+								<dl>
+									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
+									<dd>¥1,000円<span>（税込）</span></dd>
+								</dl>
+								<p class="order_info">◯◯◯ケ以上から予約承ります</p>
+							</figure>
+						</li>
+
+						<li data-iziModal-open=".modal05">
+							<figure>
+								<img src="assets/img/order/img02.jpg">
+								<p class="name">Cセット</p>
+								<dl>
+									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜、和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
+									<dd>¥4,000円<span>（税込）</span></dd>
+								</dl>
+								<p class="order_info">◯◯◯ケ以上から予約承ります</p>
+							</figure>
+						</li>
+
+						<li data-iziModal-open=".modal06">
+							<figure>
+								<img src="assets/img/order/none.jpg">
+								<p class="name">Eセット</p>
+								<dl>
+									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜、和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
+									<dd>¥13,000円<span>（税込）</span></dd>
+								</dl>
+								<p class="order_info">◯◯◯ケ以上から予約承ります</p>
+							</figure>
+						</li>
+					</ul>
+				</div>
+
+				<script>
+					$(function(){
+						let plan_obj = []
+						$('.menu-plan_sec li').each(function(index,val){
+							plan_obj.push({
+								img:$(val).find('img').attr('src'),
+								name:$(val).find('p.name').text(),
+								info:$(val).find('dt').text(),
+								price:$(val).find('dd').html(),
+								number:$(val).attr('data-iziModal-open').slice(1),
+								order_info:$(val).find('p.order_info').html()
+							});
+						});
+					
+						if(plan_obj.length){
+							$.each(plan_obj,function(index,element){
+
+								let html = `
+								<div class="plan_modal ${element.number}" data-izimodal-group="group1">
+								
+									<img src="${element.img}" >
+									<p>${element.name}</p>
+									<dl>
+									<dt>${element.info}</dt>
+									<dd>${element.price}</dd>
+									</dl>
+									<p class="order_info">${element.order_info}</p>
+
+									<div class="modal_close" data-izimodal-close="">×</div>
+
+									<ul>
+									<li><span data-izimodal-prev=""><</span></li>
+									<li><span data-izimodal-next="">></span></li>
+									</ul>
+									
+									<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+									
+								</div>
+								`;
+								$('.menu-plan_sec').after(html)
+							});	
+						}
+					});
+				</script>
+
+				<h3>その他・売店情報</h3>
+
 				<table>
 					<tr>
 						<th>若鶏コース（しい茸狩り付き）</th>
@@ -464,6 +595,7 @@
 
 				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
 
+				</div>
 
 				<!--
             商品購入
@@ -651,7 +783,7 @@
             <a href="javascript:void(0)" class="more_btn">口コミをもっと見る</a>
             -->
 
-			<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+				<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
 
 
 				<div class="kuchikomi_btn">
@@ -661,7 +793,7 @@
 			<a href="/spot/index" class="back_btn"><img src="/assets/img/back_btn.png" alt="一覧に戻る" /></a>
 			<a href="javascript:void(0);" class="like_btn" id="like_btn"><img src="/assets/img/like_btn.png" alt="LIKE!" /></a>
 
-			
+
 		</article>
 
 
@@ -682,6 +814,15 @@
 					$('.modal-contents').hide();
 					$('#modal-' + id).show();
 				});
+			});
+
+			$(function() {
+				$(".plan_modal").iziModal({
+					closeButton: true,
+					padding: 20,
+					loop:true
+				});
+				$('.modal_close').iziModal('close');
 			});
 		</script>
 
