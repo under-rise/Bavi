@@ -18,8 +18,8 @@
 	<title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
 	<?php include __DIR__ . '/tpl/head.php'; ?>
-	<link rel="stylesheet" href="resources/css/venue_detail.css?6.92">
-	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.4">
+	<link rel="stylesheet" href="resources/css/venue_detail.css?9.2">
+	<link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.6">
 
 
 
@@ -247,6 +247,61 @@
 						</li>
 					</ul>
 				</section>
+				
+
+				<section class="news_sec column_sec">
+					<h3><img src="/assets/img/icon_column.png" alt="COLUMN" />関連コラム</h3>
+					<ul>
+						<li>
+							<div class="txt">
+							
+								<dl>
+									<dt class="type01">アドバイス</dt>
+									<dd><a href="#">【マイナス10歳肌ライターおすすめ】バーベキューやキャンプでうっかり日焼け後にするべきスキンケアとは？</a></dd>
+								</dl>
+								
+							</div>
+						</li>
+
+						<li>
+							<div class="txt">
+							
+								<dl>
+									<dt class="type02">アイテム</dt>
+									<dd><a href="#">【後編】宿泊キャンプBBQに使えるテントの種類・選び方とは?!アウトドア用品店STAFFが解説！</a></dd>
+								</dl>
+								
+							</div>
+						</li>
+
+						<li>
+							<div class="txt">
+							
+								<dl>
+									<dt class="type03">グルメ</dt>
+									<dd><a href="#">【東京都内】プロが選ぶお花見できるBBQ場（公園）4選！<2022年版>桜の花が咲いたら…お花見に出かけよう</a></dd>
+								</dl>
+								
+							</div>
+						</li>
+
+						<li>
+							<div class="txt">
+								<dl>
+									<dt class="type04">会場</dt>
+									<dd><a href="#">誰と年に何回BBQしてる？？Twitterアンケートで聞いてみました！</a></dd>
+								</dl>
+								
+							</div>
+						</li>
+						
+					</ul>
+
+				 <a href="#" class="btn">もっとコラムを見る</a>
+
+				</section>
+
+				
 				<!--<a href="javascript:void(0);" class="modal link_btn">予約する</a>-->
 			</section>
 			<div class="gallery_sec modal_sec" style="display: none;">
@@ -445,7 +500,7 @@
 						<li data-iziModal-open=".modal04">
 							<figure>
 								<img src="assets/img/order/img01.jpg">
-								<p class="name">Bセット</p>
+								<p class="name">オプションA</p>
 								<dl>
 									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
 									<dd>¥1,000円<span>（税込）</span></dd>
@@ -457,7 +512,7 @@
 						<li data-iziModal-open=".modal05">
 							<figure>
 								<img src="assets/img/order/img02.jpg">
-								<p class="name">Cセット</p>
+								<p class="name">オプションB</p>
 								<dl>
 									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜、和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
 									<dd>¥4,000円<span>（税込）</span></dd>
@@ -469,7 +524,7 @@
 						<li data-iziModal-open=".modal06">
 							<figure>
 								<img src="assets/img/order/none.jpg">
-								<p class="name">Eセット</p>
+								<p class="name">オプションC</p>
 								<dl>
 									<dt>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜、和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</dt>
 									<dd>¥13,000円<span>（税込）</span></dd>
