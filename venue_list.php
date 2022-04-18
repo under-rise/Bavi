@@ -8,9 +8,9 @@
 	<meta name="description" content="">
 	<title></title>
 	<link rel="stylesheet" href="resources/css/sanitize.css">
-	<link rel="stylesheet" href="resources/css/base.css?1.3">
-	<link rel="stylesheet" href="resources/css/base_sp.css?1.2">
-	<link rel="stylesheet" href="resources/css/venue_list.css?1.5">
+	<link rel="stylesheet" href="resources/css/base.css?1.4">
+	<link rel="stylesheet" href="resources/css/base_sp.css?1.3">
+	<link rel="stylesheet" href="resources/css/venue_list.css?1.9">
 	<link rel="stylesheet" href="resources/css/venue_list_sp.css?1.5">
 	<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="resources/js/config.js"></script>
@@ -18,6 +18,27 @@
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
+
+
+<script>
+$(function() {
+	$('.result_list form > ul > li:nth-child(-n+2) ').click(function(e) {
+		var select = '.' + $(this).attr('class');
+		$('#overlay_search div > ul').css('display','none');
+		$('#overlay_search div ' + select).css('display','block');
+		$('#overlay_search div button[type="button"]').css('display','none');
+		if(select==".detail")$('#overlay_search div button[type="button"]').css('display','inline-block');
+		$('#overlay_search').fadeIn();
+		$('html').addClass('overlay');
+	});
+	$('#overlay_search div button[type="button"]').click(function(e) {
+		$('.detail input[type="checkbox"]').prop('checked',false);
+		$('.detail input[type="radio"]').prop('checked',false);
+		$('.detail input[type="text"]').val('');
+	});
+});
+
+</script>
 	
 </head>
 <body>
@@ -38,6 +59,7 @@
 					<span id="close">+</span>
 					
 					<button>検索する</button>
+					<button type="button">リセット</button>
 					
 					<ul class="location">
 						<li>
