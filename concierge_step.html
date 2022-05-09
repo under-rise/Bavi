@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ja">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="">
+		<title>幹事様必見!BBQ団体向けコンシェルジュ | 日本最大級のBBQプラットフォーム Bavi</title>
+		<link rel="stylesheet" href="resources/css/sanitize.css">
+		<!-- カレンダー表示用cssを追加 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+		<!-- カレンダー表示用cssここまで -->
+		<link rel="stylesheet" href="resources/css/base.css">
+		<link rel="stylesheet" href="resources/css/base_sp.css">
+		<!-- コンシェルジュページ用cssを追加 -->
+		<link rel="stylesheet" href="resources/css/concierge.css?1.1">
+		<link rel="stylesheet" href="resources/css/concierge_sp.css">
+		<!-- コンシェルジュページ用cssここまで -->
+		<link rel="stylesheet" href="resources//css/style.css?1.2">
+		<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
+		<!-- カレンダー表示用jsを追加 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+		<!-- カレンダー表示用jsここまで -->
+		<script type="text/javascript" src="resources/js/config.js"></script>
+		<script type="text/javascript" src="resources/js/smoothScroll.js"></script>
+		<!-- ステップフォーム用jsを追加 -->
+		<script type="text/javascript" src="resources/js/concierge.js"></script>
+		<!-- ステップフォーム用jsここまで -->
+		<!-- カレンダー表示用ｊｓとcssを追加 -->
+		<script>
+			$(function() {
+				$(".datepicker").datepicker({
+					dateFormat: "yy/mm/dd",
+					minDate: 1,
+					beforeShow: function(input, inst) {
+						var top  = $(this).offset().top + $(this).outerHeight();
+						var left = $(this).offset().left;
+						setTimeout(function() {
+							inst.dpDiv.css({
+								'top' : top,
+								'left': left
+							});
+						}, 10);
+					}
+				});
+			});
+		</script>
+		<style>
+			@media screen and (max-width:768px){
+				.ui-datepicker {
+					font-size: 85%;
+				}
+			}
+		</style>
+		<!-- カレンダー表示用ｊｓとcssここまで -->
+		<!--[if lt IE 9]>
+	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
+	<![endif]-->
+		
+	</head>
+	
+	<body>
+		<div id="loading"></div>
+		<div id="wrapper">
+			<header class="no_fixed">
+				<h1>日本最大級のBBQプラットフォーム Bavi</h1>
+				
+				<a href="/"><img src="resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
+			</header>
+			
+			
+			<article class="no_fixed">
+				<div class="inr">
+				<div class="tit">
+					<h2><img src="resources/images/concierge/concierge_main.jpg"></h2>
+				</div>
+				
+				<div id="step">
+					<div id="step_indicater"><img src="resources/images/concierge/step1.svg" alt="" /></div>
+					
+					<form action="concierge_thanks.html" novalidate>
+						<ol>
+							<li>
+								<h3><span>Q1.</span>基本情報</h3>
+								
+								<p>お客様の情報を入力してください。</p>
+								
+								<dl>
+									<dt>会社名</dt>
+									<dd><input type="text" name="会社名" placeholder="会社名を入力してください"></dd>
+									
+									<dt>お名前</dt>
+									<dd><input type="text" name="お名前" placeholder="お名前を入力してください" required></dd>
+									
+									<dt>E-mail</dt>
+									<dd><input type="email" name="E-mail" placeholder="メールアドレスを入力してください" required></dd>
+									
+									<dt>電話番号</dt>
+									<dd><input type="tel" name="電話番号" placeholder="お電話番号を入力してください" required></dd>
+								</dl>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+								</div>
+								
+								<span class="step_num">1/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q2.</span>希望日付</h3>
+								
+								<p>ご希望の日付を第三候補まで入力してください。</p>
+								
+								<dl>
+									<dt>第一候補</dt>
+									<dd><input type="text" name="第一候補" placeholder="年 / 月 / 日" class="datepicker" required tabindex="-1"></dd>
+									
+									<dt>第二候補</dt>
+									<dd><input type="text" name="第二候補" placeholder="年 / 月 / 日" class="datepicker" tabindex="-1"></dd>
+									
+									<dt>第三候補</dt>
+									<dd><input type="text" name="第三候補" placeholder="年 / 月 / 日" class="datepicker" tabindex="-1"></dd>
+								</dl>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">2/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q3.</span>希望時間帯</h3>
+								
+								<p>ご希望の時間帯を選択してください。（複数選択可）</p>
+								
+								<ul class="check_list">
+									<li><label><input type="checkbox" name="希望時間帯[]" value="午前" required tabindex="-1"><span>午前</span></label></li>
+									<li><label><input type="checkbox" name="希望時間帯[]" value="昼" required tabindex="-1"><span>昼</span></label></li>
+									<li><label><input type="checkbox" name="希望時間帯[]" value="午後" required tabindex="-1"><span>午後</span></label></li>
+									<li><label><input type="checkbox" name="希望時間帯[]" value="夕方" required tabindex="-1"><span>夕方</span></label></li>
+									<li><label><input type="checkbox" name="希望時間帯[]" value="夜" required tabindex="-1"><span>夜</span></label></li>
+									<li><label><input type="checkbox" name="希望時間帯[]" value="夜中" required tabindex="-1"><span>夜中</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">3/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q4.</span>利用人数</h3>
+								
+								<p>ご利用人数に近いものを選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="利用人数" value="30人程度" required tabindex="-1"><span>30人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="50人程度" required tabindex="-1"><span>50人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="100人程度" required tabindex="-1"><span>100人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="150人程度" required tabindex="-1"><span>150人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="200人程度" required tabindex="-1"><span>200人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="300人程度" required tabindex="-1"><span>300人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="500人程度" required tabindex="-1"><span>500人程度</span></label></li>
+									<li><label><input type="radio" name="利用人数" value="それ以上" required tabindex="-1"><span>それ以上</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">4/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q5.</span>メンバー構成</h3>
+								
+								<p>メンバーの年代を教えてください。（複数選択可）</p>
+								
+								<ul class="check_list">
+									<li><label><input type="checkbox" name="メンバー年代[]" value="10代〜20代" required tabindex="-1"><span>10代〜20代</span></label></li>
+									<li><label><input type="checkbox" name="メンバー年代[]" value="30代〜40代" required tabindex="-1"><span>30代〜40代</span></label></li>
+									<li><label><input type="checkbox" name="メンバー年代[]" value="50代以上" required tabindex="-1"><span>50代以上</span></label></li>
+								</ul>
+								
+								<p>メンバーの男女比率を教えてください。</p>
+								
+								<dl class="genda">
+									<div>
+										<dt>男性</dt>
+										<dd><input type="text" name="男性比" required tabindex="-1"></dd>
+									</div>
+									<div>
+										<dt>女性</dt>
+										<dd><input type="text" name="女性比" required tabindex="-1"></dd>
+									</div>
+								</dl>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">5/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q6.</span>希望エリア</h3>
+								
+								<p>希望エリアの住所を入力してください。</p>
+								
+								<dl>
+									<dt class="select">都道府県</dt>
+									<dd>
+										<select name="都道府県" required tabindex="-1">
+											<option value="">選択してください</option>
+											<option value="北海道">北海道</option>
+											<option value="青森県">青森県</option>
+											<option value="岩手県">岩手県</option>
+											<option value="宮城県">宮城県</option>
+											<option value="秋田県">秋田県</option>
+											<option value="山形県">山形県</option>
+											<option value="福島県">福島県</option>
+											<option value="茨城県">茨城県</option>
+											<option value="栃木県">栃木県</option>
+											<option value="群馬県">群馬県</option>
+											<option value="埼玉県">埼玉県</option>
+											<option value="千葉県">千葉県</option>
+											<option value="東京都">東京都</option>
+											<option value="神奈川県">神奈川県</option>
+											<option value="新潟県">新潟県</option>
+											<option value="富山県">富山県</option>
+											<option value="石川県">石川県</option>
+											<option value="福井県">福井県</option>
+											<option value="山梨県">山梨県</option>
+											<option value="長野県">長野県</option>
+											<option value="岐阜県">岐阜県</option>
+											<option value="静岡県">静岡県</option>
+											<option value="愛知県">愛知県</option>
+											<option value="三重県">三重県</option>
+											<option value="滋賀県">滋賀県</option>
+											<option value="京都府">京都府</option>
+											<option value="大阪府">大阪府</option>
+											<option value="兵庫県">兵庫県</option>
+											<option value="奈良県">奈良県</option>
+											<option value="和歌山県">和歌山県</option>
+											<option value="鳥取県">鳥取県</option>
+											<option value="島根県">島根県</option>
+											<option value="岡山県">岡山県</option>
+											<option value="広島県">広島県</option>
+											<option value="山口県">山口県</option>
+											<option value="徳島県">徳島県</option>
+											<option value="香川県">香川県</option>
+											<option value="愛媛県">愛媛県</option>
+											<option value="高知県">高知県</option>
+											<option value="福岡県">福岡県</option>
+											<option value="佐賀県">佐賀県</option>
+											<option value="長崎県">長崎県</option>
+											<option value="熊本県">熊本県</option>
+											<option value="大分県">大分県</option>
+											<option value="宮崎県">宮崎県</option>
+											<option value="鹿児島県">鹿児島県</option>
+											<option value="沖縄県">沖縄県</option>
+										</select>
+									</dd>
+									
+									<dt>市区町村</dt>
+									<dd><input type="text" name="市区町村" placeholder="入力してください" required tabindex="-1"></dd>
+								</dl>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">6/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q7.</span>施設について</h3>
+								
+								<p>ご希望の施設タイプを選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="施設タイプ" value="屋外" required tabindex="-1"><span>屋外</span></label></li>
+									<li><label><input type="radio" name="施設タイプ" value="屋内" required tabindex="-1"><span>屋内</span></label></li>
+									<li><label><input type="radio" name="施設タイプ" value="レストラン型" required tabindex="-1"><span>レストラン型</span></label></li>
+								</ul>
+								
+								<p>区画のご要望があれば選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="区画要望" value="最低限" required tabindex="-1"><span>最低限</span></label></li>
+									<li><label><input type="radio" name="区画要望" value="普通" required tabindex="-1"><span>普通</span></label></li>
+									<li><label><input type="radio" name="区画要望" value="ラグジュアリー" required tabindex="-1"><span>ラグジュ<br class="only_smart" />アリー</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">7/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q8.</span>ロケーション</h3>
+								
+								<p>ロケーションを選択してください。（複数選択可）</p>
+								
+								<ul class="check_list">
+									<li><label><input type="checkbox" name="ロケーション[]" value="都心" required tabindex="-1"><span>都心</span></label></li>
+									<li><label><input type="checkbox" name="ロケーション[]" value="海" required tabindex="-1"><span>海</span></label></li>
+									<li><label><input type="checkbox" name="ロケーション[]" value="川" required tabindex="-1"><span>川</span></label></li>
+									<li><label><input type="checkbox" name="ロケーション[]" value="山" required tabindex="-1"><span>山</span></label></li>
+									<li><label><input type="checkbox" name="ロケーション[]" value="会社敷地内" required tabindex="-1"><span>会社敷地内</span></label></li>
+									<li><label><input type="checkbox" name="ロケーション[]" value="室内" required tabindex="-1"><span>室内</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">8/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q9.</span>移動手段</h3>
+								
+								<p>移動手段を選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="移動手段" value="徒歩" required tabindex="-1"><span>徒歩</span></label></li>
+									<li><label><input type="radio" name="移動手段" value="電車" required tabindex="-1"><span>電車</span></label></li>
+									<li><label><input type="radio" name="移動手段" value="車" required tabindex="-1"><span>車</span></label></li>
+									<li><label><input type="radio" name="移動手段" value="貸切バス" required tabindex="-1"><span>貸切バス</span></label></li>
+									<li><label><input type="radio" name="移動手段" value="送迎" required tabindex="-1"><span>送迎</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">9/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q10.</span>予算</h3>
+								
+								<p>一人当たりまたは全体での予算を入力してください。</p>
+								
+								<dl>
+									<dt>一人当たり</dt>
+									<dd><input type="text" name="一人当たり" placeholder="入力してください" required tabindex="-1"></dd>
+									
+									<dt>全体で</dt>
+									<dd><input type="text" name="全体で" placeholder="入力してください" required tabindex="-1"></dd>
+								</dl>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">10/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q11.</span>利用プラン</h3>
+								
+								<p>ご希望の利用プランを選択してください。（複数選択可）</p>
+								
+								<ul class="check_list">
+									<li><label><input type="checkbox" name="利用プラン[]" value="場所のみ" required tabindex="-1"><span>場所のみ</span></label></li>
+									<li><label><input type="checkbox" name="利用プラン[]" value="場所＋食事" required tabindex="-1"><span>場所＋食事</span></label></li>
+									<li><label><input type="checkbox" name="利用プラン[]" value="場所＋食事＋ドリンク" required tabindex="-1"><span>場所＋食事＋ドリンク</span></label></li>
+									<li><label><input type="checkbox" name="利用プラン[]" value="オリジナルプラン" required tabindex="-1"><span>オリジナルプラン</span></label></li>
+								</ul>
+								
+								<p>オプション（複数選択可）</p>
+								
+								<ul class="check_list">
+									<li><label><input type="checkbox" name="オプション[]" value="アクティビティ" tabindex="-1"><span>アクティビティ</span></label></li>
+									<li><label><input type="checkbox" name="オプション[]" value="スポーツ" tabindex="-1"><span>スポーツ</span></label></li>
+									<li><label><input type="checkbox" name="オプション[]" value="マリンスポーツ" tabindex="-1"><span>マリンスポーツ</span></label></li>
+									<li><label><input type="checkbox" name="オプション[]" value="果物狩り" tabindex="-1"><span>果物狩り</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">11/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q12.</span>道具について</h3>
+								
+								<p>道具の量についてご希望を選択してください。</p>
+								
+								<ul class="radio_list2">
+									<li><label><input type="radio" name="道具量" value="不要" required tabindex="-1"><span>不要</span></label></li>
+									<li><label><input type="radio" name="道具量" value="一部のみ" required tabindex="-1"><span>一部のみ</span></label></li>
+									<li><label><input type="radio" name="道具量" value="全員分" required tabindex="-1"><span>全員分</span></label></li>
+									<li><label><input type="radio" name="道具量" value="人数分以上" required tabindex="-1"><span>人数分以上</span></label></li>
+								</ul>
+								
+								<p>道具の質についてご希望を選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="道具質" value="最低限" required tabindex="-1"><span>最低限</span></label></li>
+									<li><label><input type="radio" name="道具質" value="普通" required tabindex="-1"><span>普通</span></label></li>
+									<li><label><input type="radio" name="道具質" value="ラグジュアリー" required tabindex="-1"><span>ラグジュ<br class="only_smart" />アリー</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">12/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q13.</span>食事について</h3>
+								
+								<p>食事の量についてご希望を選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="食事量" value="少なめ" required tabindex="-1"><span>少なめ</span></label></li>
+									<li><label><input type="radio" name="食事量" value="普通" required tabindex="-1"><span>普通</span></label></li>
+									<li><label><input type="radio" name="食事量" value="多め" required tabindex="-1"><span>多め</span></label></li>
+								</ul>
+								
+								<p>食事の質についてご希望を選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="食事質" value="ライト" required tabindex="-1"><span>ライト</span></label></li>
+									<li><label><input type="radio" name="食事質" value="スタンダード" required tabindex="-1"><span>スタンダード</span></label></li>
+									<li><label><input type="radio" name="食事質" value="ラグジュアリー" required tabindex="-1"><span>ラグジュ<br class="only_smart" />アリー</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">13/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q14.</span>ドリンクについて</h3>
+								
+								<p>ドリンクのご希望を選択してください。</p>
+								
+								<ul class="radio_list">
+									<li><label><input type="radio" name="ドリンク" value="ソフトドリンクのみ" required tabindex="-1"><span>ソフト<br class="only_smart" />ドリンクのみ</span></label></li>
+									<li><label><input type="radio" name="ドリンク" value="ソフトドリンク＋アルコール" required tabindex="-1"><span>ソフト<br class="only_smart" />ドリンク<br />＋アルコール</span></label></li>
+									<li><label><input type="radio" name="ドリンク" value="飲み放題" required tabindex="-1"><span>飲み放題</span></label></li>
+								</ul>
+								
+								<div class="btns">
+									<button type="button" class="next" tabindex="-1">次へ</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">14/15</span>
+							</li>
+							<li class="right">
+								<h3><span>Q15.</span>その他ご要望</h3>
+								
+								<p>ご要望事項がありましたら自由に入力してください。</p>
+								
+								<textarea name="ご要望" maxlength="1000" placeholder="ご要望事項がありましたら自由にご記入ください（1000文字以内）" tabindex="-1"></textarea>
+								
+								<div class="btns">
+									<button type="button" class="next active" tabindex="-1">内容を確認する</button>
+									<button type="button" class="prev" tabindex="-1">前に戻る</button>
+								</div>
+								
+								<span class="step_num">15/15</span>
+							</li>
+							<li class="right">
+								<section id="confirm">
+									<h3>こちらで宜しかったですか？<span>入力内容をご確認ください。</span></h3>
+									
+									<dl>
+										<dt><span>Q1.</span>基本情報</dt>
+										<dd>
+											<dl>
+												<dt>会社名</dt>
+												<dd><span data="会社名">&nbsp;</span></dd>
+												
+												<dt>お名前</dt>
+												<dd><span data="お名前">&nbsp;</span></dd>
+												
+												<dt>E-mail</dt>
+												<dd><span data="E-mail">&nbsp;</span></dd>
+												
+												<dt>電話番号</dt>
+												<dd><span data="電話番号">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q2.</span>希望日付</dt>
+										<dd>
+											<dl>
+												<dt>第一候補</dt>
+												<dd><span data="第一候補">&nbsp;</span></dd>
+												
+												<dt>第二候補</dt>
+												<dd><span data="第二候補">&nbsp;</p></dd>
+												
+												<dt>第三候補</dt>
+												<dd><span data="第三候補">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q3.</span>希望時間帯</dt>
+										<dd>
+											<span data="希望時間帯[]">&nbsp;</span>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q4.</span>利用人数</dt>
+										<dd>
+											<span data="利用人数">&nbsp;</span>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q5.</span>メンバー構成</dt>
+										<dd>
+											<dl>
+												<dt>年代</dt>
+												<dd><span data="メンバー年代[]">&nbsp;</span></dd>
+												
+												<dt>男女比</dt>
+												<dd><span data="男性比">&nbsp;</span>:<span data="女性比">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q6.</span>希望エリア</dt>
+										<dd>
+											<dl>
+												<dt>都道府県</dt>
+												<dd><span data="都道府県">&nbsp;</span></dd>
+												
+												<dt>市区町村</dt>
+												<dd><span data="市区町村">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q7.</span>施設について</dt>
+										<dd>
+											<dl>
+												<dt>施設タイプ</dt>
+												<dd><span data="施設タイプ">&nbsp;</span></dd>
+												
+												<dt>区画要望</dt>
+												<dd><span data="区画要望">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q8.</span>ロケーション</dt>
+										<dd>
+											<span data="ロケーション[]">&nbsp;</span>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q9.</span>移動手段</dt>
+										<dd>
+											<span data="移動手段">&nbsp;</span>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q10.</span>予算</dt>
+										<dd>
+											<dl>
+												<dt>一人当たり</dt>
+												<dd><span data="一人当たり">&nbsp;</span></dd>
+												
+												<dt>全体で</dt>
+												<dd><span data="全体で">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q11.</span>利用プラン</dt>
+										<dd>
+											<dl>
+												<dt>プラン</dt>
+												<dd><span data="利用プラン[]">&nbsp;</span></dd>
+												
+												<dt>オプション</dt>
+												<dd><span data='オプション[]'>&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q12.</span>道具について</dt>
+										<dd>
+											<dl>
+												<dt>道具量</dt>
+												<dd><span data="道具量">&nbsp;</span></dd>
+												
+												<dt>道具質</dt>
+												<dd><span data="道具質">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q13.</span>食事について</dt>
+										<dd>
+											<dl>
+												<dt>食事量</dt>
+												<dd><span data="食事量">&nbsp;</span></dd>
+												
+												<dt>食事質</dt>
+												<dd><span data="食事質">&nbsp;</span></dd>
+											</dl>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q14.</span>ドリンクについて</dt>
+										<dd>
+											<span data="ドリンク">&nbsp;</span>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+										
+										<dt><span>Q15.</span>その他ご要望</dt>
+										<dd>
+											<span data="ご要望">&nbsp;</span>
+											
+											<button type="button" class="edit" tabindex="-1">編集</button>
+										</dd>
+									</dl>
+									
+									<div class="btns">
+										<button type="submit" tabindex="-1">送信する</button>
+									</div>
+								</section>
+							</li>
+						</ol>
+					</form>
+				</div>
+				</div>
+			</article>
+			
+			<footer>
+				<a href="#wrapper" id="topbtn"><img src="resources/images/to_top.png" alt="ページTOPへ" /></a>
+				
+				<figure>
+					<img src="resources/images/foot_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" />
+				</figure>
+				
+				<ul>
+					<li><a href=""><img src="resources/images/sns1.png" alt="Twitter" /></a></li>
+					<li><a href=""><img src="resources/images/sns2.png" alt="You tube" /></a></li>
+					<li><a href=""><img src="resources/images/sns3.png" alt="facebook" /></a></li>
+					<li><a href=""><img src="resources/images/sns4.png" alt="LINE" /></a></li>
+				</ul>
+				
+				<nav>
+					<ul>
+						<li><a href="">Baviについて</a></li>
+						<li><a href="">お問い合わせ</a></li>
+						<li><a href="">運営会社</a></li>
+					</ul>
+				</nav>
+				
+				<p>&copy; Copyright Bavi all right reserved.</p>
+			</footer>
+			
+			
+			<nav id="bottom_nav" >
+				<ul>
+					<li>
+					<a href="/">
+						<img src="resources/images/bottom_nav1.png" alt="BBQ場" />
+						<span>BBQ場</span>
+					</a>
+					</li>
+					<li>
+					<a href="/spot.php">
+						<img src="resources/images/bottom_nav2.png" alt="食材SPOT" />
+						<span>食材SPOT</span>
+					</a>
+					</li>
+					<li>
+					<a href="/column.php">
+						<img src="resources/images/bottom_nav3.png" alt="COLUMN" />
+						<span>COLUMN</span>
+					</a>
+					</li>
+					<li>
+					<a href="/like.php">
+						<img src="resources/images/bottom_nav4.png" alt="LIKE" />
+						<span>LIKE</span>
+					</a>
+					</li>
+					<li>
+					<a id="menu_open">
+						<img src="resources/images/bottom_nav5.png" alt="MENU" />
+						<span>MENU</span>
+					</a>
+					</li>
+				</ul>
+			</nav>
+			
+			
+			<nav id="overlay_nav" >
+				<span id="close">+</span>
+				
+				<div>
+					<a href="/"><img src="resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
+					
+					<dl>
+						<dt>探す</dt>
+						<dd><a href="/">BBQ場</a></dd>
+						<dd><a href="/spot.html">周辺店舗</a></dd>
+						<dd><a href="/column.html">コラム</a></dd>
+						
+						<dt>MyPage</dt>
+						<dd><a href="">お気に入りページ</a></dd>
+						
+						<dt>新着情報</dt>
+						<dd><a href="">BBQ場新着</a></dd>
+						<dd><a href="">周辺店舗新着</a></dd>
+						
+						<dt>その他</dt>
+						<dd><a href="#">Baviについて</a></dd>
+						<dd><a href="/topic/tieup.php">Bavi特別タイアップについて</a></dd>
+						<dd><a href="/topic/recruitment_cameramen.php">撮影カメラマン募集について</a></dd>
+						<dd><a href="#">Baviモデルのご紹介</a></dd>
+					</dl>
+				</div>
+			</nav>
+			
+			<!--
+			<div id="bottom_line_btn">
+				<a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="resources/images/line_btn.gif" alt="LINEでお気軽相談"/></a>
+			</div>
+			-->
+		</div>
+		
+		
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,769 @@
+@charset "utf-8";
+
+.sec {
+	padding: 70px 0;
+	margin-bottom: 30px;
+}
+
+._sec {
+	margin-bottom: 40px;
+}
+
+
+.gray {
+	background-color: #f1f1f1;
+}
+
+strong {
+	font-weight: 600;
+	background: linear-gradient(transparent 70%, yellow 30%);
+	color: #e50054;
+}
+
+.start_sec {
+	margin-top: 50px;
+}
+
+.start_sec h2 {
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 40px;
+	border-bottom: 3px solid #E50153;
+	color: #E50153;
+	padding-bottom: 6px;
+}
+
+.sec01>div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sec01 figure {
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+.sec01 figure img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.sec01 ul {
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+.sec01 ul li {
+	border: 3px solid #E50153;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-weight: 900;
+	padding: 10px;
+}
+
+.sec01 h3 {
+	text-align: center;
+	font-weight: 900;
+
+	width: 80%;
+	margin: 0 auto 30px auto;
+	font-size: 23px;
+	background: linear-gradient(transparent 70%, yellow 30%);
+}
+
+/* sec02 */
+
+.sec02 p {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.sec02 ul {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.sec02 ul li {
+	width: 30%;
+}
+
+.sec02 ul li img {
+	display: block;
+	width: 90%;
+	margin: 0 auto 15px auto;
+}
+
+.sec02 ul li dt {
+	font-weight: 600;
+	font-size: 16px;
+	color: #E50153;
+}
+
+.sec02 ul li dd {
+	text-align: left;
+}
+
+
+/* sec03 */
+
+.sec03 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sec03 figure {
+	width: 25%;
+	max-height: 200px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.sec03 .info {
+	width: 70%;
+	text-align: left;
+}
+
+/* sec04 */
+
+.sec04 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sec04 p {
+	text-align: left;
+}
+
+
+.sec03 {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* sec06 */
+.sec06 ul {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+	gap: 20px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sec06 ul li {
+	width: 30%;
+	border: 3px solid #e50054;
+	border-radius: 9999px;
+	padding: 20px;
+	font-weight: 600;
+	color: #e50054;
+}
+
+/* sec05 */
+
+.sec05 ol li span {
+	display: block;
+
+	color: #fff;
+	width: 50px;
+
+}
+
+.sec05 ol li {
+	align-items: center;
+	display: flex;
+	background-color: #e50054;
+	border: 3px solid #e50054;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.sec05 ol li p {
+	padding-left: 15px;
+	background: #fff;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+}
+
+.sec05 ul li {
+	text-align: left;
+	font-size: 11px;
+}
+
+/* header */
+header.no_fixed {
+	border-bottom: none;
+}
+
+
+/* .tit */
+.tit {
+	width: 90%;
+	margin: 0 auto;
+	/* background:url(../images/concierge/bg.png) center top;
+	background-size:67px auto;
+	border-bottom:6px solid #e7e9e8; */
+}
+
+
+.tit p {
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.8;
+	transform: rotate(0.03deg);
+}
+
+
+/* .start_banner */
+.start_banner {
+	padding: 0px 0 0;
+}
+
+/* .start_btn */
+.start_btn:not(:first-child) {
+	padding: 0px 0;
+}
+
+.start_btn p {
+	font-size: 38px;
+	font-weight: 900;
+	color: #E50153;
+}
+
+.start_btn p img {
+	width: 50px;
+	display: block;
+	margin: 10px auto 0;
+}
+
+.start_btn a {
+	display: block;
+	width: 330px;
+	line-height: 60px;
+	margin: 20px auto 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #E50153;
+	border-radius: 5px;
+	transform: rotate(0.03deg);
+	border-bottom: 5px solid #8a0536;
+}
+
+
+/* テキストボックス */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	width: 90%;
+	height: 42px;
+	padding: 0 10px;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+}
+
+/* ラジオボタン */
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+span {
+	display: block;
+	height: 3.8em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+	border: 5px solid #ccc;
+	border-radius: 10px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+input[type="radio"]:checked+span {
+	color: #E50153;
+	background-color: #F9D6D3;
+	border: 5px solid #E50153;
+}
+
+
+/* チェックボックス */
+input[type="checkbox"] {
+	position: relative;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 21px;
+	height: 21px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked:after {
+	display: block;
+	position: absolute;
+	top: -9px;
+	left: 2px;
+	content: "";
+	width: 16px;
+	height: 24px;
+	border-right: 5px solid #e50054;
+	border-bottom: 5px solid #e50054;
+	-webkit-transform: rotate(45deg) skew(8deg);
+	transform: rotate(45deg) skew(8deg);
+	background-color: transparent;
+	border-radius: 0;
+}
+
+input[type="checkbox"]+span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.3em;
+	line-height: 21px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #666;
+}
+
+
+/* セレクトボックス */
+select {
+	width: 90%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 60px;
+	margin: 0;
+	padding: 0 20px 0 10px;
+	border: 1px solid #666;
+	color: #000;
+	background: #ECECEC url(select_arrow.svg) no-repeat right 5px center;
+	border-radius: 5px;
+	background-size: 10px auto;
+	font-size: 16px;
+	outline: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select option,
+select optgroup {
+	background: #fff;
+}
+
+
+/* テキストエリア */
+textarea {
+	width: 100%;
+	min-height: 130px;
+	margin-top: 1.6em;
+	font-size: 16px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #666;
+	vertical-align: bottom;
+}
+
+
+/* プレイスホルダー */
+input::placeholder,
+textarea::placeholder {
+	color: #ccc;
+}
+
+input:-ms-input-placeholder,
+textarea::placeholder {
+	color: #ccc;
+}
+
+input::-ms-input-placeholder,
+textarea::placeholder {
+	color: #ccc;
+}
+
+
+/* #step */
+#step {
+	width: 640px;
+	margin: auto;
+	padding: 0 1.8em;
+	overflow: hidden;
+}
+
+#step #step_indicater {
+	margin: 30px 0;
+}
+
+#step form ol {
+	margin: auto;
+	padding: 0 2em;
+	position: relative;
+}
+
+#step form ol>li {
+	padding-bottom: 140px;
+	transform: rotate(0.03deg);
+	transition: transform 0.2s;
+	-webkit-transition: transform 0.2s;
+}
+
+#step form ol>li:nth-child(n+2) {
+	width: calc(100% - 4em);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 2em;
+}
+
+#step form ol>li.right {
+	-webkit-transform: translate(120%, 0);
+	transform: translate(120%, 0);
+}
+
+#step form ol>li.left {
+	-webkit-transform: translate(-120%, 0);
+	transform: translate(-120%, 0);
+}
+
+#step form ol>li>h3 {
+	margin-bottom: 0.5em;
+	font-size: 16px;
+	text-align: left;
+	text-indent: -2.8em;
+}
+
+#step form ol>li>h3 span {
+	margin-right: 0.5em;
+	font-size: 20px;
+	color: #E50153;
+}
+
+#step form ol>li>p {
+	font-size: 14px;
+	text-align: left;
+}
+
+#step form ol>li>dl {
+	margin-top: 1.6em;
+	font-size: 16px;
+	text-align: left;
+}
+
+#step form ol>li>dl dt {
+	line-height: 42px;
+	font-weight: bold;
+	float: left;
+}
+
+#step form ol>li>dl dt.select {
+	line-height: 60px;
+}
+
+#step form ol>li>dl dd {
+	margin-bottom: 1.6em;
+	padding-left: 6em;
+	position: relative;
+}
+
+#step form ol>li>dl dd:after {
+	content: '';
+	width: 1.5em;
+	padding-top: 0.6em;
+	border-left: 5px solid #ccc;
+	border-bottom: 5px solid #ccc;
+	transform: skew(-3deg) rotate(-45deg) translateY(-50%);
+	position: absolute;
+	right: 0;
+	top: 40%;
+}
+
+#step form ol>li>dl dd.active:after {
+	border-left: 5px solid #E50153;
+	border-bottom: 5px solid #E50153;
+}
+
+#step form ol>li dl dd .error {
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	font-size: 12px;
+	color: #f00;
+}
+
+#step form ol>li>dl.genda {
+	width: 80%;
+	letter-spacing: -0.4em;
+}
+
+#step form ol>li>dl.genda div {
+	display: inline-block;
+	width: 40%;
+	letter-spacing: normal;
+}
+
+#step form ol>li>dl.genda div:first-child {
+	margin-right: 3em;
+	position: relative;
+}
+
+#step form ol>li>dl.genda div:first-child:after {
+	content: '：';
+	font-weight: bold;
+	position: absolute;
+	left: calc(100% + 1em);
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#step form ol>li>dl.genda dd {
+	margin-bottom: 0;
+	padding-left: 3em;
+	position: relative;
+}
+
+#step form ol>li>dl.genda div dd:after {
+	right: auto;
+	left: calc(100% + 2em);
+}
+
+#step form ol>li>dl.genda div:first-child dd:after {
+	content: none;
+}
+
+#step form ol>li>dl.genda dd input[type="text"] {
+	width: 100%;
+}
+
+#step form ol>li>ul {
+	margin-bottom: 3em;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#step form ol>li>ul.radio_list li {
+	width: 150px;
+	margin-top: 1.6em;
+}
+
+#step form ol>li>ul.radio_list li:nth-child(3n+2) {
+	margin-left: 2.7em;
+	margin-right: 2.7em;
+}
+
+#step form ol>li>ul.radio_list2 li {
+	width: 120px;
+	margin-top: 1.6em;
+	margin-right: 1.1em;
+}
+
+#step form ol>li>ul.radio_list2 li:nth-child(4n+4) {
+	margin-right: 0;
+}
+
+#step form ol>li>ul.check_list {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#step form ol>li>ul.check_list li {
+	margin: 1.6em 1em 0 0;
+}
+
+#step form ol>li>ul.check_list li:last-child {
+	margin-right: 0;
+}
+
+#step form ol>li .btns {
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+}
+
+#step form ol>li .btns .next {
+	width: 330px;
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #E8CCD4;
+	border-radius: 5px;
+	outline: none;
+	border-bottom: 5px solid #e2b3c4;
+}
+
+#step form ol>li .btns .next.active {
+	background-color: #E50153;
+	border-bottom: 5px solid #8a0536;
+	cursor: pointer;
+}
+
+#step form ol>li .btns .prev {
+	line-height: 60px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #E50153;
+	position: absolute;
+	left: -2.5em;
+	cursor: pointer;
+	outline: none;
+}
+
+#step form ol>li .btns .prev:before {
+	content: '';
+	display: inline-block;
+	width: 0.6em;
+	height: 0.6em;
+	margin-right: 0.2em;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(45deg) translateY(-0.1em);
+}
+
+#step form ol>li .btns button[type="submit"] {
+	width: 300px;
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: 900;
+	color: #fff;
+	background-color: #E50153;
+	border-radius: 12px;
+	cursor: pointer;
+	position: relative;
+}
+
+#step form ol>li .btns button[type="submit"]:before {
+	content: '';
+	display: block;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: 2px solid #fff;
+	border-radius: 10px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+
+#step form ol>li .step_num {
+	width: 100%;
+	margin-top: 1em;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #E50153;
+	position: absolute;
+	bottom: 0;
+}
+
+#step form ol>li:last-child {
+	height: auto;
+}
+
+#step form ol>li:last-child #confirm h3 {
+	margin-bottom: 2em;
+	font-size: 20px;
+	color: #E50153;
+}
+
+#step form ol>li:last-child #confirm h3 span {
+	display: block;
+	font-size: 16px;
+}
+
+#step form ol>li:last-child #confirm>dl {
+	text-align: left;
+}
+
+#step form ol>li:last-child #confirm>dl>dt {
+	line-height: 1;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+}
+
+#step form ol>li:last-child #confirm>dl>dt span {
+	margin-right: 0.5em;
+	font-size: 20px;
+	color: #E50153;
+}
+
+#step form ol>li:last-child #confirm>dl>dd {
+	margin-bottom: 1em;
+	padding: 0 70px 1em 200px;
+	border-bottom: 1px solid;
+	position: relative;
+}
+
+#step form ol>li:last-child #confirm>dl>dd dl dt {
+	font-size: 14px;
+	float: left;
+}
+
+#step form ol>li:last-child #confirm>dl>dd dl dt:after {
+	content: '：';
+}
+
+#step form ol>li:last-child #confirm>dl>dd dl dd {
+	font-size: 14px;
+}
+
+#step form ol>li:last-child #confirm>dl>dd button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #E50153;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+/* #thanks */
+#thanks {
+	padding: 80px 0;
+	color: #E50153;
+	transform: rotate(0.03deg);
+}
+
+#thanks h3 {
+	margin-bottom: 1em;
+	font-size: 20px;
+}
+
+#thanks h3 img {
+	display: block;
+	width: 90px;
+	margin: 0 auto 1.5em;
+}
+
+#thanks p {
+	font-size: 16px;
+	font-weight: bold;
+}
