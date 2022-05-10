@@ -72,6 +72,7 @@
             <dd><a href="/">BBQ場</a></dd>
             <dd><a href="/spot.html">周辺店舗</a></dd>
             <dd><a href="/column.html">コラム</a></dd>
+            <dd><a href="/concierge.html">BBQ団体向けコンシェルジュ</a></dd>
 
             <dt>MyPage</dt>
             <dd><a href="">お気に入りページ</a></dd>

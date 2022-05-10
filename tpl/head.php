@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/resources/css/sanitize.css">
-<link rel="stylesheet" href="/resources/css/base.css?1.8">
-<link rel="stylesheet" href="/resources/css/base_sp.css?1.6">
+<link rel="stylesheet" href="/resources/css/base.css?1.81">
+<link rel="stylesheet" href="/resources/css/base_sp.css?1.9">
 
 
 <link rel="stylesheet" href="/resources/css/style.css?1.2" />
@@ -13,11 +13,11 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/resources/js/html5shiv.js"></script>
 <![endif]-->
-   
-<meta property="og:title" content="日本最大級のBBQプラットフォーム Bavi" >
-<meta property="og:image" content="http://bavi.tank.jp/resources/images/apple-touch-icon.png" >
-<meta property="og:description" content="日本最大級のBBQプラットフォーム Bavi" >
+
+<meta property="og:title" content="日本最大級のBBQプラットフォーム Bavi">
+<meta property="og:image" content="http://bavi.tank.jp/resources/images/apple-touch-icon.png">
+<meta property="og:description" content="日本最大級のBBQプラットフォーム Bavi">
 <meta property="og:locale" content="ja_JP" />
 
 <meta name="apple-mobile-web-app-title" content="Bavi">
-<link rel="apple-touch-icon" sizes="180x180" href="/resources/images/apple-touch-icon.png"　 >
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/images/apple-touch-icon.png" 　>
