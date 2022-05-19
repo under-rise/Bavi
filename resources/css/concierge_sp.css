@@ -262,23 +262,21 @@
 	}
 
 	#step #step_indicater {
-		margin: 3% 0;
+		padding: 0 10px;
+		width: 90%;
+		margin: 30px auto 40px auto;
+	}
+
+	#step #step_indicater>div span {
+		font-size: 13px;
 	}
 
 	#step form ol {
 		margin: auto;
-		padding: 0 1em;
+		padding: 0 1em 60px 1em;
 		position: relative;
 	}
 
-	#step form ol>li {
-		padding-bottom: 140px;
-	}
-
-	#step form ol>li:nth-child(n+2) {
-		width: 94%;
-		left: 1em;
-	}
 
 	#step form ol>li>h3 {
 		margin-bottom: 0.5em;
@@ -306,7 +304,19 @@
 	#step form ol>li>dl dt {
 		line-height: 1.5;
 		float: none;
+		width: 100%;
 	}
+
+	#step form ol>li:not(.confirm_sec) dl dd {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-indent: 0;
+		margin-bottom: 15px;
+	}
+
+
+	#step form ol>li:not(.confirm_sec) dl dd input {}
 
 	#step form ol>li>dl dt.select {
 		line-height: 1.5;
@@ -317,19 +327,19 @@
 		padding-left: 0;
 	}
 
-	#step form ol>li>dl dd:after {
+	#step form ol>li:not(.confirm_sec) dl dd:after {
 		content: '';
-		width: 1.2em;
+		width: 4vw;
 		padding-top: 0.4em;
 		border-left: 4px solid #ccc;
 		border-bottom: 4px solid #ccc;
 		transform: skew(-3deg) rotate(-45deg) translateY(-50%);
 		position: absolute;
 		right: 0;
-		top: 40%;
+		top: 70%;
 	}
 
-	#step form ol>li>dl dd.active:after {
+	#step form ol>li dl dd.active:after {
 		border-left: 5px solid #E50153;
 		border-bottom: 5px solid #E50153;
 	}
@@ -385,8 +395,8 @@
 	}
 
 	#step form ol>li>ul.radio_list li:nth-child(3n+2) {
-		margin-left: 2%;
-		margin-right: 2%;
+		/* margin-left: 2%;
+		margin-right: 2%; */
 	}
 
 	#step form ol>li>ul.radio_list2 li {
@@ -417,7 +427,6 @@
 
 	#step form ol>li .btns {
 		width: 100%;
-		position: absolute;
 	}
 
 	#step form ol>li .btns .next {
@@ -428,6 +437,7 @@
 		line-height: 50px;
 		font-size: 18px;
 		border-radius: 0.5em;
+		margin-bottom: 20px;
 	}
 
 	#step form ol>li .btns .prev {
