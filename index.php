@@ -91,6 +91,9 @@
                 <div class="inr clearfix">
                     <ul class="slider">
 
+                        <li><a href="https://bavi.jp/spot/detail/1519"><img
+                                    src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
+
                         <li><a href="/concierge.html"><img src="resources/images/top/slider_concierge.jpg"></a>
 
                         <li><a href="https://bavi.jp/spot/detail/1290"><img
