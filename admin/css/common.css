@@ -34,13 +34,63 @@ h2.sub_ttl {
   padding-bottom: 100px;
 }
 
-button, input[type="submit"], input[type="button"] {
+button,
+input[type=submit],
+input[type=button] {
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline: none;
   padding: 0;
   appearance: none;
+}
+
+.btn-default {
+  background: #cf2e57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-default:hover {
+  background-color: #b4274a;
+  color: #fff;
+}
+
+#all_check_btn {
+  text-align: center;
+  text-indent: 0;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mail_send_btn {
+  margin-top: 30px;
+}
+.mail_send_btn button {
+  background: #266698;
+  border-bottom: 2px solid #163962;
+  padding: 5px 10px;
+  margin: 10px auto;
+  width: 300px;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+}
+.mail_send_btn button:hover {
+  background-color: #064273;
+  color: #fff;
+}
+.mail_send_btn button:nth-child(2) {
+  background: #0b6b3e;
+}
+.mail_send_btn button:nth-child(2):hover {
+  background-color: #03562f;
 }
 
 .sec {
@@ -66,18 +116,46 @@ button, input[type="submit"], input[type="button"] {
   background: #32658f;
 }
 
+.icon.other {
+  background: #666;
+}
+
 .icon.dengon {
   animation: flash 1.5s linear infinite;
   background: #ee0404;
   font-size: 10px;
-  white-space: nowrap;
-  position: absolute;
-  top: 10px;
+  top: 20px;
   right: 0;
   left: 0;
-  padding: 0 3px;
+  line-height: 1;
+  padding: 3px;
   border-radius: 3px;
   color: yellow;
+}
+
+.price_order_total {
+  display: flex;
+  justify-content: center;
+}
+.price_order_total dl {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px 20px 20px;
+  background: linear-gradient(transparent 80%, #fffdc8 20%);
+}
+.price_order_total dl dt {
+  font-weight: bold;
+  padding-right: 5px;
+  font-size: 16px;
+}
+.price_order_total dl dd {
+  font-weight: bold;
+  font-size: 22px;
+  color: #266698;
+}
+.price_order_total dl dd span {
+  padding-left: 3px;
+  font-size: 0.7em;
 }
 
 @keyframes flash {
@@ -88,13 +166,13 @@ button, input[type="submit"], input[type="button"] {
     opacity: 0;
   }
 }
-
 .table_style {
   width: 100%;
   table-layout: fixed;
 }
 
-.table_style th, .table_style td {
+.table_style th,
+.table_style td {
   border: 1px solid #999;
   text-align: center;
   padding: 10px 10px;
@@ -114,9 +192,10 @@ button, input[type="submit"], input[type="button"] {
   background: #266698;
   color: #fff;
   width: 100%;
-  padding: 2px;
+  padding: 5px 3px;
   border-radius: 3px;
   border-bottom: 2px solid #163962;
+  font-size: 11px;
 }
 
 .btn_type.mail {
@@ -132,7 +211,7 @@ button, input[type="submit"], input[type="button"] {
   margin: 0 auto;
   color: #000;
   border-radius: 5px;
-  padding: 5px  4px;
+  padding: 5px 4px;
 }
 
 .table_style .w5 {
@@ -171,7 +250,12 @@ button, input[type="submit"], input[type="button"] {
   width: 80%;
 }
 
-.form input[type="text"], .form input[type="number"], .form input[type="date"], .form input[type="tel"], .form input[type="email"], .form textarea {
+.form input[type=text],
+.form input[type=number],
+.form input[type=date],
+.form input[type=tel],
+.form input[type=email],
+.form textarea {
   background: #f7fafd;
   padding: 5px;
   width: 100%;
@@ -188,7 +272,7 @@ button, input[type="submit"], input[type="button"] {
   width: 100%;
 }
 
-.form input[type="submit"] {
+.form input[type=submit] {
   background: #266698;
   border-bottom: 2px solid #163962;
   padding: 5px 10px;
@@ -199,7 +283,7 @@ button, input[type="submit"], input[type="button"] {
   display: block;
 }
 
-.form input[type="radio"] + label {
+.form input[type=radio] + label {
   font-weight: normal;
   vertical-align: middle;
   padding-left: 2px;
