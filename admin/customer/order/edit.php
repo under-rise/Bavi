@@ -412,11 +412,11 @@
         <div id="management_page" class="col-md-10 col-md-offset-2 main" style="margin-bottom: 100px;">
             <div class="ttl">
                 <h1>富士スピードウェイ&times;BBQ NAPAC 富士SUPER TEC 24時間レース　注文情報</h1>
-                <h2>【1519-41】富士スピードウェイ&times;BBQ NAPAC 富士SUPER TEC 24時間レース - 西山 尚志 様</h2>
+                <h2>【1519-42】富士スピードウェイ&times;BBQ NAPAC 富士SUPER TEC 24時間レース - 矢谷悟志 様</h2>
                 <div class="row">
                     <a href="/customer/order/" class="btn btn-default">
                         << 一覧に戻る </a>　
-                            <a href="/customer/contacts/message/99" class="btn btn-default"> メッセージやり取り一覧 >> </a>
+                            <a href="/customer/contacts/message/100" class="btn btn-default"> メッセージやり取り一覧 >> </a>
                 </div>
             </div>
             <style>
@@ -457,7 +457,7 @@
                         <tr>
                             <th>名前</th>
                             <td>
-                                <input type="text" name="name" value="西山 尚志">
+                                <input type="text" name="name" value="矢谷悟志">
                             </td>
                             <th>名前カナ</th>
                             <td>
@@ -467,20 +467,20 @@
                         <tr>
                             <th>TEL</th>
                             <td>
-                                <input type="tel" name="tel" value="09056791690">
+                                <input type="tel" name="tel" value="09076739806">
                             </td>
                             <th>メールアドレス</th>
                             <td>
-                                <input type="email" name="email" value="tn.i-picnic@docomo.ne.jp">
+                                <input type="email" name="email" value="yatani3@hotmail.com">
                             </td>
                         </tr>
                         <tr>
                             <th>住所</th>
                             <td colspan="3">
                                 〒 <input type="number" name="zip_code" size="10" maxlength="8"
-                                    style="width: 10em; margin-bottom: 5px;" value="2240021"
+                                    style="width: 10em; margin-bottom: 5px;" value="5220007"
                                     onKeyUp="AjaxZip3.zip2addr(this,'','address','address');">
-                                <input type="text" name="address" value="神奈川県横浜市都筑区北山田5-17-27-826">
+                                <input type="text" name="address" value="滋賀県彦根市古沢町513ー15ー1008">
                             </td>
                         </tr>
                         <tr>
@@ -560,13 +560,13 @@
                 <!--member sec-->
                 <div id="" class="guest_sec sec">
                     <h2 class="sub_ttl">
-                        案件情報（利用NO. 1519-41）
+                        案件情報（利用NO. 1519-42）
                     </h2>
                     <table class="table_style">
                         <tr>
                             <th>受付日</th>
                             <td>
-                                2022-05-28 23:09:09 </td>
+                                2022-05-30 15:13:46 </td>
                             <th>CV種別</th>
                             <td>
                                 <select class="form-control" name="cv_type">
@@ -593,9 +593,9 @@
                             <th>希望利用人数</th>
                             <td>
                                 <select name="spot_order_people" style="width: 95%">
-                                    <option value="2" selected>2人</option>
+                                    <option value="2">2人</option>
                                     <option value="3">3人</option>
-                                    <option value="4">4人</option>
+                                    <option value="4" selected>4人</option>
                                     <option value="5">5人</option>
                                     <option value="6">6人</option>
                                     <option value="7">7人</option>
@@ -696,7 +696,7 @@
                             </td>
                             <th>確定利用料金</th>
                             <td>
-                                <input type="number" name="price" value="11000" style="width: 95%"> 円
+                                <input type="number" name="price" value="17000" style="width: 95%"> 円
                             </td>
                         </tr>
                         <tr>
@@ -707,9 +707,9 @@
                                 <select class="form-control" name="spot_order_time_id">
                                     <option>指定なし</option>
                                     <option value="104">1部11:00〜13:00（残りわずか）</option>
-                                    <option value="105">2部14:00〜16:00</option>
+                                    <option value="105" selected>2部14:00〜16:00</option>
                                     <option value="106">3部17:00〜19:00 &times;ご予約満了受付不可</option>
-                                    <option value="107" selected>4部19:30〜21:30（残りわずか）</option>
+                                    <option value="107">4部19:30〜21:30（残りわずか）</option>
                                 </select>
                             </td>
                         </tr>
@@ -728,7 +728,7 @@
                                     <span class="input-group-addon">レースBBQプラン</span>
                                     <span class="input-group-addon">×</span>
                                     <input type="number" class="form-control" name="spot_order_plan_count[61]"
-                                        value="2">
+                                        value="4">
                                     <span class="input-group-addon">セット</span>
                                 </div>
                                 <div class="input-group">
@@ -744,14 +744,14 @@
                                     <span class="input-group-addon">アルコール飲み放題</span>
                                     <span class="input-group-addon">×</span>
                                     <input type="number" class="form-control" name="spot_order_option_count[56]"
-                                        value="1">
+                                        value="">
                                     <span class="input-group-addon">セット</span>
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">ソフトドリンク飲み放題</span>
                                     <span class="input-group-addon">×</span>
                                     <input type="number" class="form-control" name="spot_order_option_count[57]"
-                                        value="1">
+                                        value="">
                                     <span class="input-group-addon">セット</span>
                                 </div>
                                 <div class="input-group">
@@ -765,7 +765,7 @@
                                     <span class="input-group-addon">ソフトドリンクチケット4枚</span>
                                     <span class="input-group-addon">×</span>
                                     <input type="number" class="form-control" name="spot_order_option_count[59]"
-                                        value="">
+                                        value="1">
                                     <span class="input-group-addon">セット</span>
                                 </div>
                                 <div class="input-group">
@@ -788,7 +788,7 @@
                                 </select>
                             </td>
                             <th>支払金額</th>
-                            <td>11000円</td>
+                            <td>17000円</td>
                         </tr>
                         <tr>
                             <th>備考</th>
