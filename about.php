@@ -82,8 +82,7 @@
             </section>
 
             <ul>
-                <li><a href="https://bavi.jp/assets/pdf/publication_materials_2ndseason.pdf"
-                        target="_blank">掲載詳細を確認する</a></li>
+                <li><a href="" target="_blank">掲載詳細を確認する</a></li>
                 <li><a href="/contact.html">掲載依頼をする</a></li>
             </ul>
         </article>
