@@ -15,7 +15,7 @@
     <nav>
         <ul>
             <li><a href="about.php">Baviについて</a></li>
-
+            <li><a href="https://bavi.jp/assets/pdf/publication_materials_2ndseason.pdf" target="_blank">掲載についての資料</a>
             </li>
             <li><a href="company.php">お問い合わせ</a></li>
             <li><a href="company.php">運営会社</a></li>
