@@ -15,7 +15,7 @@
     <nav>
         <ul>
             <li><a href="about.php">Baviについて</a></li>
-            <li><a href="https://bavi.jp/assets/pdf/publication_materials_2ndseason.pdf" target="_blank">掲載についての資料</a>
+            <li><a href="https://bavi.jp/assets/pdf/publication_materials_2ndseason.pdf" target="_blank">施設者向け資料</a>
             </li>
             <li><a href="company.php">お問い合わせ</a></li>
             <li><a href="company.php">運営会社</a></li>
@@ -85,6 +85,8 @@
 
             <dt>その他</dt>
             <dd><a href="#">Baviについて</a></dd>
+            <dd><a href="https://bavi.jp/assets/pdf/publication_materials_2ndseason.pdf" target="_balnk">施設者向け資料</a>
+            </dd>
             <dd><a href="/topic/tieup.php">Bavi特別タイアップについて</a></dd>
             <dd><a href="/topic/recruitment_cameramen.php">撮影カメラマン募集について</a></dd>
             <dd><a href="#">Baviモデルのご紹介</a></dd>
