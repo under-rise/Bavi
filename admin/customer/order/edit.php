@@ -19,6 +19,14 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://bavi.jp/assets/js/customer/main.js?1648761028"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/bootstrap.css?1616644533" />
+
+    <link type="text/css" rel="stylesheet" href="/assets/css/add.css?1.21" />
+
+    </style>
+
+
 </head>
 
 <body id="spot">
@@ -65,368 +73,27 @@
         </div>
     </header>
     <!--header END-->
-    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/bootstrap.css?1616644533" />
-    <style>
-    /*************************/
-    /* 追加 */
-    /*************************/
-    body#spot {
-        background-image: none;
-        background-color: white;
-    }
-
-    #management_page {
-        font-size: 13px;
-    }
-
-    /*search_sec*/
-    #search_sec {
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        padding: 15px;
-    }
-
-    .sort_btn {
-        cursor: pointer;
-    }
-
-    #search_sec h2 {
-        font-weight: bold;
-        font-size: 14px;
-        margin: 0 0 10px 0;
-    }
-
-    #search_sec th {
-        width: 10%;
-    }
-
-    /*member_sec*/
-    #member_sec .table_style {
-        border-bottom: 1px solid #999;
-    }
-
-    #member_sec .main_info td {
-        border-bottom: none;
-        position: relative;
-    }
-
-    #member_sec .main_info td {
-        border-top: 1px solid #266698;
-    }
-
-    #member_sec .user_contact>td {
-        border-bottom: none;
-        border-top: 1px dashed #999;
-    }
-
-    .btn_sec {
-        padding: 10px 0;
-    }
-
-    .btn_sec button.btn_type02 {
-        background: #ccc;
-        width: 200px;
-        padding: 5px;
-        color: #fff;
-        border-radius: 5px;
-        margin: 10px 5px;
-    }
-
-    .btn_sec button.btn_type02.detail {
-        background: #266698;
-    }
-
-    .btn_sec button.btn_type02.delete {
-        background: #ad0202;
-    }
-
-    /*guest_sec*/
-    .guest_sec .table_style th {
-        width: 10%;
-    }
-
-    .guest_sec .table_style td {
-        text-align: left;
-    }
-
-    .flex {
-        display: flex;
-        justify-content: center;
-    }
-
-    .flex>div {
-        margin: 0 10px;
-    }
-
-    .ttl h1 {
-        font-size: 18px;
-        color: #fff;
-        background: #266698;
-        font-weight: bold;
-        padding: 10px 10px;
-        margin-bottom: 10px;
-    }
-
-    .ttl {
-        background-color: transparent;
-        position: relative;
-        display: block;
-         !important;
-    }
-
-    .ttl .back {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 8px;
-        background-color: #fff;
-        border-radius: 3px;
-        padding: 2px 30px;
-    }
-
-    h2.sub_ttl {
-        font-size: 16px;
-        border-bottom: 1px solid #266698;
-        color: #266698;
-        font-weight: bold;
-        padding: 10px 10px;
-        margin-bottom: 20px;
-    }
-
-    .contents {
-        padding-bottom: 100px;
-    }
-
-    button,
-    input[type="submit"],
-    input[type="button"] {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        padding: 0;
-        appearance: none;
-    }
-
-    .sec {
-        padding: 10px 0;
-        margin: 20px 0;
-    }
-
-    .icon {
-        display: block;
-        padding: 2px;
-        color: #fff;
-    }
-
-    .icon.decision {
-        background: #e4348f;
-    }
-
-    .icon.negotiation {
-        background: #58a34c;
-    }
-
-    .icon.cancel {
-        background: #32658f;
-    }
-
-    .icon.dengon {
-        animation: flash 1.5s linear infinite;
-        background: #ee0404;
-        font-size: 10px;
-        white-space: nowrap;
-        position: absolute;
-        top: 10px;
-        right: 0;
-        left: 0;
-        padding: 0 3px;
-        border-radius: 3px;
-        color: yellow;
-    }
-
-    @keyframes flash {
-
-        20%,
-        80% {
-            opacity: 1;
-        }
-
-        50% {
-            opacity: 0;
-        }
-    }
-
-    .table_style {
-        width: 100%;
-        table-layout: fixed;
-    }
-
-    .table_style th,
-    .table_style td {
-        border: 1px solid #999;
-        text-align: center;
-        padding: 10px 10px;
-    }
-
-    .table_style th {
-        background: #fafafa;
-        font-weight: bold;
-    }
-
-    .table_style a {
-        text-decoration: underline;
-    }
-
-    .btn_type {
-        background: #266698;
-        color: #fff;
-        width: 100%;
-        padding: 2px;
-        border-radius: 3px;
-        border-bottom: 2px solid #163962;
-    }
-
-    .btn_type.mail {
-        background: #ec7411;
-        border-bottom: 2px solid #b4560a;
-    }
-
-    .btn_type.back {
-        display: block;
-        background: #f1f1f1;
-        border-bottom: 2px solid #555;
-        width: 300px;
-        margin: 0 auto;
-        color: #000;
-        border-radius: 5px;
-        padding: 5px 4px;
-    }
-
-    .table_style .w5 {
-        width: 5%;
-    }
-
-    .table_style .w10 {
-        width: 10%;
-    }
-
-    .table_style .w20 {
-        width: 20%;
-    }
-
-    .table_style .w30 {
-        width: 30%;
-    }
-
-    .table_style .w40 {
-        width: 40%;
-    }
-
-    .table_style .w50 {
-        width: 50%;
-    }
-
-    .table_style .w60 {
-        width: 60%;
-    }
-
-    .table_style .w70 {
-        width: 70%;
-    }
-
-    .table_style .w80 {
-        width: 80%;
-    }
-
-    .form input[type="text"],
-    .form input[type="number"],
-    .form input[type="date"],
-    .form input[type="tel"],
-    .form input[type="email"],
-    .form textarea {
-        background: #f7fafd;
-        padding: 5px;
-        width: 100%;
-        outline: none;
-        appearance: none;
-        border: 1px solid #999;
-        border-radius: 3px;
-    }
-
-    .form select {
-        padding: 3px;
-        background: #f7fafd;
-        border: 1px solid #999;
-        width: 100%;
-    }
-
-    .form input[type="submit"] {
-        background: #266698;
-        border-bottom: 2px solid #163962;
-        padding: 5px 10px;
-        margin: 10px auto;
-        width: 300px;
-        color: #fff;
-        border-radius: 5px;
-        display: block;
-    }
-
-    .form input[type="radio"]+label {
-        font-weight: normal;
-        vertical-align: middle;
-        padding-left: 2px;
-    }
-
-    .pager_style ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    .pager_style ul li a {
-        border-radius: 3px;
-        padding: 5px 10px;
-        color: #000;
-        display: block;
-        border: 1px solid #999;
-        margin: 0 5px;
-    }
-
-    .pager_style ul li a.current {
-        background: #266698;
-        color: #fff;
-        pointer-events: none;
-    }
-
-    .pager_style ul li a:hover {
-        background: #266698;
-        color: #fff;
-    }
-    </style>
-
-
     <section class="contents">
-        <div id="management_page" class="col-md-10 col-md-offset-2 main" style="margin-bottom: 100px;">
-            <div class="ttl">
+        <div id="management_page">
+
+            <div class="back_btn">
+                <a href="/customer/order/" class="btn btn-default">
+                    一覧に戻る </a>
+            </div>
+
+            <div class="ttl page_ttl">
                 <h1>富士スピードウェイ&times;BBQ NAPAC 富士SUPER TEC 24時間レース　注文情報</h1>
                 <h2>【1519-42】富士スピードウェイ&times;BBQ NAPAC 富士SUPER TEC 24時間レース - 矢谷悟志 様</h2>
-                <div class="row">
-                    <a href="/customer/order/" class="btn btn-default">
-                        << 一覧に戻る </a>　
-                            <a href="/customer/contacts/message/100" class="btn btn-default"> メッセージやり取り一覧 >> </a>
+
+                <div class="message_btn">
+                    <a href="/customer/contacts/message/100" class="btn message_list_btn">メッセージ一覧 </a>
                 </div>
             </div>
-            <style>
-            .alert {
-                font-weight: bold;
-                color: red;
-            }
-            </style>
+            <!-- ttl -->
+
             <form class="form" method="post">
-                <div id="" class="guest_sec sec">
+
+                <div id="" class="guest_sec">
                     <h2 class="sub_ttl">顧客情報</h2>
                     <table class="table_style">
                         <tr>
@@ -441,8 +108,8 @@
                         </td>
                         -->
                             <th>性別</th>
-                            <td>
-                                <div class="flex">
+                            <td colspan="3">
+                                <div class="flex" style="justify-content:flex-start;">
                                     <div>
                                         <input type="radio" id="label_sex_1" name="sex" value="1" checked>
                                         <label for="label_sex_1">男性
@@ -486,64 +153,24 @@
                         <tr>
                             <th>年代</th>
                             <td colspan="3">
-                                <div class="flex">
-                                    <div>
-                                        <input type="radio" name="age" id="age_1" value="1">
-                                        <label for="age_1">10歳以下</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_2" value="2">
-                                        <label for="age_2">11歳〜15歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_3" value="3">
-                                        <label for="age_3">16歳〜20歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_4" value="4">
-                                        <label for="age_4">21歳〜25歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_5" value="5">
-                                        <label for="age_5">26歳〜30歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_6" value="6">
-                                        <label for="age_6">31歳〜35歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_7" value="7">
-                                        <label for="age_7">36歳〜40歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_8" value="8" checked>
-                                        <label for="age_8">41歳〜45歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_9" value="9">
-                                        <label for="age_9">46歳〜50歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_10" value="10">
-                                        <label for="age_10">51歳〜55歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_11" value="11">
-                                        <label for="age_11">56歳〜60歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_12" value="12">
-                                        <label for="age_12">61歳〜65歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_13" value="13">
-                                        <label for="age_13">66歳〜70歳</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="age" id="age_14" value="14">
-                                        <label for="age_14">71歳以上</label>
-                                    </div>
-                                </div>
+                                <select name="age">
+                                    <option value="1">10歳以下</option>
+                                    <option value="2">11歳〜15歳</option>
+                                    <option value="3">16歳〜20歳</option>
+                                    <option value="4">20歳以下</option>
+                                    <option value="5">21歳〜25歳</option>
+                                    <option value="6">26歳〜30歳</option>
+                                    <option value="7">31歳〜35歳</option>
+                                    <option value="8">36歳〜40歳</option>
+                                    <option value="9">41歳〜45歳</option>
+                                    <option value="10">46歳〜50歳</option>
+                                    <option value="11">51歳〜55歳</option>
+                                    <option value="12">56歳〜60歳</option>
+                                    <option value="13">61歳〜65歳</option>
+                                    <option value="14">66歳〜70歳</option>
+                                    <option value="15">71歳以上</option>
+                                </select>
+
                             </td>
                         </tr>
                         <!--
@@ -557,30 +184,108 @@
                     </table>
                     <input type="submit" value="保存する">
                 </div>
-                <!--member sec-->
-                <div id="" class="guest_sec sec">
-                    <h2 class="sub_ttl">
-                        案件情報（利用NO. 1519-42）
-                    </h2>
+
+                <div class="guest_sec">
+
+                    <h2 class="sub_ttl">受注内容（利用NO. 1519-42）</h2>
+
+                    <div class="order_sec">
+                        <h3>プラン</h2>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/img01.jpg"></figure>
+                                    <p>BBQプラン1</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[61]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/img02.jpg"></figure>
+                                    <p>BBQプラン2</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[62]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/none.jpg"></figure>
+                                    <p>BBQプラン3</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[62]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                    </div>
+
+                    <div class="order_sec">
+                        <h3>オプション</h2>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/img03.jpg"></figure>
+                                    <p>オプション1</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[61]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/img04.jpg"></figure>
+                                    <p>オプション2</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[62]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/img05.jpg"></figure>
+                                    <p>オプション3</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[62]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure><img src="img/img07.jpg"></figure>
+                                    <p>オプション4</p>
+                                    <div class="input_sec">
+                                        <input type="number" class="form-control" name="spot_order_plan_count[62]"
+                                            value="4"><span>セット</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                    </div>
+
+
+
+                    <h2 class="sub_ttl">案件情報</h2>
+
                     <table class="table_style">
-                        <tr>
-                            <th>受付日</th>
-                            <td>
-                                2022-05-30 15:13:46 </td>
-                            <th>CV種別</th>
-                            <td>
-                                <select class="form-control" name="cv_type">
-                                    <option value="">指定なし</option>
-                                    <option value="1" selected>Web</option>
-                                    <option value="2">LINE</option>
-                                    <option value="3">TEL</option>
-                                    <option value="9">その他</option>
-                                </select>
-                            </td>
+                        <th>受付日</th>
+                        <td>
+                            2022-05-30 15:13:46 </td>
+                        <th>CV種別</th>
+                        <td>
+                            <select class="form-control" name="cv_type">
+                                <option value="">指定なし</option>
+                                <option value="1" selected>Web</option>
+                                <option value="2">LINE</option>
+                                <option value="3">TEL</option>
+                                <option value="9">その他</option>
+                            </select>
+                        </td>
                         </tr>
                         <tr>
                             <th>ステータス</th>
-                            <td>
+                            <td colspan="3">
                                 <select class="select_stetas" style="margin-top: 4px;">
                                     <option>全て</option>
                                     <option>決定</option>
@@ -721,62 +426,7 @@
                             <td>
                                 静岡県駿東郡小山町中日向６９４　富士スピードウェイ内16Aエリア </td>
                         </tr>
-                        <tr>
-                            <th>プラン</th>
-                            <td>
-                                <div class="input-group">
-                                    <span class="input-group-addon">レースBBQプラン</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_plan_count[61]"
-                                        value="4">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon">【お子様用】レースBBQプラン</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_plan_count[62]" value="">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                            </td>
-                            <th>オプション</th>
-                            <td>
-                                <div class="input-group">
-                                    <span class="input-group-addon">アルコール飲み放題</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_option_count[56]"
-                                        value="">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon">ソフトドリンク飲み放題</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_option_count[57]"
-                                        value="">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon">アルコールチケット4枚</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_option_count[58]"
-                                        value="">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon">ソフトドリンクチケット4枚</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_option_count[59]"
-                                        value="1">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon">あおぞらご飯</span>
-                                    <span class="input-group-addon">×</span>
-                                    <input type="number" class="form-control" name="spot_order_option_count[60]"
-                                        value="">
-                                    <span class="input-group-addon">セット</span>
-                                </div>
-                            </td>
-                        </tr>
+
                         <tr>
                             <th>支払方法</th>
                             <td>
@@ -790,6 +440,7 @@
                             <th>支払金額</th>
                             <td>17000円</td>
                         </tr>
+
                         <tr>
                             <th>備考</th>
                             <td colspan="3">
@@ -799,6 +450,9 @@
                     </table>
                     <input type="submit" value="保存する">
                 </div>
+
+
+                <!-- guest_sec -->
                 <!--
         <div id="" class="guest_sec sec">
             <h2 class="sub_ttl">伝言</h2>
@@ -831,7 +485,8 @@
         </div>
                 -->
                 <div class="table_style">
-                    <a class="btn_type back" href="/customer/order" style="text-align: center;">一覧ページへ戻る</a>
+                    <a class="btn_type back" href="/customer/order"
+                        style="text-align: center; text-decoration: none;">一覧ページへ戻る</a>
                 </div>
             </form>
         </div>
