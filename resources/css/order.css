@@ -1,206 +1,267 @@
 /* #question */
 
 #order h3 {
- margin: 0 auto;
- padding-bottom: 10px;
-width:320px;
- text-align: center;
-margin-bottom:40px;
- font-size: 18px;
- font-weight:900;
-color:#e50054;
-border-bottom:2px solid #e50054;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	width: 320px;
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 18px;
+	font-weight: 900;
+	color: #e50054;
+	border-bottom: 2px solid #e50054;
 }
 
-#order form { width: 640px; margin: 0 auto;}
-#order dl{
-	margin:50px 0 50px;
+#order form {
+	width: 640px;
+	margin: 0 auto;
 }
-#order dl dt{
-	margin:20px 0 10px;
-	font-size:15px;
-	font-weight:bold;
-	text-align:left;
+
+#order dl {
+	margin: 50px 0 50px;
 }
-#order dl dt span{
-	margin-right:10px;
-	font-size:20px;
-	color:#e50054;
+
+#order dl dt {
+	margin: 20px 0 10px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#order dl dt span {
+	margin-right: 10px;
+	font-size: 20px;
+	color: #e50054;
 }
 
 #order dl dd ul.order {
-	margin-bottom:25px;
+	margin-bottom: 25px;
 	display: -webkit-flex;
 	display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-#order dl dd ul.order li { cursor: pointer; width: 48%; padding: 20px; 	border:1px solid #939393; border-radius: 5px; position:relative; margin-bottom: 20px; text-align: left;}
-#order dl dd ul.order li.selected { border-color:#e50054; background-color: #faf2f9; }
-#order dl dd ul li label {
- cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: block;
-  font-size: 16px; 
-  border-bottom: 1px dashed #999; padding-bottom: 5px;
-}
-
-#order dl dd ul li .price {  font-weight: bold; color:#e50054; text-align: right; font-size: 16px; margin-top: 10px;}
-#order dl dd ul li label input[type="radio"] + span{
- margin-left: 10px;
-	cursor:pointer;
-}
-#order dl dd ul li label input[type="radio"]:checked + span{
-	color:#e50054;
-}
-#order dl dd ul li label  {
-pointer-events: none;
-
-}
-
-#order dl dd textarea{
-	width:100%;
-	min-height: 130px;
-	font-size:14px;
-	padding:10px 10px;
+#order dl dd ul.order li {
+	cursor: pointer;
+	width: 48%;
+	padding: 20px;
+	border: 1px solid #939393;
 	border-radius: 5px;
-	background-color:#fff;
-	border:1px solid #939393;
-	vertical-align:bottom;
+	position: relative;
+	margin-bottom: 20px;
+	text-align: left;
 }
-#order dl dd textarea.large{
+
+#order dl dd ul.order li.selected {
+	border-color: #e50054;
+	background-color: #faf2f9;
+}
+
+#order dl dd ul li label {
+	cursor: pointer;
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: block;
+	font-size: 16px;
+	border-bottom: 1px dashed #999;
+	padding-bottom: 5px;
+}
+
+#order dl dd ul li .price {
+	font-weight: bold;
+	color: #e50054;
+	text-align: right;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+#order dl dd ul li label input[type="radio"]+span {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#order dl dd ul li label input[type="radio"]:checked+span {
+	color: #e50054;
+}
+
+#order dl dd ul li label {
+	pointer-events: none;
+
+}
+
+#order dl dd textarea {
+	width: 100%;
+	min-height: 130px;
+	font-size: 14px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #939393;
+	vertical-align: bottom;
+}
+
+#order dl dd textarea.large {
 	min-height: 290px;
 }
 
-#order dl dd input[type="text"],#order dl dd input[type="tel"],#order dl dd input[type="mail"]{
-	width:100%;
-	font-size:14px;
-	padding:10px 10px;
+#order dl dd input[type="text"],
+#order dl dd input[type="tel"],
+#order dl dd input[type="email"] {
+	width: 100%;
+	font-size: 14px;
+	padding: 10px 10px;
 	border-radius: 5px;
-	background-color:#fff;
-	border:1px solid #939393;
-	vertical-align:bottom;
+	background-color: #fff;
+	border: 1px solid #939393;
+	vertical-align: bottom;
 }
 
 #order dl dd label.calendar {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border:1px solid #939393;
-  border-radius: 5px;
-  text-align: left;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #939393;
+	border-radius: 5px;
+	text-align: left;
 }
 
 #order dl dd label.calendar input[type="date"] {
-  position: relative;
-  padding: 10px 10px;
-  width: 100%;
-  padding:10px 10px;
-  background: transparent;
-  box-sizing: border-box;
-  font-size: 14px;
+	position: relative;
+	padding: 10px 10px;
+	width: 100%;
+	padding: 10px 10px;
+	background: transparent;
+	box-sizing: border-box;
+	font-size: 14px;
 }
 
 #order dl dd label.calendar input[type="date"]::-webkit-calendar-picker-indicator {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
 }
 
 
-#order dl dd select{
-	width:100%;
+#order dl dd select {
+	width: 100%;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	height:60px;
-	padding:0 30px 0 20px;
-	border:1px solid #939393;
-	color:#000;
+	height: 60px;
+	padding: 0 30px 0 20px;
+	border: 1px solid #939393;
+	color: #000;
 	background: url(select_arrow.png) no-repeat right 20px center;
-	background-size:14px auto;
-	font-size:14px;
+	background-size: 14px auto;
+	font-size: 14px;
 	border-radius: 5px;
 }
 
 #order dl dd select::-ms-expand {
 	display: none;
 }
-#order dl dd select option{
-	background:#fff;
+
+#order dl dd select option {
+	background: #fff;
 }
 
 #order dl dd label.calendar input[type="date"] {
 
- background:url("../images/calendar.svg") no-repeat 98% center; background-size: 20px;
+	background: url("../images/calendar.svg") no-repeat 98% center;
+	background-size: 20px;
 
 }
 
-#order #userinfo_copy_btn { margin: 0; padding: 0; }
-#order #userinfo_copy_btn button { width: 80%; border: 1px solid #999; padding: 8px 15px; border-radius: 5px; background: #f9f9f9; }
-#order #userinfo_copy_btn button:hover { opacity: 0.6;}
+#order #userinfo_copy_btn {
+	margin: 0;
+	padding: 0;
+}
+
+#order #userinfo_copy_btn button {
+	width: 80%;
+	border: 1px solid #999;
+	padding: 8px 15px;
+	border-radius: 5px;
+	background: #f9f9f9;
+}
+
+#order #userinfo_copy_btn button:hover {
+	opacity: 0.6;
+}
 
 /*option_sec*/
 #order dl dd input[type="number"] {
 	width: auto;
-	font-size:14px;
-	padding:5px 10px;
+	font-size: 14px;
+	padding: 5px 10px;
 	margin-top: 5px;
 	border-radius: 3px;
-	background-color:#fff;
-	border:1px solid #939393;
+	background-color: #fff;
+	border: 1px solid #939393;
 }
-#order .order_sec  li {
+
+#order .order_sec li {
 	padding: 8px 0;
 	text-align: left;
 	border-bottom: 1px dashed #999;
-} 
-
-
-#order .order_sec  li > div { 
-	display: flex;
-	justify-content:space-between;
-	vertical-align:baseline;
 }
 
-#order .order_sec  li > div figure {
+
+#order .order_sec li>div {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: baseline;
+}
+
+#order .order_sec li>div figure {
 	width: 40%;
 }
 
-#order .order_sec  li > div  .info {
+#order .order_sec li>div .info {
 	width: 57%;
 }
 
-#order .order_sec  li  .info .price {
+#order .order_sec li .info .price {
 	text-align: right;
 	margin: 0;
 }
 
-#order .order_sec  li .name {
+#order .order_sec li .name {
 	font-weight: bold;
 	font-size: 14px;
-} 
+}
 
-#order .order_sec  li p {
+#order .order_sec li p {
 	font-size: 12px;
 	margin-top: 1px;
 	font-weight: normal;
 }
 
 
-#order .order_sec  li  > .info {
+#order .order_sec li>.info {
 	width: 83%;
 }
 
 
 
-#order .order_sec  li .input_sec { margin-left: auto; float:right;  }
-#order .order_sec  li .input_sec input { width: 5em; text-align:center;}
-#order .order_sec  li .input_sec span { font-size: 10px; white-space: nowrap; padding-left: 5px;}
+#order .order_sec li .input_sec {
+	margin-left: auto;
+	float: right;
+}
+
+#order .order_sec li .input_sec input {
+	width: 5em;
+	text-align: center;
+}
+
+#order .order_sec li .input_sec span {
+	font-size: 10px;
+	white-space: nowrap;
+	padding-left: 5px;
+}
 
 #order .order_sec li .order_info {
 	color: #e50054;
@@ -209,4 +270,119 @@ pointer-events: none;
 	margin-top: 3px;
 	padding-top: 3px;
 	border-top: 1px dashed #e50054;
+}
+
+#order .terms {
+	max-height: 300px;
+	background: #f5f5f5;
+	padding: 20px 10px;
+	overflow-y: auto;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#order .terms h4 {
+	text-align: center;
+}
+
+#order .terms dl {
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+}
+
+#order .terms dl dt {
+	font-size: 12px;
+	margin: 0;
+	font-weight: 100;
+	margin-bottom: 5px;
+}
+
+#order .terms dl dd {
+	font-size: 10px;
+}
+
+input[type="checkbox"]+span,
+input[type="checkbox"]+span>label {
+	cursor: pointer;
+}
+
+.link_btn {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.link_btn.active {
+	opacity: 1;
+	pointer-events: visible;
+	cursor: pointer;
+}
+
+.link_btn.active:hover {
+	opacity: 0.8;
+}
+
+.none {
+	font-weight: bold;
+	color: #e50054;
+}
+
+.close_btn {
+	background-color: #999;
+	color: #fff;
+	border-radius: 10px;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.mes {
+	font-weight: bold;
+	color: #e50054;
+}
+
+.plan_modal ._inr {
+	padding: 30px 0;
+}
+
+.plan_modal ._inr .order_list {
+	padding: 10px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #555;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.plan_modal ._inr .order_list figure {
+	width: 35%;
+}
+
+.plan_modal ._inr .order_list ._info {
+	width: 60%;
+	text-align: left;
+}
+
+.plan_modal ._inr .order_list ._info .name {
+	font-weight: bold;
+}
+
+.plan_modal ._inr .order_list ._info .price {
+	font-weight: bold;
+	color: #e50054;
+	margin-top: 5px;
+}
+
+.plan_modal ._inr .order_list ._info .caption {
+	margin: 2px 0 4px;
+	font-size: 11px;
+}
+
+.plan_modal ._inr .order_list ._info .val {
+	font-weight: bold;
+	text-align: right;
+	font-size: 15px;
 }
