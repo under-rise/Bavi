@@ -203,3 +203,29 @@ function AjustHeight(element,childelem,num){
 		}
 	});
 }
+
+// タブパネル
+$(function(){
+	$.fn.tabPanel = function(options){
+
+		let default_option = {
+			animation:false,
+			btn: $(this).children('li'),
+			tabPanel: '.in_tab_panel_box',
+			callback: null
+		};
+
+		let option = $.extend(default_option,options);
+		
+		$(option.btn).on('click',function(e){
+			$(option.btn).removeClass('active');
+			$(this).addClass('active');
+		
+			let i = $(this).index();
+			$(option.tabPanel).removeClass('active');
+			$(option.tabPanel).eq(i).addClass('active');
+
+			if(option.callback){option.callback();}
+		});
+	}
+});

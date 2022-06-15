@@ -18,8 +18,8 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?9.2">
-    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.6">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?9.3">
+    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.9">
 
 
 
@@ -112,6 +112,9 @@
             }
         });
 
+        $('.panel_btn').tabPanel();
+
+
     });
     </script>
 
@@ -188,8 +191,9 @@
                         ったなんて！と実感していただけるハズ！年中楽しめます。しい茸狩りやその他にも関西屈指のあじさい園や、昆虫好きにはたまらない珍しい昆虫の標本館など色々楽しめます。ぜひ楽しい一日を満喫してください。
                     </p>
 
-                    <a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+                    <!-- <a href="javascript:void(0);" class="link_btn reserve modal" data-name=".terms"><span>予約する</span></a> -->
 
+                    <a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
 
                 </section>
                 <div class="colona_sec">
@@ -332,7 +336,7 @@
 
             <section id="detail" class="cont">
                 <h2>会場詳細</h2>
-                <ul>
+                <ul class="service_list">
                     <li>
                         <figure>
                             <img src="/assets/img//venue/detail3.png" alt="トイレあり" />
@@ -381,77 +385,130 @@
                         <th>ペット</th>
                         <td>ペット同伴要相談</td>
                     </tr>
-                </table>
-                <table>
-                    <tr>
-                        <th>平均料金</th>
-                        <td>しい茸狩りなし2805円～、しい茸狩り付3685円〜</td>
-                        <td class="btn_td">
-                            <a href="javascript:void(0);" class="modal modal_btn" data-name=".price_sec">確認する</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>ご利用時間</th>
-                        <td>09:00〜17:00</td>
-                        <td class="btn_td">
-                            <a href="javascript:void(0);" class="modal modal_btn" data-name=".time_sec">確認する</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>予約</th>
-                        <td>要予約</td>
-                        <td class="btn_td">
-                            <a href="javascript:void(0);" class="modal modal_btn" data-name=".reservation_sec">確認する</a>
-                        </td>
-                    </tr>
                     <tr>
                         <th>駐車場</th>
                         <td colspan="2">駐車場あり：120台（内バス20台） 料金：無料</td>
                     </tr>
                 </table>
+
+                <div class="tab_panel inr">
+
+                    <ul class="panel_btn">
+                        <li class="active">料金システム</li>
+                        <li>ご利用時間</li>
+                        <li>予約</li>
+                    </ul>
+
+                    <div class="tab_panel_box">
+
+                        <div class="in_tab_panel_box active">
+                            <h3>料金システム</h3>
+                            <div>▼手ぶら・飲食店の場合<br />
+                                2,000円～3,000円<br />
+                                ※一人あたりの予算。あくまで目安であり予算を保証するものではありません。</div>
+                        </div>
+
+                        <div class="in_tab_panel_box">
+                            <h3>利用時間について</h3>
+                            <div>営業期間：通年営業<br />
+                                営業時間：9時～17時（最終受付15時30分）<br />
+                                定休日：年末年始</div>
+                        </div>
+
+                        <div class="in_tab_panel_box">
+                            <h3>ご予約について</h3>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <th>電話番号</th>
+                                        <td><a href="tel:079-568-1301">079-568-1301</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Web</th>
+                                        <td><a href="http://www.kasaya.net" target="_blank">http://www.kasaya.net</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>問い合わせ</th>
+                                        <td><a href="https://bavi.jp/contact"
+                                                target="_blank">https://bavi.jp/contact</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
                 <a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
 
             </section>
-            <div class="price_sec modal_sec" style="display: none;">
+
+            <div class="terms modal_sec" style="display: none;">
                 <div class="inr">
                     <span class="close">+</span>
-                    <h3>料金について</h3>
-                    <div>▼手ぶら・飲食店の場合<br />
-                        2,000円～3,000円<br />
-                        ※一人あたりの予算。あくまで目安であり予算を保証するものではありません。</div>
-                </div>
-            </div>
-            <div class="time_sec modal_sec" style="display: none;">
-                <div class="inr">
-                    <span class="close">+</span>
-                    <h3>利用時間について</h3>
-                    <div>営業期間：通年営業<br />
-                        営業時間：9時～17時（最終受付15時30分）<br />
-                        定休日：年末年始</div>
-                </div>
-            </div>
-            <div class="reservation_sec modal_sec" style="display: none;">
-                <div class="inr">
-                    <span class="close">+</span>
-                    <h3>ご予約について</h3>
-                    <div>
-                        <table class="table_style">
-                            <tr>
-                                <th>電話番号</th>
-                                <td><a href="tel:079-568-1301">079-568-1301</a></td>
-                            </tr>
-                            <tr>
-                                <th>Web</th>
-                                <td><a href="http://www.kasaya.net" target="_blank">http://www.kasaya.net</a></td>
-                            </tr>
-                            <tr>
-                                <th>問い合わせ</th>
-                                <td><a href="https://bavi.jp/contact" target="_blank">https://bavi.jp/contact</a></td>
-                            </tr>
-                        </table>
+                    <h3>ご利用規約</h3>
+                    <div class="_terms">
+                        <dl>
+                            <dt>予約期限ポリシー</dt>
+                            <dd>利用者は施設ごとに定められた予約期限ポリシーに則り予約をすること。<br>
+                                ◯道具・区画のみの予約は開催日の◯◯日前まで<br>
+                                ◯食材や飲料を伴う予約は開催日の◯◯日前まで<br>
+                                ※但し、施設の空き状況によって、上記を過ぎての予約が可能な場合がある。<br>
+                                その際は電話による確認をお願い致します。確認なき予約は一切無効と致します。
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt>内容変更期限ポリシー</dt>
+                            <dd>利用者は施設ごとに定めれた内容変更期限ポリシーに則り内容変更をすること<br>
+                                ◯人数の増減変更は開催日の◯◯日前まで<br>
+                                ◯プランの変更は開催日の◯◯日前まで
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt>キャンセルポリシー</dt>
+                            <dd>
+                                <p>ご予約をキャンセルされる場合は、以下のキャンセル料金を頂戴いたします。<br><br>
+                                    【区画・道具のレンタルの場合】<br>
+                                    ご利用3日前以前：無償<br>
+                                    ご利用2日前：ご利用金額の30％<br>
+                                    ご利用前日：ご利用金額の50％<br>
+                                    ご利用当日：<br>ご利用金額の100％
+                                    <br>
+                                    <br>
+                                    【食材や飲料もセットでご注文の場合】
+                                    利用3日前以前：無償<br>
+                                    ご利用2日前：ご利用金額の30％<br>
+                                    ご利用前日：ご利用金額の50％<br>
+                                    ご利用当日：ご利用金額の100％
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt>雨天ポリシー</dt>
+                            <dd>雨天のキャンセルについてもキャンセルチャージ同様にキャンセルチャージがかかります。<br>
+                                但し、以下の場合キャンセルチャージが減額となる場合がございます。<br>
+                                ◯台風直撃や天変地異により開催が困難だと判断した時<br>
+                                ◯台風や天変地異に近い状態が起き、開催が困難だと判断した時<br>
+                                ◯施設が利用休止、又は利用することが困難な時<br>
+                                ◯海が大荒れの場合や河川の増水で施設側が危険と判断した時
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt>器材の破損ポリシー</dt>
+                            <dd>器材の破損、使用不可の状態になった場合は、仕入れ価格相当を実費にてお支払いいただきます。
+                        </dl>
                     </div>
+
+                    <a href="/venue_order.php" class="link_btn reserve"><span>同意して予約する</span></a>
+
                 </div>
             </div>
+
             <section id="shop" class="cont">
 
                 <div class="inr">
@@ -658,7 +715,6 @@
                     </table>
 
                     <a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
-
                 </div>
 
                 <!--
@@ -850,7 +906,7 @@
             <a href="javascript:void(0)" class="more_btn">口コミをもっと見る</a>
             -->
 
-                <a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
+                <a href="javascript:void(0);" class="link_btn reserve modal" data-name=".terms"><span>予約する</span></a>
 
 
                 <div class="kuchikomi_btn">
