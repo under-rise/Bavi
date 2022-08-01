@@ -18,7 +18,7 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?9.3">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?9.4">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.9">
 
 
@@ -142,6 +142,7 @@
 
             <section id="venue" class="cont">
                 <h2 class="tit"><span class="kinki">近畿</span>しい茸ランドかさや</h2>
+
                 <section>
                     <div class="double_slick">
                         <div class="colona_icon"><img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" /></div>
@@ -193,6 +194,13 @@
                     </p>
 
                     <!-- <a href="javascript:void(0);" class="link_btn reserve modal" data-name=".terms"><span>予約する</span></a> -->
+
+                    <div class="recommend_btn">
+                        <a href="https://bavi.jp/lp/uhutahama/" target="_blank">
+                            <span>特集ページ開設中</span>
+                            <p>会場の詳細な写真や情報を掲載中！</p>
+                        </a>
+                    </div>
 
                     <a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
 

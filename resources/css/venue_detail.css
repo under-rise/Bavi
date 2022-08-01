@@ -1322,3 +1322,40 @@ input[type="radio"]:checked:after {
 	margin-top: 20px;
 	color: #fff;
 }
+
+.recommend_btn {}
+
+.recommend_btn a {
+	font-weight: bold;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	background: #1dc3e1;
+	padding: 10px 0;
+	margin: 20px 0;
+	border-radius: 5px;
+	border-bottom: 3px solid #0fa1bb;
+}
+
+.recommend_btn a span {
+	padding-left: 20px;
+	position: relative;
+}
+
+.recommend_btn a p {
+	text-align: center;
+	font-size: 11px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+
+.recommend_btn a span:before {
+	content: "";
+	position: absolute;
+	left: -15px;
+	top: -4px;
+	background: url('../../assets/img/icon_info.gif') left center;
+	background-size: contain;
+	width: 28px;
+	height: 28px;
+}

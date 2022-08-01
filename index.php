@@ -35,7 +35,7 @@
         $('.slick').slick({
             autoplay: true,
             autoplaySpeed: 5000,
-            speed: 800,
+            speed: 200,
             infinite: true,
             fade: false,
             arrows: true,
@@ -44,13 +44,13 @@
             slidesToShow: 2,
             slidesToScroll: 1,
             cssEase: 'linear',
-            swipe: false,
+            swipe: true,
         });
 
         $('.slider').slick({
             autoplay: true,
             autoplaySpeed: 5000,
-            speed: 800,
+            speed: 200,
             infinite: true,
             fade: false,
             arrows: true,
@@ -90,6 +90,10 @@
 
                 <div class="inr clearfix">
                     <ul class="slider">
+
+                        <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img
+                                    src="assets/img/top/recommended_spot_001.jpg"></a>
+                        </li>
 
                         <li><a href="https://bavi.jp/spot/detail/1519"><img
                                     src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
