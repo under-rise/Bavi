@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calender.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <script>
+      $(function () {
+        const cal_item = ".calender__sec_item";
+        const cal_sec = ".calender__sec";
+        const week = ["日", "月", "火", "水", "木", "金", "土"];
+        const url = "./data/calender.json";
+        const state_html = ['<div class="icon type01">-</div>', '<div class="icon type02">◯</div>', '<div class="icon type03">△</div>', '<div class="icon type04">×</div>'];
+        let state_data;
+        //表示する月
+        const calenderArray = [
+          { time: 0, activeClass: "current" },
+          { time: 1, activeClass: "next" },
+          { time: 2, activeClass: "next" },
+        ];
+        let currentNum = 1; //現在のカレンダー
+        let itemNum;
+
+        //ーーーーーーーーーーーーーーーーーーーーーーーーーー
+        // json取得
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((json) => {
+            state_data = json;
+          })
+          .then(() => {
+            setCal(calenderArray);
+            sliderAwake();
+            init();
+          })
+          .catch((e) => {
+            console.log(e);
+            alert(e + "情報取得に失敗しました。");
+          });
+
+        //ーーーーーーーーーーーーーーーーーーーーーーーーーー
+        // カレンダー作成
+        const today = new Date();
+        const nextMonth = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+        const next2Month = new Date(today.getFullYear(), today.getMonth() + 2, 1);
+
+        //ーーーーーーーーーーーーーーーーーーーーーーーーーー
+        // カレンダー表示
+        function setCal(date) {
+          let calendar = "";
+          for (let i of date) {
+            let date = new Date(today.getFullYear(), today.getMonth() + i.time, 1);
+            let year = date.getFullYear();
+            let month = date.getMonth();
+            calendar += makeCalender(year, month, i.activeClass);
+          }
+          $(cal_sec).prepend(calendar);
+        }
+
+        function makeCalender(year, month, activeClass) {
+          let count = 0;
+          let startDayOfWeek = new Date(year, month, 1).getDay();
+          let endDate = new Date(year, month + 1, 0).getDate();
+          let lastMonthEndDate = new Date(year, month, 0).getDate();
+          let row = Math.ceil((startDayOfWeek + endDate) / week.length);
+
+          let calendar = `<div class="calender__sec_item ${activeClass}">`;
+          calendar += `<div class="year_month">${year}年${month + 1}月</div>`;
+
+          calendar += "<table class='table'><tr>";
+          for (var i = 0; i < week.length; i++) {
+            calendar += "<th>" + week[i] + "</th>";
+          }
+          calendar += "</tr>";
+
+          calendar += '<table class="table"><tr>';
+
+          // 1行ずつ設定
+          for (var i = 0; i < row; i++) {
+            calendar += "<tr>";
+            // 1colum単位で設定
+            for (var j = 0; j < week.length; j++) {
+              if (i == 0 && j < startDayOfWeek) {
+                // 1行目で1日まで先月の日付を設定
+                calendar += "<td class='disabled'>" + setState(year, month, count) + "<p>" + (lastMonthEndDate - startDayOfWeek + j + 1) + "</p></td>";
+              } else if (count >= endDate) {
+                // 最終行で最終日以降、翌月の日付を設定
+                count++;
+                calendar += "<td class='disabled'>" + setState(year, month, count) + "<p>" + (count - endDate) + "</p></td>";
+              } else {
+                // 当月の日付を曜日に照らし合わせて設定
+                count++;
+                if (year == today.getFullYear() && month == today.getMonth() && count == today.getDate()) {
+                  calendar += "<td class='today'>" + setState(year, month, count) + "<p>" + count + "</p></td>";
+                } else {
+                  calendar += "<td>" + setState(year, month, count) + "<p>" + count + "</p></td>";
+                }
+              }
+            }
+            calendar += "</tr>";
+          }
+
+          calendar += "</table></div>";
+
+          return calendar;
+        }
+
+        // state表示
+        function setState(year, month, count) {
+          // 日付取得
+          let d = `${year}-${month + 1}-${count}`;
+          if (count == 0 || state_data[d] == undefined) {
+            return state_html[0];
+          }
+          switch (state_data[d].state) {
+            case 0:
+              return state_html[0];
+              break;
+            case 1:
+              return state_html[1];
+              break;
+            case 2:
+              return state_html[2];
+              break;
+            case 3:
+              return state_html[3];
+              break;
+            default:
+              return state_html[0];
+          }
+        }
+
+        // カレンダーの大きさ
+        function sliderAwake() {
+          itemNum = $(cal_item).length; //カレンダーの数
+          let h = 0;
+          $(cal_item).each(function () {
+            h = h < $(this).innerHeight() ? $(this).innerHeight() : h;
+          });
+          // ボタンの大きさ
+          let btn_h = $(".slider__arrow").innerHeight();
+          $(cal_sec).css({ height: h + btn_h + 10 + "px" });
+        }
+
+        // 前の月
+        $(".slider__arrow.is-prev").on("click", function () {
+          if (currentNum <= 1) {
+            currentNum = currentNum;
+          } else {
+            currentNum = currentNum - 1;
+          }
+          sliderAction();
+        });
+
+        $(".slider__arrow.is-next").on("click", function () {
+          if (currentNum >= itemNum) {
+            currentNum = itemNum;
+          } else {
+            currentNum = currentNum + 1;
+          }
+          sliderAction();
+        });
+
+        // slick
+        function sliderAction() {
+          $(".calender__sec_item").removeClass(["current", "prev", "next"]);
+          //   $(`.calender__sec_item:nth-child(${currentNum})`).addClass("current");
+          $(".calender__sec_item").each(function (e) {
+            console.log($(this).index());
+            if ($(this).index() + 1 == currentNum) {
+              $(this).addClass("current");
+            } else if ($(this).index() + 1 > currentNum) {
+              $(this).addClass("next");
+            } else {
+              $(this).addClass("prev");
+            }
+          });
+          init();
+        }
+
+        function init() {
+          if (currentNum >= itemNum) {
+            $(".slider__arrow.is-next").addClass("disable");
+          } else {
+            $(".slider__arrow.is-next").removeClass("disable");
+          }
+
+          if (currentNum <= 1) {
+            $(".slider__arrow.is-prev").addClass("disable");
+          } else {
+            $(".slider__arrow.is-prev").removeClass("disable");
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="calender">
+      <div class="info">
+        <dl>
+          <dt class="type01">-</dt>
+          <dd>受付対象外</dd>
+        </dl>
+        <dl>
+          <dt class="type02">◯</dt>
+          <dd>空きあり</dd>
+        </dl>
+        <dl>
+          <dt class="type03">△</dt>
+          <dd>残りわずか</dd>
+        </dl>
+        <dl>
+          <dt class="type04">×</dt>
+          <dd>満員</dd>
+        </dl>
+      </div>
+
+      <div class="calender__sec">
+        <div class="slider__arrow is-prev">前の月</div>
+        <div class="slider__arrow is-next">次の月</div>
+      </div>
+      <!-- calender__sec -->
+    </div>
+    <!-- calender -->
+  </body>
+</html>

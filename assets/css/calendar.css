@@ -1,0 +1,267 @@
+#calendar_sec {
+  background: url(../img/bg_blue.jpg);
+  background-size: 40px;
+}
+
+.calendar table th,
+.calendar table td {
+  border: 1px solid #999;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.calendar .cal_info {
+  display: flex;
+  border: 2px solid #ddd;
+  padding: 6px 0;
+  border-radius: 3px;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 5px;
+}
+
+
+.calendar .cal_info dl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calendar .cal_info dl dt {
+  text-indent: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.calendar .cal_info dl dt img {
+  width: 20px !important;
+  margin: 0 auto !important;
+  padding: 0;
+}
+
+.calendar .cal_info dl dd {
+  font-size: 13px;
+}
+
+.calendar .year_month {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.calendar table.table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse !important;
+  text-align: center;
+  display: table !important;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.calendar .table th {
+  padding: 2px;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.calendar .table th:first-child {
+  background-color: rgb(230, 17, 17);
+  color: #fff;
+}
+
+.calendar .table th:last-child {
+  background-color: rgb(5, 97, 202);
+  color: #fff;
+}
+
+.calendar .table td {
+  padding: 20px 5px 10px 5px !important;
+  box-sizing: border-box;
+}
+
+.calendar .table td p {
+  font-size: 12px;
+  text-align: right;
+  padding-bottom: 0;
+  margin: 0;
+  display: block;
+}
+
+.calendar .table th,
+.calendar .table td {
+  border: none;
+  vertical-align: middle;
+  text-align: center !important;
+  border: 1px solid #555 !important;
+  padding-bottom: 5px !important;
+  display: table-cell !important;
+  box-sizing: border-box;
+}
+
+.calendar .table th {
+  padding: 5px 0 !important;
+}
+
+.calendar .table td.today {
+  background-color: rgb(254, 240, 243);
+}
+
+.calendar .table td.disabled {
+  color: #999;
+  display: block;
+}
+
+.calendar__sec {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.calendar__sec_item {
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.calendar__sec_item.current {
+  left: 0;
+  top: 0;
+}
+
+.calendar__sec_item.next {
+  left: 101%;
+  right: auto;
+}
+
+.calendar__sec_item.prev {
+  left: -101%;
+  right: auto;
+}
+
+.calendar .slider__arrow {
+  display: block;
+  width: 48%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: rgb(215, 0, 104);
+  border-radius: 5px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.calendar .slider__arrow.is-prev {
+  left: 0;
+}
+
+.calendar .slider__arrow.is-next {
+  right: 0;
+}
+
+.calendar .slider__arrow.disable {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+
+.calendar .table td:last-child p {
+  color: #444;
+}
+
+.calendar td .state {
+  display: inline-block;
+}
+
+.calendar .state img {
+  width: 30px !important;
+  display: inline-block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.calendar_modal ._inr {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width:680px) {
+
+  #calendar_sec {
+    padding-right: 2%;
+    padding-left: 2%;
+    box-sizing: border-box;
+  }
+
+  .calendar table.table {
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .calendar .year_month {
+    font-size: 16px;
+  }
+
+
+  .calendar .table td,
+  .calendar .table td:first-child {
+    display: table-cell !important;
+    flex-grow: 1;
+    padding: 10px 5px 5px 5px !important;
+    width: auto !important;
+  }
+
+  .calendar .table td p {
+    font-size: 10px;
+  }
+
+  .calendar .cal_info dl {
+    display: flex;
+    flex-flow: column;
+    gap: 0;
+  }
+
+  .calendar .cal_info dl dt {}
+
+  .calendar .cal_info dl dt img {
+    width: 15px !important;
+  }
+
+  .calendar .cal_info dl dd {
+    font-size: 11px;
+  }
+
+  .calendar td .state {
+    width: 20px;
+  }
+
+  .calendar table.table th,
+  .calendar table.table td {
+    border: 1px solid #999 !important;
+    border-spacing: 0;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+  .calendar table.table {
+    table-layout: fixed;
+  }
+}

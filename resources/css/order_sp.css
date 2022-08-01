@@ -80,11 +80,8 @@
 		background: #fff;
 	}
 
-	#order dl dd label.calendar input[type="date"] {
+	#order dl dd label.calendar_input input[type="text"] {
 		font-size: 13px;
-		background: url("../images/calendar.svg") no-repeat 98% center;
-		background-size: 20px;
-		height: 40px;
 	}
 
 

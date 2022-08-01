@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/*************************/
+/* 追加 */
+/*************************/
+body#spot {
+  background-image: none;
+  background-color: white; }
+
+#management_page {
+  font-size: 13px; }
+
+/*search_sec*/
+#search_sec {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px; }
+
+.sort_btn {
+  cursor: pointer; }
+
+#search_sec h2 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 10px 0; }
+
+#search_sec th {
+  width: 10%; }
+
+/*member_sec*/
+#member_sec .table_style {
+  border-bottom: 1px solid #999; }
+
+#member_sec .main_info td {
+  border-bottom: none;
+  position: relative; }
+
+#member_sec .main_info td {
+  border-top: 1px solid #266698; }
+
+#member_sec .user_contact > td {
+  border-bottom: none;
+  border-top: 1px dashed #999; }
+
+.btn_sec {
+  padding: 10px 0; }
+
+.btn_sec button.btn_type02 {
+  background: #ccc;
+  width: 200px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 5px; }
+
+.btn_sec button.btn_type02.detail {
+  background: #266698; }
+
+.btn_sec button.btn_type02.delete {
+  background: #ad0202; }
+
+.alert {
+  font-weight: bold;
+  color: red; }
+
+/*guest_sec*/
+.guest_sec {
+  width: 100%; }
+
+.guest_sec .table_style th {
+  width: 10%; }
+
+.guest_sec .table_style td {
+  text-align: left; }
+
+.flex {
+  display: flex;
+  justify-content: center; }
+
+.flex > div {
+  margin: 0 10px; }
+
+.ttl h1 {
+  font-size: 18px;
+  color: #fff;
+  background: #266698;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin-bottom: 10px; }
+
+.ttl {
+  background-color: transparent;
+  position: relative;
+  display: block !important;
+  margin: 0;
+  padding: 0; }
+
+.back_btn {
+  display: flex;
+  padding-top: 10px;
+  justify-content: end; }
+  .back_btn a {
+    padding: 5px 40px;
+    background-color: #cf2e57;
+    color: #fff;
+    font-weight: bold; }
+
+.message_btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0; }
+  .message_btn .message_list_btn {
+    width: 80%;
+    padding: 3px 0;
+    max-width: 400px;
+    background-color: #58a34c;
+    border-bottom: 3px solid #2a5623;
+    font-weight: bold; }
+    .message_btn .message_list_btn:hover {
+      color: #fff; }
+
+.page_ttl {
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 0; }
+
+h2.sub_ttl {
+  font-size: 16px;
+  border-bottom: 1px solid #266698;
+  color: #266698;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin-bottom: 20px; }
+
+.contents {
+  padding-left: 290px;
+  padding-bottom: 200px;
+  padding-top: 0;
+  margin-top: 0;
+  max-width: 1600px; }
+
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none; }
+
+.sec {
+  padding: 10px 0;
+  margin: 20px 0; }
+
+.icon {
+  display: block;
+  padding: 2px;
+  color: #fff; }
+
+.icon.decision {
+  background: #e4348f; }
+
+.icon.negotiation {
+  background: #58a34c; }
+
+.icon.cancel {
+  background: #32658f; }
+
+.icon.dengon {
+  animation: flash 1.5s linear infinite;
+  background: #ee0404;
+  font-size: 10px;
+  white-space: nowrap;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  padding: 0 3px;
+  border-radius: 3px;
+  color: yellow; }
+
+@keyframes flash {
+  20%,
+  80% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+.table_style {
+  width: 100%;
+  table-layout: fixed; }
+
+.table_style th,
+.table_style td {
+  border: 1px solid #999;
+  text-align: center;
+  padding: 10px 10px; }
+
+.table_style th {
+  background: #fafafa;
+  font-weight: bold; }
+
+.table_style a {
+  text-decoration: underline; }
+
+.btn_type {
+  background: #266698;
+  color: #fff;
+  width: 100%;
+  padding: 2px;
+  border-radius: 3px;
+  border-bottom: 2px solid #163962; }
+
+.btn_type.mail {
+  background: #ec7411;
+  border-bottom: 2px solid #b4560a; }
+
+.btn_type.back {
+  display: block;
+  background: #f1f1f1;
+  border-bottom: 2px solid #555;
+  width: 300px;
+  margin: 0 auto;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px 4px; }
+
+.table_style .w5 {
+  width: 5%; }
+
+.table_style .w10 {
+  width: 10%; }
+
+.table_style .w20 {
+  width: 20%; }
+
+.table_style .w30 {
+  width: 30%; }
+
+.table_style .w40 {
+  width: 40%; }
+
+.table_style .w50 {
+  width: 50%; }
+
+.table_style .w60 {
+  width: 60%; }
+
+.table_style .w70 {
+  width: 70%; }
+
+.table_style .w80 {
+  width: 80%; }
+
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea {
+  background: #f7fafd;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+  appearance: none;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 12px; }
+
+.form select {
+  padding: 3px;
+  background: #f7fafd;
+  border: 1px solid #999;
+  width: 100%;
+  border-radius: 3px;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  appearance: menulist; }
+
+.form input[type="submit"] {
+  background: #266698;
+  border-bottom: 2px solid #163962;
+  padding: 5px 10px;
+  margin: 10px auto;
+  width: 300px;
+  color: #fff;
+  border-radius: 5px;
+  display: block; }
+
+.form input[type="radio"] + label {
+  font-weight: normal;
+  vertical-align: middle;
+  padding-left: 2px; }
+
+.pager_style ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.pager_style ul li a {
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #000;
+  display: block;
+  border: 1px solid #999;
+  margin: 0 5px; }
+
+.pager_style ul li a.current {
+  background: #266698;
+  color: #fff;
+  pointer-events: none; }
+
+.pager_style ul li a:hover {
+  background: #266698;
+  color: #fff; }
+
+@media screen and (max-width: 1000px) {
+  .contents {
+    padding-left: 28%; } }
+@media screen and (max-width: 640px) {
+  header #logo_sec {
+    display: flex;
+    align-items: flex-end;
+    width: 100%; }
+    header #logo_sec #logo {
+      width: 35vw; }
+    header #logo_sec h1 {
+      font-size: 2.8vw;
+      padding-left: 10px; }
+
+  .contents {
+    width: 100%;
+    padding-left: 0; } }

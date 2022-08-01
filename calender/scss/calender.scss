@@ -1,0 +1,132 @@
+.calender {
+  width: 60%;
+  margin: 0 auto;
+  .info {
+    display: flex;
+    border: 2px solid #ddd;
+    padding: 5px 0;
+    border-radius: 3px;
+    justify-content: space-around;
+    text-align: center;
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      font-size: 11px;
+    }
+  }
+  .year_month {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  .table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    th {
+      padding: 2px;
+      background-color: #444;
+      color: #fff;
+      &:first-child {
+        background-color: rgb(230, 17, 17);
+        color: #fff;
+      }
+      &:last-child {
+        background-color: rgb(5, 97, 202);
+        color: #fff;
+      }
+    }
+    td {
+      padding: 20px 5px 5px 5px;
+      p {
+        font-weight: bold;
+        font-size: 10px;
+        text-align: right;
+      }
+    }
+    th,
+    td {
+      border: 1px solid #666;
+    }
+    td.today {
+      background-color: rgb(254, 240, 243);
+    }
+    td.disabled {
+      color: #999;
+    }
+  }
+  // calender_sec
+  &__sec {
+    position: relative;
+    width: 100%;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    overflow: hidden;
+    &_item {
+      cursor: pointer;
+      width: 100%;
+      position: absolute;
+      transition: all 0.2s ease-in-out 0.1s;
+      &.current {
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+      &.next {
+        left: 101%;
+        right: auto;
+      }
+      &.prev {
+        left: -101%;
+        right: auto;
+      }
+    }
+  }
+
+  .slider__arrow {
+    display: block;
+    width: 48%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgb(215, 0, 104);
+    border-radius: 5px;
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    &.is-prev {
+      left: 0;
+    }
+    &.is-next {
+      right: 0;
+    }
+    &.disable {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+  }
+}
+
+.calender {
+  .icon {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .type01 {
+    color: #aaa;
+  }
+  .type02 {
+    color: rgb(215, 0, 104);
+  }
+  .type03 {
+    color: rgb(64, 171, 112);
+  }
+  .type04 {
+    color: #000;
+  }
+}

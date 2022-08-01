@@ -36,6 +36,7 @@
     </style>
 
     <link rel="stylesheet" href="resources/css/iziModal.min.css">
+    <link rel="stylesheet" href="assets/css/calendar.css?1.5">
     <script src="resources/js/iziModal.min.js" type="text/javascript"></script>
 
 
@@ -788,6 +789,27 @@
             </div>
         </div>
         -->
+
+            <section id="calendar_sec" class="cont">
+
+                <div class="inr">
+                    <h2>予約状況</h2>
+
+                    <div class="calendar">
+
+                        <div class="calendar__sec">
+                            <div class="slider__arrow is-prev">前の月</div>
+                            <div class="slider__arrow is-next">次の月</div>
+                        </div>
+                        <!-- calendar -->
+
+                    </div>
+                    <!-- calendar -->
+                </div>
+            </section>
+            <!--  calendar_sec -->
+
+
             <section id="coupon" class="cont coupon_sec">
                 <h2>クーポン</h2>
                 <div class="inr">
@@ -923,6 +945,8 @@
 
         <?php include __DIR__ . '/tpl/footer.php'; ?>
 
+
+
         <script>
         $(function() {
             $('#like_btn').click(function() {
@@ -947,6 +971,28 @@
                 loop: true
             });
             $('.modal_close').iziModal('close');
+        });
+        </script>
+
+
+        <!-- calendar js 追加部分 -->
+        <script src="assets/js/calendar.js?2.1"></script>
+        <script>
+        //会場ID 
+        const SHOP_ID = "1234";
+        // json URL
+        const url = "assets/data/calendar.json?1.2";
+        //表示する月の数
+        const calendarLength = 3;
+        // アイコン設定
+        const state_html = [
+            '<div class="state"><img src="/assets/img/calendar/icon01.png"></div>',
+            '<div class="state"><img src="/assets/img/calendar/icon02.png"></div>',
+            '<div class="state"><img src="/assets/img/calendar/icon03.png"></div>',
+            '<div class="state"><img src="/assets/img/calendar/icon04.png"></div>',
+        ];
+        $(function() {
+            reserveCalendar.getJsonData(url);
         });
         </script>
 

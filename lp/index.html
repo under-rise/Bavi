@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>うふた浜BBQ場 総合マリンレジャーBLUEBOX | Bavi</title>
+    <link rel="stylesheet" href="./css/sanitize.css" />
+    <link rel="stylesheet" href="./css/lp.css?1.3" />
+    <link rel="stylesheet" href="./css/calender.css" />
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <div class="inr">
+          <div class="logo_sec">
+            <p><img src="./images/lp_osusume.jpg" /></p>
+            <h1><img src="./images/logo.jpg" /></h1>
+          </div>
+          <dl class="address_sec">
+            <dt>沖縄県国頭郡本部町字渡久地861-1 うふた浜</dt>
+            <dd class="tel">TEL: 0980-43-7922</dd>
+            <dd><a href="http://bavi.jp/spot/detail/1290/order" target="_blank" class="btn">予約する</a></dd>
+          </dl>
+        </div>
+      </header>
+
+      <div id="contents">
+        <div class="main">
+          <section class="sec01">
+            <div class="inr">
+              <div class="swiper">
+                <!-- 必要に応じたwrapper -->
+                <div class="swiper-wrapper">
+                  <!-- スライド -->
+                  <div class="swiper-slide"><img src="./images/slider006.jpg" /></div>
+                  <div class="swiper-slide"><img src="./images/slider003.jpg" /></div>
+                  <div class="swiper-slide"><img src="./images/slider001.jpg" /></div>
+                  <div class="swiper-slide"><img src="./images/slider002.jpg" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- 必要に応じてナビボタン -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <div class="comment">
+                <h2>ビーチサイドBBQ！手間な準備や片付け一切不要なので手ぶらでOK！飲み物持込み自由！</h2>
+              </div>
+            </div>
+          </section>
+          <!-- sec01 -->
+
+          <section class="sec02 sec">
+            <div class="inr">
+              <h2 class="ttl">お知らせ</h2>
+              <template v-if="_newsData.length > 0">
+                <dl v-for="(i,index) in _newsData" :key="index">
+                  <dt>{{ i.day }}</dt>
+                  <dd><a v-on:click.prepend="openModal(index)">{{ i.title }}</a></dd>
+                </dl>
+              </template>
+            </div>
+          </section>
+        </div>
+        <!-- sec02 -->
+
+        <section class="sec03 sec">
+          <div class="inr">
+            <h2 class="ttl">紹介動画</h2>
+            <ul>
+              <li>
+                <div class="movie">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/3F3QljYLwHo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- sec03 -->
+
+        <section class="sec04 sec">
+          <div class="inr">
+            <h2 class="ttl">うふた浜の特徴</h2>
+            <ul>
+              <li>
+                <img src="./images/sec04_img01.jpg" alt="" srcset="" />
+              </li>
+              <li>
+                <img src="./images/sec04_img02.jpg" alt="" srcset="" />
+              </li>
+              <li>
+                <img src="./images/sec04_img03.jpg" alt="" srcset="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- sec04 -->
+
+        <section class="sec05 sec">
+          <div class="inr">
+            <h2 class="ttl">ギャラリー</h2>
+            <ul>
+              <li v-for="(item,index) in _gallerydata" :key="item.img" @click="galleryModal(index)">
+                <img :src="item.img" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- sec05 -->
+
+        <section class="sec06 sec">
+          <div class="inr">
+            <h2 class="ttl">施設概要</h2>
+
+            <table class="table">
+              <tr>
+                <th>住所</th>
+                <td>沖縄県国頭郡本部町字渡久地861-1 うふた浜</td>
+              </tr>
+              <tr>
+                <th>主な施設</th>
+                <td>「幸せの鐘」「ヤシの木」「インスタ映えスポット」</td>
+              </tr>
+              <tr>
+                <th>禁止事項</th>
+                <td>他のお客様への迷惑行為</td>
+              </tr>
+              <tr>
+                <th>ペット</th>
+                <td>ペット可 (予約の際にお申し付け下さい。)、<br />BBQプランは11時</td>
+              </tr>
+              <tr>
+                <th>平均料金</th>
+                <td>1名7,000円〜10,000円程度</td>
+              </tr>
+              <tr>
+                <th>ご利用時間</th>
+                <td>11:00〜21:00</td>
+              </tr>
+              <tr>
+                <th>予約</th>
+                <td>要予約</td>
+              </tr>
+              <tr>
+                <th>駐車場</th>
+                <td colspan="2">駐車場あり:20台 無料</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <!-- sec06 -->
+
+        <section class="sec07 sec">
+          <div class="inr">
+            <h2 class="ttl">サービスについて</h2>
+            <div class="box">
+              <ul>
+                <li>■季節、入荷に合わせて多少変化いたします。</li>
+                <li>■施設利用料込</li>
+                <li>■焼台一式込</li>
+                <li>■備品一式込（お皿、箸、タレ、調味料、おしぼり、ゴミ処理費）</li>
+                <li>■インストラクターアシスト料金込</li>
+              </ul>
+              <p class="c">時間厳守にて、宜しくお願いいたします。<br />時間延長は、可能ですが、お一人別途延長料金を頂いております。</p>
+            </div>
+
+            <ul>
+              <li>
+                <div>
+                  <figure><img src="./images/menu001.jpg" alt="" srcset="" /><p style="margin-top: 4px; font-size: 9px;">※商品写真はイメージです。</p></figure>
+                  <div class="info">
+                    <h3>満腹プラン</h3>
+                    <p>
+                      大好評のビーチサイドバーベキュー！ 牛、豚、鶏、島野菜を堪能出来るボリューム満点な盛り合わせ。手間な準備や片付け不要なので、手ぶらでOK！北部観光ついでにBBQと最高のロケーションが楽しめます。又、ドリンク持ち込み無料となっておりますので、お好きなドリンクをお持ち下さい。
+                    </p>
+                    <dl>
+                      <dt>＜料理内容＞</dt>
+                      <dd>鶏・モモ・セセリ・手羽先・豚・カルビ・ロース・トントロ・タン・牛・味付カルビ・ロース・中落カルビ・ソーセージ・ウィンナー</br>
+                        約650g</br>
+                        島野菜</dd>
+                    </dl>
+                    <div class="price">¥4,950円<span>（税込）</span></div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <figure><img src="./images/menu002.jpg" alt="" srcset="" /><p style="margin-top: 4px; font-size: 9px;">※商品写真はイメージです。</p></figure>
+                  <div class="info">
+                    <h3>今月限定目玉BBQプラン</h3>
+                    <p>沖縄ならではの地産食材を集めたBBQプラン。『伊江牛/石垣牛』『あぐー豚』『やんばる地鶏』の贅沢な盛り合わせを、今月限定でお得にご用意しました。手間な準備や片付け不要なので、手ぶらでOK！北部観光ついでにBBQと最高のロケーションが楽しめます。 又、ドリンク持ち込み無料となっておりますので、お好きなドリンクをお持ち下さい。</p>
+                    
+                    <dl>
+                      <dt>＜料理内容＞</dt>
+                      <dd>やんばる地鶏・モモ・セセリ・ハラミ・手羽先・あぐー豚・カルビ・ロース・トントロ・タン・伊江牛/石垣牛・味付カルビ・ロース・中落カルビ・カルビ・ソーセージ・ウィンナー・沖縄そば麺<br>
+                        約500g<br>
+                        島野菜</dd>
+                    </dl>
+
+                    <div class="price">¥7,500円<span>（税込）</span></div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <figure><img src="./images/menu003.jpg" alt="" srcset="" /><p style="margin-top: 4px; font-size: 9px;">※商品写真はイメージです。</p></figure>
+                  <div class="info">
+                    <h3>やんばる満腹プラン</h3>
+                    <p>沖縄の厳選された地産地消の食材をふんだんに使用したプラン。 やんばる島黒豚あぐー、やんばる地鶏、伊江牛、石垣牛、島野菜のフルコース 手間な準備や片付け不要なので、手ぶらでOK！北部観光ついでにBBQと最高のロケーションが楽しめます。 又、ドリンク持ち込み無料となっておりますので、お好きなドリンクをお持ち下さい。</p>
+                    <dl>
+                      <dt>＜料理内容＞</dt>
+                      <dd>山原地鶏 モモ・山原地鶏 ハラミ・山原地鶏 ササミ・山原地鶏 セセリ・山原地鶏 砂ズリ・山原地鶏 レバ・山原地鶏 ボンジリ・山原地鶏 手羽先・ソーセージ・ウィンナー・沖縄そば麺（本部町産）<br>
+                        約450g<br>
+                        島野菜</dd>
+                    </dl>
+
+                    <div class="price">¥16,500円<span>（税込）</span></div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <figure><img src="./images/menu004.jpg" alt="" srcset="" /><p style="margin-top: 4px; font-size: 9px;">※商品写真はイメージです。</p></figure>
+                  <div class="info">
+                    <h3>海鮮・車海老プラン</h3>
+                    <p>沖縄の厳選食材を使用したBBQプラン。 沖縄県宜野座村で育った生産日本一の「車海老」をふんだんに使用したプランです！ 手間な準備や片付け不要なので、手ぶらでOK！北部観光ついでにBBQと最高のロケーションが楽しめます。 又、ドリンク持ち込み無料となっておりますので、お好きなドリンクをお持ち下さい。</p>
+                    <dl>
+                      <dt>＜料理内容＞</dt>
+                      <dd>車海老 4～7本 (サイズにより異なります)・近海魚 1匹 (20～30㎝)・日替わり肉 100～200g(内容は仕入れ状況により異なります)・ソーセージ・ウィンナー・沖縄そば麺（本部町産）・島野菜<br>
+                        などの日替わり内容になります。</dd>
+                    </dl>
+                    <div class="price">¥13,200円<span>（税込）</span></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <a class="btn" href="http://bavi.jp/spot/detail/1290/order" target="_blank">予約する</a>
+          </div>
+        </section>
+        <!-- sec05 -->
+
+        <section class="sec08 sec">
+          <div class="inr">
+            <h2 class="ttl">予約状況</h2>
+            <p class="c">ご予約可能なアイコンをタップして<br />ご予約ページへお進み頂けます。</p>
+            <div class="calendar">
+              <div class="calendar__sec">
+                <div class="slider__arrow is-prev">前の月</div>
+                <div class="slider__arrow is-next">次の月</div>
+              </div>
+              <!-- calendar__sec -->
+            </div>
+            <!-- calendar -->
+          </div>
+        </section>
+        <!-- sec08 -->
+
+        <section class="sec09 sec">
+          <div class="inr">
+            <h2 class="ttl">ご予約方法</h2>
+
+            <ul>
+              <!-- <li>
+                <figure>
+                  <img src="./images/icon_tel.jpg" alt="" srcset="" />
+                  <p>電話予約</p>
+                </figure>
+                <div class="info">
+                  <div><a href="tel:0980-43-7922" class="tel">TEL: 0980-43-7922</a></div>
+                  <p>直接店舗にお電話にてご予約をお願い致します。</p>
+                </div>
+              </li> -->
+
+              <li>
+                <figure>
+                  <img src="./images/icon_form.jpg" alt="" srcset="" />
+                  <p>フォーム予約</p>
+                </figure>
+                <div class="info">
+                  <div><a href="http://bavi.jp/spot/detail/1290/order" class="form" target="_blank">予約フォーム</a></div>
+                  <p>当ご予約ボタンよりお進みください。</p>
+                </div>
+              </li>
+
+              <li>
+                <figure>
+                  <img src="./images/icon_line.jpg" alt="" srcset="" />
+                  <p>公式LINE</p>
+                </figure>
+                <div class="info">
+                  <div><a href="https://line.me/ti/p/%40637eulru" target="_blank" class="line">公式LINE</a></div>
+                  <p>友達追加いただき、ご相談からご予約まで対応させていただきます。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- sec09 -->
+
+        <section class="sec10 sec">
+          <div class="inr">
+            <h2 class="ttl">利用の流れ</h2>
+            <ul>
+              <li>
+                <h3><span>1</span>ご予約依頼、又は予約相談</h3>
+                <p><a href="http://bavi.jp/spot/detail/1290/order">WEBフォーム</a>、または<a href="tel:0980-43-7922">お電話</a>にて無料見積りをご依頼ください。</p>
+              </li>
+
+              <li>
+                <h3><span>2</span>予約確定</h3>
+                <p><a href="http://bavi.jp/spot/detail/1290/order">WEBフォーム</a>よりご予約いただき、当社からのご連絡、ご返信を持ってご予約確定となります。こちらから返信がない婆にはお受付できておりません。</p>
+              </li>
+
+              <li>
+                <h3><span>3</span>プラン変更や人数変更</h3>
+                <p>ご利用3日前までに変更や人数変更、キャンセルなどはご連絡お願いいたします。</p>
+              </li>
+
+              <li>
+                <h3><span>4</span>サービスご利用</h3>
+                <p>うふた浜に到著しましたら、<a href="tel:0980-43-7922">0980-43-7922</a>にお電話ください。場所がわからない場合や遅れる場合などもこちらにお掛けください。</p>
+              </li>
+
+              <li>
+                <h3><span>5</span>ご精算</h3>
+                <p>ご利用開始前、又は開始後にご精算いただきます。</p>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+        <!-- sec10 -->
+
+        <section class="sec11 sec">
+          <div class="inr">
+            <h2 class="ttl">よくある質問</h2>
+
+            <dl>
+              <dt><span>Q</span>こちらから予約と本サイトからのご予約は何が違いますか？</dt>
+              <dd>プラン内容、料金共に同じです。わかりやすい方でご予約ください。こちらでご予約ですとチェックがダブルとなりますので、間違いが少ないです。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>利用時間は何時から何時までですか？</dt>
+              <dd>12:00〜21:00までの間の3時間となります。夕方からの夜にかけての時間帯が人気の時間となっております。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>近くに買い出しできるところはありますか？</dt>
+              <dd>車で5分のところにコンビニ（ローソン）があります。ドリンクは概ね揃います。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>プラン料金の他に別途かかりますか？</dt>
+              <dd>プラン料金以外は別途かかりません。夜の場合の証明、食材の追加など当日に追加ご依頼がある場合には可能性があります。都度料金説明の上ご案内いたします。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>何名から利用できますか？</dt>
+              <dd>2名様〜承っております。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>海に入ることはできますか？</dt>
+              <dd>はい、可能です。日中は監視員がついておりますので、安全に楽しむ場合には問題ありません。夜の時間帯や飲酒中は絶対にご遠慮いただきます。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>ドリンクの注文は可能ですか？</dt>
+              <dd>現状、ドリンクの注文はできません。ご詩人でお持ち込みください。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>近くのスポットは何がありますか？</dt>
+              <dd>車で10〜15分圏内のところに「美ら海水族館」「福木並木」など観光客が必ずいくスポットがございます。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>他のアクティビティは対応可能でしょうか。</dt>
+              <dd>2022年はアクティビティを中止しております。代わりにレンタルバイク、居酒屋、マリンスポーツも合わせてご紹介可能となっております。お気軽にご相談ください。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>駐車場はありますか？</dt>
+              <dd>専用駐車場があります。必ず付近到着時にご連絡ください。無断駐車の場合は撤去される場合がございます。</dd>
+            </dl>
+
+            <dl>
+              <dt><span>Q</span>お見積もり、予約完了のメールが届かないです。</dt>
+              <dd>
+                【迷惑メールフォルダをご確認ください】<br />
+                ・「迷惑メール」フォルダーに振り分けられることがございます。受信できるよう、フィルター設定をしてください。<br />
+                【なりすましメール拒否設定、迷惑メール対策をご確認ください】<br />
+                ・「なりすましメール拒否」は、メールの送信元メールアドレスを偽装しているメールを受信拒否する機能です。お客様にとって必要なメールでも、なりすましの疑いがあると判断された場合は、自動で受信拒否の対象となります。<br />
+                ・「迷惑メール対策」は、迷惑メールを未然に防ぐように、あらかじめブロックの設定する機能です。受信拒否の対象となる場合がございます。<br />
+                上記2つの対策として「@gpc-group.com」ドメインのメール受信許可設定をしてください。
+                ※キャリアドメイン（@docomo.ne.jp、@ezweb.ne.jp、@softbank.ne.jp、@i.softbank.ne.jpなど）がなりすましメール拒否設定、迷惑メール対策で届かないケースが多いです。<br />
+                フリーメールを使用している場合なども、メールが届かない場合がございます。
+              </dd>
+
+          </div>
+        </section>
+        <!-- sec11 -->
+
+        <section class="secAccess sec">
+          <div class="inr">
+            <h2 class="ttl">アクセス</h2>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.5490886224925!2d127.88942156670204!3d26.662916027764712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4fbe42acf0b51%3A0x3c6660995336e98a!2z44GG44G144Gf5rWcIOaBi-S6uuODk-ODvOODgSDjgI7jgqLjgrDjg7zosZov5LyK5rGf54mbL-efs-Weo-eJmy_jgoTjgpPjgbDjgovlnLDpto8vQkJRL-ODkOODvOODmeOCreODpeODvC_jg6Tjgrfjga7mnKjjgI8!5e0!3m2!1sja!2sjp!4v1623138757944!5m2!1sja!2sjp"
+              width="640"
+              height="370"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+
+            <address>
+              <dl>
+                <dt>沖縄県国頭郡本部町字渡久地861-1 うふた浜</dt>
+                <dd>TEL: <a href="tel:0980-43-7922">0980-43-7922</a></dd>
+              </dl>
+            </address>
+
+            <div class="access">
+              <dl>
+                <dt>アクセス方法（車）</dt>
+                <dd>■美ら海水族館から車で約5分</dd>
+                <dd>■瀬底島から車で約5分</dd>
+                <dd>■今帰仁村から車で約15分</dd>
+                <dd>■名護市から車で約20分</dd>
+                <dd>■古宇利島から車で約25分</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+        <!-- sec08 -->
+
+        <footer class="sec">
+          <div class="inr">
+            <div class="logo"><img src="./images/bavi_logo.jpg" alt="" srcset="" /></div>
+            <dl>
+              <dt>日本最大級のBBQプラットフォーム Bavi</dt>
+              <dd><a href="http://bavi.jp/">http://bavi.jp/</a></dd>
+            </dl>
+
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/channel/UCMA8rsf6gPte0ZDpY62A8Pg" target="_blank"><img src="./images/footer_img01.jpg" alt="" srcset="" /></a>
+              </li>
+              <li>
+                <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="./images/footer_img02.jpg" alt="" srcset="" /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/bavi_bbq/" target="_blank"><img src="./images/footer_img03.jpg" alt="" srcset="" /></a>
+              </li>
+            </ul>
+
+            <p>© Copyright Bavi all right reserved.</p>
+          </div>
+        </footer>
+
+        <div class="bottom_link">
+          <div class="inr">
+            <ul>
+              <li><a href="tel:0980-43-7922">電話相談</a></li>
+              <li><a href="http://bavi.jp/spot/detail/1290/order" target="_blank">予約する</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <open-modal v-show="showContent" v-on:close-action="closeModal" v-bind:message="newsData"></open-modal>
+      <gallery-modal v-show="galleryFlag" v-on:close-action="galleryModalClose" v-bind:num="galleryNum"></gallery-modal>
+    </div>
+    <!-- app end -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.36/dist/vue.global.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./js/calendar.js?1"></script>
+    <script>
+      //会場ID
+      const SHOP_ID = "1290";
+      // json URL
+      const url = "data/calendar.json?1.1";
+      //表示する月の数
+      const calendarLength = 3;
+      // アイコン設定
+      const state_html = [
+        '<div class="state"><img src="images/calendar/icon01.png"></div>',
+        '<div class="state"><img src="images/calendar/icon02.png"></div>',
+        '<div class="state"><img src="images/calendar/icon03.png"></div>',
+        '<div class="state"><img src="images/calendar/icon04.png"></div>',
+      ];
+      $(function () {
+        reserveCalendar.getJsonData(url);
+      });
+    </script>
+
+    <script>
+      const _gallerydata = [
+        {
+          title: "エメラルドグリーンの海、絶景のサンセット！",
+          img: "./images/gallery001.jpg",
+        },
+        {
+          title: "エメラルドグリーンの海、絶景のサンセット！",
+          img: "./images/gallery002.jpg",
+        },
+        {
+          title: "ヤシの木に囲まれ、豊かな自然と心地よい海風",
+          img: "./images/gallery003.jpg",
+        },
+        {
+          title: "波の音を楽しみながらリゾートビーチでバーベキュー！",
+          img: "./images/gallery004.jpg",
+        },
+        {
+          title: "波の音を楽しみながらリゾートビーチでバーベキュー！",
+          img: "./images/gallery005.jpg",
+        },
+        {
+          title: "エメラルドグリーンの海、絶景のサンセット！",
+          img: "./images/gallery006.jpg",
+        },
+        {
+          title: "エメラルドグリーンの海、絶景のサンセット！",
+          img: "./images/gallery007.jpg",
+        },
+        {
+          title: "エメラルドグリーンの海、絶景のサンセット！",
+          img: "./images/gallery008.jpg",
+        },
+        {
+          title: "エメラルドグリーンの海、絶景のサンセット！",
+          img: "./images/gallery009.jpg",
+        },
+        {
+          title: "自然豊かな沖縄の海！",
+          img: "./images/gallery010.jpg",
+        },
+        {
+          title: "インスタ映えスポット「幸せの鐘」",
+          img: "./images/gallery011.jpg",
+        },
+        {
+          title: "地産地消にこだわったプラン",
+          img: "./images/gallery012.jpg",
+        },
+        {
+          title: "沖縄のシンボルシーサーがお出迎え",
+          img: "./images/gallery013.jpg",
+        },
+        {
+          title: "自然豊かな沖縄の海！",
+          img: "./images/gallery014.jpg",
+        },
+        {
+          title: "自然豊かな沖縄の海！",
+          img: "./images/gallery015.jpg",
+        },
+      ];
+
+      const _newsData = [
+        {
+          day: "2022.7.1",
+          title: "うふた浜特設ページ開設致しました。",
+          body: "この度、Baviによる「うふた浜」特設ページを開設致しました。",
+        },
+        {
+          day: "2022.7.29",
+          title: "2022年9月の予約状況更新",
+          body: "2022年9月「うふた浜 BBQ場」の予約状況更新致しました。<br>ご予約お待ちしております。",
+        },
+      ];
+
+      const app = Vue.createApp({
+        data() {
+          return {
+            galleryFlag: false,
+            showContent: false,
+            gallery: null,
+            galleryNum: 0,
+            newsData: {
+              day: null,
+              title: null,
+              body: null,
+            },
+          };
+        },
+        mounted() {
+          new Swiper(".swiper", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            // ナビボタンが必要なら追加
+            navigation: {
+              nextEl: ".swiper .swiper-button-next",
+              prevEl: ".swiper .swiper-button-prev",
+            },
+          });
+
+          this.gallery = new Swiper(".gallery", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            // ナビボタンが必要なら追加
+            navigation: {
+              nextEl: ".gallery .swiper-button-next",
+              prevEl: ".gallery .swiper-button-prev",
+            },
+          });
+        },
+        methods: {
+          galleryModal(e) {
+            this.galleryNum = e;
+            this.gallery.slideTo(e + 1);
+            this.galleryFlag = true;
+          },
+          galleryModalClose(e) {
+            this.galleryFlag = false;
+          },
+          openModal(e) {
+            this.newsData = _newsData[e];
+            this.showContent = true;
+          },
+          closeModal(e) {
+            this.showContent = false;
+          },
+        },
+      });
+
+      //モーダルコンポーネント
+      app.component("open-modal", {
+        template: `
+        <transition name="fade">
+          <div id="overlay" v-on:click.stop="closeAction">
+            <div class="inr" v-on:click.stop>
+                <div class="content modal_sec">
+                <dl>
+                    <dt>{{message.day}}</dt>
+                    <dd>{{message.title}}</dd>
+                </dl>
+                <p v-html="message.body"></p>
+                <button v-on:click.stop="closeAction">閉じる</button>
+            </div>
+          </div>
+          </div>
+        </transition>
+        `,
+        props: {
+          message: {
+            type: Object,
+            default: () => ({}),
+          },
+        },
+        eimit: ["closeAction"],
+        methods: {
+          closeAction(e) {
+            this.$emit("close-action");
+          },
+        },
+      });
+
+      //モーダルコンポーネント
+      app.component("gallery-modal", {
+        template: `
+        <transition name="fade">
+          <div id="overlay" v-on:click.stop="closeAction">
+            <div class="inr" v-on:click.stop>
+                <div class="content modal_sec">
+
+                <div class="gallery"  >
+                <!-- 必要に応じたwrapper -->
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide gallery_slide" v-for="item in galleryObj" :key="item.img">
+                    <img :src="item.img" />
+                    <p v-text=item.title></p>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination gallery_navi"></div>
+                <!-- 必要に応じてナビボタン -->
+                <!--
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                -->
+              </div>
+
+                <button v-on:click.stop="closeAction">閉じる</button>
+            </div>
+          </div>
+          </div>
+        </transition>
+        `,
+
+        props: ["num", "galery_swiper"],
+        data() {
+          return {
+            galleryObj: _gallerydata,
+          };
+        },
+
+        eimit: ["closeAction"],
+        methods: {
+          closeAction(e) {
+            this.$emit("close-action");
+          },
+        },
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>

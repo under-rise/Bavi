@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
 
@@ -13,11 +13,16 @@
     <title>オーダー | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?1.9">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?2">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.3">
 
-    <link rel="stylesheet" href="resources/css/order.css?3.5">
-    <link rel="stylesheet" href="resources/css/order_sp.css?3.5">
+
+    <link rel="stylesheet" href="assets/css/calendar.css?4.0">
+
+    <link rel="stylesheet" href="resources/css/order.css?3.41">
+    <link rel="stylesheet" href="resources/css/order_sp.css?4.5">
+
+
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -230,9 +235,10 @@
 
                         <dt><span>◯</span>利用年月日</dt>
                         <dd>
-                            <label class="calendar">
-                                <input name="use_date" type="date" value="">
+                            <label class="calendar_input">
+                                <input name="use_date" type="text" value="" id="inputCalendar" readonly>
                             </label>
+
                         </dd>
 
                         <dt><span>◯</span>利用時間</dt>
@@ -438,7 +444,109 @@
 
         </div>
 
+        <div class="calendar_modal" data-izimodal-group="calendar_modal">
+            <div class="modal_close" data-izimodal-close="">×</div>
+
+            <div class="_inr">
+
+                <div class="calendar">
+
+                    <div class="calendar__sec">
+                        <div class="slider__arrow is-prev">前の月</div>
+                        <div class="slider__arrow is-next">次の月</div>
+                    </div>
+                    <!-- calendar__sec -->
+
+                </div>
+                <!-- calender -->
+
+            </div>
+
+        </div>
+
+        <!-- calendar_modal -->
+
+
+
         <script src="./resources/js/order_confirm.js?1.3"></script>
+
+        <script>
+        function getParam(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        $(function() {
+            let date = getParam('date');
+            if (date !== undefined && date !== null) {
+                $('input[name="use_date"]').val(date);
+            }
+        });
+        </script>
+
+        <!-- ここからcalendar js 追加部分 -->
+        <script src="assets/js/calendar.js?1.31"></script>
+        <script>
+        //会場ID 
+        const SHOP_ID = "1234";
+        // json URL
+        const url = "assets/data/calendar.json?1.1";
+        //表示する月の数
+        const calendarLength = 3;
+        // アイコン設定
+        const state_html = [
+            '<div class="state"><img src="/assets/img/calendar/icon01.png"></div>',
+            '<div class="state"><img src="/assets/img/calendar/icon02.png"></div>',
+            '<div class="state"><img src="/assets/img/calendar/icon03.png"></div>',
+            '<div class="state"><img src="/assets/img/calendar/icon04.png"></div>',
+        ];
+        $(function() {
+            reserveCalendar.getJsonData(url, function() {
+
+                $(".calendar_modal").iziModal({
+                    closeButton: true,
+                    padding: 10,
+                    loop: true,
+                    onOpening: () => {
+                        $(".calendar_modal  ._inr").append(
+                            `<div class="loader"><img src="assets/img/order/shopping-cart-shopping.gif" style="width:90px;"></div>`
+                        );
+                        $(".calendar").hide();
+                    },
+                    onOpened: () => {
+                        setTimeout(() => {
+                            $(".calendar").show();
+                            sliderInit();
+                            $(".calendar_modal  ._inr .loader").remove();
+                        }, 500);
+
+                    }
+                });
+
+            });
+
+            $('#inputCalendar').on('click', function(e) {
+                $('.calendar_modal').iziModal('open');
+            });
+
+            $(document).on('click', '.calendar_modal .calendar__sec_item a', function(e) {
+                e.preventDefault();
+                let get = $(this).data("date");
+                if (get) {
+                    $('input[name="use_date"]').val(get);
+                    $('.calendar_modal').iziModal('close');
+                } else {
+                    alert("選択日は予約できません。")
+                }
+
+            });
+        });
+        </script>
 </body>
 
 </html>

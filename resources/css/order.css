@@ -117,32 +117,16 @@
 	vertical-align: bottom;
 }
 
-#order dl dd label.calendar {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
+
+
+
+#order dl dd label.calendar_input input[type="text"] {
+	padding: 15px 20px;
 	border: 1px solid #939393;
-	border-radius: 5px;
-	text-align: left;
+	background: url("../../assets/img/calendar/calendar.svg") no-repeat 98% center;
+	background-size: 20px;
 }
 
-#order dl dd label.calendar input[type="date"] {
-	position: relative;
-	padding: 10px 10px;
-	width: 100%;
-	padding: 10px 10px;
-	background: transparent;
-	box-sizing: border-box;
-	font-size: 14px;
-}
-
-#order dl dd label.calendar input[type="date"]::-webkit-calendar-picker-indicator {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-}
 
 
 #order dl dd select {
@@ -168,7 +152,7 @@
 	background: #fff;
 }
 
-#order dl dd label.calendar input[type="date"] {
+#order dl dd label.calendar_input input[type="date"] {
 
 	background: url("../images/calendar.svg") no-repeat 98% center;
 	background-size: 20px;
@@ -449,4 +433,20 @@ input[type="checkbox"]+span>label {
 	font-weight: bold;
 	text-align: right;
 	font-size: 15px;
+}
+
+.calendar {
+	margin-top: 30px;
+}
+
+.cal_info dl,
+.cal_info dt,
+.cal_info dd {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.calendar_modal .calendar__sec table.table {
+
+	margin: 10px 0 !important;
 }
