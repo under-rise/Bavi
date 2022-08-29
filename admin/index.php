@@ -570,7 +570,7 @@
                         <td>6</td>
                         <td>82,500</td>
                         <td>
-                            <a href="https://bavi.jp/customer/order/edit/16">詳細</a> | <a href="#" class="delete">削除</a>
+                            <a href="https://bavi.jp/customer/order/edit/16">詳細</a> |
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
@@ -605,7 +605,7 @@
                         <td>
                             <span class="icon negotiation">商談中</span>
                         </td>
-                        <td>テスト</td>
+                        <td>株式会社〇〇</td>
                         <td>0000-00-00</td>
                         <td>11:00〜15:00（4時間制）</td>
                         <td>FIRE&times;FARM菖蒲　ファイヤーファームBBQ場</td>
@@ -614,7 +614,7 @@
                         <td>20</td>
                         <td>0</td>
                         <td>
-                            <a href="https://bavi.jp/customer/order/edit/2">詳細</a> | <a href="#" class="delete">削除</a>
+                            <a href="https://bavi.jp/customer/order/edit/2">詳細</a> |
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
@@ -651,16 +651,7 @@
     <script>
     $(function() {
 
-        // 削除ボタンクリック
-        $('.delete').on('click', function() {
-            let link = $(this).attr('href');
-            let obj = $(this).closest('.main_info');
-            let name = obj.find('td').eq(4).text() + "様";
-            if (confirm(name + "を削除します。宜しいですか？")) {
-                location.href = link;
-                obj.remove();
-            }
-        });
+
 
         // 絞り込みを変更した時
         $('#list_status').on('change', function() {
