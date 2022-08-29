@@ -2,349 +2,695 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="robots" content="noindex" />
-    <title>案件管理|Bavi | 管理画面</title>
-    <link type="text/css" rel="stylesheet" href="http://gpc-test.work/assets/css/bootstrap.css?1595739458" />
-    <link type="text/css" rel="stylesheet" href="http://gpc-test.work/assets/css/admin_default.css?1595739458" />
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
-    <link type="text/css" rel="stylesheet" href="/admin/css/common.css?2.51">
-    <link type="text/css" rel="stylesheet" href="/admin/css/management.css?1.21">
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <style>
-    body {
-        padding-top: 0;
-    }
-    </style>
-
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="robots" content="noindex">
+    <title>Bavi 運営側管理ページ | Bavi</title>
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/customer/reset.css?1648760965" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/customer/style.css?1648760966" />
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/customer/page.css?1648760966" />
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/customer/detail.css?1648760966" />
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/customer/form.css?1648760966" />
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://bavi.jp/assets/js/customer/main.js?1648761028"></script>
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 sidebar">
-                <nav class="col-md-2 navbar navbar-inverse navbar-fixed-top">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="/customer/top">Bavi | 顧客管理画面</a>
-                        </div>
-                    </div>
-                </nav>
-                <?php include __DIR__ . '/../admin/template/nav.php'; ?>
-            </div>
-
-            <section class="contents">
-
-                <div id="management_page" class="col-md-10 col-md-offset-2 main">
-
-                    <div class="ttl">
-                        <h1>案件管理一覧</h1>
-                        <div class="back"><a href="https://bavi.jp/admin/">管理TOPページへ戻る</a></div>
-                    </div>
-
-                    <div id="search_sec" class="sec">
-
-                        <h2 style="text-align: center;">案件検索</h1>
-
-                            <form class="form">
-                                <table class="table_style">
-                                    <tr>
-                                        <th>利用NO</th>
-                                        <td><input type="text"></td>
-                                        <th>ステータス</th>
-                                        <td>
-                                            <select name="list_status select_stetas" class="" id="list_status"
-                                                style="margin-top: 4px;">
-                                                <option value="">指定なし</option>
-                                                <option value="-1">キャンセル</option>
-                                                <option value="0">案件</option>
-                                                <option value="1">保留</option>
-                                                <option value="10">商談中</option>
-                                                <option value="90">決定</option>
-                                                <option value="99">終了</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>フリー検索</th>
-                                        <td><input type="text" placeholder="名前/電話番号/メールアドレス"></td>
-                                        <th>会員</th>
-                                        <td>
-                                            <select>
-                                                <option>全て</option>
-                                                <option>会員</option>
-                                                <option>非会員</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    </tr>
-                                    <tr>
-                                        <th>会場</th>
-                                        <td>
-                                            <select name="spot_id">
-                                                <option value="">指定なし</option>
-                                                <option value="1126">Canterano</option>
-                                            </select>
-                                        </td>
-
-                                        <th>人数</th>
-                                        <td>
-                                            <div
-                                                style="display: flex; justify-content: space-between; align-items: center; ">
-                                                <input type="number" placeholder="最大人数"><span
-                                                    style="padding: 0 10px;">〜</span><input type="number"
-                                                    placeholder="最大人数">
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th>受付日</th>
-                                        <td>
-                                            <div
-                                                style="display: flex; justify-content: space-between; align-items: center; ">
-                                                <input type="date"><span style="padding: 0 10px;">〜</span><input
-                                                    type="date">
-                                            </div>
-                                        </td>
-                                        <th>利用日</th>
-                                        <td>
-                                            <div
-                                                style="display: flex; justify-content: space-between; align-items: center; ">
-                                                <input type="date"><span style="padding: 0 10px;">〜</span><input
-                                                    type="date">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                <input type="submit" value="検索">
-                                <button type="button" class="btn btn-default" id="reset-btn"> リセット </button>
-                            </form>
-                            <!--form-->
-                    </div>
-
-
-                    <div id="member_sec" class="sec">
-
-                        <div class="price_order_total">
-                            <dl>
-                                <dt>合計金額</dt>
-                                <dd>160,800<span>円</span></dd>
-                            </dl>
-                            <dl>
-                                <dt>件数</dt>
-                                <dd>850<span>件</span></dd>
-                            </dl>
-                        </div>
-
-
-                        <table class="table_style">
-
-                            <tr class="head">
-
-                                <th class="w10">
-                                    <span id="all_check_btn">全て<br>チェック</span>
-                                </th>
-                                <th class="w5"><span class="sort_btn" data-sort="1">利用NO▼</span></th>
-                                <th><span class="sort_btn" data-sort="1">受付日▼</span></th>
-                                <th class="w10" class="form">ステータス
-                                    <select class="select_stetas" style="margin-top: 4px;">
-                                        <option value="">指定なし</option>
-                                        <option value="-1">キャンセル</option>
-                                        <option value="0">案件</option>
-                                        <option value="1">保留</option>
-                                        <option value="10">商談中</option>
-                                        <option value="90">決定</option>
-                                        <option value="99">終了</option>
-                                    </select>
-                                </th>
-                                <th><span class="sort_btn" data-sort="1">名前▼</span></th>
-                                <th><span class="sort_btn" data-sort="1">利用日▼</span></th>
-                                <th><span class="sort_btn" data-sort="1">利用時間▼</span></th>
-                                <th><span data-sort="1">会場</span></th>
-                                <th><span class="sort_btn" data-sort="1">プラン▼</span></th>
-                                <th><span class="sort_btn" data-sort="1">人数▼</span></th>
-                                <th><span class="sort_btn" data-sort="1">金額▼</span></th>
-                                <th class="w5">詳細</th>
-                            </tr>
-                        </table>
-
-                        <!--repeat start-->
-                        <table class="table_style">
-                            <tr class="main_info">
-                                <td class="w10">
-                                    <div class="icon dengon">伝言あり</div>
-                                    <input type="checkbox">
-                                </td>
-                                <td class="w5"><a href="/admin/detail.php">A001</a></td>
-                                <td>2022-4-12-00:00</td>
-                                <td class="w10"><span class="icon decision">決定</span></td>
-                                <td>鈴木 太郎</td>
-                                <td>2022年5月1日</td>
-                                <td>10:00〜15:00</td>
-                                <td>うふた浜</td>
-                                <td>A.区画のみ</td>
-                                <td>20人</td>
-                                <td>145,000円</td>
-                                <td class="w5">
-                                    <button class="btn_type" onclick="location.href='/admin/detail.php'">詳細</button>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--repeat END-->
-
-                        <!--repeat start-->
-                        <table class="table_style">
-                            <tr class="main_info">
-                                <td class="w10"><input type="checkbox"></td>
-                                <td class="w5"><a href="/admin/detail.php">A002</a></td>
-                                <td>2022-4-12-00:00</td>
-                                <td class="w10"><span class="icon negotiation">商談中</span></td>
-                                <td>鈴木 太郎</td>
-                                <td>2022年5月1日</td>
-                                <td>10:00〜15:00</td>
-                                <td>fire farm</td>
-                                <td>B.区画＋食材</td>
-                                <td>50人</td>
-                                <td>5,000円</td>
-                                <td class="w5">
-                                    <button class="btn_type" onclick="location.href='/admin/detail.php'">詳細</button>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--repeat END-->
-
-                        <!--repeat start-->
-                        <table class="table_style">
-                            <tr class="main_info">
-                                <td class="w10">
-                                    <div class="icon dengon">伝言あり</div>
-                                    <input type="checkbox">
-                                </td>
-                                <td class="w5"><a href="/admin/detail.php">A003</a></td>
-                                <td>2022-4-12-00:00</td>
-                                <td class="w10"><span class="icon other">終了</span></td>
-                                <td>鈴木 太郎</td>
-                                <td>2022年5月1日</td>
-                                <td>10:00〜15:00</td>
-                                <td>しい茸ランド</td>
-                                <td>C.区画＋食材＋ドリンク</td>
-                                <td>5人</td>
-                                <td>10,000円</td>
-                                <td class="w5">
-                                    <button class="btn_type" onclick="location.href='/admin/detail.php'">詳細</button>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <!--repeat END-->
-
-                        <!--repeat start-->
-                        <table class="table_style">
-                            <tr class="main_info">
-                                <td class="w10">
-                                    <div class="icon dengon">伝言あり</div>
-                                    <input type="checkbox">
-                                </td>
-                                <td class="w5"><a href="/admin/detail.php">A003</a></td>
-                                <td>2022-4-12-00:00</td>
-                                <td class="w10"><span class="icon cancel">キャンセル</span></td>
-                                <td>鈴木 太郎</td>
-                                <td>2022年5月1日</td>
-                                <td>10:00〜15:00</td>
-                                <td>しい茸ランド</td>
-                                <td>C.区画＋食材＋ドリンク</td>
-                                <td>5人</td>
-                                <td>10,000円</td>
-                                <td class="w5">
-                                    <button class="btn_type" onclick="location.href='/admin/detail.php'">詳細</button>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <!--repeat END-->
-
-                        <div class="mail_send_btn">
-
-                            <button type="button" class="btn btn-mail"> 一斉メール送信 </button>
-                            <button type="button" class="btn btn-chat"> 一斉チャット送信 </button>
-
-                        </div>
-
-                    </div>
-                    <!--member sec-->
-
-                    <div class="pager_style">
-                        <ul>
-                            <li><a href="#" class="current">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <!--management_page-->
-
-            </section>
-
+<body id="spot">
+    <!--header-->
+    <header>
+        <div id="spMainBtn">
+            <i class="fas fa-th sp"></i>
         </div>
-        <!--row-->
+        <div id="logo_sec">
+            <div id="logo"><a href="/customer"><img src="/assets/img/customer/logo.png"></a></div>
+            <h1>運営側管理ページ</h1>
+        </div>
+        <div class="nav">
+            <div class="close sp"><i class="fas fa-times"></i></i></div>
+            <div class="guestInfomation">
+                <dl>
+                    <dt></dt>
+                    <dd><a href="/customer/info/edit" class="under-line">オーナー：ゼネラルパーソンカンパニー株式会社</a></dd>
+                    <dd><a href="/customer" class="btn type04 change_shop">登録店舗一覧</a></dd>
+                </dl>
+            </div>
+            <ul class="mainBtn detail_link_sec">
+                <li class="sub_nav"><a>案件情報</a>
+                    <ul style="display: none;">
+                        <li><a href="/customer/order/">BBQ会場 案件一覧</a></li>
+                        <li><a href="/customer/order/create">BBQ会場 案件登録</a></li>
+                    </ul>
+                </li>
+                <li><a href="/customer/contacts/">問合せ一覧</a></li>
+                <li><a href="/customer/info/edit"><i class="fas fa-id-card"></i>オーナー情報</a></li>
+                <li><a href="mailto:info@bavi.jp"><i class="fas fa-envelope"></i>お問合せ</a></li>
+            </ul>
+            <ul class="mainBtn">
+                <li><a href="/customer/admin">管理画面に戻る</a></li>
+            </ul>
+            <ul class="sns flex">
+                <li><a href="https://www.instagram.com/bavi_bbq/" target="_blacnk"><img
+                            src="/assets/img/customer/icon_instagram.png"></a></li>
+                <li><a href="https://line.me/ti/p/%40637eulru" target="_blacnk"><img
+                            src="/assets/img/customer/icon_line.png"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCMA8rsf6gPte0ZDpY62A8Pg" target="_blank"><img
+                            src="/assets/img/customer/icon_youtube.png"></a></li>
+            </ul>
+        </div>
+    </header>
+    <!--header END-->
+    <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/bootstrap.css?1616644533" />
+    <script type="text/javascript" src="https://bavi.jp/assets/js/bootstrap.js?1616644536"></script>
+    <style>
+    /*************************/
+    /* 追加 */
+    /*************************/
+    body#spot {
+        background-image: none;
+        background-color: white;
+    }
+
+    #management_page {
+        font-size: 13px;
+    }
+
+    /*search_sec*/
+    #search_sec {
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .sort_btn {
+        cursor: pointer;
+    }
+
+    #search_sec h2 {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+
+    #search_sec th {
+        width: 10%;
+    }
+
+    /*member_sec*/
+    #member_sec .table_style {
+        border-bottom: 1px solid #999;
+    }
+
+    #member_sec .main_info td {
+        border-bottom: none;
+        position: relative;
+    }
+
+    #member_sec .main_info td {
+        border-top: 1px solid #266698;
+    }
+
+    #member_sec .user_contact>td {
+        border-bottom: none;
+        border-top: 1px dashed #999;
+    }
+
+    .btn_sec {
+        padding: 10px 0;
+    }
+
+    .btn_sec button.btn_type02 {
+        background: #ccc;
+        width: 200px;
+        padding: 5px;
+        color: #fff;
+        border-radius: 5px;
+        margin: 10px 5px;
+    }
+
+    .btn_sec button.btn_type02.detail {
+        background: #266698;
+    }
+
+    .btn_sec button.btn_type02.delete {
+        background: #ad0202;
+    }
+
+    /*guest_sec*/
+    .guest_sec .table_style th {
+        width: 10%;
+    }
+
+    .guest_sec .table_style td {
+        text-align: left;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex>div {
+        margin: 0 10px;
+    }
+
+    .ttl h1 {
+        font-size: 18px;
+        color: #fff;
+        background: #266698;
+        font-weight: bold;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+    }
+
+    .ttl {
+        background-color: transparent;
+        position: relative;
+    }
+
+    .ttl .back {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 2px 30px;
+    }
+
+    h2.sub_ttl {
+        font-size: 16px;
+        border-bottom: 1px solid #266698;
+        color: #266698;
+        font-weight: bold;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+
+    .contents {
+        padding-bottom: 100px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="button"] {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+    }
+
+    .sec {
+        padding: 10px 0;
+        margin: 20px 0;
+    }
+
+    .icon {
+        display: block;
+        padding: 2px;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .icon.decision {
+        background: #e4348f;
+    }
+
+    .icon.negotiation {
+        background: #58a34c;
+    }
+
+    .icon.cancel {
+        background: #32658f;
+    }
+
+    .icon.dengon {
+        animation: flash 1.5s linear infinite;
+        background: #ee0404;
+        font-size: 10px;
+        white-space: nowrap;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        left: 0;
+        padding: 0 3px;
+        border-radius: 3px;
+        color: yellow;
+    }
+
+    @keyframes flash {
+
+        20%,
+        80% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .table_style {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .table_style th,
+    .table_style td {
+        border: 1px solid #999;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .table_style th {
+        background: #fafafa;
+        font-weight: bold;
+    }
+
+    .table_style a {
+        text-decoration: underline;
+    }
+
+    .btn_type {
+        background: #266698;
+        color: #fff;
+        width: 100%;
+        padding: 2px;
+        border-radius: 3px;
+        border-bottom: 2px solid #163962;
+    }
+
+    .btn_type.mail {
+        background: #ec7411;
+        border-bottom: 2px solid #b4560a;
+    }
+
+    .btn_type.back {
+        display: block;
+        background: #f1f1f1;
+        border-bottom: 2px solid #555;
+        width: 300px;
+        margin: 0 auto;
+        color: #000;
+        border-radius: 5px;
+        padding: 5px 4px;
+    }
+
+    .table_style .w5 {
+        width: 5%;
+    }
+
+    .table_style .w10 {
+        width: 10%;
+    }
+
+    .table_style .w20 {
+        width: 20%;
+    }
+
+    .table_style .w30 {
+        width: 30%;
+    }
+
+    .table_style .w40 {
+        width: 40%;
+    }
+
+    .table_style .w50 {
+        width: 50%;
+    }
+
+    .table_style .w60 {
+        width: 60%;
+    }
+
+    .table_style .w70 {
+        width: 70%;
+    }
+
+    .table_style .w80 {
+        width: 80%;
+    }
+
+    .form input[type="text"],
+    .form input[type="number"],
+    .form input[type="date"],
+    .form input[type="tel"],
+    .form input[type="email"],
+    .form textarea {
+        background: #f7fafd;
+        padding: 5px;
+        width: 100%;
+        outline: none;
+        appearance: none;
+        border: 1px solid #999;
+        border-radius: 3px;
+    }
+
+    .form select {
+        padding: 3px;
+        background: #f7fafd;
+        border: 1px solid #999;
+        width: 100%;
+    }
+
+    .form input[type="submit"] {
+        background: #266698;
+        border-bottom: 2px solid #163962;
+        padding: 5px 10px;
+        margin: 10px auto;
+        width: 300px;
+        color: #fff;
+        border-radius: 5px;
+        display: block;
+    }
+
+    .form input[type="radio"]+label {
+        font-weight: normal;
+        vertical-align: middle;
+        padding-left: 2px;
+    }
+
+    .pager_style ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pager_style ul li a {
+        border-radius: 3px;
+        padding: 5px 10px;
+        color: #000;
+        display: block;
+        border: 1px solid #999;
+        margin: 0 5px;
+    }
+
+    .pager_style ul li a.current {
+        background: #266698;
+        color: #fff;
+        pointer-events: none;
+    }
+
+    .pager_style ul li a:hover {
+        background: #266698;
+        color: #fff;
+    }
+    </style>
+    <section class="contents">
+        <div id="management_page" class="col-md-10 col-md-offset-2 main" style="margin-bottom: 100px;">
+            <div class="ttl">
+                <h1>案件管理一覧</h1>
+            </div>
+            <div id="search_sec" class="sec">
+                <h2 style="text-align: center;">案件検索</h2>
+                <form class="form" method="get">
+                    <table class="table_style">
+                        <tr>
+                            <th>利用NO</th>
+                            <td><input type="text" name="id" value=""></td>
+                            <th>ステータス</th>
+                            <td>
+                                <select name="status">
+                                    <option value="">指定なし</option>
+                                    <option value="-1">キャンセル</option>
+                                    <option value="0">案件</option>
+                                    <option value="1">保留</option>
+                                    <option value="10">商談中</option>
+                                    <option value="90">決定</option>
+                                    <option value="99">終了</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!--
+                    <tr>
+                        <th>CV種別</th>
+                        <td></td>
+                    </tr>
+                    -->
+                        <tr>
+                            <th>
+                                フリー検索<br>
+                                (名前/電話番号/メールアドレス)
+                            </th>
+                            <td><input type="text" placeholder="フリー検索" value=""></td>
+                            <!--
+                        <th>会員</th>
+                        <td>
+                            <select type="checkbox">
+                                <option>全て</option>
+                                <option>会員</option>
+                                <option>非会員</option>
+                            </select>
+                        </td>
+                        -->
+                        </tr>
+                        <tr>
+                            <th>会場</th>
+                            <td>
+                                <select name="spot_id">
+                                    <option value="241">彩湖・道満グリーンパーク</option>
+                                    <option value="409">都立野川公園バーベキュー広場</option>
+                                    <option value="1358">秋川橋河川公園バーベキューランド</option>
+                                    <option value="1420">赤塚公園バーベキュー広場</option>
+                                    <option value="1423">妙典河川敷・自由広場</option>
+                                    <option value="1464">篠崎公園</option>
+                                    <option value="1465">小金井公園バーベキュー場</option>
+                                    <option value="1474">新左近川親水公園</option>
+                                    <option value="1476">大泉さくら運動公園</option>
+                                    <option value="1477">郷土の森公園バーベキュー場</option>
+                                    <option value="1482">府中の森公園バーベキュー広場</option>
+                                    <option value="1515">FIRE&times;FARM菖蒲　ファイヤーファームBBQ場</option>
+                                    <option value="1517">六本木ガーデン（屋上BBQ）</option>
+                                    <option value="1519">富士スピードウェイ&times;BBQ FIA WEC 富士6時間耐久レース</option>
+                                </select>
+                            </td>
+                            <!--
+                        <th>人数</th>
+                        <td>
+                            <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                <input type="number" placeholder="最大人数"><span style="padding: 0 10px;">〜</span><input type="number" placeholder="最大人数">
+                            </div>
+                        </td>
+                        -->
+                            <th>利用日</th>
+                            <td>
+                                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                    <input type="date" name="from" value=""><span
+                                        style="padding: 0 10px;">〜</span><input type="date" name="to" value="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!--
+                        <th>受付日</th>
+                        <td>
+                            <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                <input type="date"><span style="padding: 0 10px;">〜</span><input type="date">
+                            </div>
+                        </td>
+                        <th>利用日</th>
+                        <td>
+                            <div style="display: flex; justify-content: space-between; align-items: center; ">
+                                <input type="date" name="from" value=""><span style="padding: 0 10px;">〜</span><input type="date" name="to" value="">
+                            </div>
+                        </td>
+                        -->
+                        </tr>
+                        <tr>
+                            <th>表示順</th>
+                            <td>
+                                <select name="order_by">
+                                    <option value="">指定なし(受付日降順)</option>
+                                    <option value="use_date">利用日(降順)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="検索">
+                    <button type="button" class="btn btn-default" id="reset-btn"> リセット </button>
+                </form>
+                <!--form-->
+            </div>
+            <div id="member_sec" class="sec">
+                <table class="table_style" id="order_list">
+                    <tr class="head">
+                        <th class="w5"></th>
+                        <th class="w5"><span class="sort_btn" data-sort="1">利用NO</span></th>
+                        <th><span class="sort_btn" data-sort="1">受付日</span></th>
+                        <th class="form">ステータス
+                            <select name="list_status select_stetas" class="form-control" id="list_status"
+                                style="margin-top: 4px;">
+                                <option value="">指定なし</option>
+                                <option value="-1">キャンセル</option>
+                                <option value="0">案件</option>
+                                <option value="1">保留</option>
+                                <option value="10">商談中</option>
+                                <option value="90">決定</option>
+                                <option value="99">終了</option>
+                            </select>
+                        </th>
+                        <th><span class="sort_btn" data-sort="1">名前</span></th>
+                        <th><span class="sort_btn" data-sort="1">利用日</span></th>
+                        <th><span class="sort_btn" data-sort="1">利用時間</span></th>
+                        <th><span class="sort_btn" data-sort="1">会場</span></th>
+                        <th><span class="sort_btn" data-sort="1">プラン</span></th>
+                        <th class="w5"><span class="sort_btn" data-sort="1">人数</span></th>
+                        <th class="w5">金額</th>
+                        <th>詳細</th>
+                    </tr>
 
 
+                    <tr data-list_status="-1" class="main_info">
+                        <td class="w5">
+                            <!--<div class="icon dengon">伝言あり</div>
+                                <input type="checkbox">-->
+                        </td>
+                        <td>241-5</td>
+                        <td>2022-04-17 19:39:16</td>
+                        <td>
+                            <span class="icon cancel">キャンセル</span>
+                        </td>
+                        <td>城倉主計</td>
+                        <td>2022-04-30</td>
+                        <td>10:00〜14:00</td>
+                        <td>彩湖・道満グリーンパーク</td>
+                        <td>
+                            5名レンタルプラン（設置付き） </td>
+                        <td>6</td>
+                        <td>82,500</td>
+                        <td>
+                            <a href="https://bavi.jp/customer/order/edit/16">詳細</a> |
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ステータス変更
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/16/-1">キャンセル</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/16/0">案件</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/16/1">保留</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/16/10">商談中</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/16/90">決定</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/16/99">終了</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
 
-    </div>
-    <script type="text/javascript" src="http://gpc-test.work/assets/js/bootstrap.js?1595739458"></script>
-
+                    <tr data-list_status="10" class="main_info">
+                        <td class="w5">
+                            <!--<div class="icon dengon">伝言あり</div>
+                                <input type="checkbox">-->
+                        </td>
+                        <td>1515-1</td>
+                        <td>2022-04-01 22:48:24</td>
+                        <td>
+                            <span class="icon negotiation">商談中</span>
+                        </td>
+                        <td>テスト</td>
+                        <td>0000-00-00</td>
+                        <td>11:00〜15:00（4時間制）</td>
+                        <td>FIRE&times;FARM菖蒲　ファイヤーファームBBQ場</td>
+                        <td>
+                            5名レンタルプラン（設置付き） </td>
+                        <td>20</td>
+                        <td>0</td>
+                        <td>
+                            <a href="https://bavi.jp/customer/order/edit/2">詳細</a> |
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ステータス変更
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/2/-1">キャンセル</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/2/0">案件</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/2/1">保留</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/2/10">商談中</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/2/90">決定</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"
+                                            href="/customer/order/status/2/99">終了</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--management_page-->
+    </section>
+    <style>
+    .is-hide {
+        display: none;
+    }
+    </style>
     <script>
     $(function() {
 
-        $('.select_stetas').on('change', function() {
-            alert("表示変更");
+
+
+        // 絞り込みを変更した時
+        $('#list_status').on('change', function() {
+            // 非表示状態を解除
+            $('#order_list > tbody > tr').removeClass('is-hide');
+            // 値が空の場合はすべて表示
+            if ($(this).val() === '') {
+                return;
+            }
+            // リスト内の各アイテムをチェック
+            for (let i = 0; i < $('#order_list > tbody > tr').length; i++) {
+                // アイテムに設定している項目を取得
+                let tmp = $('#order_list > tbody > tr').eq(i).data('list_status');
+                // 絞り込み対象かどうかを調べる
+                if (tmp.toString() !== $(this).val().toString()) {
+                    console.log(tmp + "/" + $(this).val());
+                    $('#order_list > tbody > tr').eq(i).addClass('is-hide');
+                }
+            }
         });
-
-        let checkFlag = false;
-        $('#all_check_btn').on('click', function() {
-            checkFlag = !checkFlag;
-            $('.table_style').find('input[type=checkbox]').prop('checked', checkFlag);
-        });
-
-        $('.sort_btn').on('click', function() {
-            alert("ソート実装お願いします。");
-        });
-
-        $('.delete').on('click', function() {
-            confirm("本当に削除して宜しいですか？");
-        });
-
-        $(".t_tip").tooltip();
-
-        $('.nav-sub').hide();
-
-
-        $('.menu-toggle').click(function() {
-            $(this).parent().find('.nav-sub').toggle(500);
-        });
-
-        var active_menu = $('li.active').parent();
-        if (active_menu.hasClass('nav-sub')) {
-            active_menu.show();
-        }
     });
     </script>
+    <!--footer-->
+    <footer>
+        <dl>
+            <dt>運営会社: ゼネラルパーソンカンパニー株式会社</dt>
+            <dd>〒120-0001東京都足立区大谷田3丁目21番6号
+            <dd>
+            <dd>TEL: 03-5856-2030</dd>
+            <dd>E-mail: info@bavi.jp</dd>
+        </dl>
+        <p id="copyright">© Copyright Bavi all right reserved.</p>
+    </footer>
+
+    <div id="overlay"></div>
+    <!--footer END-->
+    <div id="footer_btn">
+        <span></span>
+    </div>
 </body>
 
 </html>
