@@ -1,0 +1,51 @@
+
+[
+    {
+        "shop_id": "admin",
+         "value": {
+            "view_guest_day":[1,1,40,20,20,50,80,100],
+            "view_guest_week":[1,2,40,20,30,40,30],
+            "view_guest_month":[3,30,40,20,30,40,30],
+            "new_guest_day":[1,0,30,10,10,20,30,10],
+            "new_guest_week":[1,2,30,10,10,20,30],
+            "new_guest_month":[1,20,30,10,10,20,30],
+            "repeat_guest_day":[0,1,2,3,4,4,40,50],
+            "repeat_guest_week":[1,2,21,32,30,21,10],
+            "repeat_guest_month":[3,20,30,10,10,20,30],
+            "staytime":[1,1,1,2,3,1],
+            "staytimeAverage":[250],
+            "conversion_day":[1,1,1,1,1,1,1,1],
+            "conversion_week":[1,2,5,4,4,7,4],
+            "conversion_month":[10,20,30,22,23,3,10],
+            "semi_conversion_day":[1,21,9,7,7,10,10,4],
+            "semi_conversion_week":[11,21,9,7,7,10,11],
+            "semi_conversion_month":[12,43,35,35,35,30,66],
+            "tel_conversion_day":[2,4,1,11,0,2,5,1],
+            "tel_conversion_week":[11,22,50,41,20,71,4],
+            "tel_conversion_month":[120,10,20,32,33,311,114],
+            "site_conversion_day":[1,21,9,7,7,10,10,4],
+            "site_conversion_week":[1,1,19,27,37,130,99],
+            "site_conversion_month":[121,431,315,315,135,130,166],
+            "pageview_day":[101,12,92,28,23,14,42,63],
+            "pageview_week":[11,22,15,34,34,17,14],
+            "pageview_month":[310,120,330,212,23,32,810]
+         }
+    
+    },
+    {
+        "shop_id": "002",
+         "value": {
+            "view_guest_day":[1,1,2,1,2,4,5,14],
+            "view_guest_week":[10,20,30,20,30,40,30],
+            "view_guest_month":[14,20,30,20,30,10,30],
+            "new_guest_day":[21,12,20,23,20,20,13,16],
+            "new_guest_week":[13,20,30,10,10,20,36],
+            "new_guest_month":[11,13,25,17,19,13,25],
+            "repeat_guest_day":[23,13,13,14,29,19,10,38],
+            "repeat_guest_week":[13,10,11,22,20,11,18],
+            "repeat_guest_month":[15,20,30,10,10,10,20]
+         }
+    
+    }
+
+]
