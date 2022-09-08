@@ -499,27 +499,20 @@
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。大人数のお客様に大人気。大人数のお客様に大人気。</p>
 
-                            <ul class="icon">
-                                <li><img src="resources/images/icon_delivery.png" alt=""></li>
-                            </ul>
-
-
-                            <div class="score_sec">
-                                <div class="stars small">
-                                    <img src="resources/images/star.png" alt="星1個" />
-                                    <img src="resources/images/star.png" alt="星1個" />
-                                    <img src="resources/images/star.png" alt="星1個" />
-                                    <img src="resources/images/star_half.png" alt="星半数個" />
-                                    <img src="resources/images/star_none.png" alt="星無し" />
-                                    <span class="only_pc">3.5 / 5.0</span>
-                                </div>
-
-                                <dl class="like small">
-                                    <dt>&hearts;</dt>
-                                    <dd>123<span>LIKE</span></dd>
-                                </dl>
-
+                            <div class="stars small">
+                                <img src="resources/images/star.png" alt="星1個" />
+                                <img src="resources/images/star.png" alt="星1個" />
+                                <img src="resources/images/star.png" alt="星1個" />
+                                <img src="resources/images/star_half.png" alt="星半数個" />
+                                <img src="resources/images/star_none.png" alt="星無し" />
+                                <span class="only_pc">3.5 / 5.0</span>
                             </div>
+
+                            <dl class="like small">
+                                <dt>&hearts;</dt>
+                                <dd>123<span>LIKE</span></dd>
+                            </dl>
+
                         </a>
                     </li>
                 </ul>
@@ -635,34 +628,6 @@
     </div>
 </body>
 
-<script>
-$(document).ready(function() {
 
-    let ul = $('.list');
-
-    $(ul).each(function(i, e) {
-
-        $(e).find('> li').each(function(index, el) {
-
-            if (index % 2 == 1) {
-                return;
-            }
-
-            let h = $(el).height();
-            let nh = $(el).next('li').height();
-            let maxH = Math.max(h, nh);
-            console.log(maxH);
-            // set
-            $(el).find('a').css({
-                'height': maxH
-            });
-            $(el).next('li').find('a').css({
-                'height': maxH
-            });
-
-        });
-    });
-});
-</script>
 
 </html>
