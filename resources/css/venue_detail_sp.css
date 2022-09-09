@@ -433,6 +433,18 @@
 	.news_sec.column_sec .btn {
 		font-size: 11px;
 	}
+
+	/* icon */
+
+	.icon {
+		position: relative;
+		top: -5px;
+		margin-bottom: 10px;
+	}
+
+	.icon li {
+		width: 34%;
+	}
 }
 
 

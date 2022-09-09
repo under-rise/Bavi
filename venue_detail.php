@@ -162,6 +162,11 @@
                         </ul>
                     </div>
 
+                    <ul class="icon">
+                        <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
+                    </ul>
+
+
                     <div class="stars">
                         <img src="/assets/img/star.png" alt="星1個" />
                         <img src="/assets/img/star.png" alt="星1個" />

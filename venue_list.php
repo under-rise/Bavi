@@ -254,10 +254,8 @@
                             <li>
                                 <dl>
                                     <dt>デリバリー対応</dt>
-                                    <dd><label><input type="radio" name="option_id[12][]"
-                                                value="32"><span>有り</span></label></dd>
-                                    <dd><label><input type="radio" name="option_id[12][]"
-                                                value="33"><span>無し</span></label></dd>
+                                    <dd><label><input type="radio" name="option_id[12][]" value="32"><span>有り</span></label></dd>
+                                    <dd><label><input type="radio" name="option_id[12][]" value="33"><span>無し</span></label></dd>
                                 </dl>
                             </li>
                             <li class="w100">
@@ -304,7 +302,7 @@
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
                                 <ul class="icon">
-                                    <li><img src="resources/images/icon_delivery.png" alt=""></li>
+                                    <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
                                 </ul>
 
                                 <div class="score_sec">
@@ -383,7 +381,7 @@
 
 
                             <ul class="icon">
-                                <li><img src="resources/images/icon_delivery.png" alt=""></li>
+                                <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
                             </ul>
 
                             <div class="score_sec">
@@ -470,7 +468,7 @@
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。大人数のお客様に大人気。大人数のお客様に大人気。</p>
 
                             <ul class="icon">
-                                <li><img src="resources/images/icon_delivery.png" alt=""></li>
+                                <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
                             </ul>
 
                             <div class="score_sec">
@@ -499,20 +497,27 @@
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。大人数のお客様に大人気。大人数のお客様に大人気。</p>
 
-                            <div class="stars small">
-                                <img src="resources/images/star.png" alt="星1個" />
-                                <img src="resources/images/star.png" alt="星1個" />
-                                <img src="resources/images/star.png" alt="星1個" />
-                                <img src="resources/images/star_half.png" alt="星半数個" />
-                                <img src="resources/images/star_none.png" alt="星無し" />
-                                <span class="only_pc">3.5 / 5.0</span>
+                            <ul class="icon">
+                                <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
+                            </ul>
+
+
+                            <div class="score_sec">
+                                <div class="stars small">
+                                    <img src="resources/images/star.png" alt="星1個" />
+                                    <img src="resources/images/star.png" alt="星1個" />
+                                    <img src="resources/images/star.png" alt="星1個" />
+                                    <img src="resources/images/star_half.png" alt="星半数個" />
+                                    <img src="resources/images/star_none.png" alt="星無し" />
+                                    <span class="only_pc">3.5 / 5.0</span>
+                                </div>
+
+                                <dl class="like small">
+                                    <dt>&hearts;</dt>
+                                    <dd>123<span>LIKE</span></dd>
+                                </dl>
+
                             </div>
-
-                            <dl class="like small">
-                                <dt>&hearts;</dt>
-                                <dd>123<span>LIKE</span></dd>
-                            </dl>
-
                         </a>
                     </li>
                 </ul>
@@ -520,7 +525,7 @@
                 <nav class="pager">
                     <ul>
                         <li class="prev"><a href="">
-                                <前のページ< /a>
+                                前のページ< /a>
                         </li>
                         <li><a href="">1</a></li>
                         <li class="current"><a href="">2</a></li>
@@ -628,6 +633,34 @@
     </div>
 </body>
 
+<script>
+$(document).ready(function() {
 
+    let ul = $('.list');
+
+    $(ul).each(function(i, e) {
+
+        $(e).find('> li').each(function(index, el) {
+
+            if (index % 2 == 1) {
+                return;
+            }
+
+            let h = $(el).height();
+            let nh = $(el).next('li').height();
+            let maxH = Math.max(h, nh);
+            console.log(maxH);
+            // set
+            $(el).find('a').css({
+                'height': maxH
+            });
+            $(el).next('li').find('a').css({
+                'height': maxH
+            });
+
+        });
+    });
+});
+</script>
 
 </html>

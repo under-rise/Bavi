@@ -161,4 +161,38 @@
 }
 
 .recommend_sec h2 span { position: relative; color: #e50054; }
-.recommend_sec h2 span::after {  content: ""; background:url(../images/osusume.gif) no-repeat left center; position:absolute; width: 70px; height: 30px; right: -80px; top: -10px; background-size: contain; }
+.recommend_sec h2 span::after {  content: ""; background:url(../images/osusume.gif) no-repeat left center; position:absolute; width: 70px; height: 30px; right: -80px; top: -10px; background-size: contain; }.recommend_sec h2 span {
+	position: relative;
+	color: #e50054;
+}
+
+.recommend_sec h2 span::after {
+	content: "";
+	background: url(../img/venue_list/osusume.gif) no-repeat left center;
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	right: -80px;
+	top: -10px;
+	background-size: contain;
+}
+
+.cont ul.shop li a {
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.cont ul.shop li .shopimage {
+	position: relative;
+}
+
+.cont ul.shop li .icon {
+	width: 200px;
+	margin-top: -10px;
+}
+
+.cont ul.shop li .score_sec {
+	position: absolute;
+	bottom: 10px;
+	width: 90%;
+}
