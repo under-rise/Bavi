@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="resources/css/sanitize.css">
     <link rel="stylesheet" href="resources/css/base.css?1.4">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
-    <link rel="stylesheet" href="resources/css/venue_list.css?1.91">
+    <link rel="stylesheet" href="resources/css/venue_list.css?2.1">
     <link rel="stylesheet" href="resources/css/venue_list_sp.css?1.5">
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
@@ -22,24 +22,24 @@
 
 
     <script>
-    $(function() {
-        $('.result_list form > ul > li:nth-child(-n+2) ').click(function(e) {
-            var select = '.' + $(this).attr('class');
-            $('#overlay_search div > ul').css('display', 'none');
-            $('#overlay_search div ' + select).css('display', 'block');
-            $('#overlay_search div button[type="button"]').css('display', 'none');
-            if (select == ".detail") $('#overlay_search div button[type="button"]').css('display',
-                'inline-block');
-            $('#overlay_search').fadeIn();
-            $('html').addClass('overlay');
-        });
-        $('#overlay_search div button[type="button"]').click(function(e) {
-            $('.detail input[type="checkbox"]').prop('checked', false);
-            $('.detail input[type="radio"]').prop('checked', false);
-            $('.detail input[type="text"]').val('');
-        });
+        $(function() {
+            $('.result_list form > ul > li:nth-child(-n+2) ').click(function(e) {
+                var select = '.' + $(this).attr('class');
+                $('#overlay_search div > ul').css('display', 'none');
+                $('#overlay_search div ' + select).css('display', 'block');
+                $('#overlay_search div button[type="button"]').css('display', 'none');
+                if (select == ".detail") $('#overlay_search div button[type="button"]').css('display',
+                    'inline-block');
+                $('#overlay_search').fadeIn();
+                $('html').addClass('overlay');
+            });
+            $('#overlay_search div button[type="button"]').click(function(e) {
+                $('.detail input[type="checkbox"]').prop('checked', false);
+                $('.detail input[type="radio"]').prop('checked', false);
+                $('.detail input[type="text"]').val('');
+            });
 
-    });
+        });
     </script>
 
 </head>
@@ -293,8 +293,7 @@
 
                             <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店" /></div>
                             <a href="venue_detail.php">
-                                <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg"
-                                        alt="多摩川緑地バーベキュー広場" />
+                                <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg" alt="多摩川緑地バーベキュー広場" />
                                 </figure>
 
                                 <h3>多摩川緑地バーベキュー広場</h3>
@@ -327,8 +326,7 @@
 
                             <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店" /></div>
                             <a href="venue_detail.html">
-                                <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg"
-                                        alt="多摩川緑地バーベキュー広場" />
+                                <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg" alt="多摩川緑地バーベキュー広場" />
                                 </figure>
 
                                 <h3>多摩川緑地バーベキュー広場</h3>
@@ -371,8 +369,7 @@
                     <li>
                         <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店" /></div>
                         <a href="venue_detail.html">
-                            <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg"
-                                    alt="多摩川緑地バーベキュー広場" />
+                            <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg" alt="多摩川緑地バーベキュー広場" />
                             </figure>
 
                             <h3>多摩川緑地バーベキュー広場</h3>
@@ -403,8 +400,7 @@
                     </li>
                     <li>
                         <a href="venue_detail.html">
-                            <figure class="okinawa"><img src="resources/images/venue_list/result_02.jpg"
-                                    alt="多摩川緑地バーベキュー広場" />
+                            <figure class="okinawa"><img src="resources/images/venue_list/result_02.jpg" alt="多摩川緑地バーベキュー広場" />
 
                             </figure>
 
@@ -431,8 +427,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <figure class="tohoku"><img src="resources/images/venue_list/no_image.jpg"
-                                    alt="多摩川緑地バーベキュー広場" /></figure>
+                            <figure class="tohoku"><img src="resources/images/venue_list/no_image.jpg" alt="多摩川緑地バーベキュー広場" /></figure>
 
                             <h3>多摩川緑地バーベキュー広場</h3>
 
@@ -490,8 +485,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <figure class="kanto"><img src="resources/images/venue_list/result_03.jpg"
-                                    alt="多摩川緑地バーベキュー広場" /></figure>
+                            <figure class="kanto"><img src="resources/images/venue_list/result_03.jpg" alt="多摩川緑地バーベキュー広場" /></figure>
 
                             <h3>多摩川緑地バーベキュー広場摩川緑地バーベキュー広場</h3>
 
@@ -627,40 +621,39 @@
         </nav>
 
         <div id="bottom_line_btn">
-            <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="resources/images/line_btn.gif"
-                    alt="LINEでお気軽相談" /></a>
+            <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="resources/images/line_btn.gif" alt="LINEでお気軽相談" /></a>
         </div>
     </div>
 </body>
 
 <script>
-$(document).ready(function() {
+    $(document).ready(function() {
 
-    let ul = $('.list');
+        let ul = $('.list');
 
-    $(ul).each(function(i, e) {
+        $(ul).each(function(i, e) {
 
-        $(e).find('> li').each(function(index, el) {
+            $(e).find('> li').each(function(index, el) {
 
-            if (index % 2 == 1) {
-                return;
-            }
+                if (index % 2 == 1) {
+                    return;
+                }
 
-            let h = $(el).height();
-            let nh = $(el).next('li').height();
-            let maxH = Math.max(h, nh);
-            console.log(maxH);
-            // set
-            $(el).find('a').css({
-                'height': maxH
+                let h = $(el).height();
+                let nh = $(el).next('li').height();
+                let maxH = Math.max(h, nh);
+                console.log(maxH);
+                // set
+                $(el).find('a').css({
+                    'height': maxH
+                });
+                $(el).next('li').find('a').css({
+                    'height': maxH
+                });
+
             });
-            $(el).next('li').find('a').css({
-                'height': maxH
-            });
-
         });
     });
-});
 </script>
 
 </html>
