@@ -300,7 +300,10 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
@@ -308,7 +311,10 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
@@ -316,7 +322,10 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">会場名</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
@@ -324,7 +333,10 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">会場名</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
