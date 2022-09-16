@@ -18,8 +18,8 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?9.41">
-    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?2.9">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?9.411">
+    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?3.19">
 
 
 
@@ -163,7 +163,8 @@
                     </div>
 
                     <ul class="icon">
-                        <li><a href="/topic/rental.php"><img src="resources/images/icon_delivery.png?1.1" alt=""></a>
+                        <li><a href="/topic/rental.php" target="_blank"><img
+                                    src="resources/images/icon_delivery_detail.gif?1.1" alt=""></a>
                         </li>
                     </ul>
 
