@@ -91,7 +91,12 @@
                 <div class="inr clearfix">
                     <ul class="slider">
 
-                        <li><a href="/topic/rental.php"><img src="resources/images/top/delivery_banner.jpg?1.1"></a>
+                        <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img
+                                    src="/topic/images/delivery_owner_banner.jpg?1.3"></a>
+                        </li>
+
+                        <li><a href="https://bavi.jp/lp/page/rental.php"><img
+                                    src="resources/images/top/delivery_banner.jpg?1.1"></a>
                         </li>
 
                         <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img

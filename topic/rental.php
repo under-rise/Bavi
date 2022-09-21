@@ -9,9 +9,7 @@
     <meta name="description" content="">
     <title>レンタル（デリバリー）プラン | 日本最大級のBBQプラットフォーム Bavi</title>
 
-    <?php include __DIR__ . '/../topic/tpl/head.php'; ?>
-
-
+    <?php include '/home/tegarubbq/fuel/app/views/templates/head_include.php'; ?>
 
     <link rel="stylesheet" href="/topic/css/topic.css">
 
@@ -310,7 +308,7 @@
     <div id="loading"></div>
     <div id="wrapper">
 
-        <?php include __DIR__ . '/../topic/tpl/header.php'; ?>
+        <?php include '/home/tegarubbq/fuel/app/views/templates/header.php'; ?>
 
         <article id="rental" class="no_fixed cont">
 
@@ -318,7 +316,7 @@
 
             <div>
                 <div class="inr">
-                    <img src="/resources/images/top/delivery_banner.jpg?" style="margin-bottom: 30px;">
+                    <img src="../images/delivery_banner.jpg?" style="margin-bottom: 30px;">
                 </div>
             </div>
 
@@ -326,7 +324,7 @@
                 <div class="inr">
 
                     <div style="width: 240px; margin: 0 auto">
-                        <img src="/resources/images/icon_delivery_l.png" style="margin-bottom: 30px;">
+                        <img src="../images/icon_delivery_l.png" style="margin-bottom: 30px;">
                     </div>
                     <h3>Baviのレンタル（デリバリー）<br>プランとは？</h3>
 
@@ -345,7 +343,8 @@
                         </li>
                     </ol>
 
-                    <a href="/venue_list.php" class="link_btn">レンタルプラン対応会場を検索</a>
+                    <a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=1&option_id%5B11%5D%5B%5D=31"
+                        class="link_btn">レンタルプラン対応会場を検索</a>
 
                 </div>
             </section>
@@ -356,12 +355,12 @@
 
                     <h4>1セット（5人用）に含まれるもの</h4>
                     <ul class="sec02_01">
-                        <li><img src="/topic/images/rental_01.jpg">テント（1張）</li>
-                        <li><img src="/topic/images/rental_02.jpg">テーブル（1台）</li>
-                        <li><img src="/topic/images/rental_03.jpg">チェア（5脚）</li>
-                        <li><img src="/topic/images/rental_04.jpg">グリル（1台）※炭3kg付き</li>
-                        <li><img src="/topic/images/rental_05.jpg">クーラーBOX</li>
-                        <li><img src="/topic/images/rental_06.jpg">消耗品（1式）<div class="caption">
+                        <li><img src="../images/rental_01.jpg">テント（1張）</li>
+                        <li><img src="../images/rental_02.jpg">テーブル（1台）</li>
+                        <li><img src="../images/rental_03.jpg">チェア（5脚）</li>
+                        <li><img src="../images/rental_04.jpg">グリル（1台）※炭3kg付き</li>
+                        <li><img src="../images/rental_05.jpg">クーラーBOX</li>
+                        <li><img src="../images/rental_06.jpg">消耗品（1式）<div class="caption">
                                 ※紙皿10枚、お箸10膳、おしぼり10枚、プラコップ10ケ</div>
                         </li>
                     </ul>
@@ -370,7 +369,7 @@
 
                     <div class="sec02_02">
                         <figure>
-                            <img src="/topic/images/rental_07.jpg?1">
+                            <img src="../images/rental_07.jpg?1">
                         </figure>
                         <div class="cont">
                             <ul>
@@ -388,8 +387,7 @@
 
                         <div class="info">
                             <figure>
-                                <a href="https://www.gpc-bbq.com/" target="_blank"><img
-                                        src="/topic/images/logo.svg"></a>
+                                <a href="https://www.gpc-bbq.com/" target="_blank"><img src="../images/logo.svg"></a>
                             </figure>
                             <div class="cont">
                                 <dl>
@@ -401,7 +399,8 @@
                         </div>
                     </div>
 
-                    <a href="/venue_list.php" class="link_btn">レンタルプラン対応会場を検索</a>
+                    <a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=1&option_id%5B11%5D%5B%5D=31"
+                        class="link_btn">レンタルプラン対応会場を検索</a>
 
                 </div>
 
@@ -485,7 +484,8 @@
                     <dl>
                         <dt>当日雨の場合はキャンセル可能ですか？</dt>
                         <dd>キャンセルは可能です。但し、キャンセルチャージが発生いたします。（台風・転載を除く）<br>
-                            <a href="/terms.php#cancel_sec" target="_blank">キャンセルチャージの扱いはこちら</a><br>
+                            <a href="https://bavi.jp/lp/page/terms.php#cancel_sec"
+                                target="_blank">キャンセルチャージの扱いはこちら</a><br>
                             当日台風や天災が起こった場合には特例としてキャンセルチャージが無料となります。また、台風の接近、進路状況によってはキャンセルチャージが緩和される場合があります。
 
                         </dd>
@@ -506,7 +506,8 @@
 
             </section>
 
-            <a href="/venue_list.php" class="link_btn">レンタルプラン対応会場を検索</a>
+            <a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=1&option_id%5B11%5D%5B%5D=31"
+                class="link_btn">レンタルプラン対応会場を検索</a>
 
 
 
@@ -514,7 +515,7 @@
 
         </article>
 
-        <?php include __DIR__ . '/../topic/tpl/footer.php'; ?>
+        <?php include '/home/tegarubbq/fuel/app/views/templates/footer.php'; ?>
 
 </body>
 

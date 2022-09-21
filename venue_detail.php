@@ -163,7 +163,7 @@
                     </div>
 
                     <ul class="icon">
-                        <li><a href="/topic/rental.php" target="_blank"><img
+                        <li><a href="https://bavi.jp/lp/page/rental.php" target="_blank"><img
                                     src="resources/images/icon_delivery_detail.gif?1.1" alt=""></a>
                         </li>
                     </ul>
