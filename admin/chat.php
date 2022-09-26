@@ -20,6 +20,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://bavi.jp/assets/js/customer/main.js?1648761028"></script>
 
+    <style>
+    .btn-success {
+        width: 300px;
+        margin: 10px auto;
+    }
+
+    #template_select {
+        font-size: 16px;
+        padding: 5px 20px;
+        background-color: #fff;
+        border: 1px solid #999;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .send_list {
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px #999;
+    }
+
+    .send_list li {
+        margin-bottom: 5px;
+    }
+    </style>
 </head>
 
 <body id="spot">
@@ -258,12 +284,27 @@
         </div>
         <hr>
 
-
+        <div class="template_select">
+            <select name="template_select" id="template_select">
+                <option value="">テンプレートを選択する</option>
+                <option value="1">ご予約時</option>
+                <option value="2">御礼</option>
+                <option value="3">ご注文確認</option>
+                <option value="4">キャンセル</option>
+                <option value="5">その他</option>
+            </select>
+        </div>
         <form method="post" action="?">
             <input type="hidden" name="spot_contact_id" value="200">
+            <input type="title" class="form-control" style="margin-bottom: 10px;" name="mail_title">
             <textarea name="message" class="form-control" rows="10"></textarea>
+
+            <p class="red" style="margin-top: 5px;">【ご注意】変数を削除、変換してしまうと正しく送れない可能性が御座います。
+            </p>
+
             <button type="submit" class="btn btn-success"> 送信 </button>
         </form>
+
     </div>
     <!--footer-->
     <footer>
@@ -282,6 +323,46 @@
     <div id="footer_btn">
         <span></span>
     </div>
+
+    <script>
+    $(function() {
+
+        const url = './data/mail_template.json';
+        const mailTitle = $('input[name=mail_title]');
+        const textarea = $('textarea[name=message]');
+
+        $('#template_select').on('change', function() {
+            let value = $(this).val();
+
+            if (value === '') {
+                // textarea.attr('readonly', false);
+                // mailTitle.attr('readonly', false);
+                textarea.val("");
+                mailTitle.val("");
+                return;
+            } else {
+                // textarea.attr('readonly', true);
+                // mailTitle.attr('readonly', true);
+            }
+
+            fetch(url, {
+                    cache: "no-store"
+                })
+                .then(response => {
+                    return response.json();
+                })
+                .then(json => {
+                    let data = json.filter(i => {
+                        return i.id == value
+                    });
+                    mailTitle.val(data[0].title);
+                    textarea.val(data[0].message);
+                });
+
+        });
+
+    });
+    </script>
 </body>
 
 </html>

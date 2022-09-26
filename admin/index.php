@@ -525,7 +525,7 @@
             <div id="member_sec" class="sec">
                 <table class="table_style" id="order_list">
                     <tr class="head">
-                        <th class="w5"></th>
+                        <th class="w5">選択</th>
                         <th class="w5"><span class="sort_btn" data-sort="1">利用NO</span></th>
                         <th><span class="sort_btn" data-sort="1">受付日</span></th>
                         <th class="form">ステータス
@@ -553,8 +553,8 @@
 
                     <tr data-list_status="-1" class="main_info">
                         <td class="w5">
-                            <!--<div class="icon dengon">伝言あり</div>
-                                <input type="checkbox">-->
+
+                            <input type="checkbox" name="checkbox" style="transform: scale(1.5);">
                         </td>
                         <td>241-5</td>
                         <td>2022-04-17 19:39:16</td>
@@ -597,9 +597,7 @@
 
                     <tr data-list_status="10" class="main_info">
                         <td class="w5">
-                            <!--<div class="icon dengon">伝言あり</div>
-                                <input type="checkbox">-->
-                        </td>
+                            <input type="checkbox" style="transform: scale(1.5);" </td>
                         <td>1515-1</td>
                         <td>2022-04-01 22:48:24</td>
                         <td>
@@ -639,6 +637,14 @@
                         </td>
                     </tr>
                 </table>
+
+            </div>
+
+            <div>
+                <p style="text-align:center; ">チェック案件にメール一括送信する</p>
+                <a href="Broadcast.php" class="btn" id="broadcast_btn"
+                    style="color: #fff; display: block; font-weight: bold; padding: 10px 30px; margin: 0 auto; width: 300px;">メール一斉送信</a>
+
             </div>
         </div>
         <!--management_page-->
@@ -650,6 +656,15 @@
     </style>
     <script>
     $(function() {
+
+        $('#broadcast_btn').on('click', function() {
+            let leng = $('input:checkbox[name=checkbox]:checked').length;
+            if (leng == 0) {
+                alert("案件がチェックされていません。");
+                return false;
+            }
+        });
+
 
         // 削除ボタンクリック
         $('.delete').on('click', function() {
