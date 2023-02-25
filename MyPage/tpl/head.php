@@ -1,8 +1,15 @@
+<meta name="description" content="BBQ場 | 日本最大級のBBQプラットフォーム Bavi">
+<meta property="og:title" content="BBQ場 | 日本最大級のBBQプラットフォーム Bavi">
+<meta property="og:image" content="https://bavi.jp/assets/img/apple-touch-icon.png">
+<meta property="og:description" content="BBQ場 | 日本最大級のBBQプラットフォーム Bavi">
+<meta property="og:locale" content="ja_JP" />
+<meta name="apple-mobile-web-app-title" content="Bavi">
+<link rel="apple-touch-icon" sizes="180x180" href="https://bavi.jp/assets/img/apple-touch-icon.png">
+
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/base.css?321" />
 <link rel="stylesheet" href="css/base_sp.css?332" media="screen and (max-width: 780px)" />
 <link rel="stylesheet" href="css/style.css?111" />
-
 
 <link rel="stylesheet" href="/resources/slick/slick.css" />
 <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
