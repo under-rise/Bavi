@@ -6,10 +6,14 @@
     </figure>
 
     <ul>
-        <li><a href=""><img src="/resources/images/sns1.png" alt="Twitter" /></a></li>
-        <li><a href=""><img src="/resources/images/sns2.png" alt="You tube" /></a></li>
-        <li><a href=""><img src="/resources/images/sns3.png" alt="facebook" /></a></li>
-        <li><a href=""><img src="/resources/images/sns4.png" alt="LINE" /></a></li>
+        <li><a href="https://twitter.com/tegarunibbq000"><img src="/resources/images/sns1.png" alt="Twitter" /></a>
+        </li>
+        <li><a href="https://www.youtube.com/@bavi_bbqbbq6219"><img src="/resources/images/sns2.png"
+                    alt="You tube" /></a>
+        </li>
+        <li><a href="https://www.instagram.com/bavi_bbq/"><img src="/resources/images/sns5.png" alt="instagram" /></a>
+        </li>
+
     </ul>
 
     <nav>

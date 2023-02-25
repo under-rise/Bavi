@@ -26,7 +26,11 @@ $(window).on('load', function() {
 
             alalysis.detail.setReference();
 
+            // 数字反映実行
+            alalysis.funcs.date = alalysis.funcs.setArrayData();
+            alalysis.funcs.setSelectDate(jsonData,shop_id);
 
+            $('.stay_time_average .num').text(jsonData.value.staytimeAverage);
            
         });
     }
@@ -79,7 +83,7 @@ $(window).on('load', function() {
         return {
             type: "bar",
             data: {
-                labels: alalysis.funcs.getWeek(),
+                labels: alalysis.funcs.getDay(),
                 datasets: [{
                         label: "ページビュー（1ユーザーあたり）",
                         fill: false,
@@ -94,12 +98,27 @@ $(window).on('load', function() {
         }
     }
 
+    alalysis.detail.setPageviewUpdata = function(jsonData,dateType){
+    
+         return (
+                 [{
+                         label: "1ユーザーあたり",
+                         fill: false,
+                         backgroundColor: RED_LINE,
+                         borderColor: RED_LINE,
+                         lineTension: 0,
+                         data: jsonData["pageview_"+dateType]
+                     }
+                 ]
+         );
+      }
+
     // コンバージョン数
     alalysis.detail.setConversionData = function(jsonData){
         return {
             type: "bar",
             data: {
-                labels: alalysis.funcs.getWeek(),
+                labels: alalysis.funcs.getDay(),
                 datasets: [{
                         label: "予約完了数",
                         fill: false,
@@ -139,6 +158,45 @@ $(window).on('load', function() {
     }
     
 
+    // コンバージョン数 アップデート
+    alalysis.detail.setConversionUpdata = function(jsonData,dateType){
+       console.log(dateType);
+        return (
+                [{
+                        label: "予約完了数",
+                        fill: false,
+                        backgroundColor: RED_LINE,
+                        borderColor: RED_LINE,
+                        lineTension: 0,
+                        data: jsonData["conversion_"+dateType]
+                    },
+                    {
+                        label: "準予約完了",
+                        fill: false,
+                        backgroundColor: BLUE_LINE,
+                        borderColor: BLUE_LINE,
+                        lineTension: 0,
+                        data: jsonData["semi_conversion_"+dateType]
+                    },
+                    {
+                        label: "電話タップ",
+                        fill: false,
+                        backgroundColor: GREEN_LINE,
+                        borderColor: GREEN_LINE,
+                        lineTension: 0,
+                        data: jsonData["tel_conversion_"+dateType]
+                    },
+                    {
+                        label: "オフィシャルサイトタップ",
+                        fill: false,
+                        backgroundColor: ORANGE_LINE,
+                        borderColor: ORANGE_LINE,
+                        lineTension: 0,
+                        data: jsonData["site_conversion_"+dateType]
+                    }   
+                ]
+        );
+     }
 
      alalysis.detail.setReference_number = 0;
      alalysis.detail.setReference_json = {};

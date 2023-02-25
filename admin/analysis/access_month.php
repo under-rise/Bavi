@@ -21,10 +21,8 @@
 
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -64,19 +62,19 @@
 
                                 <div class="week table_data active">
                                     <div class="sub_ttl">
-                                        <h2>日別アクセス数（2022年10月10日）</h2>
+                                        <h2>日別アクセス数（2022年月別）</h2>
 
                                         <ul class="time_select">
-                                            <li class="day active"><a href="access.php">日</a></li>
+                                            <li class="day"><a href="access.php">日</a></li>
                                             <li class="week "><a href="access_week.php">週</a></li>
-                                            <li class="month"><a href="access_month.php">月</a></li>
+                                            <li class="month active"><a href="access_month.php">月</a></li>
                                         </ul>
                                     </div>
 
                                     <ul class="time_select_link">
-                                        <li class="week" data-time-select="week"><a href="#">前の日</a></li>
-                                        <li class="month active" data-time-select="month">2022年10月10日</li>
-                                        <li class="month" data-time-select="month"><a href="#">次の日</a></li>
+                                        <li class="week" data-time-select="week"><a href="#">前の年</a></li>
+                                        <li class="month active" data-time-select="month">2022年月別</li>
+                                        <li class="month" data-time-select="month"><a href="#">次の年</a></li>
                                     </ul>
 
 
@@ -88,54 +86,54 @@
                                             <th class="sort" data-num="3">閲覧ユーザー ▼</th>
                                         </tr>
                                         <tr>
-                                            <td>3時〜6時</td>
-                                            <td>110人</td>
-                                            <td>230人</td>
-                                            <td>230人</td>
+                                            <td>2022年10月</td>
+                                            <td>1101人</td>
+                                            <td>2301人</td>
+                                            <td>2301人</td>
                                         </tr>
 
                                         <tr>
-                                            <td>3時〜9時</td>
-                                            <td>140人</td>
+                                            <td>2022年9月</td>
+                                            <td>1401人</td>
+                                            <td>2101人</td>
+                                            <td>301人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年8月</td>
+                                            <td>1501人</td>
+                                            <td>2016人</td>
+                                            <td>3910人</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>2022年7月</td>
                                             <td>210人</td>
-                                            <td>30人</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>9時〜12時</td>
-                                            <td>150人</td>
-                                            <td>206人</td>
-                                            <td>390人</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>9時〜15時</td>
-                                            <td>210人</td>
-                                            <td>20人</td>
-                                            <td>30人</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>15時〜18時</td>
-                                            <td>10人</td>
-                                            <td>220人</td>
-                                            <td>310人</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>18時〜21時</td>
-                                            <td>10人</td>
-                                            <td>320人</td>
-                                            <td>30人</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>21時〜24時</td>
-                                            <td>10人</td>
                                             <td>120人</td>
+                                            <td>330人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年6月</td>
+                                            <td>110人</td>
+                                            <td>2520人</td>
+                                            <td>3710人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年5月</td>
+                                            <td>710人</td>
+                                            <td>3720人</td>
                                             <td>30人</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>2022年4月</td>
+                                            <td>170人</td>
+                                            <td>1720人</td>
+                                            <td>370人</td>
                                         </tr>
                                     </table>
 
@@ -147,29 +145,26 @@
                                             <li><a href="#">4</a></li>
                                         </ul>
                                     </div>
+
                                 </div>
-                                <!-- week -->
+                                <!-- month -->
 
-
+                                <div class="btn"><a href="./index.php">一覧ページへ戻る</a></div>
                             </div>
-                            <!-- month -->
 
-                            <div class="btn"><a href="./index.php">一覧ページへ戻る</a></div>
                         </div>
 
                     </div>
+                    <!-- ここまで -->
+
 
                 </div>
-                <!-- ここまで -->
+                <!--management_page-->
 
+            </section>
 
         </div>
-        <!--management_page-->
-
-        </section>
-
-    </div>
-    <!--row-->
+        <!--row-->
 
     </div>
 
@@ -183,24 +178,24 @@
     <script src="/admin/analysis/js/sort.js?1.31"></script>
 
     <script>
-    $('.time_select li').on('click', function() {
-        $(this).parent().children('li').removeClass('active');
-        $(this).addClass('active');
-        let s = $(this).data('time-select');
-        $('.table_data').removeClass('active');
-        $('.analysis_detail').find('.' + s).addClass('active');
-    });
+        $('.time_select li').on('click', function() {
+            $(this).parent().children('li').removeClass('active');
+            $(this).addClass('active');
+            let s = $(this).data('time-select');
+            $('.table_data').removeClass('active');
+            $('.analysis_detail').find('.' + s).addClass('active');
+        });
 
-    $('.nav-sub').hide();
+        $('.nav-sub').hide();
 
-    $('.menu-toggle').click(function() {
-        $(this).parent().find('.nav-sub').toggle(500);
-    });
+        $('.menu-toggle').click(function() {
+            $(this).parent().find('.nav-sub').toggle(500);
+        });
 
-    var active_menu = $('li.active').parent();
-    if (active_menu.hasClass('nav-sub')) {
-        active_menu.show();
-    }
+        var active_menu = $('li.active').parent();
+        if (active_menu.hasClass('nav-sub')) {
+            active_menu.show();
+        }
     </script>
 
 </body>

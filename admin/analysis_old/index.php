@@ -15,7 +15,7 @@
 
     <link type="text/css" rel="stylesheet" href="/admin/css/common.css">
     <link type="text/css" rel="stylesheet" href="/admin/css/management.css?1.1">
-    <link type="text/css" rel="stylesheet" href="/admin/css/analysis.css?1.3">
+    <link type="text/css" rel="stylesheet" href="/admin/css/analysis.css?1.21">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -65,13 +65,6 @@
         position: fixed;
         bottom: 0;
     }
-
-    .time_select li a {
-        padding: 15px;
-        width: 100px;
-        text-align: center;
-        font-weight: bold;
-    }
     </style>
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -107,15 +100,6 @@
                         <div class="back"><a href="#">一覧ページへ戻る</a></div>
                     </div>
 
-                    <div class="flex between">
-                        <p class="selected_date">表示期間：<span>2022年10月20日〜26日</span></p>
-                        <ul class="time_select">
-                            <li class="day"><a href="#">日</a></li>
-                            <li class="week"><a href="#">週</a></li>
-                            <li class="month"><a href="#">月</a></li>
-                        </ul>
-                    </div>
-
 
                     <!-- 追加 -->
                     <div id="admin" class="analysis_sec top flex justify-between">
@@ -142,6 +126,15 @@
 
                                 <canvas id="access_charts" class="analysis"></canvas>
 
+                                <div class="flex between">
+                                    <p class="selected_date">選択期間：<span>2022年8月19日</span></p>
+                                    <ul class="time_select" data-shop_id="admin" data-type="guest"
+                                        data-replace='["new","repeat","view"]'>
+                                        <li class="day active">日</li>
+                                        <li class="week">週</li>
+                                        <li class="month">月</li>
+                                    </ul>
+                                </div>
 
                                 <div class="btn"><a href="access.php">詳しく見る</a></div>
 
@@ -165,6 +158,15 @@
 
                                 <canvas id="pageview_charts" class="analysis"></canvas>
 
+                                <div class="flex between">
+                                    <p class="selected_date">選択期間：<span></span></p>
+                                    <ul class="time_select" data-shop_id="admin" data-type="pageview"
+                                        data-replace='["pageview"]'>
+                                        <li class="day active">日</li>
+                                        <li class="week">週</li>
+                                        <li class="month">月</li>
+                                    </ul>
+                                </div>
 
                             </div>
 
@@ -176,7 +178,6 @@
                         <div class="analysis_top itemBOX shadow">
                             <div class="ttl">
                                 <h2>コンバージョン</h2>
-
                             </div>
 
                             <div class="inr">
@@ -198,6 +199,15 @@
 
                                 <canvas id="conversion_charts" class="analysis"></canvas>
 
+                                <div class="flex between">
+                                    <p class="selected_date">選択期間：<span></span></p>
+                                    <ul class="time_select" data-shop_id="admin" data-type="conversion"
+                                        data-replace='["conversion","semi_conversion","tel_conversion","site_conversion"]'>
+                                        <li class="day active">日</li>
+                                        <li class="week">週</li>
+                                        <li class="month">月</li>
+                                    </ul>
+                                </div>
 
                                 <div class="btn"><a href="./conversion.php">詳しく見る</a></div>
 
@@ -357,16 +367,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    <script src="/admin/analysis/js/func.js?2.12"></script>
+    <script src="/admin/analysis/js/func.js?1.121"></script>
     <script src="/admin/analysis/js/config.js?2.411"></script>
-    <script src="/admin/analysis/js/common.js?22"></script>
-    <script src="/admin/analysis/js/detail.js?12.31"></script>
+    <script src="/admin/analysis/js/common.js?1.931"></script>
+    <script src="/admin/analysis/js/detail.js?1.31"></script>
 
 
     <script>
     const data_url = '/admin/analysis/data/access.json?4.12';
-    const reference_url = '/admin/analysis/data/reference.json?12.21';
-
+    const reference_url = '/admin/analysis/data/reference.json?1.21';
     $(window).on('load', function() {
         alalysis.detail.pageInit('admin');
     });

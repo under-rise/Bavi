@@ -10,6 +10,60 @@ $(function(){
 
     alalysis.funcs.date = {}
     
+    
+
+    // 日付変換
+    $('.time_select li').on('click',function(e){
+
+      if($(e.target).hasClass('active')) return;
+
+      // チャート取得
+      let chars_id = $(this).closest('.analysis_top').find('canvas').attr('id');
+      // 日付取得取得
+      let day = $(this).attr('class');
+      // ショップID取得
+      let shop_id = $(this).parent().data('shop_id');
+      // 取得タイプ
+      let type = $(this).parent().data('type');
+      // 取得タイプ
+      let replace = $(this).parent().data('replace');
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+      
+      let click_type;
+      switch(day){
+        case 'day':
+            click_type = alalysis.funcs.getDay();
+            break;
+        case 'week':
+            click_type = alalysis.funcs.getWeek();
+            break;
+        case 'month':
+            click_type = alalysis.funcs.getMonth();
+            break;
+      }
+      //日付ラベルの変更  
+      alalysis.common.charts[chars_id].data.labels = click_type;
+      //ショップデータの取得   
+      let jsonData = alalysis.funcs.jsonSearch(shop_id);
+   
+      //グラフデータ反映 
+      switch(type){
+        case 'guest':
+            alalysis.common.charts[chars_id].data.datasets = alalysis.common.setUpdate(jsonData.value,day);
+        break;
+        case 'conversion':
+            alalysis.common.charts["conversion_charts"].data.datasets = alalysis.detail.setConversionUpdata(jsonData.value,day);
+        break;
+        case 'pageview':
+            alalysis.common.charts["pageview_charts"].data.datasets = alalysis.detail.setPageviewUpdata(jsonData.value,day);
+        break;
+      }
+ 
+      // テキスト反映     
+      alalysis.funcs.replace(jsonData,replace,shop_id,type,day);
+      alalysis.common.charts[chars_id].update();
+    });
 
     // json検索（ショップID検索）
     alalysis.funcs.jsonSearch = function(keyword){
@@ -123,6 +177,38 @@ $(function(){
         return date;
     }
 
+    // 選択日時の初回設定
+    alalysis.funcs.setSelectDate = function(jsonData,shop_id){
+        $('.time_select').each(function(i,e){
+
+            // 数字初期化（最初はday * 1日のデータ取得）
+            let replace = $(this).data('replace');
+            let type = $(this).data('type');
+           
+            $(e).find('li').each(function(j,el){
+                if($(el).hasClass('active')){
+                    let replacePos = $(this).closest('.analysis_top').find('.selected_date span');
+                    let activeDay = $(this).attr('class').replace("active","").trim();
+                    let result = alalysis.funcs.date[activeDay];
+                    // 選択日付の更新
+                    replacePos.text(result);
+                    //データの設定
+                    alalysis.funcs.replace(jsonData,replace,shop_id,type,activeDay);
+                   
+                }
+
+            });
+        });
+        
+    }
+
+    // 選択日時の選択設定
+    $('.time_select li').on('click',function(i,e){
+        let replacePos = $(this).closest('.analysis_top').find('.selected_date span');
+        let activeDay = $(this).attr('class').replace("active","").trim();
+        let result = alalysis.funcs.date[activeDay];
+        replacePos.text(result);   
+    });
     
 
     alalysis.funcs.init = function(){

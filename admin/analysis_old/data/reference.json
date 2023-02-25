@@ -1,0 +1,74 @@
+
+
+    {
+        "shop_id": "admin",
+         "value": [
+            {
+            "media":"Goggle",
+            "url":"https://www.google.co.jp/",
+            "access":"210"
+            },
+            {
+                "media":"コラム【アドバイス】 | 日本最大級のBBQプラットフォーム Bavi",
+                "url":"https://bavi.jp/spot?pref_id=13",
+                "access":"110"
+            },
+            {
+                "media":"BBQ場【青森県】 | 日本最大級のBBQプラットフォーム Bavi",
+                "url":"https://bavi.jp/spot?pref_id=2",
+                "access":"20"
+            },
+            {
+                "media":"Yahoo",
+                "url":"https://www.yahoo.co.jp/",
+                "access":"5"
+            },
+            {
+                "media":"その他",
+                "url":"https://xxxxxxx.com",
+                "access":"3"
+            },
+            {
+            "media":"Goggle",
+            "url":"https://www.google.co.jp/",
+            "access":"1210"
+            },
+            {
+                "media":"コラム【アドバイス】 | 日本最大級のBBQプラットフォーム Bavi",
+                "url":"https://bavi.jp/spot?pref_id=13",
+                "access":"410"
+            },
+            {
+                "media":"BBQ場【青森県】 | 日本最大級のBBQプラットフォーム Bavi",
+                "url":"https://bavi.jp/spot?pref_id=2",
+                "access":"120"
+            },
+            {
+                "media":"Yahoo",
+                "url":"https://www.yahoo.co.jp/",
+                "access":"35"
+            },
+            {
+                "media":"最後",
+                "url":"https://xxxxxxx.com",
+                "access":"33"
+            },
+            {
+                "media":"最後",
+                "url":"https://xxxxxxx.com",
+                "access":"33"
+            },
+             {
+                "media":"最後",
+                "url":"https://xxxxxxx.com",
+                "access":"33"
+            },
+            {
+                "media":"最後",
+                "url":"https://xxxxxxx.com",
+                "access":"33"
+            }
+        ]
+    
+    }
+

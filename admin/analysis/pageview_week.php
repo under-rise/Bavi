@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="robots" content="noindex" />
-    <title>コンバージョン（アクセス解析） | 管理画面</title>
+    <title>ページビュー（アクセス解析） | 管理画面</title>
     <link type="text/css" rel="stylesheet" href="http://gpc-test.work/assets/css/bootstrap.css?1595739458" />
     <link type="text/css" rel="stylesheet" href="/admin/css/default.css?1.1" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="/admin/css/common.css">
     <link type="text/css" rel="stylesheet" href="/admin/css/management.css?1.1">
-    <link type="text/css" rel="stylesheet" href="/admin/css/analysis.css?1.4">
+    <link type="text/css" rel="stylesheet" href="/admin/css/analysis.css?1.51">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -49,7 +49,7 @@
                 <div id="management_page" class="col-md-10 col-md-offset-2 main">
 
                     <div class="ttl">
-                        <h1>アクセス解析 | コンバージョン</h1>
+                        <h1>アクセス解析 | ページビュー</h1>
                         <div class="back"><a href="./index.php">一覧ページへ戻る</a></div>
                     </div>
 
@@ -60,60 +60,70 @@
                         <div class="analysis_detail itemBOX shadow">
 
                             <div class="sub_ttl">
-                                <h2>コンバージョン（2022年10月20日）</h2>
-
+                                <h2>ページビュー（2022年10月20日〜10月26日）</h2>
                                 <ul class="time_select">
-                                    <li class="day active"><a href="conversion.php">日</a></li>
-                                    <li class="week "><a href="conversion_week.php">週</a></li>
-                                    <li class="month"><a href="conversion_month.php">月</a></li>
+                                    <li class="day "><a href="pageview.php">日</a></li>
+                                    <li class="week active"><a href="pageview_week.php">週</a></li>
+                                    <li class="month"><a href="pageview_month.php">月</a></li>
                                 </ul>
                             </div>
 
                             <div class="inr">
 
                                 <ul class="time_select_link">
-                                    <li class="week" data-time-select="week"><a href="#">前の日</a></li>
-                                    <li class="month active" data-time-select="month">2022年10月20日</li>
-                                    <li class="month" data-time-select="month"><a href="#">次の日</a></li>
+                                    <li class="week"><a href="#">前の週</a></li>
+                                    <li class="month active">2022年10月20日〜10月26日</li>
+                                    <li class="month"><a href="#">次の週</a></li>
                                 </ul>
-
 
                                 <table class="table_style">
                                     <tr>
-                                        <th>会場名</th>
-                                        <th class="sort" data-num="1">予約完了数 ▼</th>
-                                        <th class="sort" data-num="2">準予約完了 ▼</th>
-                                        <th class="sort" data-num="3">電話タップ ▼</th>
-                                        <th class="sort" data-num="4">サイトタップ ▼</th>
+                                        <th>ページタイトル</th>
+                                        <th>URL</th>
+                                        <th class="sort" data-num="reverse">閲覧回数 ▼</th>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">恋人ビーチ うふた浜BBQ場</a></td>
-                                        <td>100人</td>
+                                        <td>BBQ場 | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/</a></td>
                                         <td>420人</td>
-                                        <td>920回</td>
-                                        <td>320回</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">KIRANAH RESORT TOYOSU（キラナリゾート豊洲）</a></td>
-                                        <td>300人</td>
+                                        <td>恋人ビーチ うふた浜BBQ場 | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/spot/detail/1290</a></td>
+                                        <td>320人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KIRANAH RESORT TOYOSU（キラナリゾート豊洲） | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/spot/detail/1522</a></td>
                                         <td>120人</td>
-                                        <td>1920回</td>
-                                        <td>9920回</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">妙典河川敷・自由広場</a></td>
-                                        <td>100人</td>
-                                        <td>420人</td>
-                                        <td>420回</td>
-                                        <td>320回</td>
+                                        <td>妙典河川敷・自由広場 | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/spot/detail/1423</a></td>
+                                        <td>90人</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">BBQ会場</a></td>
-                                        <td>200人</td>
+                                        <td>BBQ場 | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/</a></td>
+                                        <td>20人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>恋人ビーチ うふた浜BBQ場 | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/spot/detail/1290</a></td>
+                                        <td>10人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KIRANAH RESORT TOYOSU（キラナリゾート豊洲） | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/spot/detail/1522</a></td>
+                                        <td>4人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>妙典河川敷・自由広場 | 日本最大級のBBQプラットフォーム Bavi</td>
+                                        <td><a href="#">https://bavi.jp/spot/detail/1423</a></td>
                                         <td>0人</td>
-                                        <td>550回</td>
-                                        <td>50回</td>
                                     </tr>
+
+
                                 </table>
 
                                 <div class="pager">
@@ -157,11 +167,7 @@
     <script src="/admin/analysis/js/detail.js?1.31"></script>
     <script src="/admin/analysis/js/sort.js?1.31"></script>
 
-
     <script>
-    const data_url = '/admin/analysis/data/access.json?4.12';
-    const reference_url = '/admin/analysis/data/reference.json?1.21';
-
     $('.nav-sub').hide();
 
     $('.menu-toggle').click(function() {

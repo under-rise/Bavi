@@ -60,21 +60,21 @@
                         <div class="analysis_detail itemBOX shadow">
 
                             <div class="sub_ttl">
-                                <h2>コンバージョン（2022年10月20日）</h2>
+                                <h2>コンバージョン（2022年10月）</h2>
 
                                 <ul class="time_select">
-                                    <li class="day active"><a href="conversion.php">日</a></li>
+                                    <li class="day "><a href="conversion.php">日</a></li>
                                     <li class="week "><a href="conversion_week.php">週</a></li>
-                                    <li class="month"><a href="conversion_month.php">月</a></li>
+                                    <li class="month active"><a href="conversion_month.php">月</a></li>
                                 </ul>
                             </div>
 
                             <div class="inr">
 
                                 <ul class="time_select_link">
-                                    <li class="week" data-time-select="week"><a href="#">前の日</a></li>
-                                    <li class="month active" data-time-select="month">2022年10月20日</li>
-                                    <li class="month" data-time-select="month"><a href="#">次の日</a></li>
+                                    <li class="week" data-time-select="week"><a href="#">前の月</a></li>
+                                    <li class="month active" data-time-select="month">2022年10月</li>
+                                    <li class="month" data-time-select="month"><a href="#">次の月</a></li>
                                 </ul>
 
 

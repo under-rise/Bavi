@@ -64,19 +64,19 @@
 
                                 <div class="week table_data active">
                                     <div class="sub_ttl">
-                                        <h2>日別アクセス数（2022年10月10日）</h2>
+                                        <h2>日別アクセス数（10月10日〜10月16日）</h2>
 
                                         <ul class="time_select">
-                                            <li class="day active"><a href="access.php">日</a></li>
-                                            <li class="week "><a href="access_week.php">週</a></li>
+                                            <li class="day"><a href="access.php">日</a></li>
+                                            <li class="week active"><a href="access_week.php">週</a></li>
                                             <li class="month"><a href="access_month.php">月</a></li>
                                         </ul>
                                     </div>
 
                                     <ul class="time_select_link">
-                                        <li class="week" data-time-select="week"><a href="#">前の日</a></li>
-                                        <li class="month active" data-time-select="month">2022年10月10日</li>
-                                        <li class="month" data-time-select="month"><a href="#">次の日</a></li>
+                                        <li class="week" data-time-select="week"><a href="#">前の週</a></li>
+                                        <li class="month active" data-time-select="month">2022年10月10日〜10月16日</li>
+                                        <li class="month" data-time-select="month"><a href="#">次の週</a></li>
                                     </ul>
 
 
@@ -88,21 +88,21 @@
                                             <th class="sort" data-num="3">閲覧ユーザー ▼</th>
                                         </tr>
                                         <tr>
-                                            <td>3時〜6時</td>
+                                            <td>2022年10月16日（日）</td>
                                             <td>110人</td>
                                             <td>230人</td>
                                             <td>230人</td>
                                         </tr>
 
                                         <tr>
-                                            <td>3時〜9時</td>
+                                            <td>2022年10月15日（土）</td>
                                             <td>140人</td>
                                             <td>210人</td>
                                             <td>30人</td>
                                         </tr>
 
                                         <tr>
-                                            <td>9時〜12時</td>
+                                            <td>2022年10月14日（金）</td>
                                             <td>150人</td>
                                             <td>206人</td>
                                             <td>390人</td>
@@ -110,21 +110,21 @@
 
 
                                         <tr>
-                                            <td>9時〜15時</td>
+                                            <td>2022年10月13日（木）</td>
                                             <td>210人</td>
                                             <td>20人</td>
                                             <td>30人</td>
                                         </tr>
 
                                         <tr>
-                                            <td>15時〜18時</td>
+                                            <td>2022年10月12日（水）</td>
                                             <td>10人</td>
                                             <td>220人</td>
                                             <td>310人</td>
                                         </tr>
 
                                         <tr>
-                                            <td>18時〜21時</td>
+                                            <td>2022年10月11日（火）</td>
                                             <td>10人</td>
                                             <td>320人</td>
                                             <td>30人</td>
@@ -132,7 +132,7 @@
 
 
                                         <tr>
-                                            <td>21時〜24時</td>
+                                            <td>2022年10月10日（月）</td>
                                             <td>10人</td>
                                             <td>120人</td>
                                             <td>30人</td>
@@ -150,26 +150,98 @@
                                 </div>
                                 <!-- week -->
 
+                                <div class="month table_data">
+                                    <div class="sub_ttl">
+                                        <h2>月別アクセス数（2022年4月〜2022年10月）</h2>
+                                    </div>
 
+                                    <table class="table_style">
+                                        <tr>
+                                            <th class="sort" data-num="reverse">日付 ▼</th>
+                                            <th class="sort" data-num="1">新規ユーザー ▼</th>
+                                            <th class="sort" data-num="2">リピートユーザー ▼</th>
+                                            <th class="sort" data-num="3">閲覧ユーザー ▼</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2022年10月</td>
+                                            <td>1101人</td>
+                                            <td>2301人</td>
+                                            <td>2301人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年9月</td>
+                                            <td>1401人</td>
+                                            <td>2101人</td>
+                                            <td>301人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年8月</td>
+                                            <td>1501人</td>
+                                            <td>2016人</td>
+                                            <td>3910人</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>2022年7月</td>
+                                            <td>210人</td>
+                                            <td>120人</td>
+                                            <td>330人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年6月</td>
+                                            <td>110人</td>
+                                            <td>2520人</td>
+                                            <td>3710人</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2022年5月</td>
+                                            <td>710人</td>
+                                            <td>3720人</td>
+                                            <td>30人</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>2022年4月</td>
+                                            <td>170人</td>
+                                            <td>1720人</td>
+                                            <td>370人</td>
+                                        </tr>
+                                    </table>
+
+                                    <div class="pager">
+                                        <ul>
+                                            <li><a href="#" class="active">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- month -->
+
+                                <div class="btn"><a href="./index.php">一覧ページへ戻る</a></div>
                             </div>
-                            <!-- month -->
 
-                            <div class="btn"><a href="./index.php">一覧ページへ戻る</a></div>
                         </div>
 
                     </div>
+                    <!-- ここまで -->
+
 
                 </div>
-                <!-- ここまで -->
+                <!--management_page-->
 
+            </section>
 
         </div>
-        <!--management_page-->
-
-        </section>
-
-    </div>
-    <!--row-->
+        <!--row-->
 
     </div>
 

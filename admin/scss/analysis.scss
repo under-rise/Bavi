@@ -27,13 +27,22 @@
       margin-bottom: 20px;
       box-shadow: 0 0 2px #999;
 
+      .sub_ttl {
+        justify-content: space-between;
+        display: flex;
+      }
+
       .time_select {
         justify-content: center;
         padding-bottom: 0;
         li {
-          width: 20%;
           font-weight: bold;
           text-align: center;
+          a {
+            padding: 20px;
+            display: block;
+            color: #000;
+          }
           &.active {
             pointer-events: none;
           }
@@ -158,11 +167,16 @@
   font-size: 12px;
   li {
     display: block;
-    padding: 10px 15px;
     background-color: #f1f1f1;
     border-radius: 5px;
     line-height: 1;
-    &.active {
+    a {
+      display: block;
+      color: #000;
+      padding: 10px 15px;
+    }
+    &.active,
+    &:hover {
       background-color: #97e4e9;
     }
   }

@@ -23,6 +23,9 @@ $(window).on('load', function() {
                 alalysis.common.charts["analysis_" + i] = new Chart(ctx, alalysis.common.setData(jsonData[i]));
 
                  // 数字反映実行
+                alalysis.funcs.date = alalysis.funcs.setArrayData();
+                let shop_id = $('.analysis_top').eq(i).find('.time_select').data('shop_id');
+                alalysis.funcs.setSelectDate(jsonData[i],shop_id);
             }
            
         });
@@ -54,7 +57,7 @@ $(window).on('load', function() {
         return {
             type: "line",
             data: {
-                labels: alalysis.funcs.getWeek(),
+                labels: alalysis.funcs.getDay(),
                 datasets: [{
                         label: "新規ユーザー",
                         fill: false,
@@ -83,6 +86,38 @@ $(window).on('load', function() {
             },
             options: {}
         }
+    }
+
+    // 閲覧データ更新
+    alalysis.common.setUpdate = function(jsonData,dateType){
+        
+        return (
+            [{
+                label: "新規ユーザー",
+                fill: false,
+                backgroundColor: RED_LINE,
+                borderColor: RED_LINE,
+                lineTension: 0,
+                data: jsonData["new_guest_"+dateType]
+            },
+            {
+                label: "リピートユーザー",
+                fill: false,
+                backgroundColor: BLUE_LINE,
+                borderColor: BLUE_LINE,
+                lineTension: 0,
+                data: jsonData["repeat_guest_"+dateType]
+            },
+            {
+                label: "閲覧ユーザー",
+                fill: false,
+                backgroundColor: GREEN_LINE,
+                borderColor: GREEN_LINE,
+                lineTension: 0,
+                data: jsonData["view_guest_"+dateType]
+            }
+            ]
+        );
     }
 
    
