@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| swiper
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.slider_sec .inr {
+  padding: 0;
+  flex-flow: column;
+}
+.slider_sec .inr .swiper_main {
+  width: 100%;
+}
+.slider_sec .inr .slider_thumbnail_sec {
+  width: 100%;
+}
+.slider_sec .inr .slider_thumbnail_sec .swiper-wrapper {
+  gap: 3px;
+  flex-wrap: wrap;
+  margin-top: 3px;
+  justify-content: center;
+}
+.slider_sec .inr .slider_thumbnail_sec .swiper-wrapper .swiper-slide {
+  width: calc(25% - 3px) !important;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| use_history
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.use_history {
+  display: flex;
+  justify-content: start;
+  gap: 3%;
+}
+.use_history li {
+  width: 30%;
+}
+.use_history li figure {
+  margin: 10px 0;
+}
+.use_history li dl {
+  margin: 10px 0;
+}
+.use_history li dl dt {
+  font-weight: bold;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| point_history_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.news_sec .inr {
+  flex-flow: column;
+}
+.news_sec .inr > div {
+  width: 100%;
+}
+
+.reserve_plan_sec ul li .day,
+.point_history_sec ul li .day,
+.news_list_sec ul li .day {
+  font-size: 9px;
+}
+.reserve_plan_sec ul li .icon,
+.point_history_sec ul li .icon,
+.news_list_sec ul li .icon {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 10px;
+}
+.reserve_plan_sec ul li .point,
+.point_history_sec ul li .point,
+.news_list_sec ul li .point {
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 0.5em;
+}
+
+.reserve_plan_sec,
+.point_use_sec,
+.use_history {
+  gap: 0;
+  justify-content: space-between;
+}
+.reserve_plan_sec li,
+.point_use_sec li,
+.use_history li {
+  width: 48%;
+}
+
+.reserve_sec ul._reserve_sec {
+  flex-flow: column;
+}
+.reserve_sec ul._reserve_sec li {
+  width: 100%;
+  padding: 10px;
+}
+.reserve_sec ul._reserve_sec li figure {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| reserve_detail_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_detail_sec .top {
+  flex-flow: column;
+}
+.reserve_detail_sec .top .image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.reserve_detail_sec .top .info {
+  width: 100%;
+}
+.reserve_detail_sec .top .info .facility_info h3 {
+  font-size: 1.2em;
+}
+.reserve_detail_sec .top .info .facility_info p {
+  font-size: 0.8em;
+}
+.reserve_detail_sec .top .info .table {
+  font-size: 0.8em;
+}
+.reserve_detail_sec .top .info .table dd {
+  padding: 5px 10px;
+}
+.reserve_detail_sec .top .info .table dd.use_day {
+  font-size: 1.4em;
+}
+.reserve_detail_sec .price_sec {
+  font-size: 13px;
+}
+.reserve_detail_sec .price_sec span {
+  font-size: 8px;
+}

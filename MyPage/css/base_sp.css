@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+  font-size: 12px;
+}
+
+.inr {
+  width: 100%;
+  padding: 0 2%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10px 0;
+}
+
+.sp_only {
+  display: block !important;
+}
+
+.pc_only {
+  display: none !important;
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 3px;
+  border-bottom: 4px solid #980630;
+  background-color: #db0e45;
+  color: #fff;
+}
+.btn a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.btn.type01 {
+  width: 100%;
+}
+
+.ttl {
+  font-size: 1.6em;
+}
+
+.caption {
+  font-size: 9px;
+}
+
+.table.sp_vertical {
+  display: block;
+  width: 100%;
+}
+.table.sp_vertical > dl {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.table.sp_vertical > dl > dt, .table.sp_vertical > dl > dd {
+  display: block;
+  width: 100% !important;
+  border-bottom: none;
+  padding: 10px 0;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| header
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+header .header_top {
+  padding: 10px 0;
+  justify-content: center;
+  gap: 10px;
+}
+header h1 {
+  font-size: 8px;
+}
+header .logo {
+  width: 30%;
+  text-align: center;
+}
+header .logo p {
+  font-size: 1em;
+}
+header .user_sec {
+  display: none;
+}
+header #overlay_nav .logo {
+  width: 50%;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| nav
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+#overlay_nav div.sec .logo span {
+  font-size: 13px;
+}
+#overlay_nav div.sec dl.nav dt {
+  margin-top: 20px;
+  font-size: 14px;
+}
+#overlay_nav div.sec dl.nav dd a {
+  font-size: 13px;
+}
+
+#bottom_nav {
+  padding-bottom: 10px;
+}
+#bottom_nav ul {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+}
+#bottom_nav ul li a span {
+  font-size: 14px;
+}
+#bottom_nav ul li a img {
+  width: 55%;
+  margin-top: -10px;
+  display: inline-block;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| footer
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+footer {
+  margin-top: 30px;
+}
+footer .logo {
+  width: 50%;
+  max-width: 150px;
+}
+footer .sns_sec {
+  gap: 30px;
+}
+footer .sns_sec li {
+  width: 15%;
+  max-width: 50px;
+}
+footer nav ul {
+  flex-flow: column;
+}
+footer nav ul li a {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  display: block;
+  color: #000;
+}
+footer #copyright {
+  background-color: #f1f1f1;
+  padding: 30px 0 150px;
+}
+
+@media screen and (max-width: 480px) {
+  #bottom_nav ul li a span {
+    font-size: 2.8vw;
+  }
+  #bottom_nav ul li a img {
+    width: 55%;
+  }
+}

@@ -8,170 +8,174 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     <title>ユーザー情報設定 | 日本最大級のBBQプラットフォーム Bavi</title>
+    <meta name="apple-mobile-web-app-title" content="Bavi">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
 
-    <?php include __DIR__ . '/../tpl/head.php'; ?>
-    <link rel="stylesheet" href="/resources/css/mypage.css?1.3" />
-    <script type="text/javascript" src="/MyPage/js/config.js" />
-    </script>
-    <style>
+    <?php
+    include 'tpl/head.php'
+    ?>
 
-    </style>
+    <link rel="stylesheet" href="css/index.css?11">
+    <link rel="stylesheet" href="css/index_sp.css?111" media="screen and (max-width: 780px)" />
+    <link rel="stylesheet" href="css/page.css?1.1">
+    <link rel="stylesheet" href="css/form.css?1.2">
+
 </head>
 
-<body id="my_page">
+<body>
 
-    <div id="loading"></div>
-    <div id="wrapper">
+    <?php
+    include 'tpl/header.php'
+    ?>
 
-        <?php include __DIR__ . '/../MyPage/tpl/header.php'; ?>
+    <article class="contents">
 
-        <article id="top" class="cont">
 
-            <h2>ユーザー情報設定</h2>
+        <section class="setting_sec">
 
-            <?php
-            $num = $_GET['value'] == '' ? 0 : $_GET['value'];
-            ?>
             <div class="inr">
-            <div class="setting_status">
-                <div class="status">
-                        <p>設定状況</p>
-                        <div class="graph"><span></span></div>
-                        <div class="step"><span class="value"><?= $num ?></span> / <span class="maxvalue">16</span></div>
-                </div>
-            </div>
-            </div>
-               
-            <script>
-                $(function(){
-                    const el = '.setting_status .graph';
-                    const v = '.setting_status .step';
-                    const value = $(v+' .value').text();
-                    const maxValue = $(v+' .maxvalue').text();
 
-                    let num = value / maxValue*100;
-                        num = num > 100 ? 100 : num;
-                        $(el + ' span').css({'width':num + '%'});
+                <form class="form h-adr">
 
-                    if(value >= maxValue){
-                        $(v).html('<span class="done">100%<div>（設定完了）</div></span>');
-                    }
-                    
-                });
-            </script>
+                    <h2 class="ttl">ユーザー情報設定</h2>
 
-            
-
-            <section class="setting">
-                <div class="inr">
-
-                    <form action="/MyPage/index.php">
+                    <div class="table bottom_border w100 mg_b30">
                         <dl>
                             <dt>名前</dt>
-                            <dd><input type="text" placeholder="例）山田 太郎">
-                            <p style="font-size: 11px; color: #666; margin-top: 5px;">苗字と名前の間はなるべく空白を開けるように入力ください。</p>
-                        </dd>
+                            <dd><input type="text" name="name" value="鈴木"></dd>
                         </dl>
-
                         <dl>
                             <dt>性別</dt>
                             <dd>
-                                <select>
-                                    <option>性別を選択してください。</option>
-                                    <option>男性</option>
-                                    <option>女性</option>
+                                <select name="sex" class="w30">
+                                    <option value="">性別を選択してください。</option>
+                                    <option value="1">男性</option>
+                                    <option value="2">女性</option>
                                 </select>
                             </dd>
                         </dl>
-
+                        <dl>
+                            <dt>年齢</dt>
+                            <dd>
+                                <select name="age" class="w30">
+                                    <option value="">年齢を選択してください。</option>
+                                    <option value="1">10歳以下</option>
+                                    <option value="2">11歳〜15歳</option>
+                                    <option value="3">16歳〜20歳</option>
+                                    <option value="4">21歳〜25歳</option>
+                                    <option value="5">26歳〜30歳</option>
+                                    <option value="6">31歳〜35歳</option>
+                                    <option value="7">36歳〜40歳</option>
+                                    <option value="8">41歳〜45歳</option>
+                                    <option value="9">46歳〜50歳</option>
+                                    <option value="10">51歳〜55歳</option>
+                                    <option value="11">56歳〜60歳</option>
+                                    <option value="12">61歳〜65歳</option>
+                                    <option value="13">66歳〜70歳</option>
+                                    <option value="14">71歳以上</option>
+                                </select>
+                            </dd>
+                        </dl>
                         <dl>
                             <dt>職業</dt>
                             <dd>
-                                <select>
-                                    <option>職業を選択してください。</option>
-                                    <option>会社役員</option>
-                                    <option>会社員</option>
-                                    <option>公務員</option>
-                                    <option>自営業</option>
-                                    <option>大学生</option>
-                                    <option>アルバイト・パート</option>
-                                    <option>無職</option>
-                                    <option>その他</option>
+                                <select name="job" class="w30">
+                                    <option value="">職業を選択してください。</option>
+                                    <option value="1">会社役員</option>
+                                    <option value="2">会社員</option>
+                                    <option value="3">公務員</option>
+                                    <option value="4">自営業</option>
+                                    <option value="5">大学生</option>
+                                    <option value="6">アルバイト・パート</option>
+                                    <option value="7">無職</option>
+                                    <option value="8">その他</option>
                                 </select>
                             </dd>
                         </dl>
-
-
                         <dl>
                             <dt>TEL</dt>
-                            <dd>
-                                <input type="text" value="" placeholder="例）09011110000">
-                                <p style="font-size: 11px; color: #666; margin-top: 5px;">「-」ハイフンはつけず数字のみで入力ください。</p>
-                            </dd>
+                            <dd><input type="text" name="tel" value="09078317421"></dd>
                         </dl>
-
                         <dl>
                             <dt>E-mail</dt>
-                            <dd><input type="text" value="info@bavi.jp"></dd>
-
+                            <dd><input type="text" name="email" value="suzuki@under-rise.com"></dd>
                         </dl>
-
                         <dl>
+                            <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8">
+                            </script>
                             <dt>郵便番号</dt>
-                            <dd><input type="text" value="" placeholder="例）1200001 ">
-                            <p style="font-size: 11px; color: #666; margin-top: 5px;">「-」ハイフンはつけず数字のみで入力ください。</p>
-                        </dd>
+                            <dd>
+                                <span class="p-country-name" style="display:none;">Japan</span>
+                                <input type="text" name="zip_code" maxlength="7" class="zip p-postal-code" value="">
+                                <p class="font_10 mg_t5">※ハイフンなしで入力ください。</p>
+                            </dd>
                         </dl>
+                        <dl>
+                            <dt>住所</dt>
+                            <dd><textarea type="text" rows="3" name="address" value=""
+                                    class="p-region p-locality p-street-address p-extended-address"></textarea>
+                            </dd>
+                        </dl>
+                    </div>
 
-                        <h3>ワクチン接種状況</h3>
-
-                        <p style="font-size: 12px; margin: 15px 0 10px;">ワクチン接種情報を登録し、安全で快適なBBQのご協力を宜しくお願いいたします。</p>
-
+                    <h2 class="ttl">ワクチン接種状況</h2>
+                    <p>ワクチン接種情報を登録し、安全で快適なBBQのご協力を宜しくお願いいたします。</p>
+                    <div class="table bottom_border w100">
                         <dl>
                             <dt>第一回</dt>
                             <dd>
                                 <label class="calendar">
-                                    <input name="" type="date" value=""  >
+                                    <input name="covid19_1st_date" type="date" value="0000-00-00">
                                 </label>
                             </dd>
                         </dl>
-
                         <dl>
                             <dt>第二回</dt>
                             <dd>
                                 <label class="calendar">
-                                    <input name="" type="date" value=""　>
+                                    <input name="covid19_2nd_date" type="date" value="0000-00-00">
                                 </label>
                             </dd>
                         </dl>
-
                         <dl>
                             <dt>第三回</dt>
                             <dd>
                                 <label class="calendar">
-                                    <input name="use_date" type="date" value="">
-                                </label
+                                    <input name="covid19_3rd_date" type="date" value="0000-00-00">
+                                </label>
                             </dd>
                         </dl>
+                    </div>
 
-                        <ul style="font-size: 12px; text-align: left; margin-top: 5px;">
-                            <li>※接種していない方は登録必要ありません。</li>
-                            <li>※偽りの情報を登録した場合には強制解約とさせていただきます。</li>
-                        </ul>
+                    <ul class="font_11 mg_t10">
+                        <li>※接種していない方は登録必要ありません。</li>
+                        <li>※偽りの情報を登録した場合には強制解約とさせていただきます。</li>
+                    </ul>
 
-                        <button type="submit" class="link_btn">情報を変更する</button>
+                    <div class="mg_t30">
+                        <button>更新する</button>
+                    </div>
+                </form>
 
-                    </form>
+            </div>
+            <!-- inr -->
+        </section>
+        <!-- 施設ご利用履歴 -->
 
-                </div>
-            </section>
 
-        </article>
+    </article>
+    <!-- main contents -->
 
-    </div>
+    <?php
+    include 'tpl/footer.php'
+    ?>
 
-    <?php include __DIR__ . '/../MyPage/tpl/footer.php'; ?>
+
+    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
 
 </body>
-
-</html>

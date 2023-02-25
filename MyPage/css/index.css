@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| swiper
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.slider_sec .inr {
+  display: flex;
+  justify-content: space-between;
+}
+.slider_sec .inr .swiper_main {
+  width: 70%;
+  position: relative;
+}
+.slider_sec .inr .slider_thumbnail_sec {
+  width: 28%;
+}
+.slider_sec .inr .slider_thumbnail_sec .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider_sec .inr .slider_thumbnail_sec .swiper-wrapper .swiper-slide {
+  width: 50% !important;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+.slider_sec .inr .slider_thumbnail_sec .swiper-wrapper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper {
+  z-index: 1 !important;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| use_history
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_plan_sec,
+.point_use_sec,
+.use_history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 3%;
+}
+.reserve_plan_sec li,
+.point_use_sec li,
+.use_history li {
+  width: 31.3%;
+  box-sizing: border-box;
+}
+.reserve_plan_sec li figure,
+.point_use_sec li figure,
+.use_history li figure {
+  margin: 10px 0;
+}
+.reserve_plan_sec li dl,
+.point_use_sec li dl,
+.use_history li dl {
+  margin: 10px 0;
+}
+.reserve_plan_sec li dl dt,
+.point_use_sec li dl dt,
+.use_history li dl dt {
+  font-weight: bold;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| point_history_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.news_sec {
+  background-color: #f1f1f1;
+}
+.news_sec .inr {
+  display: flex;
+  justify-content: space-between;
+}
+.news_sec .inr > div {
+  width: 49%;
+}
+
+.point_history_sec,
+.news_list_sec {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 15px;
+}
+.point_history_sec .btn,
+.news_list_sec .btn {
+  margin-top: auto;
+}
+.point_history_sec ul,
+.news_list_sec ul {
+  margin-bottom: 20px;
+}
+.point_history_sec ul li,
+.news_list_sec ul li {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px dashed #999;
+}
+.point_history_sec ul li .day,
+.news_list_sec ul li .day {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.point_history_sec ul li .icon,
+.news_list_sec ul li .icon {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.point_history_sec ul li .point,
+.news_list_sec ul li .point {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 0.5em;
+}
+.point_history_sec ul li p,
+.news_list_sec ul li p {
+  text-align: left;
+  color: #555;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| reserve_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_sec ul._reserve_sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.reserve_sec ul._reserve_sec li {
+  width: 49%;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+.reserve_sec ul._reserve_sec li .table {
+  margin: 10px 0;
+  width: 100%;
+  font-size: 0.9em;
+}
+.reserve_sec ul._reserve_sec li .table dd {
+  text-align: left;
+}
+.reserve_sec ._reserve_sec figure {
+  position: relative;
+}
+.reserve_sec ._reserve_sec figure .icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 11px;
+}
+.reserve_sec ._reserve_sec figure .icon strong {
+  font-size: 14px;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| reserve_detail_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_detail_sec .top {
+  display: flex;
+  justify-content: space-between;
+}
+.reserve_detail_sec .top .image {
+  width: 48%;
+}
+.reserve_detail_sec .top .image > figure {
+  margin-bottom: 20px;
+}
+.reserve_detail_sec .top .info {
+  width: 50%;
+}
+.reserve_detail_sec .top .info .facility_info {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.reserve_detail_sec .top .info .facility_info h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+.reserve_detail_sec .top .info .facility_info p {
+  font-size: 0.9em;
+}
+.reserve_detail_sec .top .info .table dd {
+  padding: 5px 10px;
+  font-size: 1em;
+}
+.reserve_detail_sec .top .info .table dd.use_day {
+  font-size: 1.2em;
+}
+.reserve_detail_sec .price_sec {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #db0e45;
+}
+.reserve_detail_sec .price_sec span {
+  font-size: 9px;
+}
+.reserve_detail_sec .reserve_plan_sec dl dt {
+  font-size: 11px;
+}
+.reserve_detail_sec .reserve_plan_sec dl dd {
+  font-size: 12px;
+}
+.reserve_detail_sec .facility_information .table {
+  width: 100%;
+}
+.reserve_detail_sec .facility_information .table dd {
+  text-align: left;
+}
+.reserve_detail_sec .facility_information .gMap {
+  margin-top: 20px;
+}
+.reserve_detail_sec .facility_information .gMap iframe {
+  width: 100%;
+  min-height: 400px;
+}

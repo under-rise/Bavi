@@ -7,64 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
-    <title>退会 | 日本最大級のBBQプラットフォーム Bavi</title>
+    <title>ユーザー退会 | 日本最大級のBBQプラットフォーム Bavi</title>
+    <meta name="apple-mobile-web-app-title" content="Bavi">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 
-    <?php include __DIR__ . '/../tpl/head.php'; ?>
-    <link rel="stylesheet" href="/resources/css/mypage.css?1.1" />
+    <?php
+    include 'tpl/head.php'
+    ?>
 
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="css/index.css?11">
+    <link rel="stylesheet" href="css/index_sp.css?111" media="screen and (max-width: 780px)" />
+    <link rel="stylesheet" href="css/page.css?1.1">
+    <link rel="stylesheet" href="css/form.css?1.2">
+
 </head>
 
-<body id="my_page">
+<body>
 
-    <div id="loading"></div>
-    <div id="wrapper">
+    <?php
+    include 'tpl/header.php'
+    ?>
 
-        <?php include __DIR__ . '/../MyPage/tpl/header.php'; ?>
+    <article class="contents">
 
-        <article id="top" class="cont">
 
-            <h2>ユーザー退会</h2>
+        <section class="setting_sec">
 
-            <section class="delete">
-                <div class="inr">
+            <div class="inr">
 
-                <?php
-                    if(!isset($_GET['delete']) && !$_GET['delete'] == "on"){
-                ?>
-                <form method="get" action="/MyPage/delete.php">
+                <form class="form h-adr" onsubmit="confirm('退会します。宜しいですか？')">
 
-                <p>Bavi会員から退会します。</p>
-                <p>一度、退会されますと設定頂いた<strong class="txt_pink">会員情報や保有ポイントが失効</strong>致しますが宜しいですか？</p>
-                <input type="hidden" name="delete" value="on">
-                <p style="margin-top: 30px;">上記、内容を承諾の上、退会する。</p>
-                <button type="submit" class="link_btn">退会する</button>
+                    <h2 class="ttl">ユーザー退会</h2>
 
+                    <p>Bavi会員から退会します。<br>
+                        一度、退会されますと設定頂いた会員情報や施設履歴・保有ポイントが失効致しますが宜しいですか？</p>
+
+                    <p class="mg_t30"><b class="pink">上記、内容を承諾の上、退会する。</b></p>
+
+                    <div class="mg_t30">
+                        <button>退会する</button>
+                    </div>
                 </form>
 
-                <?php
-                   }else{
-                ?>
-                    <p>退会完了致しました。<br>Baviサイトご利用頂き有難う御座いました。</p>
-                    <p style="margin-top:10px;">引き続き、一般ユーザーにてサイトをご利用くださいませ。</p>
+            </div>
+            <!-- inr -->
+        </section>
+        <!-- 施設ご利用履歴 -->
 
-                    <p style="margin-top:20px;"><a href="/" class="txt_pink">トップページへ戻る</a></p>
-                    
-                <?php
-                    }
-                ?>
-                
-                </div>
-            </section>
 
-        </article>
+    </article>
+    <!-- main contents -->
 
-    </div>
+    <?php
+    include 'tpl/footer.php'
+    ?>
 
-    <?php include __DIR__ . '/../topic/tpl/footer.php'; ?>
+
+    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
 
 </body>
-
-</html>

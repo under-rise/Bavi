@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
-    <title>ログイン | 日本最大級のBBQプラットフォーム Bavi</title>
+    <title>パスワード再発行 | 日本最大級のBBQプラットフォーム Bavi</title>
     <meta name="apple-mobile-web-app-title" content="Bavi">
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,52 +45,36 @@
     <article class="contents">
         <section class="">
             <div class="inr">
-                <h2 class="ttl">ログイン</h2>
-                <p class="mg_b30">アカウントが未登録の方は<a href="create.php" class="line pink">新規会員登録</a>してください。</p>
+                <h2 class="ttl">パスワード再発行</h2>
+                <p class="mg_b30">パスワードをお忘れの場合、下記フォームにメールアドレスを入力してください。</p>
 
                 <div class="signIn_sec">
-                    <div class="signIn_social">
-                        <ul>
-                            <li><a href="#"><span class="line">Lineでログイン</span></a></li>
-                            <li><a href="#"><span class="goggle">Goggleでログイン</span></a></li>
-                            <li><a href="#"><span class="twitter">Twitterでログイン</span></a></li>
-                            <li><a href="#"><span class="yahoo">Yahooでログイン</span></a></li>
-                            <li><a href="#"><span class="facebook"> Facebookでログイン</span></a></li>
-                            <li><a href="#"><span class="apple">Apple IDでログイン</span></a></li>
-                        </ul>
-                    </div>
-
-                    <hr>
 
                     <div class="signIn_email mg_t30">
-                        <h3>メールアドレスでログイン</h3>
+                        <h3>送信先メールアドレス</h3>
 
                         <form action="index.php" method="post" class="form">
 
                             <ul>
                                 <li><input type="text" name="email" value="" placeholder="メールアドレス"></li>
-                                <li><input type="password" name="password" value="" placeholder="パスワード"></li>
                             </ul>
 
                             <div class="mg_t30">
-                                <button type="submit">ログイン</button>
+                                <button type="submit">送信する</button>
                             </div>
 
-                            <p class="mg_t30"><a href="password.php" class="line">パスワードをお忘れの場合</a></p>
-
-                            <div class="mg_t30">
-                                <button type="button" class="green" onclick="location.href='create.php'">新規登録する</button>
-                            </div>
+                            <p class="mg_t30"><a href="login.php" class="line">ログインフォームはこちら</a></p>
 
                         </form>
+
                     </div>
 
-                    <hr>
-
-                    <ul class="font_10">
-                        <li>※ ログインに10回失敗するとアカウントがロックされますのでご注意ください。</li>
-                        <li>※ アカウントがロックされた場合は「パスワード再設定」を行なってください。</li>
+                    <ul class="font_11 mg_t30">
+                        <li>※ パスワードリセットは、発行より1時間以内にお願いします。</li>
+                        <li>※ 1時間以上経過した場合は、再度パスワードリセットをお願いします。</li>
                     </ul>
+
+
                 </div>
 
             </div>

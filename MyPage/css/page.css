@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+|   ログイン・会員登録
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.login_sec header .header_top {
+  display: flex;
+  justify-content: center;
+}
+.login_sec .create_sec,
+.login_sec .signIn_sec {
+  width: 60%;
+  margin: 0 auto;
+}
+.login_sec .create_sec input {
+  width: 100%;
+}
+.login_sec .create_sec .caption {
+  margin: 5px 0;
+}
+.login_sec .create_sec .table dt,
+.login_sec .create_sec .table dd {
+  padding: 10px 10px;
+}
+.login_sec .signIn_social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.login_sec .signIn_social ul li {
+  width: 48%;
+}
+.login_sec .signIn_social ul li a {
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  padding: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.login_sec .signIn_social ul li a span {
+  padding-left: 40px;
+  position: relative;
+}
+.login_sec .signIn_social ul li a span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+.login_sec .signIn_social ul li a span.line::before {
+  background: url("../images/social/line.jpg") no-repeat left center;
+  background-size: contain;
+}
+.login_sec .signIn_social ul li a span.goggle::before {
+  background: url("../images/social/goggle.jpg") no-repeat left center;
+  background-size: contain;
+}
+.login_sec .signIn_social ul li a span.twitter::before {
+  background: url("../images/social/twitter.jpg") no-repeat left center;
+  background-size: contain;
+}
+.login_sec .signIn_social ul li a span.yahoo::before {
+  background: url("../images/social/yahoo.jpg") no-repeat left center;
+  background-size: contain;
+}
+.login_sec .signIn_social ul li a span.facebook::before {
+  background: url("../images/social/facebook.jpg") no-repeat left center;
+  background-size: contain;
+}
+.login_sec .signIn_social ul li a span.apple::before {
+  background: url("../images/social/apple.jpg") no-repeat left center;
+  background-size: contain;
+}
+.login_sec .signIn_email li {
+  margin-top: 15px;
+}
+.login_sec .signIn_email li input {
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .login_sec .create_sec,
+  .login_sec .signIn_sec {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .login_sec .create_sec .signIn_social > ul,
+  .login_sec .signIn_sec .signIn_social > ul {
+    gap: 0;
+  }
+  .login_sec .create_sec .signIn_social > ul li,
+  .login_sec .signIn_sec .signIn_social > ul li {
+    width: 49%;
+    margin-top: 15px;
+  }
+  .login_sec .create_sec .signIn_social > ul li a,
+  .login_sec .signIn_sec .signIn_social > ul li a {
+    padding: 20px;
+  }
+}
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+|   pointを使う
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.sort ul {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sort ul li {
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sort ul li.active, .sort ul li:hover {
+  color: #db0e45;
+}
+
+#point_sec.point_use_sec {
+  padding-bottom: 20px;
+  gap: 2%;
+}
+#point_sec.point_use_sec li {
+  width: 23%;
+  box-sizing: border-box;
+}
+#point_sec.point_use_sec li dt a {
+  color: #000;
+}
+#point_sec.point_use_sec li dd.point_sec {
+  color: #db0e45;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+|   商品詳細
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.item_detail_sec .inr {
+  display: flex;
+  justify-content: space-between;
+}
+.item_detail_sec .inr .image {
+  width: 40%;
+}
+.item_detail_sec .inr .info {
+  width: 50%;
+  text-align: left;
+}
+.item_detail_sec .inr .info .table {
+  margin: 20px 0;
+  font-size: 12px;
+}
+.item_detail_sec .inr .info .table dt {
+  text-align: center;
+}
+.item_detail_sec .inr .info .form .input_sec {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+.item_detail_sec .inr .info .form .input_sec span {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 9999px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+}
+.item_detail_sec .inr .info .form .input_sec input[type=number] {
+  width: calc(80% - 60px);
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.item_detail_sec .inr .info .form .input_sec input[type=number]::-webkit-inner-spin-button, .item_detail_sec .inr .info .form .input_sec input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+.item_detail_sec .inr .info .name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.item_detail_sec .inr .info .name h3 {
+  font-size: 1.6em;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+|   口コミ詳細
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.voice_detail_sec .table {
+  font-size: 0.9em;
+}
+.voice_detail_sec .info .table dd {
+  text-align: left;
+}
+
+@media screen and (max-width: 780px) {
+  .sort ul {
+    width: 100%;
+  }
+  .sort ul li {
+    padding: 10px 0;
+    width: 50%;
+    font-size: 0.9em;
+  }
+  #point_sec.point_use_sec {
+    gap: 1%;
+  }
+  #point_sec.point_use_sec li {
+    width: 49%;
+  }
+  #point_sec.point_use_sec li dt a {
+    font-size: 0.9em;
+  }
+  #point_sec.point_use_sec li dd.point_sec {
+    font-size: 1.1em;
+  }
+  /*ーーーーーーーーーーーーーーーーーーーーーー
+  |
+  |   商品詳細
+  | 
+  ーーーーーーーーーーーーーーーーーーーーーー*/
+  .item_detail_sec .inr {
+    flex-flow: column;
+  }
+  .item_detail_sec .inr .image {
+    width: 100%;
+  }
+  .item_detail_sec .inr .info {
+    width: 100%;
+  }
+  .item_detail_sec .inr .info .form .input_sec span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+  .item_detail_sec .inr .info .form .input_sec input[type=text] {
+    width: calc(100% - 80px);
+  }
+}
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+|   ユーザー情報設定
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.setting_sec .form textarea,
+.setting_sec .form select,
+.setting_sec .form input {
+  width: 100%;
+}
+.setting_sec .form textarea.w30,
+.setting_sec .form select.w30,
+.setting_sec .form input.w30 {
+  width: 30%;
+}
+.setting_sec .form textarea.w50,
+.setting_sec .form select.w50,
+.setting_sec .form input.w50 {
+  width: 50%;
+}
+.setting_sec .form input.zip {
+  width: 10em;
+}
+.setting_sec .table dl dt {
+  width: 20%;
+}
+.setting_sec .table dl dd {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 780px) {
+  .setting_sec .form textarea.w30,
+  .setting_sec .form select.w30,
+  .setting_sec .form input.w30 {
+    width: 100%;
+  }
+  .setting_sec .form textarea.w50,
+  .setting_sec .form select.w50,
+  .setting_sec .form input.w50 {
+    width: 100%;
+  }
+}

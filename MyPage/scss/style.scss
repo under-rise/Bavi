@@ -1,0 +1,121 @@
+// icon
+.icon {
+  display: inline-block;
+  background-color: #666;
+  text-align: center;
+  padding: 2px 10px;
+  font-size: 10px;
+  border-radius: 3px;
+  color: #fff;
+  &.purchase {
+    background-color: #1c51a1;
+  }
+  &.acquisition {
+    background-color: #e50054;
+  }
+  &.reserve {
+    background-color: rgb(24, 136, 121);
+  }
+  &.cancel {
+    background-color: #9b9b9b;
+  }
+  &.news {
+    background-color: #d68504;
+  }
+  &.border {
+    border: 2px solid #fff;
+  }
+}
+
+.bg_pink {
+  background-color: #f9e6ee;
+}
+
+.point {
+  &.acquisition {
+    color: #e50054;
+  }
+
+  &.purchase {
+    color: #1c51a1;
+  }
+}
+
+.import {
+  position: relative;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 0;
+    top: -5px;
+    z-index: 2;
+    background: url("../images/check.svg") no-repeat left center;
+    background-size: contain;
+    animation: blink 1.5s ease-in-out infinite alternate;
+  }
+}
+
+.flash {
+  animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+// error
+.error_sec {
+  border: 1px solid #e50054;
+  margin-bottom: 30px;
+
+  ul {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  li:not(:first-child) {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dashed #e2bfcc;
+  }
+  b {
+    color: #e50054;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    span {
+      display: inline-block;
+      background-color: #e50054;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      color: #fff;
+      line-height: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .icon {
+    font-size: 8px;
+    padding: 0px 5px;
+    line-height: 1.4;
+    strong {
+      font-size: 10px;
+    }
+  }
+}

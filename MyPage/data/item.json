@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name": "BBQコンロ",
+        "image": "item001.jpg",
+        "point":1200,
+        "information":"ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用 【日本正規品10年保証】",
+        "created_at": "2023-10-23",
+        "popular":"4.5",
+        "other":""
+    },
+    {
+        "id":2,
+        "name": "BBQコンロ",
+        "image": "item002.jpg",
+        "point":2000,
+        "information":"ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用 【日本正規品10年保証】",
+        "created_at": "2023-12-23",
+        "popular":"4.0",
+        "other":""
+    },
+    {
+        "id":3,
+        "name": "BBQコンロ",
+        "image": "item003.jpg",
+        "point":800,
+        "information":"ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用 【日本正規品10年保証】",
+        "created_at": "2022-10-23",
+        "popular":"4.1",
+        "other":""
+    },
+    {
+        "id":4,
+        "name": "BBQコンロ",
+        "image": "item004.jpg",
+        "point":300,
+        "information":"ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用 【日本正規品10年保証】",
+        "created_at": "2013-10-23",
+        "popular":"1.5",
+        "other":""
+    },
+    {
+        "id":5,
+        "name": "Amazonギフト",
+        "image": "item007.jpg",
+        "point":500,
+        "information":"ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用 【日本正規品10年保証】",
+        "created_at": "2013-10-23",
+        "popular":"2.4",
+        "other":""
+    },
+    {
+        "id":6,
+        "name": "ポイント現金化",
+        "image": "item008.jpg",
+        "point":1000,
+        "information":"ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用 【日本正規品10年保証】",
+        "created_at": "2013-10-23",
+        "popular":"3.9",
+        "other":"money"
+    }
+]

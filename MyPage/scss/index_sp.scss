@@ -1,0 +1,156 @@
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| swiper
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.slider_sec {
+  .inr {
+    padding: 0;
+    flex-flow: column;
+    .swiper_main {
+      width: 100%;
+    }
+    .slider_thumbnail_sec {
+      width: 100%;
+      .swiper-wrapper {
+        gap: 3px;
+        flex-wrap: wrap;
+        margin-top: 3px;
+        justify-content: center;
+        .swiper-slide {
+          width: calc(25% - 3px) !important;
+        }
+      }
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| use_history
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.use_history {
+  display: flex;
+  justify-content: start;
+  gap: 3%;
+  li {
+    width: 30%;
+    figure {
+      margin: 10px 0;
+    }
+    dl {
+      margin: 10px 0;
+      dt {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| point_history_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.news_sec {
+  & .inr {
+    flex-flow: column;
+    & > div {
+      width: 100%;
+    }
+  }
+}
+.reserve_plan_sec,
+.point_history_sec,
+.news_list_sec {
+  ul {
+    li {
+      .day {
+        font-size: 9px;
+      }
+      .icon {
+        display: inline-block;
+        margin-left: 0.5em;
+        font-size: 10px;
+      }
+
+      .point {
+        font-weight: bold;
+        font-size: 12px;
+        padding-left: 0.5em;
+      }
+    }
+  }
+}
+
+.reserve_plan_sec,
+.point_use_sec,
+.use_history {
+  gap: 0;
+  justify-content: space-between;
+  li {
+    width: 48%;
+  }
+}
+
+.reserve_sec {
+  ul._reserve_sec {
+    flex-flow: column;
+    li {
+      width: 100%;
+      padding: 10px;
+      figure {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| reserve_detail_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_detail_sec {
+  .top {
+    flex-flow: column;
+    .image {
+      width: 100%;
+      margin-bottom: 20px;
+      & > figure {
+      }
+    }
+    .info {
+      width: 100%;
+      .facility_info {
+        h3 {
+          font-size: 1.2em;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+      .table {
+        font-size: 0.8em;
+        dd {
+          padding: 5px 10px;
+          &.use_day {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+  .price_sec {
+    font-size: 13px;
+    span {
+      font-size: 8px;
+    }
+  }
+}

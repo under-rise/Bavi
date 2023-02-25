@@ -1,0 +1,232 @@
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| swiper
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.slider_sec {
+  .inr {
+    display: flex;
+    justify-content: space-between;
+    .swiper_main {
+      width: 70%;
+      position: relative;
+    }
+    .slider_thumbnail_sec {
+      width: 28%;
+      .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .swiper-slide {
+          width: 50% !important;
+          flex-wrap: wrap;
+          opacity: 0.5;
+        }
+        .swiper-slide-thumb-active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.swiper {
+  z-index: 1 !important;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| use_history
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.reserve_plan_sec,
+.point_use_sec,
+.use_history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 3%;
+  li {
+    width: 31.3%;
+    box-sizing: border-box;
+    figure {
+      margin: 10px 0;
+    }
+    dl {
+      margin: 10px 0;
+      dt {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| point_history_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.news_sec {
+  background-color: #f1f1f1;
+  & .inr {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      width: 49%;
+    }
+  }
+}
+
+.point_history_sec,
+.news_list_sec {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 15px;
+  .btn {
+    margin-top: auto;
+  }
+  ul {
+    margin-bottom: 20px;
+    li {
+      background-color: #fff;
+      padding: 10px 0;
+      border-bottom: 1px dashed #999;
+
+      .day {
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .icon {
+        display: inline-block;
+        margin-left: 0.5em;
+      }
+
+      .point {
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-left: 0.5em;
+      }
+      p {
+        text-align: left;
+        color: #555;
+      }
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| reserve_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_sec {
+  ul._reserve_sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 49%;
+      padding: 10px 30px;
+      background-color: #fff;
+      .table {
+        margin: 10px 0;
+        width: 100%;
+        font-size: 0.9em;
+        dd {
+          text-align: left;
+        }
+      }
+    }
+  }
+  ._reserve_sec {
+    figure {
+      position: relative;
+      .icon {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 11px;
+        strong {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| reserve_detail_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.reserve_detail_sec {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .image {
+      width: 48%;
+      & > figure {
+        margin-bottom: 20px;
+      }
+    }
+    .info {
+      width: 50%;
+      .facility_info {
+        text-align: left;
+        margin-bottom: 20px;
+        h3 {
+          font-size: 1.3em;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 0.9em;
+        }
+      }
+      .table {
+        dd {
+          padding: 5px 10px;
+          font-size: 1em;
+          &.use_day {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+  .price_sec {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #db0e45;
+    span {
+      font-size: 9px;
+    }
+  }
+
+  .reserve_plan_sec dl {
+    dt {
+      font-size: 11px;
+    }
+    dd {
+      font-size: 12px;
+    }
+  }
+  .facility_information {
+    .table {
+      width: 100%;
+      dd {
+        text-align: left;
+      }
+    }
+    .gMap {
+      margin-top: 20px;
+      iframe {
+        width: 100%;
+        min-height: 400px;
+      }
+    }
+  }
+}
