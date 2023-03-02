@@ -512,6 +512,51 @@ html.overlay {
 
 /*ーーーーーーーーーーーーーーーーーーーーーー
 |
+|   ご意見箱
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+
+.defect_report_sec {
+  margin: 30px 0;
+  .inr > div {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    .ttl {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .btn {
+      background-color: #fff;
+      a {
+        padding: 8px;
+      }
+    }
+    .table dt,
+    .table dd {
+      padding: 10px 10px;
+    }
+    .close {
+      display: block;
+      width: 40px;
+      line-height: 37px;
+      padding-bottom: 3px;
+      font-size: 24px;
+      background-color: #ccc;
+      border-radius: 50%;
+      transform: rotate(45deg);
+      cursor: pointer;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      z-index: 10;
+    }
+  }
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
 | footer
 | 
 ーーーーーーーーーーーーーーーーーーーーーー*/

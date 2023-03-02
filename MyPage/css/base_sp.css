@@ -129,6 +129,18 @@ header #overlay_nav .logo {
 
 /*ーーーーーーーーーーーーーーーーーーーーーー
 |
+|   ご意見箱
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.defect_report_sec .inr > div .btn a {
+  padding: 0;
+}
+.defect_report_sec .overlay_nav div.modal {
+  width: 98%;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
 | footer
 | 
 ーーーーーーーーーーーーーーーーーーーーーー*/

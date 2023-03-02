@@ -51,6 +51,7 @@
                         <li><a href="use_history.php">施設ご利用履歴</a></li>
                         <li><a href="voice_history.php">口コミ履歴</a></li>
                         <li><a href="like_history.php">LIKEされた施設</a></li>
+                        <li><a @click="$store.defectReport.f_open()">ご意見箱</a></li>
                         <li><a href="/MyPage/delete.php">退会する</a></li>
                     </ul>
                 </li>
@@ -66,7 +67,8 @@
 
                 <div class="sec" :class="open ? 'open' : ''" @click.outside="open = false">
                     <h2 class="logo">
-                        <a href="/"><img src="/resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /><span class="ttl">マイページ</span></a>
+                        <a href="/"><img src="/resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /><span
+                                class="ttl">マイページ</span></a>
                     </h2>
 
                     <div class="nav_user_sec">
@@ -102,6 +104,7 @@
                         <dd><a href="/MyPage/setting.php"">登録情報設定</a></dd>
 				
                         <dt>その他</dt>
+                        <dd><a @click=" open=false, $store.defectReport.f_open()">ご意見箱</a></dd>
                         <dd><a onclick=" javascript:confirm('ログアウトします。宜しいですか？')">ログアウト</a></dd>
                         <dd><a href="/MyPage/delete.php">退会する</a></dd>
                     </dl>

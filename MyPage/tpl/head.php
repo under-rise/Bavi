@@ -7,8 +7,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://bavi.jp/assets/img/apple-touch-icon.png">
 
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/base.css?321" />
-<link rel="stylesheet" href="css/base_sp.css?332" media="screen and (max-width: 780px)" />
+<link rel="stylesheet" href="css/base.css?41.13" />
+<link rel="stylesheet" href="css/base_sp.css?4.1" media="screen and (max-width: 780px)" />
+<link rel="stylesheet" href="css/form.css?4.122" />
 <link rel="stylesheet" href="css/style.css?111" />
 
 <link rel="stylesheet" href="/resources/slick/slick.css" />

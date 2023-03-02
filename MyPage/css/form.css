@@ -10,7 +10,20 @@
   background-color: #f9f9f9;
   padding: 10px;
 }
-
+.form input[type=date].w100,
+.form input[type=number].w100,
+.form input[type=password].w100,
+.form input[type=text].w100,
+.form input[type=email].w100,
+.form input[type=tel].w100,
+.form select.w100,
+.form textarea.w100 {
+  width: 100%;
+}
+.form input:disabled,
+.form button:disabled {
+  opacity: 0.3;
+}
 .form select {
   width: 100%;
   padding: 12px;
@@ -25,11 +38,9 @@
   background-position: calc(100% - 1.3em) center;
   background-repeat: no-repeat;
 }
-
 .form select::-ms-expand {
   display: none;
 }
-
 .form button {
   display: block;
   padding: 10px;
@@ -41,38 +52,19 @@
   border-radius: 3px;
   cursor: pointer;
 }
-
 .form button.green {
   background-color: #0aa972;
 }
-
 .form .calendar input[type=date] {
   position: relative;
   width: 100%;
   box-sizing: border-box;
 }
-
 .form .calendar input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-}
-
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  min-height: 3em;
-}
-
-input[type="date"]::-webkit-date-and-time-value,
-input[type="time"]::-webkit-date-and-time-value,
-input[type="datetime-local"]::-webkit-date-and-time-value {
-  text-align: left;
-  padding: 5px;
 }
 
 @media screen and (max-width: 780px) {

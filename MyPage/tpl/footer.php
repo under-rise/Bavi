@@ -1,7 +1,76 @@
     <!-- footer -->
+
+    <section class="defect_report_sec" x-data="defectReport" x-cloak x-trap.noscroll="open">
+        <div class="inr">
+            <div>
+                <h2 class="ttl mg_b20">ご意見箱</h2>
+                <p class="mg_b10">ポイント施設増設希望<br>改善希望・新規機能・不具合・バグなど<br>
+                    Baviサービス改善・向上の為ご意見・ご報告ください。<br>
+                <p class="mg_b30" style="font-size: 90%;">（ポイント施設増設希望の方は施設名をご記載ください。）</p>
+                </p>
+                <div class="btn type01" @click="f_open()">
+                    <a>フォームを開く</a>
+                </div>
+
+                <!-- menu nav -->
+                <nav class="overlay_nav" x-show="open" x-transition.opacity.duration.200ms>
+
+                    <div class="modal" @click.outside="open = false">
+                        <span class="close" @click="open = false">+</span>
+                        <h2 class="ttl">ご意見箱フォーム</h2>
+
+                        <div x-show="state==1">
+                            <p class="mg_b10">ポイント施設増設希望<br>改善希望・新規機能・不具合・バグなど<br>
+                                Baviサービス改善・向上の為ご意見・ご報告ください。<br>
+                            <p class="mg_b30" style="font-size: 90%;">（ポイント施設増設希望の方は施設名をご記載ください。）</p>
+                            <form class="form" @submit.prevent="submit">
+
+                                <div class="table bottom_border w100 mg_b30">
+                                    <dl>
+                                        <dt>カテゴリー</dt>
+                                        <dd>
+                                            <select name="age" x-model="form.category" class="w30">
+                                                <option value="">カテゴリーを選択してください。</option>
+                                                <option value="改善希望">改善希望</option>
+                                                <option value="新規機能">新規機能</option>
+                                                <option value="ポイント施設増設希望">ポイント施設増設希望</option>
+                                                <option value="不具合・バグ報告">不具合・バグ報告</option>
+                                                <option value="その他">その他</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt>ご意見内容</dt>
+                                        <dd>
+                                            <textarea name="opinion" x-model="form.opinion" cols="30" rows="10"
+                                                class="w100"></textarea>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="mg_t30">
+                                    <button :disabled="!check">送信する</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div x-show="state==2">
+                            <p>ご意見有難う御座いました。<br>入力頂きました内容をスタッフで共有し、Bavi運営の改善に役立てて参ります。<br>ご協力有難う御座いました。</p>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- defect_report_sec end -->
+
     <footer>
 
         <div class="inr">
+
             <figure class="logo">
                 <img src="https://bavi.jp/assets/img/foot_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" />
             </figure>
@@ -96,3 +165,6 @@
             </li>
         </ul>
     </nav>
+
+    <!-- サーバー側の受信先ですが仮で「debug.php」にしております。 -->
+    <script type="text/javascript" src="js/defectReport.js?1.1"></script>

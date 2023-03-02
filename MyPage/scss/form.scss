@@ -10,6 +10,14 @@
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     padding: 10px;
+    &.w100 {
+      width: 100%;
+    }
+  }
+
+  input:disabled,
+  button:disabled {
+    opacity: 0.3;
   }
 
   select {
