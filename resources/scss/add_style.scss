@@ -1,0 +1,50 @@
+//------------------------------
+// ポイント還元率
+//------------------------------
+
+.point_sec {
+  width: 48%;
+  margin-bottom: 20px;
+  dl {
+    border: 2px solid #e50054;
+    border-radius: 3px;
+    display: flex;
+    color: #e50054;
+    font-weight: bold;
+    dt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45%;
+      background-color: #e50054;
+      color: #fff;
+    }
+    dd {
+      width: 55%;
+      b {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+
+.result_list .point_sec {
+  width: 100%;
+  line-height: 1;
+  margin-bottom: 10px;
+  dl {
+    border: 1px solid #e50054;
+    font-size: 9px;
+    dt {
+      padding: 5px;
+    }
+    dd {
+      padding: 5px;
+      text-align: center;
+      background-color: #fff;
+      b {
+        font-size: 14px;
+      }
+    }
+  }
+}

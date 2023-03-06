@@ -16,6 +16,7 @@
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
+    <link rel="stylesheet" href="assets/css/add_style.css?3.19">
     <!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
@@ -303,6 +304,15 @@
 
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
+                                <div class="point_sec">
+                                    <dl>
+                                        <dt>ポイント還元率</dt>
+                                        <dd>
+                                            <b>1</b> %
+                                        </dd>
+                                    </dl>
+                                </div>
+
                                 <ul class="icon">
                                     <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
                                 </ul>
@@ -336,6 +346,15 @@
                                 <h3>多摩川緑地バーベキュー広場</h3>
 
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
+
+                                <div class="point_sec">
+                                    <dl>
+                                        <dt>ポイント還元率</dt>
+                                        <dd>
+                                            <b>10</b> %
+                                        </dd>
+                                    </dl>
+                                </div>
 
                                 <div class="score_sec">
                                     <div class="stars small">
@@ -413,6 +432,15 @@
                             <h3>多摩川緑地バーベキュー広場</h3>
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
+
+                            <div class="point_sec">
+                                <dl>
+                                    <dt>ポイント還元率</dt>
+                                    <dd>
+                                        <b>1</b>%
+                                    </dd>
+                                </dl>
+                            </div>
 
                             <div class="score_sec">
                                 <div class="stars small">

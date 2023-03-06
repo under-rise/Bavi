@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="resources/css/venue_detail.css?9.411">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?3.19">
 
+    <link rel="stylesheet" href="assets/css/add_style.css?3.19">
+
 
 
     <link rel="stylesheet" href="resources/slick/slick.css" />
@@ -160,6 +162,15 @@
                             <li><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></li>
                             <li><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></li>
                         </ul>
+                    </div>
+
+                    <div class="point_sec">
+                        <dl>
+                            <dt>ポイント還元率</dt>
+                            <dd>
+                                <b>10</b> %
+                            </dd>
+                        </dl>
                     </div>
 
                     <ul class="icon">

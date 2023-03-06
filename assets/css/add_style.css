@@ -1,0 +1,46 @@
+.point_sec {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.point_sec dl {
+  border: 2px solid #e50054;
+  border-radius: 3px;
+  display: flex;
+  color: #e50054;
+  font-weight: bold;
+}
+.point_sec dl dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  background-color: #e50054;
+  color: #fff;
+}
+.point_sec dl dd {
+  width: 55%;
+}
+.point_sec dl dd b {
+  font-size: 1.8em;
+}
+
+.result_list .point_sec {
+  width: 100%;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.result_list .point_sec dl {
+  border: 1px solid #e50054;
+  font-size: 9px;
+}
+.result_list .point_sec dl dt {
+  padding: 5px;
+}
+.result_list .point_sec dl dd {
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+.result_list .point_sec dl dd b {
+  font-size: 14px;
+}
