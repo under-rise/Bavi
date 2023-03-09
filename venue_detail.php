@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="resources/css/venue_detail.css?9.411">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?3.19">
 
-    <link rel="stylesheet" href="assets/css/add_style.css?3.19">
+    <link rel="stylesheet" href="assets/css/add_style.css?3.21">
 
 
 
@@ -164,13 +164,29 @@
                         </ul>
                     </div>
 
-                    <div class="point_sec">
+                    <div class="point_sec question" data-iziModal-open=".point_modal_sec">
                         <dl>
-                            <dt>ポイント還元率</dt>
+                            <dt>Baviポイント<br class=" sp_only">還元率</dt>
                             <dd>
                                 <b>10</b> %
                             </dd>
                         </dl>
+                    </div>
+
+                    <div class="point_modal_sec modal_sec">
+                        <div class="inr">
+                            <span class="close" data-izimodal-close="">+</span>
+                            <h3>Baviポイントとは？</h3>
+                            <p>Baviからのバーベキュー施設のご予約・利用で貯まる<span class="line_txt_y bold">商品や現金に交換できるポイント</span>です。</p>
+                            <p><span class="line_txt_y bold">施設ごとに1%〜10%のBaviポイントの還元率</span>があり、現在ポイントが貯まる施設が急増中！
+                            </p>
+                            <p>お得に遊べるBBQ施設を見つけて賢く遊んで賢く貯めよう！</p>
+
+                            <div class="btn">
+                                <a href="https://bavi.jp/user/create">会員登録する</a>
+                            </div>
+                        </div>
+                        <!--inr end-->
                     </div>
 
                     <ul class="icon">
@@ -994,6 +1010,15 @@
             $(".plan_modal").iziModal({
                 closeButton: true,
                 padding: 20,
+                loop: true
+            });
+            $('.modal_close').iziModal('close');
+        });
+
+        $(function() {
+            $(".point_modal_sec").iziModal({
+                closeButton: true,
+                padding: 10,
                 loop: true
             });
             $('.modal_close').iziModal('close');

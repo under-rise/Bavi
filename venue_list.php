@@ -16,7 +16,7 @@
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
-    <link rel="stylesheet" href="assets/css/add_style.css?3.19">
+    <link rel="stylesheet" href="assets/css/add_style.css?3.29">
     <!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
@@ -306,7 +306,7 @@
 
                                 <div class="point_sec">
                                     <dl>
-                                        <dt>ポイント還元率</dt>
+                                        <dt>Baviポイント<br class="sp_only">還元率</dt>
                                         <dd>
                                             <b>1</b> %
                                         </dd>
@@ -349,7 +349,7 @@
 
                                 <div class="point_sec">
                                     <dl>
-                                        <dt>ポイント還元率</dt>
+                                        <dt>Baviポイント<br class="sp_only">還元率</dt>
                                         <dd>
                                             <b>10</b> %
                                         </dd>
@@ -435,7 +435,7 @@
 
                             <div class="point_sec">
                                 <dl>
-                                    <dt>ポイント還元率</dt>
+                                    <dt>Baviポイント<br class="sp_only">還元率</dt>
                                     <dd>
                                         <b>1</b>%
                                     </dd>

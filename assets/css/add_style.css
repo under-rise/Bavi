@@ -1,4 +1,50 @@
+.btn a {
+  background-color: #e50054;
+  display: block;
+  border-radius: 3px;
+  padding: 10px 5px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.line_txt_y {
+  background: linear-gradient(transparent 60%, yellow 30%);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.question {
+  position: relative;
+}
+.question::after {
+  content: "?";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: -10px;
+  border-radius: 9999px;
+  background-color: #fff;
+  border: 2px solid #e50054;
+  font-weight: bold;
+  color: #e50054;
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.sp_only {
+  display: none;
+}
+
+.pc_only {
+  display: block;
+}
+
 .point_sec {
+  cursor: pointer;
   width: 48%;
   margin-bottom: 20px;
 }
@@ -14,19 +60,23 @@
   align-items: center;
   justify-content: center;
   width: 45%;
+  font-size: 0.9em;
   background-color: #e50054;
   color: #fff;
 }
 .point_sec dl dd {
   width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .point_sec dl dd b {
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .result_list .point_sec {
   width: 100%;
-  line-height: 1;
+  line-height: 1.3;
   margin-bottom: 10px;
 }
 .result_list .point_sec dl {
@@ -35,6 +85,7 @@
 }
 .result_list .point_sec dl dt {
   padding: 5px;
+  text-align: center;
 }
 .result_list .point_sec dl dd {
   padding: 5px;
@@ -43,4 +94,35 @@
 }
 .result_list .point_sec dl dd b {
   font-size: 14px;
+}
+
+.point_modal_sec.modal_sec {
+  padding-bottom: 0;
+}
+.point_modal_sec.modal_sec .inr {
+  margin: auto;
+  padding: 20px 0;
+}
+.point_modal_sec.modal_sec .inr h3 {
+  font-weight: bold;
+}
+.point_modal_sec.modal_sec .inr p {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 680px) {
+  .sp_only {
+    display: block;
+  }
+  .pc_only {
+    display: none;
+  }
+  .point_sec dl dt {
+    width: 50%;
+    font-size: 0.5em;
+  }
+  .point_sec dl dd b {
+    font-size: 1.3em;
+  }
 }
