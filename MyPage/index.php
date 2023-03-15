@@ -256,7 +256,11 @@
             <div class="inr">
                 <h2 class="ttl">施設ご利用履歴</h2>
 
-                <ul class="use_history" style="margin-bottom: 30px;">
+                <div class="none">
+                    <p>まだ、施設ご利用履歴はありません。</p>
+                </div>
+
+                <ul class="use_history" style="margin-bottom: 30px; display: none;">
                     <li>
                         <figure>
                             <a href="use_history.php"><img src="images/facility001.jpg" alt=""></a>
@@ -278,7 +282,7 @@
                     </li>
                 </ul>
 
-                <div class="btn type01"><a href="use_history.php">もっと見る</a></div>
+                <div class="btn type01" style="display: none;"><a href="use_history.php">もっと見る</a></div>
             </div>
         </section>
         <!-- 施設ご利用履歴 -->
@@ -288,9 +292,6 @@
             <div class="inr">
                 <h2 class="ttl">口コミ履歴</h2>
 
-                <div class="none">
-                    <p>まだ、口コミ履歴はありません。</p>
-                </div>
 
                 <ul class="use_history" style="margin-bottom: 30px;">
                     <li>
