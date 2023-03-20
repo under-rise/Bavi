@@ -96,17 +96,32 @@
   font-size: 14px;
 }
 
-.point_modal_sec.modal_sec {
+.point_modal_sec {
   padding-bottom: 0;
 }
-.point_modal_sec.modal_sec .inr {
+.point_modal_sec .inr {
   margin: auto;
-  padding: 20px 0;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
 }
-.point_modal_sec.modal_sec .inr h3 {
-  font-weight: bold;
+.point_modal_sec .inr .close {
+  font-size: 28px;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
-.point_modal_sec.modal_sec .inr p {
+.point_modal_sec .inr h3 {
+  border-bottom: 1px #999 dashed;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: #e50054;
+}
+.point_modal_sec .inr p {
   text-align: left;
   margin-bottom: 1em;
 }
