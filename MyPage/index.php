@@ -44,7 +44,8 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img src="images/slider04.jpg?1" alt=""></div>
+                            <div class="swiper-slide"><a href="point.php"><img src="images/banner_point_start.jpg"
+                                        alt=""></a></div>
                             <div class="swiper-slide"><img src="images/slider03.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="images/slider01.jpg?1" alt=""></div>
                             <div class="swiper-slide"><img src="images/slider02.jpg?1" alt="">
@@ -61,7 +62,7 @@
                 <div class="slider_thumbnail_sec">
                     <div class="swiper-container slider-thumbnail">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/slider04.jpg?1" alt=""></div>
+                            <div class="swiper-slide"><img src="images/banner_point_start.jpg?1" alt=""></div>
                             <div class="swiper-slide"><img src="images/slider03.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="images/slider01.jpg?1" alt=""></div>
                             <div class="swiper-slide"><img src="images/slider02.jpg?1" alt=""></div>

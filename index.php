@@ -91,6 +91,10 @@
                 <div class="inr clearfix">
                     <ul class="slider">
 
+                        <li><a href="https://bavi.jp/user/create"><img
+                                    src="/topic/images/banner_point_start_front.jpg"></a>
+                        </li>
+
                         <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img
                                     src="/topic/images/delivery_owner_banner.jpg?1.4"></a>
                         </li>
