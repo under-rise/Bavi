@@ -27,54 +27,54 @@
     <link rel="apple-touch-icon" sizes="180x180" href="resources/images/apple-touch-icon.png" 　>
 
     <script type="text/javascript">
-    $(document).ready(function(e) {
-        $('img[usemap]').rwdImageMaps();
-    });
-
-    $(function() {
-        $('.slick').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 200,
-            infinite: true,
-            fade: false,
-            arrows: true,
-            dots: false,
-            pauseOnHover: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            cssEase: 'linear',
-            swipe: true,
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
         });
 
-        $('.slider').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 200,
-            infinite: true,
-            fade: false,
-            arrows: true,
-            dots: true,
-            pauseOnHover: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            cssEase: 'linear',
-            swipe: true,
+        $(function() {
+            $('.slick').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 200,
+                infinite: true,
+                fade: false,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                cssEase: 'linear',
+                swipe: true,
+            });
+
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 200,
+                infinite: true,
+                fade: false,
+                arrows: true,
+                dots: true,
+                pauseOnHover: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                cssEase: 'linear',
+                swipe: true,
+            });
+
         });
 
-    });
-
-    //追加
-    window.addEventListener('load', function() {
-        var maxHeight = 0;
-        $('.slick .item a').each(function(idx, elem) {
-            var height = $(elem).height();
-            if (maxHeight < height) {
-                maxHeight = height;
-            }
+        //追加
+        window.addEventListener('load', function() {
+            var maxHeight = 0;
+            $('.slick .item a').each(function(idx, elem) {
+                var height = $(elem).height();
+                if (maxHeight < height) {
+                    maxHeight = height;
+                }
+            });
+            $('.slick .item a').height(maxHeight);
         });
-        $('.slick .item a').height(maxHeight);
-    });
     </script>
 </head>
 
@@ -91,38 +91,29 @@
                 <div class="inr clearfix">
                     <ul class="slider">
 
-                        <li><a href="https://bavi.jp/user/create"><img
-                                    src="/topic/images/banner_point_start_front.jpg"></a>
+                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img src="/topic/images/banner_point_start_front.jpg"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img
-                                    src="/topic/images/delivery_owner_banner.jpg?1.4"></a>
+                        <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img src="/topic/images/delivery_owner_banner.jpg?1.4"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/page/rental.php"><img
-                                    src="resources/images/top/delivery_banner.jpg?1.2"></a>
+                        <li><a href="https://bavi.jp/lp/page/rental.php"><img src="resources/images/top/delivery_banner.jpg?1.2"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img
-                                    src="assets/img/top/recommended_spot_001.jpg"></a>
+                        <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img src="assets/img/top/recommended_spot_001.jpg"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/spot/detail/1519"><img
-                                    src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
+                        <li><a href="https://bavi.jp/spot/detail/1519"><img src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
 
                         <li><a href="/concierge.html"><img src="resources/images/top/slider_concierge.jpg"></a>
 
-                        <li><a href="https://bavi.jp/spot/detail/1290"><img
-                                    src="resources/images/top/slider_uhutahama.jpg"></a>
+                        <li><a href="https://bavi.jp/spot/detail/1290"><img src="resources/images/top/slider_uhutahama.jpg"></a>
                         </li>
-                        <li><a href="https://bavi.jp/spot/detail/963"><img
-                                    src="resources/images/top/slider_kasaya.jpg"></a>
+                        <li><a href="https://bavi.jp/spot/detail/963"><img src="resources/images/top/slider_kasaya.jpg"></a>
                         </li>
-                        <li><a href="https://bavi.jp/spot/detail/1449"><img
-                                    src="resources/images/top/slider_bbqoasis.jpg"></a>
+                        <li><a href="https://bavi.jp/spot/detail/1449"><img src="resources/images/top/slider_bbqoasis.jpg"></a>
                         </li>
-                        <li><a href="https://bavi.jp/spot?pref_id=47"><img
-                                    src="resources/images/top/slider_001.jpg"></a></li>
+                        <li><a href="https://bavi.jp/spot?pref_id=47"><img src="resources/images/top/slider_001.jpg"></a></li>
 
                         <li><a href="https://bavi.jp/about"><img src="resources/images/top/slider_003.jpg"></a></li>
                     </ul>
@@ -142,32 +133,15 @@
                     <img src="resources/images/map.png?1.1" usemap="#image-map">
 
                     <map name="image-map">
-                        <area target="" alt="北海道" title="北海道" class="hokkaido"
-                            coords="1030,11,1157,123,1217,128,1221,181,1251,208,1071,322,1004,256,917,260,940,327,870,350,845,263,893,185,956,189"
-                            shape="poly">
-                        <area target="" alt="東北" title="東北" class="tohoku"
-                            coords="851,381,943,363,958,416,1160,422,1160,502,970,505,982,553,918,731,902,733,901,768,774,761,821,656,785,635,838,543"
-                            shape="poly">
-                        <area target="" alt="関東" title="関東" class="kanto"
-                            coords="739,770,911,784,911,744,1125,740,1126,825,909,822,888,817,835,945,787,929,746,948,751,866,733,863,728,850"
-                            shape="poly">
-                        <area target="" alt="中部" title="中部" class="chubu"
-                            coords="486,630,698,632,700,715,744,690,778,642,803,658,757,756,721,761,714,847,735,881,732,953,597,955,561,863,513,872,506,859,573,784,582,720,483,719"
-                            shape="poly">
-                        <area target="" alt="近畿" title="近畿" class="kinki"
-                            coords="426,865,492,868,509,895,554,875,593,984,741,987,739,1064,524,1067,458,1055,463,955,421,946"
-                            shape="poly">
-                        <area target="" alt="中国" title="中国" class="chugoku"
-                            coords="173,795,387,790,390,863,410,863,408,950,246,994,170,989,159,957,276,877,168,879"
-                            shape="poly">
-                        <area target="" alt="四国" title="四国" class="shikoku"
-                            coords="253,1019,413,973,429,1032,323,1092,497,1094,501,1178,284,1176,276,1105"
-                            shape="poly">
-                        <area target="" alt="九州" title="九州" class="kyusyu"
-                            coords="44,1066,124,986,230,1064,193,1151,221,1153,221,1233,6,1236,8,1154,99,1151,118,1094,97,1083,63,1105"
-                            shape="poly">
-                        <area target="" alt="沖縄" title="沖縄" class="okinawa"
-                            coords="182,490,336,456,321,704,29,848,0,803,6,613" shape="poly">
+                        <area target="" alt="北海道" title="北海道" class="hokkaido" coords="1030,11,1157,123,1217,128,1221,181,1251,208,1071,322,1004,256,917,260,940,327,870,350,845,263,893,185,956,189" shape="poly">
+                        <area target="" alt="東北" title="東北" class="tohoku" coords="851,381,943,363,958,416,1160,422,1160,502,970,505,982,553,918,731,902,733,901,768,774,761,821,656,785,635,838,543" shape="poly">
+                        <area target="" alt="関東" title="関東" class="kanto" coords="739,770,911,784,911,744,1125,740,1126,825,909,822,888,817,835,945,787,929,746,948,751,866,733,863,728,850" shape="poly">
+                        <area target="" alt="中部" title="中部" class="chubu" coords="486,630,698,632,700,715,744,690,778,642,803,658,757,756,721,761,714,847,735,881,732,953,597,955,561,863,513,872,506,859,573,784,582,720,483,719" shape="poly">
+                        <area target="" alt="近畿" title="近畿" class="kinki" coords="426,865,492,868,509,895,554,875,593,984,741,987,739,1064,524,1067,458,1055,463,955,421,946" shape="poly">
+                        <area target="" alt="中国" title="中国" class="chugoku" coords="173,795,387,790,390,863,410,863,408,950,246,994,170,989,159,957,276,877,168,879" shape="poly">
+                        <area target="" alt="四国" title="四国" class="shikoku" coords="253,1019,413,973,429,1032,323,1092,497,1094,501,1178,284,1176,276,1105" shape="poly">
+                        <area target="" alt="九州" title="九州" class="kyusyu" coords="44,1066,124,986,230,1064,193,1151,221,1153,221,1233,6,1236,8,1154,99,1151,118,1094,97,1083,63,1105" shape="poly">
+                        <area target="" alt="沖縄" title="沖縄" class="okinawa" coords="182,490,336,456,321,704,29,848,0,803,6,613" shape="poly">
                     </map>
 
                     <!--
@@ -270,28 +244,22 @@
 
                 <div class="inr">
                     <ul>
-                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=1&word=&order="><img
-                                    src="resources/images/top/location_001.jpg" alt="川×BBQ"></a>
+                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=1&word=&order="><img src="resources/images/top/location_001.jpg" alt="川×BBQ"></a>
                             <p>川遊びや自然を満喫</p>
                         </li>
-                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=2&word=&order="><img
-                                    src="resources/images/top/location_002.jpg" alt="海×BBQ"></a>
+                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=2&word=&order="><img src="resources/images/top/location_002.jpg" alt="海×BBQ"></a>
                             <p>海と波音で過ごす贅沢BBQ</p>
                         </li>
-                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=3&word=&order="><img
-                                    src="resources/images/top/location_003.jpg" alt="都心×BBQ"></a>
+                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=3&word=&order="><img src="resources/images/top/location_003.jpg" alt="都心×BBQ"></a>
                             <p>夜景やアクセスも魅力</p>
                         </li>
-                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=4&word=&order="><img
-                                    src="resources/images/top/location_004.jpg" alt="静か×BBQ"></a>
+                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=4&word=&order="><img src="resources/images/top/location_004.jpg" alt="静か×BBQ"></a>
                             <p>自分だけの贅沢時間に</p>
                         </li>
-                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=5&word=&order="><img
-                                    src="resources/images/top/location_005.jpg" alt="公園×BBQ"></a>
+                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=5&word=&order="><img src="resources/images/top/location_005.jpg" alt="公園×BBQ"></a>
                             <p>整った設備や施設でお子様も安心</p>
                         </li>
-                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=32&word=&order="><img
-                                    src="resources/images/top/location_006.jpg" alt="山×BBQ"></a>
+                        <li><a href="https://bavi.jp/spot?option_id%5B1%5D%5B%5D=32&word=&order="><img src="resources/images/top/location_006.jpg" alt="山×BBQ"></a>
                             <p>大自然と景観を楽しむ！</p>
                         </li>
                     </ul>
@@ -311,10 +279,7 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
@@ -322,10 +287,7 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
@@ -333,10 +295,7 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">会場名</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
@@ -344,10 +303,7 @@
 
                     <div class="movie">
                         <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <p><a href="venue_detail.html">会場名</a></p>
                         <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>

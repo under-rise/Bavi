@@ -18,10 +18,10 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?9.411">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?9.111">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?3.19">
 
-    <link rel="stylesheet" href="assets/css/add_style.css?3.211">
+    <link rel="stylesheet" href="assets/css/add_style.css?2.2">
 
 
 
@@ -189,6 +189,11 @@
                                 することができます。
                             </p>
 
+                            <div style="margin: 20px 0px;">
+                                <a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
+                                        src="https://bavi.jp/lp/about_baviPoint/images/main.jpg" alt=""></a>
+                            </div>
+
                             <p>施設ごとに1％〜10％の還元率があり、現在ポイントが貯まる施設が急増中です！</p>
 
                             <p>お得に遊べるBBQ施設を見つけて賢く遊んで賢く貯めよう！</p>
@@ -202,7 +207,11 @@
 
                     <ul class="icon">
                         <li><a href="https://bavi.jp/lp/page/rental.php" target="_blank"><img
-                                    src="resources/images/icon_delivery_detail.gif?1.1" alt=""></a>
+                                    src="resources/images/icon_delivery.png" alt=""></a>
+                        </li>
+
+                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
+                                    src="assets/img/icon_bavi_point_horizon.png?1" alt=""></a>
                         </li>
                     </ul>
 
@@ -1030,6 +1039,8 @@
             $(".point_modal_sec").iziModal({
                 closeButton: true,
                 padding: 10,
+                top: 10,
+                bottom: 10
             });
             $('.modal_close').iziModal('close');
         });

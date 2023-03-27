@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="resources/css/sanitize.css">
     <link rel="stylesheet" href="resources/css/base.css?1.4">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
-    <link rel="stylesheet" href="resources/css/venue_list.css?2.1">
+    <link rel="stylesheet" href="resources/css/venue_list.css?2.2">
     <link rel="stylesheet" href="resources/css/venue_list_sp.css?1.5">
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
-    <link rel="stylesheet" href="assets/css/add_style.css?3.29">
+    <link rel="stylesheet" href="assets/css/add_style.css?4.29">
     <!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
@@ -315,6 +315,7 @@
 
                                 <ul class="icon">
                                     <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
+                                    <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
                                 </ul>
 
                                 <div class="score_sec">
@@ -355,6 +356,10 @@
                                         </dd>
                                     </dl>
                                 </div>
+
+                                <ul class="icon">
+                                    <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
+                                </ul>
 
                                 <div class="score_sec">
                                     <div class="stars small">
@@ -441,6 +446,10 @@
                                     </dd>
                                 </dl>
                             </div>
+
+                            <ul class="icon">
+                                <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
+                            </ul>
 
                             <div class="score_sec">
                                 <div class="stars small">
