@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/index.css?1.1311" />
+    <link rel="stylesheet" href="css/index.css?1.2" />
     <link rel="stylesheet" href="css/index_sp.css?1.2" media="screen and (max-width: 780px)" />
 
 </head>
@@ -124,17 +124,17 @@
                     <ul>
                         <li>
                             <div class="day">2022年12月30日（月） <span class="icon news">お知らせ</span></div>
-                            <p class="import">ご予約された施設のご利用日時が近づいております。</p>
+                            <p class="import"><a href="news_detail.php">ご予約された施設のご利用日時が近づいております。</a></p>
                         </li>
 
                         <li>
                             <div class="day">2023年1月1日（月） <span class="icon reserve">施設ご予約</span></div>
-                            <p>施設ご予約 GARDEN TOYOSU（キラナガーデン豊洲））</p>
+                            <p><a href="news_detail.php">施設ご予約 GARDEN TOYOSU（キラナガーデン豊洲））</a></p>
                         </li>
 
                         <li>
                             <div class="day">2023年1月2日（月） <span class="icon cancel">ご予約キャンセル</span></div>
-                            <p>ご予約キャンセル（KIRANAH GARDEN TOYOSU（キラナガーデン豊洲））</p>
+                            <p><a href="news_detail.php">ご予約キャンセル（KIRANAH GARDEN TOYOSU（キラナガーデン豊洲））</a></p>
                         </li>
                     </ul>
 
