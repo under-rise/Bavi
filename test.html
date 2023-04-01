@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="BBQ場【東京都】 | 日本最大級のBBQプラットフォーム Bavi" />
+    <meta property="og:title" content="BBQ場【東京都】 | 日本最大級のBBQプラットフォーム Bavi" />
+    <meta property="og:image" content="https://bavi.jp/assets/img/apple-touch-icon.png" />
+    <meta property="og:description" content="BBQ場【東京都】 | 日本最大級のBBQプラットフォーム Bavi" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="apple-mobile-web-app-title" content="Bavi" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+
+    <!--<meta name="robots" content="noindex">-->
+    <title>BBQ場【東京都】 | 日本最大級のBBQプラットフォーム Bavi</title>
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/sanitize.css" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/base.css?1.3" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/base_sp.css?1.3" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/venue_list.css?1.5" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/venue_list_sp.css?1.5" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/style.css?1.3" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/add_column.css" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/lib/slick/slick.css" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/lib/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://test.bavi.jp/assets/css/add_style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://test.bavi.jp/assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="resources/js/config.js"></script>
+    <script type="text/javascript" src="https://test.bavi.jp/assets/js/smoothScroll.js"></script>
+    <script type="text/javascript" src="https://test.bavi.jp/assets/js/jquery.rwdImageMaps.js"></script>
+    <script type="text/javascript" src="https://test.bavi.jp/assets/lib/slick/slick.min.js"></script>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div id="wrapper">
+      <header>
+        <h1>BBQ場【東京都】 | 日本最大級のBBQプラットフォーム Bavi</h1>
+        <a href="/"><img src="/assets/img/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
+        <span class="concierge_sec">
+          <a href="/concierge"
+            ><span class="img"><img src="/assets/img/concierge_btn.gif" /></span
+          ></a>
+        </span>
+        <span class="login_sec">
+          <a href="/mypage/login">
+            <span class="img"><img src="/assets/img/mypage/login_btn.svg" /></span>
+            <p>ログイン</p>
+          </a>
+        </span>
+      </header>
+      <article class="result_list">
+        <form method="get" id="search_form">
+          <ul>
+            <li class="location">地域で検索する</li>
+            <li class="detail">さらに絞り込む</li>
+          </ul>
+
+          <div id="overlay_search">
+            <div>
+              <span id="close">+</span>
+              <button>検索する</button>
+              <ul class="location">
+                <li>
+                  <dl>
+                    <dt>北海道エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="1" />
+                        <span>道央</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="48" />
+                        <span>道南</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="49" />
+                        <span>道北</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="50" />
+                        <span>道東</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>東北エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="2" />
+                        <span>青森県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="5" />
+                        <span>秋田県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="3" />
+                        <span>岩手県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="6" />
+                        <span>山形県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="4" />
+                        <span>宮城県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="7" />
+                        <span>福島県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>関東エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="13" checked="checked" />
+                        <span>東京都</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="8" />
+                        <span>茨城県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="9" />
+                        <span>栃木県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="10" />
+                        <span>群馬県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="11" />
+                        <span>埼玉県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="12" />
+                        <span>千葉県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="14" />
+                        <span>神奈川県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>中部エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="15" />
+                        <span>新潟県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="16" />
+                        <span>富山県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="17" />
+                        <span>石川県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="18" />
+                        <span>福井県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="19" />
+                        <span>山梨県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="20" />
+                        <span>長野県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="21" />
+                        <span>岐阜県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="22" />
+                        <span>静岡県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="23" />
+                        <span>愛知県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>近畿エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="24" />
+                        <span>三重県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="25" />
+                        <span>滋賀県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="26" />
+                        <span>京都府</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="27" />
+                        <span>大阪府</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="28" />
+                        <span>兵庫県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="29" />
+                        <span>奈良県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="30" />
+                        <span>和歌山県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>中国エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="33" />
+                        <span>岡山県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="34" />
+                        <span>広島県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="31" />
+                        <span>鳥取県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="32" />
+                        <span>島根県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="35" />
+                        <span>山口県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>四国エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="37" />
+                        <span>香川県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="36" />
+                        <span>徳島県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="39" />
+                        <span>高知県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="38" />
+                        <span>愛媛県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>九州エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="40" />
+                        <span>福岡県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="41" />
+                        <span>佐賀県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="42" />
+                        <span>長崎県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="43" />
+                        <span>熊本県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="44" />
+                        <span>大分県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="45" />
+                        <span>宮崎県</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="46" />
+                        <span>鹿児島県</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>沖縄エリア</dt>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="47" />
+                        <span>沖縄本島</span>
+                      </label>
+                    </dd>
+                    <dd>
+                      <label>
+                        <input type="checkbox" name="pref_id[]" value="51" />
+                        <span>離島</span>
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+
+              <ul class="detail">
+                <li>
+                  <dl>
+                    <dt>ロケーション</dt>
+                    <dd>
+                      <label><input type="checkbox" name="option_id[1][]" value="1" /><span>川</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="checkbox" name="option_id[1][]" value="2" /><span>海</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="checkbox" name="option_id[1][]" value="3" /><span>都心</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="checkbox" name="option_id[1][]" value="4" /><span>静か</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="checkbox" name="option_id[1][]" value="5" /><span>公園</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="checkbox" name="option_id[1][]" value="32" /><span>山</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>予約制度</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[2][]" value="6" /><span>予約制</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[2][]" value="7" /><span>予約不要</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>会場料金</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[3][]" value="8" /><span>無料</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[3][]" value="9" /><span>有料</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>駅からの距離</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[4][]" value="10" /><span>徒歩5分以内</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[4][]" value="11" /><span>徒歩6分〜10分以内</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[4][]" value="12" /><span>徒歩11分〜20分以内</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[4][]" value="13" /><span>それ以上</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>駐車場有無</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[5][]" value="14" /><span>10台未満</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[5][]" value="15" /><span>11台〜30台</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[5][]" value="16" /><span>31台〜50台</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[5][]" value="17" /><span>51台〜100台</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[5][]" value="18" /><span>それ以上</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>炊事場</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[6][]" value="19" /><span>有り</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[6][]" value="20" /><span>無し</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>会場内機材レンタル</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[7][]" value="21" /><span>有り</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[7][]" value="22" /><span>無し</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>会場内食材販売</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[8][]" value="23" /><span>有り</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[8][]" value="24" /><span>無し</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>お手洗い</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[9][]" value="25" /><span>古い</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[9][]" value="26" /><span>普通</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[9][]" value="27" /><span>新しい</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>ペット</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[10][]" value="28" /><span>可</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[10][]" value="29" /><span>不可</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>夜営業(16時以降)</dt>
+                    <dd>
+                      <label><input type="radio" name="option_id[11][]" value="30" /><span>有り</span></label>
+                    </dd>
+                    <dd>
+                      <label><input type="radio" name="option_id[11][]" value="31" /><span>無し</span></label>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="w100">
+                  <dl>
+                    <dt>検索ワード</dt>
+                    <dd><input type="text" name="word" placeholder="検索ワード" /></dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <input type="hidden" id="order" name="order" value="" />
+          </div>
+        </form>
+        <section class="cont">
+          <table>
+            <tr>
+              <th>地域条件</th>
+              <td>東京都</td>
+            </tr>
+            <tr>
+              <th>その他条件</th>
+              <td>指定なし</td>
+            </tr>
+          </table>
+          <p>「142件」のBBQ場所が見つかりました。</p>
+          <div class="recommend_sec">
+            <h2><span>Baviおすすめ会場</span></h2>
+
+            <ul class="list shop">
+              <li class="recommend">
+                <div class="colona_icon">
+                  <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+                </div>
+                <a href="/spot/detail/1522">
+                  <figure class="kanto">
+                    <img src="/uploads/spots/c0ed6c07b984dfcc01f3b9d609376fc1.PNG" alt="KIRANAH GARDEN TOYOSU（キラナガーデン豊洲）" />
+                  </figure>
+                  <h3>KIRANAH GARDEN TOYOSU（キラナガーデン豊洲）</h3>
+                  <p>TOKYO VACANCE　高揚感に包まれた大人時間。</p>
+                  <div class="point_sec">
+                    <dl>
+                      <dt>Baviポイント<br class="sp_only" />還元率</dt>
+                      <dd><b>1</b> %</dd>
+                    </dl>
+                  </div>
+                  <ul class="icon">
+                    <li><img src="/assets/img/icon_delivery.png" alt="" /></li>
+                    <li><img src="/assets/img/icon_bavi_point_horizon.png" alt="" /></li>
+                  </ul>
+                  <div class="score_sec">
+                    <div class="stars small">
+                      <img src="/assets/img/star.png" alt="星1個" />
+                      <img src="/assets/img/star.png" alt="星1個" />
+                      <img src="/assets/img/star.png" alt="星1個" />
+                      <img src="/assets/img/star.png" alt="星1個" />
+                      <img src="/assets/img/star_half.png" alt="星半数個" />
+                      <span class="only_pc">4.76 / 5.0</span>
+                    </div>
+                    <dl class="like small">
+                      <dt>&hearts;</dt>
+                      <dd>3<span>LIKE</span></dd>
+                    </dl>
+                  </div>
+                </a>
+              </li>
+              <li class="recommend">
+                <div class="colona_icon">
+                  <img src="https://test.bavi.jp/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+                </div>
+                <a href="/spot/detail/1430">
+                  <figure class="kanto">
+                    <img src="https://test.bavi.jp/uploads/spots/a61ad577e543ce076f98f6ffdd932729.JPG" alt="葛西海浜公園なぎさバーベキュー" />
+                  </figure>
+                  <h3>葛西海浜公園なぎさバーベキュー</h3>
+                  <p>23区で海バーベキューを実現できる数少ない会場です。</p>
+                  <div class="point_sec">
+                    <dl>
+                      <dt>Baviポイント<br class="sp_only" />還元率</dt>
+                      <dd><b>1</b> %</dd>
+                    </dl>
+                  </div>
+                  <ul class="icon">
+                    <li><img src="https://test.bavi.jp/assets/img/icon_bavi_point_horizon.png" alt="" /></li>
+                  </ul>
+                  <div class="score_sec">
+                    <div class="stars small">
+                      <img src="/assets/img/star_none.png" alt="星無し" />
+                      <img src="/assets/img/star_none.png" alt="星無し" />
+                      <img src="/assets/img/star_none.png" alt="星無し" />
+                      <img src="/assets/img/star_none.png" alt="星無し" />
+                      <img src="/assets/img/star_none.png" alt="星無し" />
+                      <span class="only_pc">0 / 5.0</span>
+                    </div>
+                    <dl class="like small">
+                      <dt>&hearts;</dt>
+                      <dd>3<span>LIKE</span></dd>
+                    </dl>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h2>検索ワードのBBQ場</h2>
+          <nav>
+            <ul>
+              <li class="current"><a href="javascript:void(0);" onclick="change_order_by('');">標準</a></li>
+              <li><a href="javascript:void(0);" onclick="change_order_by('rating');">評価順</a></li>
+              <li><a href="javascript:void(0);" onclick="change_order_by('like');">LIKE順</a></li>
+              <li><a href="javascript:void(0);" onclick="change_order_by('new')">新着順</a></li>
+            </ul>
+          </nav>
+          <ul class="list shop">
+            <li>
+              <div class="colona_icon">
+                <img src="https://test.bavi.jp/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/381">
+                <figure class="kanto">
+                  <img src="https://test.bavi.jp/uploads/spots/ef846af2626b541d10d0ce5474503d38.jpg" alt="よみうりランド バーベキューパークJU-JU" />
+                </figure>
+                <h3>よみうりランド バーベキューパークJU-JU</h3>
+                <p>よみうりランドにBBQの森が出現！遊園地&times;BBQ＝JU-JU</p>
+                <ul class="icon">
+                  <li><img src="https://test.bavi.jp/assets/img/icon_delivery.png" alt="" /></li>
+                </ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>3<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div class="colona_icon">
+                <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/1430">
+                <figure class="kanto">
+                  <img src="https://test.bavi.jp/uploads/spots/a61ad577e543ce076f98f6ffdd932729.JPG" alt="葛西海浜公園なぎさバーベキュー" />
+                </figure>
+                <h3>葛西海浜公園なぎさバーベキュー</h3>
+                <p>23区で海バーベキューを実現できる数少ない会場です。</p>
+                <div class="point_sec">
+                  <dl>
+                    <dt>Baviポイント<br class="sp_only" />還元率</dt>
+                    <dd><b>1</b> %</dd>
+                  </dl>
+                </div>
+                <ul class="icon">
+                  <li><img src="/assets/img/icon_bavi_point_horizon.png" alt="" /></li>
+                </ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>3<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div class="colona_icon">
+                <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/1522">
+                <figure class="kanto">
+                  <img src="/uploads/spots/c0ed6c07b984dfcc01f3b9d609376fc1.PNG" alt="KIRANAH GARDEN TOYOSU（キラナガーデン豊洲）" />
+                </figure>
+                <h3>KIRANAH GARDEN TOYOSU（キラナガーデン豊洲）</h3>
+                <p>TOKYO VACANCE　高揚感に包まれた大人時間。</p>
+                <div class="point_sec">
+                  <dl>
+                    <dt>Baviポイント<br class="sp_only" />還元率</dt>
+                    <dd><b>1</b> %</dd>
+                  </dl>
+                </div>
+                <ul class="icon">
+                  <li><img src="/assets/img/icon_delivery.png" alt="" /></li>
+                  <li><img src="/assets/img/icon_bavi_point_horizon.png" alt="" /></li>
+                </ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star_half.png" alt="星半数個" />
+                    <span class="only_pc">4.76 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>3<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div class="colona_icon">
+                <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/1358">
+                <figure class="kanto">
+                  <img src="/uploads/spots/4218c00f1573e91d37e1136b0cfd6439.jpg" alt="秋川橋河川公園バーベキューランド" />
+                </figure>
+                <h3>秋川橋河川公園バーベキューランド</h3>
+                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。</p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">4.38 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>10<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/spot/detail/1537">
+                <figure class="kanto">
+                  <img src="/uploads/spots/349b187c73dfb43680c5147377081ceb_1.jpg" alt="池袋楽園タウンの庭" />
+                </figure>
+                <h3>池袋楽園タウンの庭</h3>
+                <p>池袋駅からスグ!!グランピングとBBQが楽しめる屋上ガーデン!</p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>0<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div class="colona_icon">
+                <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/1517">
+                <figure class="kanto">
+                  <img src="/uploads/spots/710efe2310a3fa8219291e1e740f5d17.jpg" alt="六本木スカイガーデン" />
+                </figure>
+                <h3>六本木スカイガーデン</h3>
+                <p>世界中から集まる大都会六本木。お洒落でリッチなBBQをしませんか。</p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star.png" alt="星1個" />
+                    <img src="/assets/img/star_half.png" alt="星半数個" />
+                    <span class="only_pc">4.55 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>2<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div class="colona_icon">
+                <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/361">
+                <figure class="kanto">
+                  <img src="/uploads/spots/70ed5bea0d607e25c7370c9587c77b25.jpg" alt="SORAMIDO BBQ（ソラミド バーベキュー）" />
+                </figure>
+                <h3>SORAMIDO BBQ（ソラミド バーベキュー）</h3>
+                <p>葛西臨海公園内にオープン！</p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>3<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div class="colona_icon">
+                <img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" />
+              </div>
+              <a href="/spot/detail/395">
+                <figure class="kanto">
+                  <img src="/uploads/spots/9148f6a3d8ec56df74df669ca0510e96.jpg" alt="葛西臨海公園バーベキュー広場" />
+                </figure>
+                <h3>葛西臨海公園バーベキュー広場</h3>
+                <p>緑と水と人のふれあうウォーターフロント、葛西臨海公園で手ぶらバーベキューも楽しめます！</p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>3<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/spot/detail/1550">
+                <figure class="kanto">
+                  <img src="/uploads/spots/f3fe3513eeb4062a6a5cec33073df6ea.jpg" alt="夢の島　MARINA&amp;GRILL" />
+                </figure>
+                <h3>夢の島　MARINA&amp;GRILL</h3>
+                <p>
+                  夢の島マリーナに併設のBBQ場。 そこは四季折々移り変わる風景とマリーナに停泊する船、飛び交う鳥たち。 家族や仲間たち、カップルやお1人でもちょっとした非日常空間へのショートトリップ！
+                  都会のリゾート気分をお楽しみください。
+                </p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>0<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/spot/detail/353">
+                <figure class="kanto">
+                  <img src="/uploads/spots/8405c8f453d43c2d873c36ca07acab7f.jpg" alt="シャルール表参道" />
+                </figure>
+                <h3>シャルール表参道</h3>
+                <p>表参道を見渡せる屋上テラスでBBQパーティー。お好きな食材・ドリンクを持ち込んでお楽しみ頂けます♪</p>
+                <ul class="icon"></ul>
+                <div class="score_sec">
+                  <div class="stars small">
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <img src="/assets/img/star_none.png" alt="星無し" />
+                    <span class="only_pc">0 / 5.0</span>
+                  </div>
+                  <dl class="like small">
+                    <dt>&hearts;</dt>
+                    <dd>2<span>LIKE</span></dd>
+                  </dl>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="pager">
+            <ul>
+              <li class="current">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="/spot/index?pref_id=13&amp;p=2">2</a>
+              </li>
+              <li>
+                <a href="/spot/index?pref_id=13&amp;p=3">3</a>
+              </li>
+              <li>
+                <a href="/spot/index?pref_id=13&amp;p=4">4</a>
+              </li>
+              <li>
+                <a href="/spot/index?pref_id=13&amp;p=5">5</a>
+              </li>
+              <li class="next">
+                <a href="/spot/index?pref_id=13&amp;p=2" rel="next">次のページ</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </article>
+      <script>
+        $(document).ready(function () {
+          let ul = $(".list");
+
+          $(ul).each(function (i, e) {
+            $(e)
+              .find("> li")
+              .each(function (index, el) {
+                if (index % 2 == 1) {
+                  return;
+                }
+
+                let h = $(el).height();
+                let nh = $(el).next("li").height();
+                let maxH = Math.max(h, nh);
+                console.log(maxH);
+                // set
+                $(el).find("a").css({
+                  height: maxH,
+                });
+                $(el).next("li").find("a").css({
+                  height: maxH,
+                });
+              });
+          });
+        });
+        function change_order_by($order) {
+          $("#order").val($order);
+          $("#search_form").submit();
+          return true;
+        }
+      </script>
+
+      <footer>
+        <a href="#wrapper" id="topbtn"><img src="/assets/img/to_top.png" alt="ページTOPへ" /></a>
+        <figure>
+          <img src="/assets/img/foot_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" />
+        </figure>
+        <ul>
+          <li>
+            <a href="https://twitter.com/tegarunibbq000"><img src="/assets/img/sns1.png" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@bavi_bbqbbq6219"><img src="/assets/img/sns2.png" alt="You tube" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Bavibbq"><img src="/assets/img/sns3.png" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href="https://line.me/ti/p/%40637eulru"><img src="/assets/img/sns4.png" alt="LINE" /></a>
+          </li>
+        </ul>
+        <nav>
+          <ul>
+            <li><a href="/about">Baviについて</a></li>
+            <li><a href="/assets/pdf/business.pdf" target="_blank">施設者向け資料</a></li>
+            <li><a href="/contact">お問い合わせ</a></li>
+            <li><a href="/company">運営会社</a></li>
+            <li><a href="/privacy">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+        <p>&copy; Copyright Bavi all right reserved.</p>
+      </footer>
+      <nav id="bottom_nav">
+        <ul>
+          <li>
+            <a href="/">
+              <img src="/assets/img/bottom_nav1.png" alt="BBQ場" />
+              <span>BBQ場</span>
+            </a>
+          </li>
+          <li>
+            <a href="/food_top">
+              <img src="/assets/img/bottom_nav2.png" alt="食材SPOT" />
+              <span>食材SPOT</span>
+            </a>
+          </li>
+          <li>
+            <a href="/contents/">
+              <img src="/assets/img/bottom_nav3.png" alt="COLUMN" />
+              <span>COLUMN</span>
+            </a>
+          </li>
+          <li>
+            <a href="/mypage/likes">
+              <img src="/assets/img/bottom_nav4.png" alt="LIKE" />
+              <span>LIKE</span>
+            </a>
+          </li>
+          <li>
+            <a id="menu_open">
+              <img src="/assets/img/bottom_nav5.png" alt="MENU" />
+              <span>MENU</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="overlay_nav">
+        <span id="close">+</span>
+        <div>
+          <a href="/"><img src="/assets/img/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
+          <dl>
+            <dt>探す</dt>
+            <dd><a href="/">BBQ場</a></dd>
+            <dd><a href="/food_top">周辺店舗</a></dd>
+            <dd><a href="/contents/">コラム</a></dd>
+            <dd><a href="/concierge">BBQ団体向けコンシェルジュ</a></dd>
+
+            <dt>MyPage</dt>
+            <dd><a href="/mypage/likes">お気に入りページ</a></dd>
+
+            <dt>新着情報</dt>
+            <dd><a href="/">BBQ場新着</a></dd>
+            <dd><a href="/">周辺店舗新着</a></dd>
+
+            <dt>その他</dt>
+            <dd><a href="/about">Baviについて</a></dd>
+            <dd><a href="/assets/pdf/business.pdf" target="_blank">施設者向け資料</a></dd>
+            <dd><a href="/tieup">Bavi特別タイアップについて</a></dd>
+            <dd><a href="/cameraman">撮影カメラマン募集について</a></dd>
+            <dd><a href="/character">Baviモデルのご紹介</a></dd>
+          </dl>
+        </div>
+      </nav>
+      <div id="bottom_line_btn">
+        <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="/assets/img/line_btn.gif" alt="LINEでお気軽相談" /></a>
+      </div>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZBT227KFT"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-9ZBT227KFT");
+      </script>
+      <!-- User Heat Tag -->
+      <script type="text/javascript">
+        (function (add, cla) {
+          window["UserHeatTag"] = cla;
+          (window[cla] =
+            window[cla] ||
+            function () {
+              (window[cla].q = window[cla].q || []).push(arguments);
+            }),
+            (window[cla].l = 1 * new Date());
+          var ul = document.createElement("script");
+          var tag = document.getElementsByTagName("script")[0];
+          ul.async = 1;
+          ul.src = add;
+          tag.parentNode.insertBefore(ul, tag);
+        })("//uh.nakanohito.jp/uhj2/uh.js", "_uhtracker");
+        _uhtracker({ id: "uh4CBAMn4o" });
+      </script>
+      <!-- End User Heat Tag -->
+      <!-- Global site tag (gtag.js) - Google Ads: 997534492 -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-997534492"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "AW-997534492");
+      </script>
+    </div>
+  </body>
+</html>

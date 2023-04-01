@@ -304,19 +304,6 @@
 
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
-                                <div class="point_sec">
-                                    <dl>
-                                        <dt>Baviポイント<br class="sp_only">還元率</dt>
-                                        <dd>
-                                            <b>1</b> %
-                                        </dd>
-                                    </dl>
-                                </div>
-
-                                <ul class="icon">
-                                    <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
-                                    <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
-                                </ul>
 
                                 <div class="score_sec">
                                     <div class="stars small">
@@ -401,10 +388,9 @@
                                     alt="多摩川緑地バーベキュー広場" />
                             </figure>
 
-                            <h3>多摩川緑地バーベキュー広場</h3>
+                            <h3>111</h3>
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
-
 
                             <ul class="icon">
                                 <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
@@ -434,7 +420,7 @@
 
                             </figure>
 
-                            <h3>多摩川緑地バーベキュー広場</h3>
+                            <h3>222</h3>
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
@@ -672,8 +658,11 @@
 </body>
 
 <script>
-$(document).ready(function() {
+$(window).on("load resize", function() {
+    AjustListheight();
+});
 
+function AjustListheight() {
     let ul = $('.list');
 
     $(ul).each(function(i, e) {
@@ -687,7 +676,7 @@ $(document).ready(function() {
             let h = $(el).height();
             let nh = $(el).next('li').height();
             let maxH = Math.max(h, nh);
-            console.log(maxH);
+
             // set
             $(el).find('a').css({
                 'height': maxH
@@ -698,7 +687,7 @@ $(document).ready(function() {
 
         });
     });
-});
+}
 </script>
 
 </html>
