@@ -105,6 +105,14 @@
   padding: 10px 0;
   border-bottom: 1px dashed #999;
 }
+.point_history_sec ul li a,
+.news_list_sec ul li a {
+  color: #555;
+}
+.point_history_sec ul li a:hover,
+.news_list_sec ul li a:hover {
+  text-decoration: underline;
+}
 .point_history_sec ul li .day,
 .news_list_sec ul li .day {
   text-align: left;
@@ -126,6 +134,27 @@
 .news_list_sec ul li p {
   text-align: left;
   color: #555;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| news_detail_sec
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.news_detail_sec h3 {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+.news_detail_sec .contents {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.news_detail_sec .contents figure {
+  margin-bottom: 20px;
 }
 
 /*ーーーーーーーーーーーーーーーーーーーーーー

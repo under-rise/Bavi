@@ -135,17 +135,14 @@ $(function(){
 });
 
 
-/* 要素をnum個つずつ高さを合わせて並べる */
-$(window).on('load resize',function(){
-// 設定項目1：親要素名
-// 設定項目2：高さを合わせたい子要素名の配列。子要素同士で親子関係がある場合は、親を配列の後ろに置くこと。
-// 設定項目3：1行に並べる子要素数。全ての子要素を同じ高さにする場合は「0」を指定。
-	AjustHeight(".list", ["h3","h4","p"], 2);
-    /*2021*/
-//    AjustHeight(".slick", ["h3","p",".item > a"], 0);
-
+ /* 要素をnum個つずつ高さを合わせて並べる */
+  $(function(){
+	$(window).on("load resize", function () {
+		AjustHeight(".list", ["h3", "h4", "p", ".point_sec", "ul.icon"], 2);
+	  });
+  AjustHeight(".list", ["h3", "h4", "p", ".point_sec", "ul.icon"], 2);
 });
-
+  
 ///*SNSのURL変更*/
 //$(function(){
 //   
@@ -176,7 +173,7 @@ function AjustHeight(element,childelem,num){
 	$(element).each(function(){
 		
 		var clen = childelem.length;
-		
+			
 		for(var r=0;r<clen;r++){
 			var len;
 			if(num==0){

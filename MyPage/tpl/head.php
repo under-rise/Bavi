@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/base.css?41.13" />
 <link rel="stylesheet" href="css/base_sp.css?4.1" media="screen and (max-width: 780px)" />
 <link rel="stylesheet" href="css/form.css?4.122" />
-<link rel="stylesheet" href="css/style.css?111" />
+<link rel="stylesheet" href="css/style.css?2" />
 
 <link rel="stylesheet" href="/resources/slick/slick.css" />
 <link rel="stylesheet" href="/resources/slick/slick-theme.css" />

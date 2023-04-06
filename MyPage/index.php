@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/index.css?1.1311" />
+    <link rel="stylesheet" href="css/index.css?1.2" />
     <link rel="stylesheet" href="css/index_sp.css?1.2" media="screen and (max-width: 780px)" />
 
 </head>
@@ -44,11 +44,12 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img src="images/slider04.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider03.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider01.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider02.jpg?1" alt="">
-                            </div>
+                            <div class="swiper-slide"><a href="point.php"><img src="images/banner_point_start.jpg"
+                                        alt=""></a></div>
+                            <div class="swiper-slide"><a href="https://bavi.jp/mypage/point/item/4"><img
+                                        src="images/banner_amazon_1000.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="https://bavi.jp/mypage/point/item/5"><img
+                                        src="images/banner_money_2000.jpg" alt=""></a></div>
 
                         </div>
                     </div>
@@ -61,10 +62,10 @@
                 <div class="slider_thumbnail_sec">
                     <div class="swiper-container slider-thumbnail">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/slider04.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider03.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider01.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider02.jpg?1" alt=""></div>
+                            <div class="swiper-slide"><img src="images/banner_point_start.jpg?1" alt=""></div>
+                            <div class="swiper-slide"><img src="images/banner_amazon_1000.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/banner_money_2000.jpg" alt=""></div>
+
                         </div>
                     </div>
                 </div>
@@ -123,17 +124,17 @@
                     <ul>
                         <li>
                             <div class="day">2022年12月30日（月） <span class="icon news">お知らせ</span></div>
-                            <p class="import">ご予約された施設のご利用日時が近づいております。</p>
+                            <p class="import"><a href="news_detail.php">ご予約された施設のご利用日時が近づいております。</a></p>
                         </li>
 
                         <li>
                             <div class="day">2023年1月1日（月） <span class="icon reserve">施設ご予約</span></div>
-                            <p>施設ご予約 GARDEN TOYOSU（キラナガーデン豊洲））</p>
+                            <p><a href="news_detail.php">施設ご予約 GARDEN TOYOSU（キラナガーデン豊洲））</a></p>
                         </li>
 
                         <li>
                             <div class="day">2023年1月2日（月） <span class="icon cancel">ご予約キャンセル</span></div>
-                            <p>ご予約キャンセル（KIRANAH GARDEN TOYOSU（キラナガーデン豊洲））</p>
+                            <p><a href="news_detail.php">ご予約キャンセル（KIRANAH GARDEN TOYOSU（キラナガーデン豊洲））</a></p>
                         </li>
                     </ul>
 
@@ -256,7 +257,11 @@
             <div class="inr">
                 <h2 class="ttl">施設ご利用履歴</h2>
 
-                <ul class="use_history" style="margin-bottom: 30px;">
+                <div class="none">
+                    <p>まだ、施設ご利用履歴はありません。</p>
+                </div>
+
+                <ul class="use_history" style="margin-bottom: 30px; display: none;">
                     <li>
                         <figure>
                             <a href="use_history.php"><img src="images/facility001.jpg" alt=""></a>
@@ -278,7 +283,7 @@
                     </li>
                 </ul>
 
-                <div class="btn type01"><a href="use_history.php">もっと見る</a></div>
+                <div class="btn type01" style="display: none;"><a href="use_history.php">もっと見る</a></div>
             </div>
         </section>
         <!-- 施設ご利用履歴 -->
@@ -288,9 +293,6 @@
             <div class="inr">
                 <h2 class="ttl">口コミ履歴</h2>
 
-                <div class="none">
-                    <p>まだ、口コミ履歴はありません。</p>
-                </div>
 
                 <ul class="use_history" style="margin-bottom: 30px;">
                     <li>

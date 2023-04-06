@@ -18,10 +18,10 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?9.411">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?9.111">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?3.19">
 
-    <link rel="stylesheet" href="assets/css/add_style.css?3.19">
+    <link rel="stylesheet" href="assets/css/add_style.css?2.2">
 
 
 
@@ -164,18 +164,54 @@
                         </ul>
                     </div>
 
-                    <div class="point_sec">
+                    <div class="point_sec question" data-iziModal-open=".point_modal_sec">
                         <dl>
-                            <dt>ポイント還元率</dt>
+                            <dt>Baviポイント<br class=" sp_only">還元率</dt>
                             <dd>
                                 <b>10</b> %
                             </dd>
                         </dl>
                     </div>
 
+                    <div class="point_modal_sec">
+                        <div class="inr">
+                            <span class="close" data-izimodal-close="">+</span>
+
+                            <h3>Baviでは会員登録していただくと</h3>
+                            <p>バーベキュー予約や施設への口コミや評価をいただくことで<span class="line_txt_y bold">Baviポイントが貯まります。</span></p>
+
+                            <h3>Baviポイントとは？</h3>
+
+                            <p>Baviポイントは<br>
+                                <span class="line_txt_y bold">・商品と交換<br>
+                                    ・アマゾンギフトと交換<br>
+                                    ・現金と交換<br></span>
+                                することができます。
+                            </p>
+
+                            <div style="margin: 20px 0px;">
+                                <a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
+                                        src="https://bavi.jp/lp/about_baviPoint/images/main.jpg" alt=""></a>
+                            </div>
+
+                            <p>施設ごとに1％〜10％の還元率があり、現在ポイントが貯まる施設が急増中です！</p>
+
+                            <p>お得に遊べるBBQ施設を見つけて賢く遊んで賢く貯めよう！</p>
+
+                            <div class="btn">
+                                <a href="https://bavi.jp/user/create">会員登録する</a>
+                            </div>
+                        </div>
+                        <!--inr end-->
+                    </div>
+
                     <ul class="icon">
                         <li><a href="https://bavi.jp/lp/page/rental.php" target="_blank"><img
-                                    src="resources/images/icon_delivery_detail.gif?1.1" alt=""></a>
+                                    src="resources/images/icon_delivery.png" alt=""></a>
+                        </li>
+
+                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
+                                    src="assets/img/icon_bavi_point_horizon.png?1" alt=""></a>
                         </li>
                     </ul>
 
@@ -995,6 +1031,16 @@
                 closeButton: true,
                 padding: 20,
                 loop: true
+            });
+            $('.modal_close').iziModal('close');
+        });
+
+        $(function() {
+            $(".point_modal_sec").iziModal({
+                closeButton: true,
+                padding: 10,
+                top: 10,
+                bottom: 10
             });
             $('.modal_close').iziModal('close');
         });

@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="resources/css/sanitize.css">
     <link rel="stylesheet" href="resources/css/base.css?1.4">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
-    <link rel="stylesheet" href="resources/css/venue_list.css?2.1">
+    <link rel="stylesheet" href="resources/css/venue_list.css?2.2">
     <link rel="stylesheet" href="resources/css/venue_list_sp.css?1.5">
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
-    <link rel="stylesheet" href="assets/css/add_style.css?3.19">
+    <link rel="stylesheet" href="assets/css/add_style.css?4.29">
     <!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
@@ -304,18 +304,6 @@
 
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
-                                <div class="point_sec">
-                                    <dl>
-                                        <dt>ポイント還元率</dt>
-                                        <dd>
-                                            <b>1</b> %
-                                        </dd>
-                                    </dl>
-                                </div>
-
-                                <ul class="icon">
-                                    <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
-                                </ul>
 
                                 <div class="score_sec">
                                     <div class="stars small">
@@ -349,12 +337,16 @@
 
                                 <div class="point_sec">
                                     <dl>
-                                        <dt>ポイント還元率</dt>
+                                        <dt>Baviポイント<br class="sp_only">還元率</dt>
                                         <dd>
                                             <b>10</b> %
                                         </dd>
                                     </dl>
                                 </div>
+
+                                <ul class="icon">
+                                    <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
+                                </ul>
 
                                 <div class="score_sec">
                                     <div class="stars small">
@@ -396,10 +388,9 @@
                                     alt="多摩川緑地バーベキュー広場" />
                             </figure>
 
-                            <h3>多摩川緑地バーベキュー広場</h3>
+                            <h3>111</h3>
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
-
 
                             <ul class="icon">
                                 <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
@@ -429,18 +420,22 @@
 
                             </figure>
 
-                            <h3>多摩川緑地バーベキュー広場</h3>
+                            <h3>222</h3>
 
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
                             <div class="point_sec">
                                 <dl>
-                                    <dt>ポイント還元率</dt>
+                                    <dt>Baviポイント<br class="sp_only">還元率</dt>
                                     <dd>
                                         <b>1</b>%
                                     </dd>
                                 </dl>
                             </div>
+
+                            <ul class="icon">
+                                <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
+                            </ul>
 
                             <div class="score_sec">
                                 <div class="stars small">
@@ -663,8 +658,11 @@
 </body>
 
 <script>
-$(document).ready(function() {
+$(window).on("load resize", function() {
+    AjustListheight();
+});
 
+function AjustListheight() {
     let ul = $('.list');
 
     $(ul).each(function(i, e) {
@@ -678,7 +676,7 @@ $(document).ready(function() {
             let h = $(el).height();
             let nh = $(el).next('li').height();
             let maxH = Math.max(h, nh);
-            console.log(maxH);
+
             // set
             $(el).find('a').css({
                 'height': maxH
@@ -689,7 +687,7 @@ $(document).ready(function() {
 
         });
     });
-});
+}
 </script>
 
 </html>

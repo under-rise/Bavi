@@ -241,8 +241,13 @@
 }
 
 .cont ul.shop li .icon {
-	width: 200px;
+	display: flex;
 	margin-top: -10px;
+	gap: 20px;
+}
+
+.cont ul.shop li .icon li {
+	width: 40%;
 }
 
 .cont ul.shop li .score_sec {
