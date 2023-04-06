@@ -46,10 +46,10 @@
                             <!-- Slides -->
                             <div class="swiper-slide"><a href="point.php"><img src="images/banner_point_start.jpg"
                                         alt=""></a></div>
-                            <div class="swiper-slide"><img src="images/slider03.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider01.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider02.jpg?1" alt="">
-                            </div>
+                            <div class="swiper-slide"><a href="https://bavi.jp/mypage/point/item/4"><img
+                                        src="images/banner_amazon_1000.jpg" alt=""></a></div>
+                            <div class="swiper-slide"><a href="https://bavi.jp/mypage/point/item/5"><img
+                                        src="images/banner_money_2000.jpg" alt=""></a></div>
 
                         </div>
                     </div>
@@ -63,9 +63,9 @@
                     <div class="swiper-container slider-thumbnail">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="images/banner_point_start.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider03.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider01.jpg?1" alt=""></div>
-                            <div class="swiper-slide"><img src="images/slider02.jpg?1" alt=""></div>
+                            <div class="swiper-slide"><img src="images/banner_amazon_1000.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/banner_money_2000.jpg" alt=""></div>
+
                         </div>
                     </div>
                 </div>
