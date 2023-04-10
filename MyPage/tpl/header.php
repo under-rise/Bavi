@@ -11,7 +11,7 @@
 
             <div class="user_sec">
                 <div class="user_info">
-                    <p class="user_name">こんにちわ。鈴木さん</p>
+                    <p class="user_name">こんにちは。鈴木さん</p>
                     <dl>
                         <dt>所有ポイント</dt>
                         <dd class="point_sec"><b>3,000</b><span>point</span></dd>
@@ -73,7 +73,7 @@
 
                     <div class="nav_user_sec">
                         <div class="user_info">
-                            <p class="user_name">こんにちわ。鈴木さん</p>
+                            <p class="user_name">こんにちは。鈴木さん</p>
                             <dl>
                                 <dt>所有ポイント</dt>
                                 <dd class="point_sec">3,000<span>point</span></dd>
