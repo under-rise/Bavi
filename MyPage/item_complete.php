@@ -41,7 +41,7 @@
             <div class="inr">
                 <div class="image">
                     <figure>
-                        <img :src="'images/'+selectItem.image" alt="">
+                        <img src="https://bavi.jp/uploads/point_item/b36c68824ae37ab82381277c29706c3f.jpg" alt="">
                     </figure>
                 </div>
 
@@ -49,17 +49,19 @@
                     <div class="item_info">
 
                         <div class="name">
-                            <h3 x-text="selectItem.name">BBQコンロ</h3>
-
-                            <div class="stars">
-                                <span class="star" x-html="getStar(selectItem.popular)">
-                                </span>
-                                <span class="score" x-text="selectItem.popular + ' / 5.0'"></span>
-                            </div>
+                            <h3>手づくりハンバーグ８００ｇ（２0０ｇ×４個）【完全無添加！国産Ａ4～Ａ5黒毛和牛100％】</h3>
                         </div>
 
-                        <p x-text="selectItem.information">ウェーバー(Weber) バーベキュー コンロ 直径57cm オリジナルケトルプレミアム 炭 キャンプ 10-12人用
-                            【日本正規品10年保証】</p>
+                        <div class="stars" style="margin-bottom: 20px">
+                            <span class="star">
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star_half.png" alt="星1個" />
+                                <img src="/assets/img/star_none.png" alt="星1個" />
+                            </span>
+                            <span class="score">3.5/ 5.0</span>
+                        </div>
 
                         <div class="table border">
                             <dl>
@@ -68,7 +70,7 @@
                             </dl>
                             <dl>
                                 <dt>使用ポイント</dt>
-                                <dd class="point_sec"><b x-text="point().toLocaleString()">3,000</b><span>point</span>
+                                <dd class="point_sec"><b x-text="point.toLocaleString()">0000</b><span>point</span>
                                 </dd>
                             </dl>
                         </div>
@@ -91,37 +93,16 @@
 
     <script>
         const item = () => ({
+            id: null,
             num: 1,
-            datas: {},
-            selectItem: {
-                image: '',
-                point: 0,
-            },
+            point: 0,
             init() {
 
-                fetch('data/item.json', {
-                        cache: "no-store"
-                    })
-                    .then((response) => {
-                        return response.json();
-                    })
-                    .then((data) => {
-                        this.datas = data;
-                        let id = getParam('id');
-                        this.num = getParam('num');
-                        this.selectItem = this.datas.find(obj => obj.id == id);
+                this.id = getParam('id');
+                this.num = getParam('num');
+                this.point = Number(getParam('point'));
 
-                        if (this.selectItem == undefined) {
-                            throw new Error();
-                        }
-                    }).catch((e) => {
-                        location.href = 'point.php'
-                    });
             },
-            point() {
-                return this.selectItem.point * this.num;
-            }
-
         });
 
         document.addEventListener('alpine:init', () => {

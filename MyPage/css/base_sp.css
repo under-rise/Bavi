@@ -41,6 +41,12 @@ section {
 .btn.type01 {
   width: 100%;
 }
+.btn.type02 {
+  padding: 5px;
+}
+.btn.type02 a {
+  padding: 3px;
+}
 
 .ttl {
   font-size: 1.6em;

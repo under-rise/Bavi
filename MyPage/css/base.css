@@ -102,6 +102,16 @@ section {
 .btn.type01 a {
   color: #000;
 }
+.btn.type02 {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+.btn.type02 a {
+  padding: 8px;
+  color: #000;
+}
 
 .ttl {
   font-weight: bold;

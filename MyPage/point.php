@@ -21,8 +21,8 @@
     ?>
 
     <link rel="stylesheet" href="css/index.css?1">
-    <link rel="stylesheet" href="css/index_sp.css?1" media="screen and (max-width: 780px)" />
-    <link rel="stylesheet" href="css/page.css?14">
+    <link rel="stylesheet" href="css/index_sp.css?2" media="screen and (max-width: 780px)" />
+    <link rel="stylesheet" href="css/page.css?14.1">
     <link rel="stylesheet" href="css/form.css">
 
 </head>
@@ -34,43 +34,6 @@
     ?>
 
     <article class="contents" x-data="app" x-cloak>
-
-        <!-- <section>
-
-            <div class="inr">
-                <h2 class="ttl pink">ポイントを使う</h2>
-
-                <div x-data="{open:false}">
-
-                    <div class="form" x-show="open" x-transition>
-                        <div class="table">
-                            <dl>
-                                <dt>キーワード検索</dt>
-                                <dd><input type="text"></dd>
-                            </dl>
-                            <dl>
-                                <dt>カテゴリー</dt>
-                                <dd>
-                                    <div class="select">
-                                        <select name="" id="">
-                                            <option value="">全て</option>
-                                            <option value="">電化製品</option>
-                                            <option value="">BBQ関連</option>
-                                            <option value="">Amazonクーポン</option>
-                                            <option value="">その他</option>
-                                        </select>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
-
-                    <div class="btn type01" @click="open = !open"><a href="#" x-text="open ? '閉じる': '検索する'">検索する</a>
-                    </div>
-                </div>
-            </div>
-
-        </section> -->
 
         <section>
             <div class="inr">
@@ -95,12 +58,47 @@
                 </div>
                 <!-- error_sec -->
 
+                <div x-data="{open:false}" style="margin-bottom: 40px;">
+
+                    <div class="btn type02" @click="open = !open"><a x-text="open ? '閉じる': '商品を絞込む'">商品を絞込む</a>
+                    </div>
+
+                    <div class="search_sec  form" x-show="open" x-transition>
+
+                        <form method="get" action="#" class="form">
+                            <div class="table">
+                                <dl>
+                                    <dt>キーワード検索</dt>
+                                    <dd><input type="text" name="keyword" class="w100"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>カテゴリー</dt>
+                                    <dd>
+                                        <div class="select">
+                                            <select name="category" id="">
+                                                <option value="">全て</option>
+                                                <option value="">電化製品</option>
+                                                <option value="">食品</option>
+                                                <option value="">ホーム・インテリア</option>
+                                                <option value="">ドリンク・お酒</option>
+                                                <option value="">スイーツ</option>
+                                                <option value="">その他</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <input type="submit" class="btn" value="商品検索">
+                        </form>
+                    </div>
+                </div>
+
                 <div class="sort">
                     <ul>
-                        <li @click="sort('new')">新着順</li>
-                        <li @click="sort('popular')">人気順</li>
-                        <li @click="sort('point_high')">ポイントが高い順</li>
-                        <li @click="sort('point_low')">ポイントが低い順</li>
+                        <li>新着順</li>
+                        <li>人気順</li>
+                        <li>ポイントが高い順</li>
+                        <li>ポイントが低い順</li>
                     </ul>
                 </div>
             </div>
@@ -111,24 +109,51 @@
             <div class="inr">
                 <ul id="point_sec" class="point_use_sec" style="margin-bottom: 30px;">
 
-                    <template x-for="data in datas" :key="data.id">
-                        <li>
-                            <figure>
-                                <a :href="'item.php?id='+data.id"><img :src="'images/'+data.image" alt=""></a>
-                            </figure>
-                            <div class="stars">
-                                <span class="star" x-html="getStar(data.popular)">
-                                </span>
-                                <span class="score" x-text="data.popular + ' / 5.0'"></span>
-                            </div>
-                            <dl>
-                                <dt><a x-text="data.name"></a></dt>
-                                <dd class="point_sec"><b x-text="data.point.toLocaleString()">0</b><span>ポイント<span
-                                            x-show="data.other">から</span></span>
-                                </dd>
-                            </dl>
-                        </li>
-                    </template>
+                    <li>
+                        <figure>
+                            <a href="item.php?id=1"><img
+                                    src="https://bavi.jp/uploads/point_item/d18dd677f7015fa5afa6c454ca316cb4.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="stars">
+                            <span class="star">
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star_half.png" alt="星1個" />
+                                <img src="/assets/img/star_none.png" alt="星1個" />
+                            </span>
+                            <span class="score">3.5/ 5.0</span>
+                        </div>
+                        <dl>
+                            <dt><a>BBQコンロ</a></dt>
+                            <dd class="point_sec"><b>1,200</b><span>ポイント</span>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <a href="item.php?id=2"><img
+                                    src="https://bavi.jp/uploads/point_item/b36c68824ae37ab82381277c29706c3f.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="stars">
+                            <span class="star">
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star.png" alt="星1個" />
+                                <img src="/assets/img/star_half.png" alt="星1個" />
+                                <img src="/assets/img/star_none.png" alt="星1個" />
+                            </span>
+                            <span class="score">3.5/ 5.0</span>
+                        </div>
+                        <dl>
+                            <dt><a>鰻楽 九州産うなぎ蒲焼（3尾）</a></dt>
+                            <dd class="point_sec"><b>9,720</b><span>ポイント</span>
+                            </dd>
+                        </dl>
+                    </li>
 
                 </ul>
 
@@ -150,58 +175,6 @@
     <?php
     include 'tpl/footer.php'
     ?>
-
-    <script>
-    const item = () => ({
-        datas: {},
-        init() {
-
-            fetch('data/item.json', {
-                    cache: "no-store"
-                })
-                .then((response) => {
-                    return response.json();
-                })
-                .then((data) => {
-                    this.datas = data;
-                });
-        },
-        sort(e) {
-            switch (e) {
-                case 'new':
-                    this.datas = this.datas.sort(function(a, b) {
-                        return (a.created_at < b.created_at) ? -1 : 1; //オブジェクトの昇順ソート
-                    });
-                    break;
-                case 'popular':
-                    this.datas = this.datas.sort(function(a, b) {
-                        return (a.popular > b.popular) ? -1 : 1; //オブジェクトの昇順ソート
-                    });
-                    break;
-                case 'point_high':
-                    this.datas = this.datas.sort(function(a, b) {
-                        return (a.point > b.point) ? -1 : 1; //オブジェクトの昇順ソート
-                    });
-                    break;
-                case 'point_low':
-                    this.datas = this.datas.sort(function(a, b) {
-                        return (a.point < b.point) ? -1 : 1; //オブジェクトの昇順ソート
-                    });
-                    break;
-                default:
-                    this.datas = this.datas.sort(function(a, b) {
-                        return (a.created_at > b.created_at) ? -1 : 1; //オブジェクトの昇順ソート
-                    });
-            }
-
-            console.log(this.datas);
-        }
-    });
-
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('app', item);
-    });
-    </script>
 
     <script src="js/config.js"></script>
 

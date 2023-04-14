@@ -134,6 +134,25 @@
   width: 23%;
   box-sizing: border-box;
 }
+#point_sec.point_use_sec li figure {
+  flex-basis: 100%;
+}
+#point_sec.point_use_sec li figure a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-top: 90%;
+  margin: 10px 5px;
+}
+#point_sec.point_use_sec li figure a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 #point_sec.point_use_sec li dt a {
   color: #000;
 }
@@ -141,6 +160,30 @@
   color: #db0e45;
   font-size: 1.4em;
   font-weight: bold;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+|   検索
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.search_sec {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search_sec .form .table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.search_sec .form .table dt,
+.search_sec .form .table dd {
+  padding: 5px;
+}
+.search_sec .form .btn {
+  min-width: 300px;
+  padding: 10px;
 }
 
 /*ーーーーーーーーーーーーーーーーーーーーーー
@@ -204,6 +247,31 @@
 }
 .item_detail_sec .inr .info .name h3 {
   font-size: 1.6em;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー
+|
+| item swiper
+| 
+ーーーーーーーーーーーーーーーーーーーーーー*/
+.slider_item_sec .swiper_main {
+  position: relative;
+}
+.slider_item_sec .slider_item_thumbnail_sec .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider_item_sec .slider_item_thumbnail_sec .swiper-wrapper .swiper-slide {
+  width: 25% !important;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+.slider_item_sec .slider_item_thumbnail_sec .swiper-wrapper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.slider_item_sec .swiper-button-next::after,
+.slider_item_sec .swiper-button-prev::after {
+  content: none !important;
 }
 
 /*ーーーーーーーーーーーーーーーーーーーーーー
@@ -304,5 +372,17 @@
   .setting_sec .form select.w50,
   .setting_sec .form input.w50 {
     width: 100%;
+  }
+  /*ーーーーーーーーーーーーーーーーーーーーーー
+  |
+  |   検索
+  | 
+  ーーーーーーーーーーーーーーーーーーーーーー*/
+  .search_sec {
+    padding: 10px;
+  }
+  .search_sec .form .table dt,
+  .search_sec .form .table dd {
+    font-size: 11px;
   }
 }
