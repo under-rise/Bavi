@@ -1,132 +1,248 @@
 @charset "utf-8";
 
 /* #search */
-#search{
-	padding-bottom:140px;
-	background:url(../images/top/search_bg.png)no-repeat center bottom;
-	background-size:1000px auto;
+#search {
+	padding-bottom: 140px;
+	background: url(../images/top/search_bg.png)no-repeat center bottom;
+	background-size: 1000px auto;
 	transform: none;
 }
-@media screen and (min-width:1000px){
-	#search{
-		background-size:100% auto;
+
+@media screen and (min-width:1000px) {
+	#search {
+		background-size: 100% auto;
 	}
 }
-#search h2{
-	margin-bottom:20px;
+
+#search h2 {
+	margin-bottom: 20px;
 	transform: rotate(0.03deg);
 
 }
-#search h2 + div{
-	width:643px;
-	margin:auto;
-    position: relative;
+
+#search h2+div {
+	width: 643px;
+	margin: auto;
+	position: relative;
 }
-#search h2 + div img{
-	width:100%;
+
+#search h2+div img {
+	width: 100%;
 }
-#search h2 + div h3{
-	width:388px;
+
+#search h2+div h3 {
+	width: 388px;
 }
-#search h2 + div p{
-	width:300px;
-	margin:-15px 0 -230px 85px;
-	padding:20px 0 15px;
-	font-size:38px;
-	font-weight:900;
-	color:#e50054;
-	background:url(../images/top/search_num.png)no-repeat center center;
-	background-size:300px auto;
-	transform:rotate(-8deg);
+
+#search h2+div p {
+	width: 300px;
+	margin: -15px 0 -230px 85px;
+	padding: 20px 0 15px;
+	font-size: 38px;
+	font-weight: 900;
+	color: #e50054;
+	background: url(../images/top/search_num.png)no-repeat center center;
+	background-size: 300px auto;
+	transform: rotate(-8deg);
 }
-#search h2 + div p span{
-	font-size:23px;
+
+#search h2+div p span {
+	font-size: 23px;
 }
-#search h2 + div area{
-	border:none;
-	outline:none;
-	cursor:pointer;
+
+#search h2+div area {
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 /* #mainVisual */
-#mainVisual.cont { padding: 10px 0 10px 0;}
+#mainVisual.cont {
+	padding: 10px 0 10px 0;
+}
 
 /* location*/
-#location { }
-#location ul { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: space-between;}
-#location ul li { width: 49.5%; margin-bottom: 2%; padding: 5px; border-radius: 7px; background: #fff; }
-#location ul li p { font-size: 11px; margin-top: 3px;}
+#location {}
+
+#location ul {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#location ul li {
+	width: 49.5%;
+	margin-bottom: 2%;
+	padding: 5px;
+	border-radius: 7px;
+	background: #fff;
+}
+
+#location ul li p {
+	font-size: 11px;
+	margin-top: 3px;
+}
+
+#location ul li:first-child {
+	width: 100%;
+}
+
+/* sec_area_search */
+
+#sec_area_search ul {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#sec_area_search ul li {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 49%;
+	background-color: #fff;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+#sec_area_search ul li a:hover {
+	opacity: 0.8;
+	background-color: #e50054;
+	color: #fff;
+}
+
+#sec_area_search ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 15px 20px;
+	color: #000;
+	border: 2px solid #e50054;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 0 2px 0 #e50054;
+}
+
+#sec_area_search ul li a span {
+	color: #e50054;
+	font-weight: bold;
+}
+
+#sec_area_search ul li a:hover span {
+	color: #fff;
+}
 
 /* #news */
-#news{
-	padding-bottom:60px;
-	background:url(../images/bg_gray.png);
-	background-size:85px auto;
-}
-#news h2 + p{
-	font-size:16px;
+#news {
+	padding-bottom: 60px;
+	background: url(../images/bg_gray.png);
+	background-size: 85px auto;
 }
 
-.top_kuchikomi_btn { position: absolute;right: 0; top: 85%; width: 220px;}
+#news h2+p {
+	font-size: 16px;
+}
+
+.top_kuchikomi_btn {
+	position: absolute;
+	right: 0;
+	top: 85%;
+	width: 220px;
+}
 
 
 /*▼▼▼20210818追加*/
 /* #youtube */
-#youtube{
-	background:url(../images/bg_pink.png);
-	background-size:50px auto;
+#youtube {
+	background: url(../images/bg_pink.png);
+	background-size: 50px auto;
 }
 
-#youtube .inr { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px;}
+#youtube .inr {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
 
 
 #youtube .movie {
-  background: #fff;
-  width: 49%;
-  padding: 10px 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  background: #fff;
-  box-sizing: border-box;
+	background: #fff;
+	width: 49%;
+	padding: 10px 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+	box-sizing: border-box;
 }
 
 #youtube .movie_item {
- position: relative;
- padding-top: 56.25%;
- width: 100%;
+	position: relative;
+	padding-top: 56.25%;
+	width: 100%;
 }
 
 #youtube iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }
 
-#youtube .movie p {  margin-top: 5px; font-size: 12px;}
-#youtube .movie p a { color:#e50054;}
+#youtube .movie p {
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+#youtube .movie p a {
+	color: #e50054;
+}
 
 
-#youtube .movie .btn a { background: #f1f1f1; color: #e50054; display: inline-block; font-size: 11px; margin:10px 0 5px 0; border-radius: 5px; padding: 1px 15px; box-sizing: border-box;}
+#youtube .movie .btn a {
+	background: #f1f1f1;
+	color: #e50054;
+	display: inline-block;
+	font-size: 11px;
+	margin: 10px 0 5px 0;
+	border-radius: 5px;
+	padding: 1px 15px;
+	box-sizing: border-box;
+}
 
 /*変更　20211022*/
-.slick div figure { position: relative; height: 200px; overflow: hidden; }
+.slick div figure {
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
 
-.slick div.item a img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.slick div.item a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 
-@media screen and (max-width:680px){
-    #youtube .movie .btn a { font-size: 9px; margin: 5px 0; width: 100%; padding: 4px 0;}  
-    
-    /*変更　20211022*/
-    .slick div figure { position: relative; height: 120px; overflow: hidden; }
+@media screen and (max-width:680px) {
+	#youtube .movie .btn a {
+		font-size: 9px;
+		margin: 5px 0;
+		width: 100%;
+		padding: 4px 0;
+	}
+
+	/*変更　20211022*/
+	.slick div figure {
+		position: relative;
+		height: 120px;
+		overflow: hidden;
+	}
 }
