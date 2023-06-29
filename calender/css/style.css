@@ -748,7 +748,7 @@ figure.okinawa:after {
 
 /* .like */
 .like {
-    width: 175px;
+    width: 100%;
     line-height: 30px;
     margin: 10px 0;
     background-color: #ebebeb;
@@ -1331,5 +1331,3 @@ table.table_style td.btn_td {
     right: 10%;
     width: 220px;
 }
-
-SmaSurf クイック検索

@@ -18,8 +18,8 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?9.111">
-    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?3.19">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?12">
+    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?5.1">
 
     <link rel="stylesheet" href="assets/css/add_style.css?2.2">
 
@@ -225,7 +225,7 @@
                         <span>3.8 / 5.0</span>
                     </div>
                     <dl class="like">
-                        <dt>&hearts;</dt>
+                        <dt id="like_btn">&hearts;</dt>
                         <dd>3<span>LIKE</span></dd>
                     </dl>
                     <ul class="sns_sec">
@@ -999,21 +999,19 @@
                 </div>
             </section>
             <a href="/spot/index" class="back_btn"><img src="/assets/img/back_btn.png" alt="一覧に戻る" /></a>
-            <a href="javascript:void(0);" class="like_btn" id="like_btn"><img src="/assets/img/like_btn.png"
-                    alt="LIKE!" /></a>
 
 
         </article>
 
 
-        <?php include __DIR__ . '/tpl/footer.php'; ?>
+        <?php include __DIR__ . '/tpl/footer_spot.php'; ?>
 
 
 
         <script>
         $(function() {
             $('#like_btn').click(function() {
-                window.location.href = "/user/create";
+                window.location.href = "https://bavi.jp/mypage/login";
             });
 
             $('.modal-show').click(function() {

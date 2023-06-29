@@ -445,6 +445,29 @@
 	.icon li {
 		width: 45%;
 	}
+
+
+	/*-------------------------
+	main_menu 20230629
+-------------------------*/
+
+	#menu_btn {
+		width: 70px;
+	}
+
+	#reserve_sec li a {
+		top: -5px;
+	}
+
+	#reserve_sec li img {
+		max-width: 35%;
+		display: block;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		margin-top: -10px;
+	}
+
 }
 
 
@@ -482,6 +505,16 @@
 		border-top: none;
 	}
 
+	/*-------------------------
+	main_menu 20230629
+-------------------------*/
 
+	#menu_btn {
+		width: 70px;
+	}
+
+	#reserve_sec {
+		font-size: 11px;
+	}
 
 }
