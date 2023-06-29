@@ -856,6 +856,7 @@
 
                 <div class="inr">
                     <h2>予約状況</h2>
+                    <p class="bold txt_pink">カレンダーから予約しよう！</p>
 
                     <div class="calendar">
 
