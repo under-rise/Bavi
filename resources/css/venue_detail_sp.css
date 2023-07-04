@@ -517,4 +517,25 @@
 		font-size: 11px;
 	}
 
+	/*------------------------- 
+予約人数 
+-------------------------*/
+	.reserved_people {
+		max-width: 80%;
+		font-size: 11px;
+		bottom: 100px;
+		padding: 15px 20px;
+	}
+
+	.reserved_people p {
+		padding-left: 20px;
+	}
+
+	.reserved_people p::before {
+		width: 20px;
+		height: 20px;
+		left: -8px;
+		top: -3px;
+	}
+
 }

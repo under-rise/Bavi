@@ -1438,3 +1438,79 @@ body {
 	margin: 0 auto;
 	margin-top: -10px;
 }
+
+/*------------------------- 
+予約人数 
+-------------------------*/
+.reserved_people {
+	max-width: 65%;
+	text-align: left;
+	position: fixed;
+	bottom: 140px;
+	left: -100vw;
+	background-color: rgba(229, 0, 84, 0.9);
+	border-radius: 3px;
+	color: #fff;
+	padding: 10px 30px;
+	border: 2px solid #fff;
+	z-index: 100;
+}
+
+.reserved_people.none {
+	left: -100vw;
+}
+
+.reserved_people p {
+	position: relative;
+	padding-left: 20px;
+}
+
+.reserved_people p::before {
+	content: "";
+	position: absolute;
+	background: url("../../assets/img/venue/reserved_icon.svg") no-repeat left center;
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+	left: -10px;
+	top: 0;
+}
+
+.reserved_people .close {
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	transform: rotate(45deg);
+	border-radius: 9999px;
+	width: 26px;
+	height: 26px;
+	color: #fff;
+	border: 2px solid #fff;
+	background-color: #e50054;
+	text-align: center;
+	padding: 4px;
+	line-height: 1;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+@keyframes reserved_people_animation {
+	0% {
+		left: -100vw;
+	}
+
+	10%,
+	90% {
+		left: 10px;
+	}
+
+	100% {
+		left: -100vw;
+	}
+}
+
+.reserved_people_animation {
+	animation-name: reserved_people_animation;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}

@@ -18,8 +18,8 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?12">
-    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?5.1">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?2">
+    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?5.2">
 
     <link rel="stylesheet" href="assets/css/add_style.css?2.2">
 
@@ -1006,10 +1006,18 @@
 
         <?php include __DIR__ . '/tpl/footer_spot.php'; ?>
 
-
+        <!-- 予約人数の表示 -->
+        <div class="reserved_people reserved_people_animation">
+            <p>今までこの施設を<strong>10人</strong>が予約しました。</p>
+            <div class="close">+</div>
+        </div>
 
         <script>
         $(function() {
+            $('.reserved_people').on('click', function() {
+                $(this).fadeOut();
+            });
+
             $('#like_btn').click(function() {
                 window.location.href = "https://bavi.jp/mypage/login";
             });
