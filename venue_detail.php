@@ -396,6 +396,25 @@
                 <!--inr end-->
             </div>
 
+            <section id="calendar_sec" class="cont">
+
+                <div class="inr">
+                    <h2>予約状況</h2>
+                    <p class="bold txt_pink">カレンダーから予約しよう！</p>
+
+                    <div class="calendar">
+
+                        <div class="calendar__sec">
+                            <div class="slider__arrow is-prev">前の月</div>
+                            <div class="slider__arrow is-next">次の月</div>
+                        </div>
+                        <!-- calendar -->
+
+                    </div>
+                    <!-- calendar -->
+                </div>
+            </section>
+            <!--  calendar_sec -->
 
             <section id="detail" class="cont">
                 <h2>会場詳細</h2>
@@ -851,27 +870,6 @@
             </div>
         </div>
         -->
-
-            <section id="calendar_sec" class="cont">
-
-                <div class="inr">
-                    <h2>予約状況</h2>
-                    <p class="bold txt_pink">カレンダーから予約しよう！</p>
-
-                    <div class="calendar">
-
-                        <div class="calendar__sec">
-                            <div class="slider__arrow is-prev">前の月</div>
-                            <div class="slider__arrow is-next">次の月</div>
-                        </div>
-                        <!-- calendar -->
-
-                    </div>
-                    <!-- calendar -->
-                </div>
-            </section>
-            <!--  calendar_sec -->
-
 
             <section id="coupon" class="cont coupon_sec">
                 <h2>クーポン</h2>
