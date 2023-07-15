@@ -18,7 +18,7 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?2">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?2.3">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?5.2">
 
     <link rel="stylesheet" href="assets/css/add_style.css?2.2">
@@ -934,6 +934,108 @@
                 </div>
             </div>
 
+            <section id="qa_sec" class="cont">
+
+                <div class="inr">
+                    <h2>よくある質問</h2>
+
+                    <div class="qa_category">
+                        <h3><span>予約について</span></h3>
+
+                        <div class="qa_contents">
+
+                            <dl>
+                                <dt><span>Q</span>レンタル器材の受渡に関してレンタル器材の受渡に関してレンタル器材の受渡に関してレンタル器材の受渡に関してレンタル器材の受渡に関して
+                                </dt>
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
+                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span>Q</span>レンタル器材の受渡に関して</dt>
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
+                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span>Q</span>レンタル時間は何時までですか？</dt>
+                                <dd>お届け時間はお届け先ごとに「９：００から３０分毎」と「１０：００から３０分毎」にご指定いただけます。
+                                    終了時間は１６：００です。<br>
+                                    詳しくは「ＢＢＱ配達エリア」でご確認ください。</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="qa_category">
+                        <h3><span>施設やプランについて</span></h3>
+
+                        <div class="qa_contents">
+                            <dl>
+                                <dt><span>Q</span>レンタル器材の受渡に関して</dt>
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
+                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span>Q</span>レンタル時間は何時までですか？</dt>
+                                <dd>お届け時間はお届け先ごとに「９：００から３０分毎」と「１０：００から３０分毎」にご指定いただけます。
+                                    終了時間は１６：００です。<br>
+                                    詳しくは「ＢＢＱ配達エリア」でご確認ください。</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="qa_category">
+                        <h3><span>子供のプランや料金について</span></h3>
+
+                        <div class="qa_contents">
+                            <dl>
+                                <dt><span>Q</span>レンタル器材の受渡に関して</dt>
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
+                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span>Q</span>レンタル時間は何時までですか？</dt>
+                                <dd>お届け時間はお届け先ごとに「９：００から３０分毎」と「１０：００から３０分毎」にご指定いただけます。
+                                    終了時間は１６：００です。<br>
+                                    詳しくは「ＢＢＱ配達エリア」でご確認ください。</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="qa_category">
+                        <h3><span>支払いについて</span></h3>
+
+                        <div class="qa_contents">
+                            <dl>
+                                <dt><span>Q</span>レンタル器材の受渡に関して</dt>
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
+                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><span>Q</span>レンタル時間は何時までですか？</dt>
+                                <dd>お届け時間はお届け先ごとに「９：００から３０分毎」と「１０：００から３０分毎」にご指定いただけます。
+                                    終了時間は１６：００です。<br>
+                                    詳しくは「ＢＢＱ配達エリア」でご確認ください。</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+            <!--  qa_sec -->
+            <!-- 
+            <dl>
+                <dt>予約について</dt>
+                　・施設やプランについて
+                　・子供のプランや料金について
+                　・支払いについて</dt>
+            </dl> -->
+
             <section id="access" class="cont">
                 <h2>アクセス</h2>
                 <div><iframe
@@ -1029,6 +1131,17 @@
                 $('.modal-contents').hide();
                 $('#modal-' + id).show();
             });
+
+            // よくある質問
+            $('.qa_category h3').on('click', function() {
+                $(this).next('.qa_contents').fadeToggle();
+                $(this).toggleClass('active');
+            });
+
+            $('.qa_category dl dt').on('click', function() {
+                $(this).toggleClass('active').next('dd').fadeToggle();
+            });
+
         });
 
         $(function() {

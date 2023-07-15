@@ -1514,3 +1514,127 @@ body {
 	animation-duration: 4s;
 	animation-timing-function: ease-in-out;
 }
+
+/*------------------------- 
+よくある質問 
+-------------------------*/
+
+#qa_sec {
+	background-color: #fcf5f7;
+}
+
+#qa_sec .inr {
+	margin: 0 auto;
+	width: 95%;
+}
+
+#qa_sec .qa_category {
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: 1px solid #999;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+#qa_sec .qa_category h3 {
+	cursor: pointer;
+	color: #000;
+	position: relative;
+	font-size: 14px;
+	padding: 5px 0;
+}
+
+#qa_sec .qa_category h3::after {
+	content: "";
+	position: absolute;
+	right: -5px;
+	top: 10px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid;
+	margin: 0 auto;
+	border-color: transparent transparent #000 #000;
+	transform: rotate(-135deg);
+	transition: transform 0.2s ease-out;
+}
+
+#qa_sec .qa_category h3.active::after {
+	transform: rotate(-45deg);
+}
+
+#qa_sec .qa_contents {
+	display: none;
+	text-align: left;
+	padding-top: 20px;
+}
+
+#qa_sec .qa_contents dl {
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #ccc;
+}
+
+/* 
+#qa_sec .qa_contents dl span {
+	padding-left: 1.5em;
+	text-indent: 1.5em;
+	display: inline-block;
+} */
+
+#qa_sec .qa_contents dl dt {
+	margin-bottom: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	color: #e50054;
+	position: relative;
+	width: 95%;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+
+#qa_sec .qa_contents dl dt span {
+	content: "Q";
+	background-color: #e50054;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 9999px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 20px;
+	position: absolute;
+	left: 0px;
+}
+
+#qa_sec .qa_contents dl dt.active::after {
+	content: "×";
+	position: absolute;
+	right: -30px;
+	top: 0;
+	background-color: #f1f1f1;
+	color: #000;
+	border-radius: 9999px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+#qa_sec .qa_contents dl dd {
+	display: none;
+	font-size: 13px;
+	padding: 10px 0;
+	line-height: 1.8;
+}
+
+#qa_sec .qa_contents dl dd a {
+	color: #e50054;
+	text-decoration: underline;
+}
