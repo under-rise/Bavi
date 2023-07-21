@@ -3,7 +3,7 @@
       {
         "format": "expanded", //nested、compact、compressedのどれかを選ぶ
         "extensionName": ".css", //style.cssとして出力
-        "savePath": "/assets/css" //cssフォルダの中にstyle.cssを出力
+        "savePath": "/resources/css" //cssフォルダの中にstyle.cssを出力
       }
     ]
 }
