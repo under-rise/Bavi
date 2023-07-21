@@ -1,109 +1,394 @@
-@charset "utf-8";
-
-/* .cont */
-article.cont h2+figure {
-	max-width: 680px;
-	margin: 60px auto 0;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+section {
+  margin-bottom: 40px;
+}
+section p {
+  text-align: left;
+}
+section figure {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+section h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #e50054;
+  font-size: 18px;
 }
 
-article.cont h2+figure img {
-	width: 100%;
+.line {
+  font-weight: bold;
+  background: linear-gradient(transparent 70%, rgb(247, 252, 204) 70%);
 }
 
-article.cont .cont {
-	padding: 60px 0;
-	overflow: hidden;
+.box {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-article.cont .cont:first-of-type {
-	background: url(../img/about/cont1_bg.png?1)no-repeat center center;
-	background-size: 680px auto;
+.mb_40 {
+  margin-bottom: 40px;
 }
 
-article.cont .cont:nth-of-type(2) {
-	background: #eeefde url(../img/about/cont2_bg.png?1)no-repeat center center;
-	background-size: 680px auto;
+.border__bottom_dott {
+  border-bottom: 2px dashed #e50054;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-article.cont .cont:last-of-type {
-	background: url(../img/about/cont3_bg.png?1)no-repeat center center;
-	background-size: 840px auto;
+.inr {
+  width: 1080px;
+  margin: 0 auto;
 }
 
-article.cont .cont div {
-	width: 640px;
-	margin: 0 auto;
-	padding-right: 280px;
+.ttl {
+  text-align: center;
+  padding: 10px 0;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-top: 2px dashed #000;
+}
+.ttl h3 {
+  line-height: 1.4;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.ttl p {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 
-article.cont .cont:nth-of-type(even) div {
-	padding-right: 0;
-	padding-left: 280px;
+.ttl2 {
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+.ttl2 h4 {
+  font-size: 20px;
+  color: #fff;
+}
+.ttl2 h4 span {
+  background-color: #e50054;
+  padding: 5px 40px;
 }
 
-article.cont .cont h3 {
-	margin: 0 auto 10px;
-	font-size: 18px;
-	font-weight: bold;
-	color: #000;
-	text-align: left;
+#report ul {
+  display: flex;
+  gap: 1.8%;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+#report ul li {
+  height: auto;
+  border: 3px solid #e50054;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  color: #e50054;
+  font-weight: bold;
+  width: 32%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#report ul li > div {
+  width: 100%;
+  justify-content: space-between;
 }
 
-article.cont .cont p {
-	margin: 0 auto 2em;
-	font-size: 15px;
-	text-align: left;
-	line-height: 2;
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-article.cont .cont p:last-of-type {
-	margin-bottom: 0;
+.team_sec {
+  border-bottom: 1px dashed #000;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 49%;
+}
+.team_sec .img {
+  max-width: 200px;
+  margin: 0 auto 20px auto;
+}
+.team_sec .img img {
+  border-radius: 50%;
+}
+.team_sec dl.profile {
+  margin-bottom: 15px;
+}
+.team_sec dl.profile dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.team_sec dl.profile em {
+  font-style: normal;
+  font-size: 17px;
+  padding-left: 0.5em;
+}
+.team_sec dl.profile dd {
+  text-align: left;
+}
+.team_sec .table dl {
+  font-size: 13px;
 }
 
-article.cont .cont p span {
-	color: #e50054;
+.table {
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+}
+.table > dl {
+  display: table-row;
+}
+.table > dl > dt, .table > dl > dd {
+  vertical-align: middle;
+  display: table-cell;
+  border: 1px solid #000;
+  padding: 10px 15px;
+}
+.table > dl > dt {
+  width: 7em;
+  background-color: #f9f9f9;
+}
+.table > dl > dd {
+  text-align: left;
 }
 
-article.cont>ul li {
-	width: 307px;
-	display: inline-block;
-	margin: 0 10px;
+#company .table {
+  font-size: 13px;
+}
+#company .table dt {
+  width: 10em;
 }
 
-article.cont>ul li a {
-	display: block;
-	width: 100%;
-	max-width: 640px;
-	line-height: 68px;
-	margin: 0 auto;
-	font-size: 18px;
-	font-weight: bold;
-	color: #fff;
-	background-color: #e50054;
-	border-radius: 8px;
-	position: relative;
-
+#history dl {
+  display: table;
+  width: 600px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#history dl dt {
+  text-align: right;
+  width: 10em;
+  display: table-cell;
+}
+#history dl dd {
+  padding-left: 1em;
+  text-align: left;
+  display: table-cell;
+}
+#history dl dt,
+#history dl dd {
+  border-bottom: 1px dashed #000;
+  padding: 4px 0;
 }
 
-article.cont>ul li a:after {
-	content: '';
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 0 8px 12px;
-	border-color: transparent transparent transparent #fff;
-	position: absolute;
-	right: 20px;
-	top: 50%;
-	transform: translateY(-50%);
+#buginess_contents li {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 2px dashed #000;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+#buginess_contents li dl dt {
+  font-weight: bold;
+}
+#buginess_contents li dl dt a {
+  color: #e50054;
+  text-decoration: underline;
+}
+#buginess_contents li dl dd {
+  margin-top: 20px;
+  text-align: left;
 }
 
-article.cont>ul li:first-child a {
-	color: #000;
-	background-color: #9ccaae;
+table th {
+  font-weight: normal;
+  padding-right: 1em;
 }
 
-article.cont>ul li:first-child a:after {
-	border-color: transparent transparent transparent #000;
-	position: absolute;
+.document_btn ul {
+  justify-content: space-between;
+  display: flex;
+}
+.document_btn ul li {
+  width: 48%;
+}
+.document_btn ul li a {
+  color: #fff;
+  padding: 20px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  background-color: #e50054;
+}
+.document_btn ul li:nth-child(1) a {
+  background-color: #078b64;
+}
+
+@media screen and (max-width: 1080px) {
+  .inr {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .inr {
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+  }
+  .allow {
+    padding: 0;
+    margin: -10px 0 5px;
+  }
+  section p {
+    font-size: 13px;
+  }
+  section h4 {
+    font-size: 13px;
+  }
+  .ttl {
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ttl h3 {
+    font-size: 28px;
+  }
+  .ttl p {
+    font-size: 11px;
+    padding-bottom: 0px;
+  }
+  .ttl2 {
+    margin-top: 30px;
+  }
+  .ttl2 h4 {
+    font-size: 16px;
+  }
+  .ttl2 h4 span {
+    padding: 5px 20px;
+  }
+  .table {
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  .table > dl {
+    display: block;
+    width: 100%;
+  }
+  .table > dl > dt, .table > dl > dd {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px;
+  }
+  .table > dl > dt {
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .table > dl > dd {
+    text-align: left;
+  }
+  #report ul {
+    display: flex;
+    gap: 1%;
+  }
+  #report ul li {
+    font-size: 12px;
+    border: 2px solid #e50054;
+    margin-bottom: 5px;
+    padding: 15px 5px;
+    border-radius: 5px;
+    width: 49%;
+  }
+  .team_sec {
+    width: 100%;
+  }
+  .team_sec .img {
+    max-width: 160px;
+  }
+  .team_sec dl.profile {
+    margin-bottom: 15px;
+  }
+  .team_sec dl.profile em {
+    font-size: 16px;
+  }
+  .team_sec .table dl {
+    font-size: 12px;
+  }
+  #company .table {
+    font-size: 12px;
+  }
+  #company .table dt {
+    width: 100%;
+  }
+  #company .table dd {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #company .table dd table {
+    display: inline-block;
+  }
+  #company .table dd table th {
+    text-align: right;
+  }
+  #company .table dd table td {
+    text-align: left;
+  }
+  #history {
+    font-size: 12px;
+  }
+  #history dl {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+  #history dl dt {
+    text-align: left;
+    width: 100%;
+    display: block;
+    border: none;
+    font-size: 13px;
+  }
+  #history dl dt,
+  #history dl dd {
+    border: none;
+    padding: 0;
+  }
+  #history dl dd {
+    padding-left: 1em;
+    width: 100%;
+    display: block;
+    border-bottom: 1px dashed #000;
+    padding-bottom: 4px;
+  }
+  .document_btn ul {
+    flex-flow: column;
+  }
+  .document_btn ul li {
+    width: 100%;
+  }
+  .document_btn ul li a {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  #buginess_contents li {
+    border-bottom: 1px dashed #000;
+    padding-bottom: 15px;
+  }
+  #buginess_contents li dl dd {
+    font-size: 12px;
+  }
 }
