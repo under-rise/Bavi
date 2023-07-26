@@ -18,8 +18,8 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?2.3">
-    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?5.2">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?2.41">
+    <link rel="stylesheet" href="resources/css/venue_detail_sp.css?15.3">
 
     <link rel="stylesheet" href="assets/css/add_style.css?2.2">
 
@@ -206,12 +206,13 @@
                     </div>
 
                     <ul class="icon">
-                        <li><a href="https://bavi.jp/lp/page/rental.php" target="_blank"><img
-                                    src="resources/images/icon_delivery.png" alt=""></a>
+                        <li class="icon_flash"><img src="resources/images/icon_on-the-day.png?1" alt="">
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
-                                    src="assets/img/icon_bavi_point_horizon.png?1" alt=""></a>
+                        <li><a href="https://bavi.jp/lp/page/rental.php" target="_blank"><img src="resources/images/icon_delivery.png" alt=""></a>
+                        </li>
+
+                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img src="assets/img/icon_bavi_point_horizon.png?1" alt=""></a>
                         </li>
                     </ul>
 
@@ -230,16 +231,13 @@
                     </dl>
                     <ul class="sns_sec">
                         <li class="twitter">
-                            <a href="https://twitter.com/share?text=しい茸ランドかさや - バーベキュー場・食材探しならBavi&url=https://bavi.jp/spot/detail/963"
-                                target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/share?text=しい茸ランドかさや - バーベキュー場・食材探しならBavi&url=https://bavi.jp/spot/detail/963" target="_blank"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="facebook">
-                            <a href="https://www.facebook.com/share.php?u=https://bavi.jp/spot/detail/963"
-                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/share.php?u=https://bavi.jp/spot/detail/963" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="sns_line">
-                            <a href="https://social-plugins.line.me/lineit/share?url=https://bavi.jp/spot/detail/963"
-                                target="_blank"><i class="fab fa-line"></i></a>
+                            <a href="https://social-plugins.line.me/lineit/share?url=https://bavi.jp/spot/detail/963" target="_blank"><i class="fab fa-line"></i></a>
                         </li>
                     </ul>
                     <h3>1年中OK！かさやの定番！無農薬で自然栽培されたしい茸狩り&amp;バーベキュー！</h3>
@@ -373,7 +371,6 @@
 
                     </ul>
 
-                    <a href="#" class="btn">もっとコラムを見る</a>
 
                 </section>
 
@@ -947,14 +944,12 @@
                             <dl>
                                 <dt><span>Q</span>レンタル器材の受渡に関してレンタル器材の受渡に関してレンタル器材の受渡に関してレンタル器材の受渡に関してレンタル器材の受渡に関して
                                 </dt>
-                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
-                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
                                 </dd>
                             </dl>
                             <dl>
                                 <dt><span>Q</span>レンタル器材の受渡に関して</dt>
-                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
-                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
                                 </dd>
                             </dl>
                             <dl>
@@ -972,8 +967,7 @@
                         <div class="qa_contents">
                             <dl>
                                 <dt><span>Q</span>レンタル器材の受渡に関して</dt>
-                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
-                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
                                 </dd>
                             </dl>
                             <dl>
@@ -991,8 +985,7 @@
                         <div class="qa_contents">
                             <dl>
                                 <dt><span>Q</span>レンタル器材の受渡に関して</dt>
-                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
-                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
                                 </dd>
                             </dl>
                             <dl>
@@ -1010,8 +1003,7 @@
                         <div class="qa_contents">
                             <dl>
                                 <dt><span>Q</span>レンタル器材の受渡に関して</dt>
-                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a
-                                        href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
+                                <dd>受渡場所は公園入り口若しくは駐車場となります。公園以外の場所は打ち合わせの上、決めさせて頂きます。当日ご指定お届け時間の約１５分までに<a href="#">弊社デリバリースタッフ</a>よりお客様の登録された携帯電話へご連絡を差し上げ、お会いしていただきます。ご注文いただきました商品を確認の上、受渡の終了とさせて頂きます。
                                 </dd>
                             </dl>
                             <dl>
@@ -1087,11 +1079,144 @@
                         食材のお肉についても和牛や地鶏を使っていて大満足な体験と食事でした。<br />
                         大大大おすすめです！</p>
                 </section>
-                <!--
-            <a href="javascript:void(0)" class="more_btn">口コミをもっと見る</a>
-            -->
 
-                <a href="javascript:void(0);" class="link_btn reserve modal" data-name=".terms"><span>予約する</span></a>
+                <section>
+                    <dl>
+                        <dt>2.Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>Bavi管理人</dt>
+                        <dd>（男性 / 30代）</dd>
+                    </dl>
+
+                    <div class="stars">
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star.png" alt="星1個" />
+                        <img src="/assets/img/star_half.png" alt="星半数個" />
+                        <img src="/assets/img/star_none.png" alt="星無し" />
+                        <span>3.8 / 5.0</span>
+                    </div>
+
+                    <h3>[利用日]2022-02-10 [利用人数]4人未満</h3>
+                    <p>今回は初取材でお邪魔させていただきました。</p>
+                </section>
+
+                <a href="javascript:void(0)" class="more_btn">口コミをもっと見る</a>
+
+
+                <a href="javascript:void(0);" class="link_btn reserve modal" data-name=".terms" style="margin-top: 50px;"><span>予約する</span></a>
 
 
                 <div class="kuchikomi_btn">
@@ -1143,6 +1268,44 @@
             });
 
         });
+                const start_count = 3;
+                const add_count = 2;
+
+                const voice_sec = $('#voice').find('section');
+                const voice_btn = $('#voice').find('.more_btn');
+                const voice_count = voice_sec.length;
+                let current_count = 0;
+
+                current_count = start_count;
+                init(start_count);
+
+                function init(c) {
+                    if (current_count >= voice_count) {
+                        voice_btn.hide();
+                    }
+
+                    voice_sec.hide();
+                    voice_sec.each((i, e) => {
+                        if (c > i) {
+                            $(e).show();
+                        }
+                    });
+                }
+                voice_btn.on('click', () => {
+                    current_count += add_count;
+                    init(current_count);
+                });
+
+
+                // よくある質問
+                $('.qa_category h3').on('click', function() {
+                    $(this).next('.qa_contents').fadeToggle();
+                    $(this).toggleClass('active');
+                });
+
+                $('.qa_category dl dt').on('click', function() {
+                    $(this).toggleClass('active').next('dd').fadeToggle();
+                });
 
         $(function() {
             $(".plan_modal").iziModal({

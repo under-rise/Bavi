@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="resources/css/top_sp.css?1.51">
 
     <link rel="stylesheet" href="/resources/slick/slick.css" />
-    <link rel="stylesheet" href="/resources/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/resources/slick/slick-theme.css?1.1" />
 
 
     <meta property="og:title" content="日本最大級のBBQプラットフォーム Bavi">
@@ -49,7 +49,7 @@
 
             $('.slider').slick({
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 speed: 200,
                 infinite: true,
                 fade: false,

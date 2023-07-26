@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <title></title>
     <link rel="stylesheet" href="resources/css/sanitize.css">
-    <link rel="stylesheet" href="resources/css/base.css?1.4">
+    <link rel="stylesheet" href="resources/css/base.css?1.5">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
-    <link rel="stylesheet" href="resources/css/venue_list.css?2.2">
-    <link rel="stylesheet" href="resources/css/venue_list_sp.css?1.5">
+    <link rel="stylesheet" href="resources/css/venue_list.css?2.3">
+    <link rel="stylesheet" href="resources/css/venue_list_sp.css?1.15">
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
@@ -261,6 +261,15 @@
                                                 value="33"><span>無し</span></label></dd>
                                 </dl>
                             </li>
+                            <li>
+                                <dl>
+                                    <dt>当日受け入れ</dt>
+                                    <dd><label><input type="radio" name="option_id[13][]"
+                                                value="34"><span>有り</span></label></dd>
+                                    <dd><label><input type="radio" name="option_id[13][]"
+                                                value="35"><span>無し</span></label></dd>
+                                </dl>
+                            </li>
                             <li class="w100">
                                 <dl>
                                     <dt>検索ワード</dt>
@@ -393,6 +402,8 @@
                             <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
                             <ul class="icon">
+                                <li class="icon_flash"><img src="resources/images/icon_on-the-day.png?1.1" alt="">
+                                </li>
                                 <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
                             </ul>
 
@@ -434,7 +445,10 @@
                             </div>
 
                             <ul class="icon">
+                                <li class="icon_flash"><img src="resources/images/icon_on-the-day.png?1.1" alt="">
+                                </li>
                                 <li><img src="assets/img/icon_bavi_point_horizon.png" alt=""></li>
+                                <li><img src="resources/images/icon_delivery.png?1.1" alt=""></li>
                             </ul>
 
                             <div class="score_sec">
@@ -657,14 +671,23 @@
     </div>
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
-$(window).on("load resize", function() {
-    AjustListheight();
+$(function() {
+    $(window).on("load resize", _.debounce(AjustListheight, 200));
 });
 
-function AjustListheight() {
-    let ul = $('.list');
 
+
+function AjustListheight() {
+
+    let ul = $('.list');
+    $(ul).find('a').css({
+        'height': 'auto'
+    });
     $(ul).each(function(i, e) {
 
         $(e).find('> li').each(function(index, el) {

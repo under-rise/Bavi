@@ -1331,3 +1331,22 @@ table.table_style td.btn_td {
 	right: 10%;
 	width: 220px;
 }
+
+/* icon */
+.icon_flash {
+	animation: icon_flash 2s linear infinite;
+}
+
+@keyframes icon_flash {
+
+	0%,
+	20%,
+	80%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.4;
+	}
+}

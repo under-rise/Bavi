@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/resources/css/sanitize.css">
-<link rel="stylesheet" href="/resources/css/base.css?1.81">
+<link rel="stylesheet" href="/resources/css/base.css?2.0">
 <link rel="stylesheet" href="/resources/css/base_sp.css?1.9">
 
 
