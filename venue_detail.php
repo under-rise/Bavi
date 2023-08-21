@@ -28,13 +28,12 @@
     <link rel="stylesheet" href="resources/slick/slick.css" />
     <link rel="stylesheet" href="resources/slick/slick-theme.css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <style>
-    #bottom_line_btn {
-        display: none;
-    }
+        #bottom_line_btn {
+            display: none;
+        }
     </style>
 
     <link rel="stylesheet" href="resources/css/iziModal.min.css">
@@ -43,82 +42,82 @@
 
 
     <script type="text/javascript">
-    $(function() {
-        $('.slick').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 800,
-            infinite: true,
-            fade: false,
-            arrows: true,
-            dots: false,
-            pauseOnHover: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            cssEase: 'linear',
-            swipe: false,
-        });
+        $(function() {
+            $('.slick').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 800,
+                infinite: true,
+                fade: false,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                cssEase: 'linear',
+                swipe: false,
+            });
 
-        $('.main_slick').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 800,
-            infinite: true,
-            fade: false,
-            arrows: true,
-            dots: false,
-            pauseOnHover: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            cssEase: 'linear',
-            swipe: false,
-            asNavFor: '.slick_nav'
-        });
+            $('.main_slick').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 800,
+                infinite: true,
+                fade: false,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                cssEase: 'linear',
+                swipe: false,
+                asNavFor: '.slick_nav'
+            });
 
-        $('.slick_nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.main_slick',
-            arrows: false,
-            dots: false,
-            centerMode: false,
-            focusOnSelect: true,
-            swipe: false
-        });
+            $('.slick_nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.main_slick',
+                arrows: false,
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true,
+                swipe: false
+            });
 
-        $('.slick_coupon').slick({
-            autoplay: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            focusOnSelect: true,
-            swipe: true,
-            adaptiveHeight: true,
-        });
+            $('.slick_coupon').slick({
+                autoplay: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                focusOnSelect: true,
+                swipe: true,
+                adaptiveHeight: true,
+            });
 
-        $('.modal').click(function(e) {
-            $('html').addClass('overlay');
-            var obj = $(this).data('name');
-            $(obj).fadeIn();
-        });
+            $('.modal').click(function(e) {
+                $('html').addClass('overlay');
+                var obj = $(this).data('name');
+                $(obj).fadeIn();
+            });
 
-        $('.modal_sec .close').click(function(e) {
-            $('.modal_sec').fadeOut();
-            $('html').removeClass('overlay');
-        });
-
-        $('.modal_sec').click(function(e) {
-            if (!$(e.target).closest('.modal_sec .inr').length) {
-                $(this).fadeOut();
+            $('.modal_sec .close').click(function(e) {
+                $('.modal_sec').fadeOut();
                 $('html').removeClass('overlay');
-            }
+            });
+
+            $('.modal_sec').click(function(e) {
+                if (!$(e.target).closest('.modal_sec .inr').length) {
+                    $(this).fadeOut();
+                    $('html').removeClass('overlay');
+                }
+            });
+
+            $('.panel_btn').tabPanel();
+
+
         });
-
-        $('.panel_btn').tabPanel();
-
-
-    });
     </script>
 
 </head>
@@ -149,12 +148,9 @@
                     <div class="double_slick">
                         <div class="colona_icon"><img src="/assets/img/icon_colona.png" alt="コロナ対策推奨店" /></div>
                         <div class="main_slick">
-                            <div class="modal" data-name=".gallery_sec"><img
-                                    src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></div>
-                            <div class="modal" data-name=".gallery_sec"><img
-                                    src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></div>
-                            <div class="modal" data-name=".gallery_sec"><img
-                                    src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></div>
+                            <div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/c4cbfd93dc8a4e1ba1716b08cb536123.jpg" alt="" /></div>
+                            <div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/2bca92b3fb70f1db419990dd9426e200.jpg" alt="" /></div>
+                            <div class="modal" data-name=".gallery_sec"><img src="/uploads/spots/7da762121c1ec3f34d92cefcc520a7c4.jpg" alt="" /></div>
                         </div>
 
                         <ul class="slick_nav">
@@ -190,8 +186,7 @@
                             </p>
 
                             <div style="margin: 20px 0px;">
-                                <a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
-                                        src="https://bavi.jp/lp/about_baviPoint/images/main.jpg" alt=""></a>
+                                <a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img src="https://bavi.jp/lp/about_baviPoint/images/main.jpg" alt=""></a>
                             </div>
 
                             <p>施設ごとに1％〜10％の還元率があり、現在ポイントが貯まる施設が急増中です！</p>
@@ -325,51 +320,77 @@
 
                 <section class="news_sec column_sec">
                     <h3><img src="/assets/img/icon_column.png" alt="COLUMN" />関連コラム</h3>
-                    <ul>
-                        <li>
-                            <div class="txt">
 
-                                <dl>
-                                    <dt class="type01">アドバイス</dt>
-                                    <dd><a href="#">【マイナス10歳肌ライターおすすめ】バーベキューやキャンプでうっかり日焼け後にするべきスキンケアとは？</a></dd>
-                                </dl>
+                    <div class="column_scroll_sec">
+                        <ul>
+                            <li>
+                                <div class="txt">
 
-                            </div>
-                        </li>
+                                    <dl>
+                                        <dt class="type01">アドバイス</dt>
+                                        <dd><a href="#">【マイナス10歳肌ライターおすすめ】バーベキューやキャンプでうっかり日焼け後にするべきスキンケアとは？</a></dd>
+                                    </dl>
 
-                        <li>
-                            <div class="txt">
+                                </div>
+                            </li>
 
-                                <dl>
-                                    <dt class="type02">アイテム</dt>
-                                    <dd><a href="#">【後編】宿泊キャンプBBQに使えるテントの種類・選び方とは?!アウトドア用品店STAFFが解説！</a></dd>
-                                </dl>
+                            <li>
+                                <div class="txt">
 
-                            </div>
-                        </li>
+                                    <dl>
+                                        <dt class="type02">アイテム</dt>
+                                        <dd><a href="#">【後編】宿泊キャンプBBQに使えるテントの種類・選び方とは?!アウトドア用品店STAFFが解説！</a></dd>
+                                    </dl>
 
-                        <li>
-                            <div class="txt">
+                                </div>
+                            </li>
 
-                                <dl>
-                                    <dt class="type03">グルメ</dt>
-                                    <dd><a href="#">【東京都内】プロが選ぶお花見できるBBQ場（公園）4選！<2022年版>桜の花が咲いたら…お花見に出かけよう</a></dd>
-                                </dl>
+                            <li>
+                                <div class="txt">
 
-                            </div>
-                        </li>
+                                    <dl>
+                                        <dt class="type03">グルメ</dt>
+                                        <dd><a href="#">【東京都内】プロが選ぶお花見できるBBQ場（公園）4選！<2022年版>桜の花が咲いたら…お花見に出かけよう</a></dd>
+                                    </dl>
 
-                        <li>
-                            <div class="txt">
-                                <dl>
-                                    <dt class="type04">会場</dt>
-                                    <dd><a href="#">誰と年に何回BBQしてる？？Twitterアンケートで聞いてみました！</a></dd>
-                                </dl>
+                                </div>
+                            </li>
 
-                            </div>
-                        </li>
+                            <li>
+                                <div class="txt">
+                                    <dl>
+                                        <dt class="type04">会場</dt>
+                                        <dd><a href="#">誰と年に何回BBQしてる？？Twitterアンケートで聞いてみました！</a></dd>
+                                    </dl>
 
-                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="txt">
+                                    <dl>
+                                        <dt class="type04">会場</dt>
+                                        <dd><a href="#">誰と年に何回BBQしてる？？Twitterアンケートで聞いてみました！</a></dd>
+                                    </dl>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="txt">
+
+                                    <dl>
+                                        <dt class="type03">グルメ</dt>
+                                        <dd><a href="#">【東京都内】プロが選ぶお花見できるBBQ場（公園）4選！<2022年版>桜の花が咲いたら…お花見に出かけよう</a></dd>
+                                    </dl>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
 
 
                 </section>
@@ -509,8 +530,7 @@
                                     </tr>
                                     <tr>
                                         <th>問い合わせ</th>
-                                        <td><a href="https://bavi.jp/contact"
-                                                target="_blank">https://bavi.jp/contact</a></td>
+                                        <td><a href="https://bavi.jp/contact" target="_blank">https://bavi.jp/contact</a></td>
                                     </tr>
                                 </table>
                             </div>
@@ -681,23 +701,23 @@
                     </div>
 
                     <script>
-                    $(function() {
-                        let plan_obj = []
-                        $('.menu-plan_sec li').each(function(index, val) {
-                            plan_obj.push({
-                                img: $(val).find('img').attr('src'),
-                                name: $(val).find('p.name').text(),
-                                info: $(val).find('dt').text(),
-                                price: $(val).find('dd').html(),
-                                number: $(val).attr('data-iziModal-open').slice(1),
-                                order_info: $(val).find('p.order_info').html()
+                        $(function() {
+                            let plan_obj = []
+                            $('.menu-plan_sec li').each(function(index, val) {
+                                plan_obj.push({
+                                    img: $(val).find('img').attr('src'),
+                                    name: $(val).find('p.name').text(),
+                                    info: $(val).find('dt').text(),
+                                    price: $(val).find('dd').html(),
+                                    number: $(val).attr('data-iziModal-open').slice(1),
+                                    order_info: $(val).find('p.order_info').html()
+                                });
                             });
-                        });
 
-                        if (plan_obj.length) {
-                            $.each(plan_obj, function(index, element) {
+                            if (plan_obj.length) {
+                                $.each(plan_obj, function(index, element) {
 
-                                let html = `
+                                    let html = `
 								<div class="plan_modal ${element.number}" data-izimodal-group="group1">
 								
 									<img src="${element.img}" >
@@ -719,10 +739,10 @@
 									
 								</div>
 								`;
-                                $('.menu-plan_sec').after(html)
-                            });
-                        }
-                    });
+                                    $('.menu-plan_sec').after(html)
+                                });
+                            }
+                        });
                     </script>
 
                     <h3>その他・売店情報</h3>
@@ -1030,10 +1050,7 @@
 
             <section id="access" class="cont">
                 <h2>アクセス</h2>
-                <div><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.397191736555!2d135.14609575059794!3d34.946652280275714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600071d4f1569889%3A0x6272b5de43480911!2z44GX44GE6Iy444Op44Oz44OJ44GL44GV44KE!5e0!3m2!1sja!2sjp!4v1622258532163!5m2!1sja!2sjp"
-                        width="640" height="370" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe></div>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.397191736555!2d135.14609575059794!3d34.946652280275714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600071d4f1569889%3A0x6272b5de43480911!2z44GX44GE6Iy444Op44Oz44OJ44GL44GV44KE!5e0!3m2!1sja!2sjp!4v1622258532163!5m2!1sja!2sjp" width="640" height="370" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
                 <p>兵庫県三田市上相野373<br />TEL: <a href="tel:079-568-1301">079-568-1301</a></p>
                 <table>
                     <tr>
@@ -1238,36 +1255,29 @@
         </div>
 
         <script>
-        $(function() {
-            $('.reserved_people').on('click', function() {
-                $(this).fadeOut();
-            });
+            $(function() {
+                $('.reserved_people').on('click', function() {
+                    $(this).fadeOut();
+                });
 
-            $('#like_btn').click(function() {
-                window.location.href = "https://bavi.jp/mypage/login";
-            });
+                $('#like_btn').click(function() {
+                    window.location.href = "https://bavi.jp/mypage/login";
+                });
 
-            $('.modal-show').click(function() {
+                $('.modal-show').click(function() {
 
-                $('html').addClass('overlay');
-                var id = $(this).data('id');
+                    $('html').addClass('overlay');
+                    var id = $(this).data('id');
 
-                $(".coupon_sec").fadeIn();
-                $('.modal-contents').hide();
-                $('#modal-' + id).show();
-            });
+                    $(".coupon_sec").fadeIn();
+                    $('.modal-contents').hide();
+                    $('#modal-' + id).show();
+                });
 
-            // よくある質問
-            $('.qa_category h3').on('click', function() {
-                $(this).next('.qa_contents').fadeToggle();
-                $(this).toggleClass('active');
-            });
+                // ーーーーーーーーーーーーーーーーーーー
+                // 口コミ
 
-            $('.qa_category dl dt').on('click', function() {
-                $(this).toggleClass('active').next('dd').fadeToggle();
-            });
 
-        });
                 const start_count = 3;
                 const add_count = 2;
 
@@ -1307,46 +1317,48 @@
                     $(this).toggleClass('active').next('dd').fadeToggle();
                 });
 
-        $(function() {
-            $(".plan_modal").iziModal({
-                closeButton: true,
-                padding: 20,
-                loop: true
             });
-            $('.modal_close').iziModal('close');
-        });
 
-        $(function() {
-            $(".point_modal_sec").iziModal({
-                closeButton: true,
-                padding: 10,
-                top: 10,
-                bottom: 10
+            $(function() {
+                $(".plan_modal").iziModal({
+                    closeButton: true,
+                    padding: 20,
+                    loop: true
+                });
+                $('.modal_close').iziModal('close');
             });
-            $('.modal_close').iziModal('close');
-        });
+
+            $(function() {
+                $(".point_modal_sec").iziModal({
+                    closeButton: true,
+                    padding: 10,
+                    top: 10,
+                    bottom: 10
+                });
+                $('.modal_close').iziModal('close');
+            });
         </script>
 
 
         <!-- calendar js 追加部分 -->
         <script src="assets/js/calendar.js?2.1"></script>
         <script>
-        //会場ID 
-        const SHOP_ID = "1234";
-        // json URL
-        const url = "assets/data/calendar.json?1.2";
-        //表示する月の数
-        const calendarLength = 3;
-        // アイコン設定
-        const state_html = [
-            '<div class="state"><img src="/assets/img/calendar/icon01.png"></div>',
-            '<div class="state"><img src="/assets/img/calendar/icon02.png"></div>',
-            '<div class="state"><img src="/assets/img/calendar/icon03.png"></div>',
-            '<div class="state"><img src="/assets/img/calendar/icon04.png"></div>',
-        ];
-        $(function() {
-            reserveCalendar.getJsonData(url);
-        });
+            //会場ID 
+            const SHOP_ID = "1234";
+            // json URL
+            const url = "assets/data/calendar.json?1.2";
+            //表示する月の数
+            const calendarLength = 3;
+            // アイコン設定
+            const state_html = [
+                '<div class="state"><img src="/assets/img/calendar/icon01.png"></div>',
+                '<div class="state"><img src="/assets/img/calendar/icon02.png"></div>',
+                '<div class="state"><img src="/assets/img/calendar/icon03.png"></div>',
+                '<div class="state"><img src="/assets/img/calendar/icon04.png"></div>',
+            ];
+            $(function() {
+                reserveCalendar.getJsonData(url);
+            });
         </script>
 
 </body>

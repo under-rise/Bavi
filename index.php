@@ -91,38 +91,29 @@
                 <div class="inr clearfix">
                     <ul class="slider">
 
-                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img
-                                    src="/topic/images/banner_point_start_front.jpg"></a>
+                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img src="/topic/images/banner_point_start_front.jpg"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img
-                                    src="/topic/images/delivery_owner_banner.jpg?1.4"></a>
+                        <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img src="/topic/images/delivery_owner_banner.jpg?1.4"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/page/rental.php"><img
-                                    src="resources/images/top/delivery_banner.jpg?1.2"></a>
+                        <li><a href="https://bavi.jp/lp/page/rental.php"><img src="resources/images/top/delivery_banner.jpg?1.2"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img
-                                    src="assets/img/top/recommended_spot_001.jpg"></a>
+                        <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img src="assets/img/top/recommended_spot_001.jpg"></a>
                         </li>
 
-                        <li><a href="https://bavi.jp/spot/detail/1519"><img
-                                    src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
+                        <li><a href="https://bavi.jp/spot/detail/1519"><img src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
 
                         <li><a href="/concierge.html"><img src="resources/images/top/slider_concierge.jpg"></a>
 
-                        <li><a href="https://bavi.jp/spot/detail/1290"><img
-                                    src="resources/images/top/slider_uhutahama.jpg"></a>
+                        <li><a href="https://bavi.jp/spot/detail/1290"><img src="resources/images/top/slider_uhutahama.jpg"></a>
                         </li>
-                        <li><a href="https://bavi.jp/spot/detail/963"><img
-                                    src="resources/images/top/slider_kasaya.jpg"></a>
+                        <li><a href="https://bavi.jp/spot/detail/963"><img src="resources/images/top/slider_kasaya.jpg"></a>
                         </li>
-                        <li><a href="https://bavi.jp/spot/detail/1449"><img
-                                    src="resources/images/top/slider_bbqoasis.jpg"></a>
+                        <li><a href="https://bavi.jp/spot/detail/1449"><img src="resources/images/top/slider_bbqoasis.jpg"></a>
                         </li>
-                        <li><a href="https://bavi.jp/spot?pref_id=47"><img
-                                    src="resources/images/top/slider_001.jpg"></a></li>
+                        <li><a href="https://bavi.jp/spot?pref_id=47"><img src="resources/images/top/slider_001.jpg"></a></li>
 
                         <li><a href="https://bavi.jp/about"><img src="resources/images/top/slider_003.jpg"></a></li>
                     </ul>
@@ -255,39 +246,32 @@
                 <div class="inr">
                     <ul>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_1" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_000.jpg?11" alt="川×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_1" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_000.jpg?11" alt="川×BBQ" /></a>
                             <p>楽々！デリバリー対応可能な会場</p>
                         </li>
 
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_2" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_001.jpg?1.1" alt="川×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_2" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_001.jpg?1.1" alt="川×BBQ" /></a>
                             <p>川遊びや自然を満喫</p>
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_3" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_002.jpg?1.1" alt="海×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_3" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_002.jpg?1.1" alt="海×BBQ" /></a>
                             <p>海と波音で過ごす贅沢BBQ</p>
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_4" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_003.jpg?1.1" alt="都心×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_4" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_003.jpg?1.1" alt="都心×BBQ" /></a>
                             <p>夜景やアクセスも魅力</p>
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_5" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_004.jpg?1.1" alt="静か×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_5" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_004.jpg?1.1" alt="静か×BBQ" /></a>
                             <p>自分だけの贅沢時間に</p>
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_6" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_005.jpg?1.1" alt="公園×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_6" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_005.jpg?1.1" alt="公園×BBQ" /></a>
                             <p>整った設備や施設でお子様も安心</p>
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_7" target="_blank"><img
-                                    src="https://bavi.jp/lp/spot/images/location_006.jpg?1.1" alt="山×BBQ" /></a>
+                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_7" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_006.jpg?1.1" alt="山×BBQ" /></a>
                             <p>アクティビティ・その他おすすめスポット</p>
                         </li>
                     </ul>
