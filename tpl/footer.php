@@ -23,6 +23,7 @@
             </li>
             <li><a href="company.php">お問い合わせ</a></li>
             <li><a href="company.php">運営会社</a></li>
+            <li><a href="law.php">特定商取引法に基づく表記</a></li>
             <li><a href="privacy.php">プライバシーポリシー</a></li>
         </ul>
     </nav>
