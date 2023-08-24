@@ -19,17 +19,17 @@
 
     <link rel="stylesheet" href="assets/css/calendar.css?4.0">
 
-    <link rel="stylesheet" href="resources/css/order.css?3.41">
-    <link rel="stylesheet" href="resources/css/order_sp.css?4.5">
-
-
-
+    <link rel="stylesheet" href="resources/css/order.css?3">
+    <link rel="stylesheet" href="resources/css/order_sp.css?3">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+
+    <!-- alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
     #bottom_line_btn {
@@ -83,7 +83,7 @@
                 <h2 class="tit"><span class="kanto">東 京</span>多摩川緑地バーベキュー広場</h2>
 
 
-                <form method="post" action="#">
+                <form method="get" action="#">
 
                     <h3>ご注文・ご予約</h3>
 
@@ -257,7 +257,7 @@
                             </select>
                         </dd>
 
-                        <dt><span>◯</span>利用人数</dt>
+                        <dt><span>◯</span>利用人数（大人）</dt>
                         <dd>
                             <select name="use_people">
                                 <option>選択してください。</option>
@@ -272,6 +272,117 @@
                                 <option>100〜199人</option>
                                 <option>200人以上</option>
                             </select>
+                        </dd>
+
+                        <dt><span>◯</span>利用人数（子供・ペット）</dt>
+                        <dd class="child_pet_use_sec" x-data="child_pet_use">
+
+                            <div class="select_area">
+                                <p class="num" @click="modalOpen" x-show="!flag">子供・ペット利用なし</p>
+
+                                <p class="num" @click="modalOpen" x-show="flag">利用人数を変更する</p>
+
+                                <div class="_modal" x-show="open" @click.outside="open = false" x-transition>
+                                    <dl>
+                                        <dt><span>◯</span>子供（小学生以上）</dt>
+                                        <dd>
+                                            <select name="child" x-model="num.child">
+                                                <option value="0">選択してください。</option>
+                                                <option value="1">1人</option>
+                                                <option value="2">2人</option>
+                                                <option value="3">3人</option>
+                                                <option value="4">4人</option>
+                                                <option value="5">5人</option>
+                                                <option value="6">6人</option>
+                                                <option value="7">7人</option>
+                                                <option value="8">8人</option>
+                                                <option value="9">9人</option>
+                                                <option value="10">10人</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt><span>◯</span>子供（未就学児）</dt>
+                                        <dd>
+                                            <select name="preschooler" x-model="num.preschooler">
+                                                <option value="0">選択してください。</option>
+                                                <option value="1">1人</option>
+                                                <option value="2">2人</option>
+                                                <option value="3">3人</option>
+                                                <option value="4">4人</option>
+                                                <option value="5">5人</option>
+                                                <option value="6">6人</option>
+                                                <option value="7">7人</option>
+                                                <option value="8">8人</option>
+                                                <option value="9">9人</option>
+                                                <option value="10">10人</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt><span>◯</span>乳幼児（0〜3歳）</dt>
+                                        <dd>
+                                            <select name="infants" x-model="num.infants">
+                                                <option value="0">選択してください。</option>
+                                                <option value="1">1人</option>
+                                                <option value="2">2人</option>
+                                                <option value="3">3人</option>
+                                                <option value="4">4人</option>
+                                                <option value="5">5人</option>
+                                                <option value="6">6人</option>
+                                                <option value="7">7人</option>
+                                                <option value="8">8人</option>
+                                                <option value="9">9人</option>
+                                                <option value="10">10人</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+
+                                    <dl>
+                                        <dt><span>◯</span>ペット</dt>
+                                        <dd>
+                                            <select name="pet" x-model="num.pet">
+                                                <option value="0">選択してください。</option>
+                                                <option value="1">1匹</option>
+                                                <option value="2">2匹</option>
+                                                <option value="3">3匹</option>
+                                                <option value="4">4匹</option>
+                                                <option value="5">5匹</option>
+                                                <option value="6">6匹</option>
+                                                <option value="7">7匹</option>
+                                                <option value="8">8匹</option>
+                                                <option value="9">9匹</option>
+                                                <option value="10">10匹</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+
+                                    <button type="button" class="close" @click="open = false">決定</button>
+
+                                </div>
+                            </div>
+
+                            <table x-show="flag" class="result_table">
+                                <tr>
+                                    <th>子供（小学生以上）</th>
+                                    <td><span x-text="num.child"></span>人</td>
+                                </tr>
+                                <tr>
+                                    <th>子供（未就学児）</th>
+                                    <td><span x-text="num.preschooler"></span>人</td>
+                                </tr>
+                                <tr>
+                                    <th>乳幼児（0〜3歳）</th>
+                                    <td><span x-text="num.infants"></span>人</td>
+                                </tr>
+                                <tr>
+                                    <th>ペット</th>
+                                    <td><span x-text="num.pet"></span>匹</td>
+                                </tr>
+                            </table>
+
                         </dd>
 
                         <dt><span>◯</span>支払方法</dt>
@@ -545,6 +656,39 @@
                 }
 
             });
+        });
+
+        // 子供・ペットフォーム
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('child_pet_use', () => ({
+                result: '子供・ペット利用なし',
+                flag: false,
+                open: false,
+                num: {
+                    child: 0,
+                    preschooler: 0,
+                    infants: 0,
+                    pet: 0,
+                },
+                modalOpen() {
+                    this.open = !this.open
+                },
+                init() {
+                    this.$watch('open', (value) => {
+                        // true 確認
+                        if (!value) {
+                            this.flag = false;
+                            Object.keys(this.num).map((e) => {
+                                if (parseInt(this.num[e]) !== 0) {
+                                    this.flag = true;
+                                    return;
+                                }
+
+                            });
+                        }
+                    });
+                },
+            }))
         });
         </script>
 </body>

@@ -66,7 +66,7 @@
 		padding: 0 20px 0 10px;
 		border: 1px solid #939393;
 		color: #000;
-		background: #ececec url(select_arrow.png) no-repeat right 10px center;
+		background: #f9f9f9 url(select_arrow.png) no-repeat right 10px center;
 		background-size: 13px auto;
 		font-size: 12px;
 		border-radius: 5px;
@@ -91,6 +91,25 @@
 
 	#order .order_sec li .input_sec span {
 		font-size: 8px;
+	}
+
+	/* 子供・ペット予約 */
+
+	.child_pet_use_sec .result_table td span {
+		font-size: 1em;
+	}
+
+	.child_pet_use_sec .num {
+		font-size: 12px;
+		padding: 10px 20px 10px 10px;
+		background-color: #f9f9f9;
+		background-position: right 10px center;
+		background-size: 13px auto;
+	}
+
+	.child_pet_use_sec .result_table th,
+	.child_pet_use_sec .result_table td {
+		font-size: 0.8em;
 	}
 
 }
