@@ -103,4 +103,16 @@
 		padding: 0;
 	}
 
+	/* 20240205 add */
+
+	.cont ul.no_contract  {
+		width: 100%;
+		padding: 0 5%;
+	}
+
+	.cont ul.no_contract li a {
+		font-size: 12px;
+		padding: 12px 0 12px 15px; 
+	}
+
 }

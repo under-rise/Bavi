@@ -262,3 +262,38 @@
 	bottom: 10px;
 	width: 90%;
 }
+
+/* 20240205 add */
+
+.cont ul.no_contract  {
+	width: 660px;
+	margin: 20px auto 40px;
+	text-align: left;
+	padding: 0 20px;
+}
+.cont ul.shop.no_contract li {
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 4px;
+}
+
+.cont ul.no_contract li a {
+	color: #000;
+	font-size: 14px;
+	display: block;
+	border-bottom: 1px dashed #999;
+	padding: 15px 0 15px 15px; 
+	position: relative;
+}
+
+.cont ul.no_contract li a::before {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: calc(50% - 5px);
+	width: 6px;
+	height: 10px;
+	background-color: #000;
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+}

@@ -257,37 +257,40 @@
                             </select>
                         </dd>
 
-                        <dt><span>◯</span>利用人数（大人）</dt>
-                        <dd>
-                            <select name="use_people">
-                                <option>選択してください。</option>
-                                <option>4人未満</option>
-                                <option>5〜7人</option>
-                                <option>8〜9人</option>
-                                <option>10〜14人</option>
-                                <option>15〜19人</option>
-                                <option>20〜29人</option>
-                                <option>30〜49人</option>
-                                <option>50〜99人</option>
-                                <option>100〜199人</option>
-                                <option>200人以上</option>
-                            </select>
-                        </dd>
 
-                        <dt><span>◯</span>利用人数（子供・ペット）</dt>
+                        <dt><span>◯</span>利用人数</dt>
                         <dd class="child_pet_use_sec" x-data="child_pet_use">
 
                             <div class="select_area">
-                                <p class="num" @click="modalOpen" x-show="!flag">子供・ペット利用なし</p>
+                                <p class="num" @click="modalOpen" x-show="!flag">利用人数を選択してください。</p>
 
                                 <p class="num" @click="modalOpen" x-show="flag">利用人数を変更する</p>
 
                                 <div class="_modal" x-show="open" @click.outside="open = false" x-transition>
                                     <dl>
+                                        <dt><span>◯</span>大人</dt>
+                                        <dd>
+                                            <select name="child" x-model="num.adult">
+                                                <option value="0">0人</option>
+                                                <option value="1">1人</option>
+                                                <option value="2">2人</option>
+                                                <option value="3">3人</option>
+                                                <option value="4">4人</option>
+                                                <option value="5">5人</option>
+                                                <option value="6">6人</option>
+                                                <option value="7">7人</option>
+                                                <option value="8">8人</option>
+                                                <option value="9">9人</option>
+                                                <option value="10">10人</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+
+                                    <dl>
                                         <dt><span>◯</span>子供（小学生以上）</dt>
                                         <dd>
                                             <select name="child" x-model="num.child">
-                                                <option value="0">選択してください。</option>
+                                                <option value="0">0人</option>
                                                 <option value="1">1人</option>
                                                 <option value="2">2人</option>
                                                 <option value="3">3人</option>
@@ -306,7 +309,7 @@
                                         <dt><span>◯</span>子供（未就学児）</dt>
                                         <dd>
                                             <select name="preschooler" x-model="num.preschooler">
-                                                <option value="0">選択してください。</option>
+                                                <option value="0">0人</option>
                                                 <option value="1">1人</option>
                                                 <option value="2">2人</option>
                                                 <option value="3">3人</option>
@@ -325,7 +328,7 @@
                                         <dt><span>◯</span>乳幼児（0〜3歳）</dt>
                                         <dd>
                                             <select name="infants" x-model="num.infants">
-                                                <option value="0">選択してください。</option>
+                                                <option value="0">0人</option>
                                                 <option value="1">1人</option>
                                                 <option value="2">2人</option>
                                                 <option value="3">3人</option>
@@ -344,7 +347,7 @@
                                         <dt><span>◯</span>ペット</dt>
                                         <dd>
                                             <select name="pet" x-model="num.pet">
-                                                <option value="0">選択してください。</option>
+                                                <option value="0">0匹</option>
                                                 <option value="1">1匹</option>
                                                 <option value="2">2匹</option>
                                                 <option value="3">3匹</option>
@@ -365,6 +368,10 @@
                             </div>
 
                             <table x-show="flag" class="result_table">
+                                <tr>
+                                    <th>大人</th>
+                                    <td><span x-text="num.adult"></span>人</td>
+                                </tr>
                                 <tr>
                                     <th>子供（小学生以上）</th>
                                     <td><span x-text="num.child"></span>人</td>
@@ -661,10 +668,10 @@
         // 子供・ペットフォーム
         document.addEventListener('alpine:init', () => {
             Alpine.data('child_pet_use', () => ({
-                result: '子供・ペット利用なし',
                 flag: false,
                 open: false,
                 num: {
+                    adult: 0,
                     child: 0,
                     preschooler: 0,
                     infants: 0,

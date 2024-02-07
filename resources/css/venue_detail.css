@@ -1649,3 +1649,36 @@ body {
 	color: #e50054;
 	text-decoration: underline;
 }
+
+/* 20240205 add */
+
+.no_contract  {
+	text-align: left;
+	padding: 0 2%;
+}
+
+.no_contract h3 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.report {
+	max-width: 640px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+	border: 1px dashed #e50054;
+	border-radius: 10px;
+}
+
+.report h3 {
+	color: #e50054;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.report p {
+	line-height: 2;
+}
+

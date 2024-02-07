@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="resources/css/sanitize.css">
     <link rel="stylesheet" href="resources/css/base.css?1.5">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
-    <link rel="stylesheet" href="resources/css/venue_list.css?2.3">
-    <link rel="stylesheet" href="resources/css/venue_list_sp.css?1.15">
+    <link rel="stylesheet" href="resources/css/venue_list.css?2.4">
+    <link rel="stylesheet" href="resources/css/venue_list_sp.css?2.15">
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
@@ -560,6 +560,19 @@
                         </a>
                     </li>
                 </ul>
+
+       
+                    <ul class="no_contract">
+                        <li><a href="venue_no_contract.php">多摩川緑地バーベキュー広場摩川緑地バーベキュー広場</a></li>
+                        <li><a href="venue_no_contract.php">KIRANAH GARDEN TOYOSU</a></li>
+                        <li><a href="venue_no_contract.php">六本木スカイガーデン</a></li>
+                        <li><a href="venue_no_contract.php">夢の島　MARINA&GRILL</a></li>
+                        <li><a href="venue_no_contract.php">多摩川緑地バーベキュー広場摩川緑地バーベキュー広場</a></li>
+                        <li><a href="venue_no_contract.php">KIRANAH GARDEN TOYOSU</a></li>
+                        <li><a href="venue_no_contract.php">六本木スカイガーデン</a></li>
+                        <li><a href="venue_no_contract.php">夢の島　MARINA&GRILL</a></li>
+                    </ul>
+
 
                 <nav class="pager">
                     <ul>

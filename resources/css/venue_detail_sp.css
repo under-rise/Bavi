@@ -538,4 +538,13 @@
 		top: -3px;
 	}
 
+	/* 20240205 add */
+
+	.no_contract h3 {
+		font-size: 14px;
+	}
+	.no_contract p {
+		font-size: 12px;
+	}
+
 }
