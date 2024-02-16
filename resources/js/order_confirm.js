@@ -66,6 +66,11 @@ $(function() {
                     </div>`
                 };
 
+                let total_price = new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'JPY' }).format(
+                    Alpine.store('alpinePrice').total_price,
+                );
+
+                html += `<div class="total_price">合計金額 <span class="price"><strong>${total_price}</strong>円（税込）</span></div>`;
                 html += `
                 <div class="mes">上記内容で予約承ります。宜しいですか？</div>
                 <button type="button" class="link_btn active" id="send_btn">注文する</button>

@@ -19,8 +19,8 @@
 
     <link rel="stylesheet" href="assets/css/calendar.css?4.0">
 
-    <link rel="stylesheet" href="resources/css/order.css?3">
-    <link rel="stylesheet" href="resources/css/order_sp.css?3">
+    <link rel="stylesheet" href="resources/css/order.css?3.3">
+    <link rel="stylesheet" href="resources/css/order_sp.css?3.1">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -57,6 +57,7 @@
 </head>
 
 <body>
+  
     <div id="loading"></div>
     <div id="wrapper">
         <header>
@@ -86,12 +87,11 @@
                 <form method="get" action="#">
 
                     <h3>ご注文・ご予約</h3>
-
+                    
                     <dl>
                         <dt><span>◯</span>プラン</dt>
                         <dd>
                             <ul class="order_sec">
-
                                 <li>
                                     <div>
                                         <figure>
@@ -101,17 +101,18 @@
                                         <div class="info">
                                             <div class="name">Aセット</div>
                                             <p>和牛牛カルビ、豚カルビ、焼き鳥、フランク</p>
-                                            <div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
+                                            <div class="price">¥3,000<span style="font-size:12px">円（税込）</span></div>
                                             <p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
-                                            <div class="input_sec">
-                                                <input type="number" name="option_02" placeholder="0" pattern="\d*">
+                                        </div>
+                                        <div class="input_sec">
+                                                <div class="minus input_btn">-</div>
+                                                <input type="text" name="option_02" data-price="3000" placeholder="0" inputmode="tel" oninput="validateNumberInput(this);">
+                                                <div class="plus input_btn">+</div>
                                                 <span>セット</span>
-                                            </div>
-
                                         </div>
                                     </div>
-
                                 </li>
+                                <!-- li -->
 
                                 <li>
                                     <div>
@@ -122,17 +123,18 @@
                                         <div class="info">
                                             <div class="name">定番食材セット</div>
                                             <p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
-                                            <div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
+                                            <div class="price">¥13,000<span style="font-size:12px">円（税込）</span></div>
                                             <p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
-                                            <div class="input_sec">
-                                                <input type="number" name="option_02" placeholder="0" pattern="\d*">
+                                        </div>
+                                        <div class="input_sec">
+                                                <div class="minus input_btn">-</div>
+                                                <input type="text" name="option_02" data-price="13000" placeholder="0" inputmode="tel" oninput="validateNumberInput(this);">
+                                                <div class="plus input_btn">+</div>
                                                 <span>セット</span>
-                                            </div>
-
                                         </div>
                                     </div>
-
                                 </li>
+                                <!-- li -->
 
                                 <li>
                                     <div>
@@ -143,27 +145,24 @@
                                         <div class="info">
                                             <div class="name">上記区画セット＋定番食材セット</div>
                                             <p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
-                                            <div class="price">¥13,000円<span style="font-size:12px">（税込）</span></div>
+                                            <div class="price">¥5,980<span style="font-size:12px">円（税込）</span></div>
                                             <p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
-
-                                            <div class="input_sec">
-                                                <input type="number" name="option_02" value="0" placeholder="0"
-                                                    pattern="\d*">
+                                        </div>
+                                        <div class="input_sec">
+                                                <div class="minus input_btn">-</div>
+                                                <input type="text" name="option_02" data-price="5980" placeholder="0" inputmode="tel" oninput="validateNumberInput(this);">
+                                                <div class="plus input_btn">+</div>
                                                 <span>セット</span>
-                                            </div>
-
                                         </div>
                                     </div>
-
                                 </li>
-
+                                <!-- li -->
                             </ul>
                         </dd>
 
                         <dt><span>◯</span>オプション</dt>
                         <dd>
-                            <ul class="order_sec">
-
+                        <ul class="order_sec">
                                 <li>
                                     <div>
                                         <figure>
@@ -171,20 +170,20 @@
                                         </figure>
 
                                         <div class="info">
-                                            <div class="name">Aセット</div>
+                                            <div class="name">Zセット</div>
                                             <p>和牛牛カルビ、豚カルビ、焼き鳥、フランク</p>
-                                            <div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
-                                            <p class="order_info">◯◯◯ケ以上から予約承ります</p>
-                                            <div class="input_sec">
-                                                <input type="number" name="option_02" value="0" placeholder="0"
-                                                    pattern="\d*">
+                                            <div class="price">¥980<span style="font-size:12px">円（税込）</span></div>
+                                            <p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+                                        </div>
+                                        <div class="input_sec">
+                                                <div class="minus input_btn">-</div>
+                                                <input type="text" name="option_02" data-price="980" placeholder="0" inputmode="tel" oninput="validateNumberInput(this);">
+                                                <div class="plus input_btn">+</div>
                                                 <span>セット</span>
-                                            </div>
-
                                         </div>
                                     </div>
-
                                 </li>
+                                <!-- li -->
 
                                 <li>
                                     <div>
@@ -193,19 +192,20 @@
                                         </figure>
 
                                         <div class="info">
-                                            <div class="name">定番食材セット</div>
+                                            <div class="name">Bセット</div>
                                             <p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
-                                            <div class="price">¥3,000円<span style="font-size:12px">（税込）</span></div>
-                                            <p class="order_info">◯◯◯ケ以上から予約承ります</p>
-                                            <div class="input_sec">
-                                                <input type="number" name="option_02" placeholder="0" pattern="\d*">
+                                            <div class="price">¥1,500<span style="font-size:12px">円（税込）</span></div>
+                                            <p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+                                        </div>
+                                        <div class="input_sec">
+                                                <div class="minus input_btn">-</div>
+                                                <input type="text" name="option_02" data-price="1500" placeholder="0" inputmode="tel" oninput="validateNumberInput(this);">
+                                                <div class="plus input_btn">+</div>
                                                 <span>セット</span>
-                                            </div>
-
                                         </div>
                                     </div>
-
                                 </li>
+                                <!-- li -->
 
                                 <li>
                                     <div>
@@ -214,21 +214,20 @@
                                         </figure>
 
                                         <div class="info">
-                                            <div class="name">上記区画セット＋定番食材セット</div>
+                                            <div class="name">Cセット</div>
                                             <p>和牛牛カルビ、豚カルビ、焼き鳥、フランク、焼きおにぎり、カット野菜</p>
-                                            <div class="price">¥13,000円<span style="font-size:12px">（税込）</span></div>
-                                            <p class="order_info">◯◯◯ケ以上から予約承ります</p>
-                                            <div class="input_sec">
-                                                <input type="number" name="option_02" placeholder="0" pattern="\d*">
+                                            <div class="price">¥5,980<span style="font-size:12px">円（税込）</span></div>
+                                            <p class="order_info">合計金額◯◯◯円以上から予約承ります</p>
+                                        </div>
+                                        <div class="input_sec">
+                                                <div class="minus input_btn">-</div>
+                                                <input type="text" name="option_02" data-price="5980" placeholder="0" inputmode="tel" oninput="validateNumberInput(this);">
+                                                <div class="plus input_btn">+</div>
                                                 <span>セット</span>
-                                            </div>
-
                                         </div>
                                     </div>
-
                                 </li>
-
-
+                                <!-- li -->
                             </ul>
                         </dd>
 
@@ -584,9 +583,16 @@
 
         <!-- calendar_modal -->
 
-
+        <!-- 合計金額 -->
+        <div class="total_price_sec">
+            <dl>
+                <dt>合計金額</dt>
+                <dd x-data><strong x-text="$store.alpinePrice.format()" ></strong><span>円（税込）</span></dd>
+            </dl>
+        </div>
 
         <script src="./resources/js/order_confirm.js?1.3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js" integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script>
         function getParam(name, url) {
@@ -667,6 +673,7 @@
 
         // 子供・ペットフォーム
         document.addEventListener('alpine:init', () => {
+            
             Alpine.data('child_pet_use', () => ({
                 flag: false,
                 open: false,
@@ -697,7 +704,71 @@
                 },
             }))
         });
+
+        //ーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+        // 数量追加ボタン
+        
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('alpinePrice', {
+                total_price:0,
+                format(){
+                   return this.total_price.toLocaleString('ja-JP');
+                }
+            });
+        });
+        
+        $(function() {
+            $('.input_btn').on('click',function(){
+                let btn = 1;
+                if(!$(this).hasClass('plus')){
+                    btn = btn*-1;
+                }
+                let input = $(this).closest('.input_sec').find('input[type="text"]');
+                let current = input.val() == '' ? 0 : input.val();
+                let count = parseInt(current) + parseInt(btn);
+                input.val(count);
+
+                if(count < 0){
+                    input.val(0);
+                }
+                setTotalPrice();
+            });
+
+            $('.input_sec input[type="text"]').on('change',function(val){
+                setTotalPrice();
+            });
+
+             // 合計金額
+            const setTotalPrice = ()=>{
+                let total = 0;
+                $(inputObj).each((i,o)=>{
+                    let t = $(o).val();
+                    let p = $(o).data('price');
+                    total += t * p;
+                });
+                Alpine.store('alpinePrice').total_price = total;
+            };
+            
+        });
+
+        // 初回実行
+        let inputObj = [];
+        const init = ()=>{
+            $('.input_sec').find('input[type="text"]').each((val,obj)=>{
+                inputObj.push(obj);
+            });
+        }
+
+        // 数値のみ入力
+        function validateNumberInput(input) {
+            input.value = input.value.replace(/[^0-9]/g, "");
+        }
+        
+        init();
+
         </script>
+
+        
 </body>
 
 </html>
