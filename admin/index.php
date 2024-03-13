@@ -69,6 +69,23 @@
     <script type="text/javascript" src="https://bavi.jp/assets/js/bootstrap.js?1616644536"></script>
     <style>
     /*************************/
+    /* 20240313追加 */
+    /*************************/
+    .icon {
+        border-radius: 4px;
+        font-size: 11px;
+    }
+    tr.payment_complete td {
+       background-color: #f9fcee;
+    }
+    .icon.payment_unpaid {
+       background-color: #ccc;
+    }
+    .icon.payment_complete {
+       background-color: #cf2c57;
+    }
+
+    /*************************/
     /* 追加 */
     /*************************/
     body#spot {
@@ -528,7 +545,7 @@
                         <th class="w5">選択</th>
                         <th class="w5"><span class="sort_btn" data-sort="1">利用NO</span></th>
                         <th><span class="sort_btn" data-sort="1">受付日</span></th>
-                        <th class="form">ステータス
+                        <th class="form" style="width: 7%;">ステータス
                             <select name="list_status select_stetas" class="form-control" id="list_status"
                                 style="margin-top: 4px;">
                                 <option value="">指定なし</option>
@@ -540,6 +557,7 @@
                                 <option value="99">終了</option>
                             </select>
                         </th>
+                        <th style="width: 7%;">支払い</th>
                         <th><span class="sort_btn" data-sort="1">名前</span></th>
                         <th><span class="sort_btn" data-sort="1">利用日</span></th>
                         <th><span class="sort_btn" data-sort="1">利用時間</span></th>
@@ -551,15 +569,17 @@
                     </tr>
 
 
-                    <tr data-list_status="-1" class="main_info">
+                    <tr data-list_status="-1" class="main_info payment_complete">
                         <td class="w5">
-
                             <input type="checkbox" name="checkbox" style="transform: scale(1.5);">
                         </td>
                         <td>241-5</td>
                         <td>2022-04-17 19:39:16</td>
                         <td>
                             <span class="icon cancel">キャンセル</span>
+                        </td>
+                        <td>
+                            <span class="icon payment_complete" >支払済</span>
                         </td>
                         <td>城倉主計</td>
                         <td>2022-04-30</td>
@@ -602,6 +622,9 @@
                         <td>2022-04-01 22:48:24</td>
                         <td>
                             <span class="icon negotiation">商談中</span>
+                        </td>
+                        <td>
+                            <span class="icon payment_unpaid">未払い</span>
                         </td>
                         <td>株式会社〇〇</td>
                         <td>0000-00-00</td>
