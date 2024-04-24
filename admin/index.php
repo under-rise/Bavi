@@ -422,6 +422,23 @@
         background: #266698;
         color: #fff;
     }
+
+    /* add 20240424 */
+    .btn-group {
+        min-width: 100%;
+    }
+    .btn.btn-default.dropdown-toggle {
+        margin-top: 5px;
+        width: 100%;
+        font-size: 12px;
+        padding: 5px;
+        white-space:unset;
+        line-height: 1.2;
+    }
+    .dropdown-menu {
+        min-width: auto;
+        transform: translateX(-15%);
+    }
     </style>
     <section class="contents">
         <div id="management_page" class="col-md-10 col-md-offset-2 main" style="margin-bottom: 100px;">
@@ -594,7 +611,7 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    ステータス変更
+                                    ステータス<br>変更
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" role="menu">
@@ -639,7 +656,7 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    ステータス変更
+                                    ステータス<br>変更
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" role="menu">
