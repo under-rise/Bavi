@@ -18,6 +18,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script>
         	<script type="text/javascript" src="https://bavi.jp/assets/js/customer/main.js?1706126740"></script>
+    
+    <style>
+        .order_sec .price {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #276699;
+        }
+        .order_sec .price span {
+            font-size: 0.7em;
+        }
+    </style>
 </head>
 <body id="spot">
     <!--header-->
@@ -392,6 +405,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="15" name="spot_order_plan_count[15]" value="1">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">20,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -402,6 +416,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="17" name="spot_order_plan_count[17]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">12,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -412,6 +427,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1025" name="spot_order_plan_count[1025]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -422,6 +438,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="337" name="spot_order_plan_count[337]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">12,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -432,6 +449,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="397" name="spot_order_plan_count[397]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -442,6 +460,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="999" name="spot_order_plan_count[999]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -452,6 +471,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1000" name="spot_order_plan_count[1000]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -461,6 +481,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1062" name="spot_order_plan_count[1062]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -470,6 +491,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1063" name="spot_order_plan_count[1063]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -479,6 +501,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1064" name="spot_order_plan_count[1064]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -488,6 +511,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1065" name="spot_order_plan_count[1065]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -497,6 +521,7 @@
                                         <input type="number" class="form-control order_plan_price" data-id="1066" name="spot_order_plan_count[1066]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                         </ul>
                 </div>
@@ -512,6 +537,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="662" name="spot_order_option_count[662]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -522,6 +548,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="663" name="spot_order_option_count[663]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -532,6 +559,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="665" name="spot_order_option_count[665]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -542,6 +570,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="750" name="spot_order_option_count[750]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -552,6 +581,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="751" name="spot_order_option_count[751]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -562,6 +592,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="799" name="spot_order_option_count[799]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -572,6 +603,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="753" name="spot_order_option_count[753]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -582,6 +614,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="752" name="spot_order_option_count[752]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -592,6 +625,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="666" name="spot_order_option_count[666]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -602,6 +636,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="667" name="spot_order_option_count[667]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -612,6 +647,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="664" name="spot_order_option_count[664]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -622,6 +658,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="668" name="spot_order_option_count[668]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -632,6 +669,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="15" name="spot_order_option_count[15]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -642,6 +680,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="16" name="spot_order_option_count[16]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -652,6 +691,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="17" name="spot_order_option_count[17]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -662,6 +702,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="14" name="spot_order_option_count[14]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -672,6 +713,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="506" name="spot_order_option_count[506]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -682,6 +724,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="724" name="spot_order_option_count[724]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -692,6 +735,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="18" name="spot_order_option_count[18]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -702,6 +746,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="90" name="spot_order_option_count[90]" value="2">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -712,6 +757,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="669" name="spot_order_option_count[669]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -722,6 +768,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="337" name="spot_order_option_count[337]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                                             <li>
                                     <figure>
@@ -731,6 +778,7 @@
                                         <input type="number" class="form-control order_option_price" data-id="814" name="spot_order_option_count[814]" value="">
                                         <span>セット</span>
                                     </div>
+                                    <div class="price">11,000<span>円（税込）</span></div>
                                 </li>
                                                                         </ul>
                 </div>
