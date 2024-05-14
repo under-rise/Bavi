@@ -487,19 +487,131 @@
             padding: 10px;
             border-bottom: none;
         }
-        
+
+
+        /**-----------------------------
+            20240514 css 追加
+        --------------------------------*/
+
+        #totalling_sec {
+            padding-bottom: 150px;
+        }
+
+
+        #totalling_sec table td,
+        #totalling_sec table th {
+            font-size: 11px;
+            padding: 8px;
+        }
+
+        #totalling_sec dl.information {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        #totalling_sec h2 {
+            font-weight: bold;
+            font-size: 1.6em;
+            margin-top: 40px;
+            border-top: 1px dashed #999;
+            padding-top: 20px;
+        }
+
+        #totalling_sec h3 {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        #totalling_sec .unpaid {
+            color: #b4560a;
+        }
+
+        #totalling_sec .deposited {
+            color: #266698;
+        }
+
+        #totalling_sec .btn.type05 {
+            padding: 8px;
+            color: #000;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        #totalling_sec .btn.type05.all_btn {
+            font-weight: bold;
+        }
+
+        #totalling_sec .btn.type05 a {
+            color: #000;
+        }
+
+        #totalling_sec .btn.type05:hover {
+            background-color: #d8ecfb;
+        }
+
+        #totalling_sec .total {
+            font-weight: bold;
+        }
+
+        #totalling_sec .option_table {
+            width: auto;
+        }
+
+        #totalling_sec .option_table th,
+        #totalling_sec .option_table td {
+            width: 100px;
+        }
+
+        body {
+            font-family: "メイリオ";
+        }
+
+        @media only screen and (min-width: 1081px) {
+            .contents {
+                margin-left: 100px;
+            }
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .contents {
+                width: 95%;
+                max-width: 940px;
+                margin-left: auto;
+            }
+        }
+
+        @media only screen and (max-width: 990px) {
+            .contents {
+                width: 78%;
+                max-width: 940px;
+                margin-left: auto;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .contents {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
     </style>
     <section class="contents">
         <div id="management_page" class="col-md-10 col-md-offset-2 main" style="margin-bottom: 100px;">
             <div class="ttl">
                 <h1>案件表</h1>
             </div>
-            
+
             <div id="search_sec" class="sec">
                 <h2 style="text-align: center;">案件検索</h2>
                 <form class="form" method="get">
                     <table class="table_style">
-                      
+
                         <tr>
                             <th>会場</th>
                             <td>
@@ -538,7 +650,7 @@
                                     <option value="1631">6月2日【ラグビー】Bavi Sportsファン交流会第一弾（流大選手・中村亮土選手）</option>
                                 </select>
                             </td>
-                      
+
                             <th>利用日</th>
                             <td>
                                 <div style="display: flex; justify-content: space-between; align-items: center; ">
@@ -546,14 +658,422 @@
                                 </div>
                             </td>
                         </tr>
-                        
+
                     </table>
                     <input type="submit" value="検索">
                 </form>
                 <!--form-->
             </div>
 
-           
+            <div id="totalling_sec" class="sec">
+
+                <dl class="information">
+                    <dt>利用日: 2024年10月25日（月）</dt>
+                    <dd>ID:1000 秋川橋河川公園</dd>
+                </dl>
+
+                <button type="button" class="btn type05 all_btn"><a href="all.php" target="_blank">PDF一括出力</a></button>
+
+
+                <h2>案件集計</h2>
+
+                <table class="table_style">
+                    <thead>
+                        <tr class="head">
+                            <th>NO</th>
+                            <th>利用時間</th>
+                            <th width="20%">法人・団体名</th>
+                            <th>担当者</th>
+                            <th>人数</th>
+                            <th>区画</th>
+                            <th>プラン</th>
+                            <th>TEL</th>
+                            <th>支払い方法</th>
+                            <th>金額</th>
+                            <th>支払い状況</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1000-1111</td>
+                            <td>11:00〜16:00</td>
+                            <td>ゼネラルパーソンカンパニー株式会社</td>
+                            <td>榊原 良太</td>
+                            <td>150名</td>
+                            <td>デラックス</td>
+                            <td>
+                                プランA<br>
+                                プランB<br>
+                                オプション
+                            </td>
+                            <td>090-8307-0445</td>
+                            <td>現金</td>
+                            <td>¥100,000円</td>
+                            <td class="unpaid">未払い</td>
+                        </tr>
+                        <tr>
+                            <td>1000-1111</td>
+                            <td>11:00〜16:00</td>
+                            <td>株式会社アンダーライズ</td>
+                            <td>鈴木 博之</td>
+                            <td>150名</td>
+                            <td>デラックス</td>
+                            <td>
+                                プランA<br>
+                                プランB
+                            </td>
+                            <td>090-8307-0445</td>
+                            <td>PayPay</td>
+                            <td>¥100,000円</td>
+                            <td class="deposited">決済済み</td>
+                        </tr>
+                        <tr>
+                            <td>1000-1111</td>
+                            <td>11:00〜16:00</td>
+                            <td>ゼネラルパーソンカンパニー株式会社</td>
+                            <td>榊原 良太</td>
+                            <td>150名</td>
+                            <td>キャビン</td>
+                            <td>
+                                プランB
+                            </td>
+                            <td>090-8307-0445</td>
+                            <td>事前クレジット</td>
+                            <td>¥100,000円</td>
+                            <td class="unpaid">未払い</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"></td>
+                            <th colspan="2">合計件数</th>
+                            <td colspan="3" class="total">6件</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"></td>
+                            <th colspan="2">合計人数</th>
+                            <td colspan="3" class="total">1,200名</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"></td>
+                            <th colspan="2">合計金額</th>
+                            <td colspan="3" class="total">¥100,000円</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <!-- table -->
+                <button type="button" class="btn type05"><a href="order.php" target="_blank">案件集計をPDF出力</a></button>
+
+                <h2>特記事項</h2>
+
+                <table class="table_style">
+                    <tr>
+                        <th width="10%">NO</th>
+                        <th width="20%">法人・団体名</th>
+                        <th width="10%">人数</th>
+                        <th width="60%">備考</th>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td style="text-align: left;">特記事項のテキスト特記事項のテキスト特記事項のテキスト特記事項のテキスト。</td>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td style="text-align: left;">特記事項のテキスト。</td>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td style="text-align: left;">特記事項のテキスト。特記事項のテキスト。特記事項のテキスト。特記事項のテキスト。特記事項のテキスト。特記事項のテキスト。</td>
+                    </tr>
+                    <tr>
+                        <th colspan="1">合計</th>
+                        <td colspan="1" class="total">3件</td>
+                        <td colspan="1" class="total">450人</td>
+                        <td colspan=""></td>
+                    </tr>
+
+                </table>
+
+                <button type="button" class="btn type05"><a href="notices.php" target="_blank">特記事項をPDF出力</a></button>
+
+                <h2>注文プラン</h2>
+
+                <table class="table_style">
+                    <tr>
+                        <th width="10%">NO</th>
+                        <th width="20%">法人・団体名</th>
+                        <th>人数</th>
+                        <th>プランA</th>
+                        <th>プランB</th>
+                        <th>プランC</th>
+                        <th>プランD</th>
+                        <th>プランE</th>
+                        <th>プランF</th>
+                        <th>オプション</th>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td>14</td>
+                        <td>22</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>63</td>
+                        <td><a href="option.php">あり</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>92</td>
+                        <td>28</td>
+                        <td>14</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td>124</td>
+                        <td>22</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>63</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td>14</td>
+                        <td>31</td>
+                        <td>55</td>
+                        <td>12</td>
+                        <td>28</td>
+                        <td>14</td>
+                        <td><a href="option.php">あり</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>1000-1111</td>
+                        <td>ゼネラルパーソンカンパニー株式会社</td>
+                        <td>150名</td>
+                        <td>114</td>
+                        <td>31</td>
+                        <td>515</td>
+                        <td>12</td>
+                        <td>228</td>
+                        <td>34</td>
+                        <td><a href="option.php">あり</a></td>
+                    </tr>
+
+
+                    <tr>
+                        <th colspan="1">合計</th>
+                        <td colspan="1" class="total">5件</td>
+                        <td colspan="1" class="total">900人</td>
+                        <td colspan="1" class="total">84</td>
+                        <td colspan="1" class="total">44</td>
+                        <td colspan="1" class="total">98</td>
+                        <td colspan="1" class="total">31</td>
+                        <td colspan="1" class="total">120</td>
+                        <td colspan="1" class="total">91</td>
+                        <td colspan="1" class="total">3</td>
+                    </tr>
+
+                </table>
+
+                <button type="button" class="btn type05"><a href="plan.php" target="_blank">注文プランをPDF出力</a></button>
+
+                <h2>オプション（個別）</h2>
+
+                <h3>NO. 1000-1111 ゼネラルパーソンカンパニー株式会社（150名）</h3>
+                <table class="table_style option_table">
+                    <tr>
+                        <th width="10%">鉄板セット</th>
+                        <th width="10%">リブロース</th>
+                        <th width="10%">和牛ロース</th>
+                        <th width="10%">牛カルビ(1kg)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th width="10%">鉄板セット</th>
+                        <th width="10%">リブロース</th>
+                        <th width="10%">和牛ロース</th>
+                        <th width="10%">牛カルビ(1kg)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+
+
+                <h3>NO. 1000-1111 ゼネラルパーソンカンパニー株式会社（150名）</h3>
+                <table class="table_style option_table">
+                    <tr>
+                        <th width="10%">鉄板セット</th>
+                        <th width="10%">リブロース</th>
+                        <th width="10%">和牛ロース</th>
+                        <th width="10%">牛カルビ(1kg)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                        <th width="10%">ビール(1ケース)</th>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+
+                <h3>NO. 1000-1111 株式会社AAAAA（120名）</h3>
+                <table class="table_style option_table">
+                    <tr>
+                        <th width="10%">鉄板セット</th>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                    </tr>
+                </table>
+
+                <h2>オプション（集計）</h2>
+
+                <table class="table_style">
+                    <tr>
+                        <th width="20%">鉄板セット</th>
+                        <td width="30%">0</td>
+                        <th width="20%">リブロース</th>
+                        <td width="30%">111</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">和牛ロース</th>
+                        <td width="30%">0</td>
+                        <th width="20%">牛カルビ(1kg)</th>
+                        <td width="30%">120</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">ビール(1ケース)</th>
+                        <td width="30%">50</td>
+                        <th width="20%">角</th>
+                        <td width="30%">0</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">鉄板セット</th>
+                        <td width="30%">330</td>
+                        <th width="20%">リブロース</th>
+                        <td width="30%">20</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">和牛ロース</th>
+                        <td width="30%">1</td>
+                        <th width="20%">牛カルビ(1kg)</th>
+                        <td width="30%">0</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">ビール(1ケース)</th>
+                        <td width="30%">0</td>
+                        <th width="20%">角</th>
+                        <td width="30%">0</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">鉄板セット</th>
+                        <td width="30%">0</td>
+                        <th width="20%">リブロース</th>
+                        <td width="30%">0</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">和牛ロース</th>
+                        <td width="30%">2</td>
+                        <th width="20%">牛カルビ(1kg)</th>
+                        <td width="30%">55</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">ビール(1ケース)</th>
+                        <td width="30%">1</td>
+                        <th width="20%">角</th>
+                        <td width="30%">2</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">鉄板セット</th>
+                        <td width="30%">0</td>
+                        <th width="20%">リブロース</th>
+                        <td width="30%">1</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">和牛ロース</th>
+                        <td width="30%">0</td>
+                        <th width="20%">牛カルビ(1kg)</th>
+                        <td width="30%">0</td>
+                    </tr>
+
+                    <tr>
+                        <th width="20%">ビール(1ケース)</th>
+                        <td width="30%">50</td>
+                        <th width="20%">角</th>
+                        <td width="30%">160</td>
+                    </tr>
+
+                </table>
+
+                <button type="button" class="btn type05"><a href="option.php" target="_blank">オプションをPDF出力</a></button>
+
+            </div>
     </section>
 
     <style>
