@@ -16,9 +16,13 @@
     	<link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/customer/form.css?1648760966" />
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script> -->
         	<script type="text/javascript" src="https://bavi.jp/assets/js/customer/main.js?1706126740"></script>
-    
+            <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+
     <style>
         .order_sec .price {
             text-align: center;
@@ -30,7 +34,68 @@
         .order_sec .price span {
             font-size: 0.7em;
         }
+
+        /* 追加20240620 */
+        .original_plan input[type=file]{
+            margin-bottom: 10px;
+        }
+        .original_plan .table {
+            margin-bottom: 0;
+        }
+        .original_plan .table th,
+        .original_plan .table td {
+            vertical-align: middle;
+            font-size: 0.9em;
+        }
+        .original_plan .table th {
+            text-align: center;
+        }
+        .original_plan .price {
+            margin: 0;
+        }
+        .original_plan .btn_sec button {
+            background-color: #276699;
+            width: 48%;
+            padding: 5px;
+            font-weight: bold;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .original_plan .btn_sec button:hover {
+            opacity: 0.8;
+        } 
+        .original_plan .btn_sec button.del {
+            background-color: #ce5606;
+        }
+        .original_plan .num,.original_plan .price_sec {
+            text-align: center;
+        }
+        .original_plan .price .total_price {
+            font-size: 0.95em;
+        }
     </style>
+
+<script>
+    function validateNumberInput(input) {
+      input.value = input.value.replace(/[^0-9]/g, "");
+    }
+
+    document.addEventListener('alpine:init', () => {
+       Alpine.data('original_plane',()=>({
+            num:0,
+            price:0,
+            total_price:0,
+            init(){
+                this.$watch('price,num',(p)=>{
+                    this.num = parseInt(this.num);
+                    this.price = parseInt(this.price);
+                    this.total_price = this.num * this.price;
+                });
+            }
+       }));
+    });
+  </script>
 </head>
 <body id="spot">
     <!--header-->
@@ -390,9 +455,42 @@
             </div>
             <!--member sec-->
             <div class="guest_sec">
-                <h2 class="sub_ttl">
-                                        受注内容（利用NO. 1423-51）
-                                    </h2>
+                <h2 class="sub_ttl">受注内容（利用NO. 1423-51）</h2>
+
+                <div class="order_sec original_plan" x-data="original_plane">
+                    <h3>オリジナルプラン</h3>
+                    <ul>
+                        <li>
+                            <input type="file">
+                            <figure><img src="https://bavi.jp/assets/img/order/none.jpg"></figure>
+
+                            <table class="table">
+                                <tr>
+                                    <th>プラン名</th>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th>プラン<br>内容</th>
+                                    <td><textarea name="" id="" rows="3"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th>数量</th>
+                                    <td><input type="text" class="num" x-model="num" oninput="validateNumberInput(this);"></td>
+                                </tr>
+                                <tr>
+                                    <th>単価</th>
+                                    <td><input type="text" class="price_sec"  x-model="price" oninput="validateNumberInput(this);"></td>
+                                </tr>
+                            </table>
+                            <div class="price"><span>小計 </span><span class="total_price" x-text="parseInt(total_price).toLocaleString('ja-JP')">0</span><span>円</span></div>
+
+                            <div class="btn_sec">
+                                <button class="add">追加</button>
+                                <button class="del">削除</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="order_sec">
                     <h3>プラン</h3>
                     <ul>
