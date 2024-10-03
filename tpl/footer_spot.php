@@ -25,12 +25,13 @@
     </ul>
 
     <nav>
-        <ul>
+    <ul>
             <li><a href="about.php">Baviについて</a></li>
             <li><a href="https://bavi.jp/assets/pdf/publication_materials_2ndseason.pdf" target="_blank">施設者向け資料</a>
             </li>
             <li><a href="company.php">お問い合わせ</a></li>
             <li><a href="company.php">運営会社</a></li>
+            <li><a href="law.php">特定商取引法に基づく表記</a></li>
             <li><a href="privacy.php">プライバシーポリシー</a></li>
         </ul>
     </nav>
@@ -41,12 +42,6 @@
 
 <nav id="reserve_sec">
     <ul>
-        <li>
-            <a href="tel:0066973700019">
-                <img src="/resources/images/reserve_icon_01.png" alt="予約相談" />
-                <p>予約サポート</p>
-            </a>
-        </li>
         <li>
             <a href="https://bavi.jp/spot/detail/963/order">
                 <img src="/resources/images/reserve_icon_02.png" alt="注文する" />
@@ -72,8 +67,8 @@
 
         <dl>
             <dt>探す</dt>
-            <dd><a href="/">BBQ場</a></dd>
-            <dd><a href="/spot.html">周辺店舗</a></dd>
+            <dd><a href="/bbq.php">BBQ場</a></dd>
+            <dd><a href="/shop_list.php">飲食店</a></dd>
             <dd><a href="/column.html">コラム</a></dd>
             <dd><a href="/concierge.html">BBQ団体向けコンシェルジュ</a></dd>
 

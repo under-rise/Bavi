@@ -18,7 +18,7 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?2.41">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?2.5">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?15.3">
 
     <link rel="stylesheet" href="assets/css/add_style.css?2.2">
@@ -521,7 +521,7 @@
                                 <table>
                                     <tr>
                                         <th>電話番号</th>
-                                        <td><a href="tel:079-568-1301">079-568-1301</a></td>
+                                        <td><a href="https://line.me/ti/p/%40637eulru" target="_blank">公式LINEよりお問合せください。</a></td>
                                     </tr>
                                     <tr>
                                         <th>Web</th>

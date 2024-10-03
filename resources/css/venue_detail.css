@@ -1415,7 +1415,7 @@ body {
 
 #reserve_sec li {
 	position: relative;
-	width: 33.33%;
+	width: 50%;
 }
 
 #reserve_sec li a {
@@ -1429,15 +1429,13 @@ body {
 	padding-top: 5px;
 }
 
-#reserve_sec li:nth-child(1) {
-	background-color: #3871c7;
-}
 
-#reserve_sec li:nth-child(2) {
+
+#reserve_sec li:nth-child(1) {
 	background-color: #f2206f;
 }
 
-#reserve_sec li:nth-child(3) {
+#reserve_sec li:nth-child(2) {
 	background-color: #3cb03e;
 }
 
