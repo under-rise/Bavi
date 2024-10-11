@@ -1,15 +1,20 @@
 <link rel="stylesheet" href="/resources/css/sanitize.css">
-<link rel="stylesheet" href="/resources/css/base.css?2.0">
+<link rel="stylesheet" href="/resources/css/base.css?2.1">
 <link rel="stylesheet" href="/resources/css/base_sp.css?1.9">
 
 
 <link rel="stylesheet" href="/resources/css/style.css?1.2" />
+<link rel="stylesheet" href="/resources/css/add_style.css?11" />
 
 <script type="text/javascript" src="/resources/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="/resources/js/config.js?1.3"></script>
 <script type="text/javascript" src="/resources/js/smoothScroll.js"></script>
 <script type="text/javascript" src="/resources/js/jquery.rwdImageMaps.js"></script>
 <script type="text/javascript" src="/resources/slick/slick.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/resources/js/html5shiv.js"></script>
 <![endif]-->

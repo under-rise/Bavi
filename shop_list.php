@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
-    <title></title>
+    <title>飲食店一覧</title>
     <link rel="stylesheet" href="resources/css/sanitize.css">
     <link rel="stylesheet" href="resources/css/base.css?1.5">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
@@ -16,7 +16,7 @@
     <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="resources/js/config.js?1"></script>
     <script type="text/javascript" src="resources/js/smoothScroll.js"></script>
-    <link rel="stylesheet" href="assets/css/add_style.css?4.29">
+    <link rel="stylesheet" href="resources/css/add_style.css?4.3">
     <!--[if lt IE 9]>
 	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
@@ -45,10 +45,10 @@
 
 </head>
 
-<body>
+<body id="shop_page">
     <div id="loading"></div>
     <div id="wrapper">
-        <?php include __DIR__ . '/tpl/header.php'; ?>
+        <?php include __DIR__ . '/tpl/header_shop_serach.php'; ?>
 
 
         <article class="result_list">
@@ -168,12 +168,17 @@
                         <ul class="detail">
                             <li>
                                 <dl>
-                                    <dt>ロケーション</dt>
-                                    <dd><label><input type="checkbox"><span>川</span></label></dd>
-                                    <dd><label><input type="checkbox"><span>海</span></label></dd>
-                                    <dd><label><input type="checkbox"><span>都心</span></label></dd>
-                                    <dd><label><input type="checkbox"><span>静か</span></label></dd>
-                                    <dd><label><input type="checkbox"><span>予公園</span></label></dd>
+                                    <dt>ジャンル</dt>
+                                    <dd><label><input type="checkbox"><span>和食</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>中華</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>イタリアン</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>フレンチ</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>居酒屋</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>カフェ</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>エスニック</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>創作</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>BAR</span></label></dd>
+                                    <dd><label><input type="checkbox"><span>その他</span></label></dd>
                                 </dl>
                             </li>
                             <li>
@@ -181,13 +186,6 @@
                                     <dt>予約制度</dt>
                                     <dd><label><input type="radio" name="予約制度"><span>予約制</span></label></dd>
                                     <dd><label><input type="radio" name="予約制度"><span>予約不要</span></label></dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>会場料金</dt>
-                                    <dd><label><input type="radio" name="会場料金"><span>無料</span></label></dd>
-                                    <dd><label><input type="radio" name="会場料金"><span>有料</span></label></dd>
                                 </dl>
                             </li>
                             <li>
@@ -211,35 +209,6 @@
                             </li>
                             <li>
                                 <dl>
-                                    <dt>炊事場</dt>
-                                    <dd><label><input type="radio" name="炊事場"><span>有り</span></label></dd>
-                                    <dd><label><input type="radio" name="炊事場"><span>無し</span></label></dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>会場内機材レンタル</dt>
-                                    <dd><label><input type="radio" name="会場内機材レンタル"><span>有り</span></label></dd>
-                                    <dd><label><input type="radio" name="会場内機材レンタル"><span>無し</span></label></dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>会場内食材販売</dt>
-                                    <dd><label><input type="radio" name="会場内食材販売"><span>有り</span></label></dd>
-                                    <dd><label><input type="radio" name="会場内食材販売"><span>無し</span></label></dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>お手洗い</dt>
-                                    <dd><label><input type="radio" name="お手洗い"><span>古い</span></label></dd>
-                                    <dd><label><input type="radio" name="お手洗い"><span>普通</span></label></dd>
-                                    <dd><label><input type="radio" name="お手洗い"><span>新しい</span></label></dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
                                     <dt>ペット</dt>
                                     <dd><label><input type="radio" name="ペット"><span>可</span></label></dd>
                                     <dd><label><input type="radio" name="ペット"><span>不可</span></label></dd>
@@ -247,7 +216,7 @@
                             </li>
                             <li>
                                 <dl>
-                                    <dt>夜営業（16時以降）</dt>
+                                    <dt>深夜営業（23時以降）</dt>
                                     <dd><label><input type="radio" name="夜営業"><span>有り</span></label></dd>
                                     <dd><label><input type="radio" name="夜営業"><span>無し</span></label></dd>
                                 </dl>
@@ -295,21 +264,21 @@
                 </table>
 
 
-                <p>「80件」のBBQ場所が見つかりました。</p>
+                <p>「80件」の飲食店が見つかりました。</p>
 
                 <div class="recommend_sec">
-                    <h2><span>Baviおすすめ会場</span></h2>
+                    <h2><span>Baviおすすめ飲食店</span></h2>
 
                     <ul class="list shop">
                         <li class="recommend">
 
                             <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店" /></div>
-                            <a href="venue_detail.php">
-                                <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg"
-                                        alt="多摩川緑地バーベキュー広場" />
+                            <a href="shop_detail.php">
+                                <figure class="kyusyu"><img src="resources/images/top/test/shop1.jpg"
+                                        alt="養老乃瀧" />
                                 </figure>
 
-                                <h3>多摩川緑地バーベキュー広場</h3>
+                                <h3>養老乃瀧</h3>
 
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
@@ -322,7 +291,7 @@
                                         <img src="resources/images/star_half.png" alt="星半数個" />
                                         <img src="resources/images/star_none.png" alt="星無し" />
                                         <span class="only_pc">3.5 / 5.0</span>
-                                    </div>
+                                    </div>  
 
                                     <dl class="like small">
                                         <dt>&hearts;</dt>
@@ -335,12 +304,12 @@
                         <li class="recommend">
 
                             <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店" /></div>
-                            <a href="venue_detail.php">
-                                <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg"
-                                        alt="多摩川緑地バーベキュー広場" />
+                            <a href="shop_detail.php">
+                                <figure class="kyusyu"><img src="resources/images/top/test/shop2.jpg"
+                                        alt="養老乃瀧" />
                                 </figure>
 
-                                <h3>多摩川緑地バーベキュー広場</h3>
+                                <h3>養老乃瀧</h3>
 
                                 <p>遊ぶ施設が公園内・大きな芝生エリアがあり大人数のお客様に大人気。</p>
 
@@ -392,7 +361,7 @@
                 <ul class="list shop">
                     <li>
                         <div class="colona_icon"><img src="resources/images/icon_colona.png" alt="コロナ対策推奨店" /></div>
-                        <a href="venue_detail.php">
+                        <a href="shop_detail.php">
                             <figure class="kyusyu"><img src="resources/images/venue_list/result_01.jpg"
                                     alt="多摩川緑地バーベキュー広場" />
                             </figure>
@@ -425,7 +394,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="venue_detail.php">
+                        <a href="shop_detail.php">
                             <figure class="okinawa"><img src="resources/images/venue_list/result_02.jpg"
                                     alt="多摩川緑地バーベキュー広場" />
 
@@ -496,7 +465,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="venue_detail.php">
+                        <a href="shop_detail.php">
 
                             <figure class="kanto">
                                 <img src="resources/images/venue_list/result_03.jpg" alt="多摩川緑地バーベキュー広場" />
@@ -528,7 +497,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="venue_detail.php">
+                        <a href="shop_detail.php">
                             <figure class="kanto"><img src="resources/images/venue_list/result_03.jpg"
                                     alt="多摩川緑地バーベキュー広場" /></figure>
 
@@ -589,9 +558,7 @@
             </section>
         </article>
 
-
         <?php include __DIR__ . '/tpl/footer.php'; ?>
-        
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"

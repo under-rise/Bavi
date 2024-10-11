@@ -82,349 +82,445 @@
     <div id="loading"></div>
     <div id="wrapper">
 
-        <?php include __DIR__ . '/tpl/header_serach.php'; ?>
+        <header>
+            <h1>日本最大級のBBQプラットフォーム Bavi</h1>
+
+            <a href="/"><img src="resources/images/head_logo.png" alt="日本最大級のBBQプラットフォーム Bavi" /></a>
+
+
+            <span class="login_sec">
+                <a href="/MyPage/login.php">
+                    <span class="img"><img src="/MyPage/images/login_btn.svg"></span>
+                    <p>ログイン</p>
+                </a>
+            </span>
+
+        </header>
 
         <article>
 
-            <section id="mainVisual" class="cont">
+            <section class="switch_sec">
 
-                <div class="inr clearfix">
-                    <ul class="slider">
-
-                        <li><a href="https://bavi.jp/lp/about_baviPoint/" target="_blank"><img src="/topic/images/banner_point_start_front.jpg"></a>
-                        </li>
-
-                        <li><a href="https://bavi.jp/lp/page/delivery_owner.php"><img src="/topic/images/delivery_owner_banner.jpg?1.4"></a>
-                        </li>
-
-                        <li><a href="https://bavi.jp/lp/page/rental.php"><img src="resources/images/top/delivery_banner.jpg?1.2"></a>
-                        </li>
-
-                        <li><a href="https://bavi.jp/lp/uhutahama/" target="_blank"><img src="assets/img/top/recommended_spot_001.jpg"></a>
-                        </li>
-
-                        <li><a href="https://bavi.jp/spot/detail/1519"><img src="resources/images/top/FUJI_SUPER_TEC_2022520.jpg"></a></li>
-
-                        <li><a href="/concierge.html"><img src="resources/images/top/slider_concierge.jpg"></a>
-
-                        <li><a href="https://bavi.jp/spot/detail/1290"><img src="resources/images/top/slider_uhutahama.jpg"></a>
-                        </li>
-                        <li><a href="https://bavi.jp/spot/detail/963"><img src="resources/images/top/slider_kasaya.jpg"></a>
-                        </li>
-                        <li><a href="https://bavi.jp/spot/detail/1449"><img src="resources/images/top/slider_bbqoasis.jpg"></a>
-                        </li>
-                        <li><a href="https://bavi.jp/spot?pref_id=47"><img src="resources/images/top/slider_001.jpg"></a></li>
-
-                        <li><a href="https://bavi.jp/about"><img src="resources/images/top/slider_003.jpg"></a></li>
-                    </ul>
-                </div>
-
-            </section>
-
-            <section id="search" class="cont">
-                <h2><img src="resources/images/top/search_h2.png" alt="BBQ場" />地図から検索</h2>
-
-
-                <div>
-                    <h3><img src="resources/images/top/search_tit.png" alt="さあ、みんなでBaviしよう！"></h3>
-
-                    <p>1,230<span>件</span></p>
-
-                    <img src="resources/images/map.png?1.1" usemap="#image-map">
-
-                    <map name="image-map">
-                        <area target="" alt="北海道" title="北海道" class="hokkaido" coords="1030,11,1157,123,1217,128,1221,181,1251,208,1071,322,1004,256,917,260,940,327,870,350,845,263,893,185,956,189" shape="poly">
-                        <area target="" alt="東北" title="東北" class="tohoku" coords="851,381,943,363,958,416,1160,422,1160,502,970,505,982,553,918,731,902,733,901,768,774,761,821,656,785,635,838,543" shape="poly">
-                        <area target="" alt="関東" title="関東" class="kanto" coords="739,770,911,784,911,744,1125,740,1126,825,909,822,888,817,835,945,787,929,746,948,751,866,733,863,728,850" shape="poly">
-                        <area target="" alt="中部" title="中部" class="chubu" coords="486,630,698,632,700,715,744,690,778,642,803,658,757,756,721,761,714,847,735,881,732,953,597,955,561,863,513,872,506,859,573,784,582,720,483,719" shape="poly">
-                        <area target="" alt="近畿" title="近畿" class="kinki" coords="426,865,492,868,509,895,554,875,593,984,741,987,739,1064,524,1067,458,1055,463,955,421,946" shape="poly">
-                        <area target="" alt="中国" title="中国" class="chugoku" coords="173,795,387,790,390,863,410,863,408,950,246,994,170,989,159,957,276,877,168,879" shape="poly">
-                        <area target="" alt="四国" title="四国" class="shikoku" coords="253,1019,413,973,429,1032,323,1092,497,1094,501,1178,284,1176,276,1105" shape="poly">
-                        <area target="" alt="九州" title="九州" class="kyusyu" coords="44,1066,124,986,230,1064,193,1151,221,1153,221,1233,6,1236,8,1154,99,1151,118,1094,97,1083,63,1105" shape="poly">
-                        <area target="" alt="沖縄" title="沖縄" class="okinawa" coords="182,490,336,456,321,704,29,848,0,803,6,613" shape="poly">
-                    </map>
-
-                    <!--
-                <div class="top_kuchikomi_btn"><a href="question.html"><img src="resources/images/kuchikomi_btn.png" alt=""/></a></div>
-                -->
-
-                </div>
-
-
-                <div id="overlay">
-                    <div>
-                        <span id="close">+</span>
-                        <dl class="hokkaido">
-                            <dt>北海道エリア</dt>
-                            <dd><a href="">道央</a></dd>
-                            <dd><a href="">道南</a></dd>
-                            <dd><a href="">道北</a></dd>
-                            <dd><a href="">道東</a></dd>
-                        </dl>
-                        <dl class="tohoku">
-                            <dt>東北エリア</dt>
-                            <dd><a href="">青森県</a></dd>
-                            <dd><a href="">秋田県</a></dd>
-                            <dd><a href="">山形県</a></dd>
-                            <dd><a href="">宮城県</a></dd>
-                            <dd><a href="">福島県</a></dd>
-                        </dl>
-                        <dl class="kanto">
-                            <dt>関東エリア</dt>
-                            <dd><a href="venue_list.html">東京都</a></dd>
-                            <dd><a href="">茨城県</a></dd>
-                            <dd><a href="">栃木県</a></dd>
-                            <dd><a href="">群馬県</a></dd>
-                            <dd><a href="">埼玉県</a></dd>
-                            <dd><a href="">千葉県</a></dd>
-                            <dd><a href="">神奈川県</a></dd>
-                        </dl>
-                        <dl class="chubu">
-                            <dt>中部エリア</dt>
-                            <dd><a href="">新潟県</a></dd>
-                            <dd><a href="">富山県</a></dd>
-                            <dd><a href="">石川県</a></dd>
-                            <dd><a href="">福井県</a></dd>
-                            <dd><a href="">山梨県</a></dd>
-                            <dd><a href="">長野県</a></dd>
-                            <dd><a href="">岐阜県</a></dd>
-                            <dd><a href="">静岡県</a></dd>
-                            <dd><a href="">愛知県</a></dd>
-                        </dl>
-                        <dl class="kinki">
-                            <dt>近畿エリア</dt>
-                            <dd><a href="">三重県</a></dd>
-                            <dd><a href="">滋賀県</a></dd>
-                            <dd><a href="">京都府</a></dd>
-                            <dd><a href="">大阪府</a></dd>
-                            <dd><a href="">兵庫県</a></dd>
-                            <dd><a href="">奈良県</a></dd>
-                            <dd><a href="">和歌山県</a></dd>
-                        </dl>
-                        <dl class="chugoku">
-                            <dt>中国エリア</dt>
-                            <dd><a href="">岡山県</a></dd>
-                            <dd><a href="">広島県</a></dd>
-                            <dd><a href="">鳥取県</a></dd>
-                            <dd><a href="">島根県</a></dd>
-                            <dd><a href="">山口県</a></dd>
-                        </dl>
-                        <dl class="shikoku">
-                            <dt>四国エリア</dt>
-                            <dd><a href="">香川県</a></dd>
-                            <dd><a href="">徳島県</a></dd>
-                            <dd><a href="">高知県</a></dd>
-                            <dd><a href="">愛媛県</a></dd>
-                        </dl>
-                        <dl class="kyusyu">
-                            <dt>九州エリア</dt>
-                            <dd><a href="">福岡県</a></dd>
-                            <dd><a href="">佐賀県</a></dd>
-                            <dd><a href="">長崎県</a></dd>
-                            <dd><a href="">熊本県</a></dd>
-                            <dd><a href="">大分県</a></dd>
-                            <dd><a href="">宮崎県</a></dd>
-                            <dd><a href="">鹿児島県</a></dd>
-                        </dl>
-
-                        <dl class="okinawa">
-                            <dt>沖縄エリア</dt>
-                            <dd><a href="/venue_list.html">沖縄本島</a></dd>
-                            <dd><a href="/venue_list.html">離島</a></dd>
-                        </dl>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="location" class="cont">
-
-                <h2>おすすめスポットを検索</h2>
-
-                <p>あなたにあったロケーションからBBQ場をご紹介！</p>
-
-                <div class="inr">
                     <ul>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_1" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_000.jpg?11" alt="川×BBQ" /></a>
-                            <p>楽々！デリバリー対応可能な会場</p>
-                        </li>
-
-                        <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_2" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_001.jpg?1.1" alt="川×BBQ" /></a>
-                            <p>川遊びや自然を満喫</p>
-                        </li>
-                        <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_3" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_002.jpg?1.1" alt="海×BBQ" /></a>
-                            <p>海と波音で過ごす贅沢BBQ</p>
+                            <div class="info">
+                                <h2>全国のBBQ場を掲載</h2>
+                                <p>手ぶらで楽しめるスポットから、絶景を楽しめるアウトドア体験まで、あなたにぴったりのBBQ場が見つかります。友達や家族と一緒に、自然の中で楽しいひとときを過ごしてみませんか？都心からアクセス抜群な場所や、予約が必要な人気スポットもご紹介しています。</p>
+                                <div class="btn2">
+                                    <a href="bbq.php">BBQ場を検索</a>
+                                </div>
+                            </div>  
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_4" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_003.jpg?1.1" alt="都心×BBQ" /></a>
-                            <p>夜景やアクセスも魅力</p>
+                            <div class="info">
+                                <h2>焼肉・BBQに関する全国の飲食店を掲載</h2>
+                                <p>全国の焼肉・BBQ好きに贈る、厳選飲食店リスト！こだわりのお肉が自慢の焼肉店から、開放感あふれるBBQが楽しめるお店まで、各地の人気スポットを幅広くご紹介。豪華なお肉が楽しめるレストランなど、シーンに合わせたお店選びも簡単。</p>
+                                <div class="btn2">
+                                    <a href="shop_list.php">飲食店を検索</a>
+                                </div>
+                            </div>  
                         </li>
                         <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_5" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_004.jpg?1.1" alt="静か×BBQ" /></a>
-                            <p>自分だけの贅沢時間に</p>
-                        </li>
-                        <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_6" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_005.jpg?1.1" alt="公園×BBQ" /></a>
-                            <p>整った設備や施設でお子様も安心</p>
-                        </li>
-                        <li>
-                            <a href="https://bavi.jp/lp/spot/spot.php?id=spot_7" target="_blank"><img src="https://bavi.jp/lp/spot/images/location_006.jpg?1.1" alt="山×BBQ" /></a>
-                            <p>アクティビティ・その他おすすめスポット</p>
+                            <div class="info">
+                                <h2>BBQや店舗情報を配信中</h2>
+                                <p>BBQや飲食店の最新情報を随時配信中！手ぶらで楽しめるBBQスポットや、おすすめの焼肉店など、全国各地の店舗情報をいち早くお届けします。新しい店舗の紹介やイベント情報も満載。あなたの次のお出かけ先がきっと見つかるはず！ BBQの達人になるためのコツや、美味しく楽しむためのヒントも配信中。</p>
+                                <div class="btn2">
+                                    <a href="https://bavi.jp/contents/">コラムを見る</a>
+                                </div>
+                            </div>  
                         </li>
                     </ul>
 
-                </div>
-
             </section>
+            <!-- switch_sec -->
 
-            <section id="sec_area_search" class="cont">
-
-                <h2>地域別おすすめBBQスポット</h2>
-
-                <p>地域別のおすすめBBQ場を検索！</p>
-
-                <div class="inr">
-                    <ul>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_1" target="_blank"><span>都心エリア予約不要</span>
-                                <div>おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_2" target="_blank"><span>東京都心エリア</span>
-                                <div>おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_3" target="_blank"><span>夏におすすめ！</span>
-                                <div>東京おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_4" target="_blank"><span>夏におすすめ！</span>
-                                <div>埼玉おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_5" target="_blank"><span>西東京！</span>
-                                <div>おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_6" target="_blank"><span>千葉でBBQ！</span>
-                                <div>おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_7" target="_blank"><span>埼玉でBBQ！</span>
-                                <div>おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_8"><span>千葉南房総エリア！</span>
-                                <div>おすすめBBQ会場</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_9"><span>北関東でBBQ！</span>
-                                <div>おすすめセレクト</div>
-                            </a></li>
-                        <li><a href="https://bavi.jp/lp/spot/area.php?id=spot_10"><span>ファミリーに人気！</span>
-                                <div>東京都公園BBQ会場</div>
-                            </a></li>
-                    </ul>
-
-                </div>
-
-            </section>
-
-
-            <!--▼▼▼20210818追加-->
-            <section id="youtube" class="cont">
-                <h2>動画から検索</h2>
-
-                <p>BBQ会場の新着紹介ムービー</p>
-
+            <section class="pickup_sec cont" x-data="{open:'area02'}">
                 <div class="inr">
 
-                    <div class="movie">
-                        <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2>ピックアップBBQ場</h2>
+
+                    <nav>
+                        <ul>
+                            <li @click="open='area01'" :class="open=='area01' ? 'active' : ''">北海道・東北</li>
+                            <li @click="open='area02'" :class="open=='area02' ? 'active' : ''">関東</li>
+                            <li @click="open='area03'" :class="open=='area03' ? 'active' : ''">中部</li>
+                            <li @click="open='area04'" :class="open=='area04' ? 'active' : ''">近畿</li>
+                            <li @click="open='area05'" :class="open=='area05' ? 'active' : ''">中国・四国</li>
+                            <li @click="open='area06'" :class="open=='area06' ? 'active' : ''">九州・沖縄</li>
+                        </ul>
+                    </nav>
+
+                    <div class="pickup_list_sec">
+
+                        <div class="area_sec" x-show="open=='area01'">
+
+                            <h3>北海道・東北エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq3.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="venue_list.php">北海道・東北エリアのBBQ場を探す</a>
+                            </div>
                         </div>
-                        <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
-                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
+
+                        <div class="area_sec" x-show="open=='area02'">
+
+                            <h3>関東エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq2.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="venue_list.php">関東エリアのBBQ場を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area03'">
+
+                            <h3>中部エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq3.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="venue_list.php">中部エリアのBBQ場を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area04'">
+
+                            <h3>近畿エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq2.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="venue_list.php">近畿エリアのBBQ場を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area05'">
+
+                            <h3>中国・四国エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="venue_list.php">中国・四国エリアのBBQ場を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area06'">
+
+                            <h3>九州・沖縄エリア</h3>
+
+                            <div class="none">
+                                まだ、こちらのエリアの掲載はありません。
+                            </div>
+
+                            <div class="btn2">
+                                <a href="venue_list.php">九州・沖縄エリアのBBQ場を探す</a>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="movie">
-                        <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p><a href="venue_detail.html">RENO_CAMP TORIYAMA</a></p>
-                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
-                    </div>
-
-                    <div class="movie">
-                        <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rjPxgHh-gZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p><a href="venue_detail.html">会場名</a></p>
-                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
-                    </div>
-
-                    <div class="movie">
-                        <div class="movie_item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PCsp58BIsmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p><a href="venue_detail.html">会場名</a></p>
-                        <div class="btn"><a href="venue_detail.html">会場ページを見る</a></div>
-                    </div>
 
                 </div>
-
             </section>
-            <!--▲▲▲20210818ここまで-->
+            <!-- switch_sec -->
 
-            <section id="news" class="cont">
-                <h2>Pick UP!</h2>
+            <section class="pickup_sec cont" x-data="{open:'area02'}">
+                <div class="inr">
 
-                <p>おすすめのBBQ場・店舗をご紹介！</p>
+                    <h2>ピックアップ飲食店</h2>
 
-                <div class="slick">
-                    <div class="item">
-                        <a href="">
-                            <figure class="kyusyu">
-                                <img src="resources/images/top/news1.png" alt="九州" />
-                            </figure>
+                    <nav>
+                        <ul>
+                            <li @click="open='area01'" :class="open=='area01' ? 'active' : ''">北海道・東北</li>
+                            <li @click="open='area02'" :class="open=='area02' ? 'active' : ''">関東</li>
+                            <li @click="open='area03'" :class="open=='area03' ? 'active' : ''">中部</li>
+                            <li @click="open='area04'" :class="open=='area04' ? 'active' : ''">近畿</li>
+                            <li @click="open='area05'" :class="open=='area05' ? 'active' : ''">中国・四国</li>
+                            <li @click="open='area06'" :class="open=='area06' ? 'active' : ''">九州・沖縄</li>
+                        </ul>
+                    </nav>
 
-                            <h3><span>2021.2.24(MON)</span>タイトルタイトルタイトルタイトル</h3>
+                    <div class="pickup_list_sec">
 
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキスト<span>続きを見る＞</span></p>
-                        </a>
+                        <div class="area_sec" x-show="open=='area01'">
+
+                            <h3>北海道・東北エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/shop1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="shop_list.php">北海道・東北エリアの飲食店を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area02'">
+
+                            <h3>関東エリア</h3>
+                            <ul>
+                                <li>
+                                        <figure>
+                                            <a href="shop_detail.php">
+                                                <img src="resources/images/top/test/shop1.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="info">
+                                            <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                    <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                        8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                    <dl>
+                                                        <dt>関東 / 群馬県</dt>
+                                                        <dd>群馬県高崎市大八木町605-4</dd>
+                                                    </dl>
+                                        </div>
+                                    </li>
+
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/shop2.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/shop3.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="shop_list.php">関東エリアの飲食店を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area03'">
+
+                            <h3>中部エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq3.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="shop_list.php">中部エリアの飲食店を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area04'">
+
+                            <h3>近畿エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq2.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="shop_list.php">近畿エリアの飲食店を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area05'">
+
+                            <h3>中国・四国エリア</h3>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="shop_detail.php">
+                                            <img src="resources/images/top/test/bbq1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="info">
+                                        <h4>秋川橋河川公園バーベキューランド【業界最安！】<h4>
+                                                <p>認知度抜群！都心から約1時間。夏には川で遊びならBBQが可能です。<br>
+                                                    8月1日より繁忙期特別料金として1名200円が別途かかります。</p>
+                                                <dl>
+                                                    <dt>関東 / 群馬県</dt>
+                                                    <dd>群馬県高崎市大八木町605-4</dd>
+                                                </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn2">
+                                <a href="shop_list.php">中国・四国エリアの飲食店を探す</a>
+                            </div>
+                        </div>
+
+                        <div class="area_sec" x-show="open=='area06'">
+
+                            <h3>九州・沖縄エリア</h3>
+
+                            <div class="none">
+                                まだ、こちらのエリアの掲載はありません。
+                            </div>
+
+                            <div class="btn2">
+                                <a href="shop_list.php">九州・沖縄エリアの飲食店を探す</a>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="item">
-                        <a href="">
-                            <figure class="shikoku">
-                                <img src="resources/images/top/news2.png" alt="四国" />
-                            </figure>
 
-                            <h3><span>2021.2.24(MON)</span>タイトルタイトルタイトルタイトル</h3>
+                 
 
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキスト<span>続きを見る＞</span></p>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <figure class="chubu">
-                                <img src="resources/images/top/news1.png" alt="九州" />
-                            </figure>
-
-                            <h3><span>2021.2.24(MON)</span>タイトルタイトルタイトルタイトル</h3>
-
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキスト<span>続きを見る＞</span></p>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <figure class="chugoku">
-                                <img src="resources/images/top/news2.png" alt="四国" />
-                            </figure>
-
-                            <h3><span>2021.2.24(MON)</span>タイトルタイトルタイトルタイトル</h3>
-
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキスト<span>続きを見る＞</span></p>
-                        </a>
-                    </div>
                 </div>
-
-
             </section>
-
+            <!-- switch_sec -->
 
             <section id="topic" class="cont">
 

@@ -35,15 +35,15 @@
 <nav id="bottom_nav">
     <ul>
         <li>
-            <a href="/">
+            <a href="/bbq.php">
                 <img src="/resources/images/bottom_nav1.png" alt="BBQ場" />
                 <span>BBQ場</span>
             </a>
         </li>
         <li>
-            <a href="/spot.php">
+            <a href="/shop_list.php">
                 <img src="/resources/images/bottom_nav2.png" alt="食材SPOT" />
-                <span>食材SPOT</span>
+                <span>飲食店</span>
             </a>
         </li>
         <li>
@@ -77,7 +77,7 @@
         <dl>
             <dt>探す</dt>
             <dd><a href="/">BBQ場</a></dd>
-            <dd><a href="/spot.html">周辺店舗</a></dd>
+            <dd><a href="/shop_list.php">飲食店</a></dd>
             <dd><a href="/column.html">コラム</a></dd>
             <dd><a href="/concierge.html">BBQ団体向けコンシェルジュ</a></dd>
 
@@ -99,8 +99,8 @@
     </div>
 </nav>
 
-<div id="bottom_line_btn">
+<!-- <div id="bottom_line_btn">
     <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="/resources/images/line_btn.gif"
             alt="LINEでお気軽相談" /></a>
-</div>
+</div> -->
 </div>
