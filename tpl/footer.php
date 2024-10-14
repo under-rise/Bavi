@@ -99,8 +99,8 @@
     </div>
 </nav>
 
-<!-- <div id="bottom_line_btn">
+<div id="bottom_line_btn">
     <a href="https://line.me/ti/p/%40637eulru" target="_blank"><img src="/resources/images/line_btn.gif"
             alt="LINEでお気軽相談" /></a>
-</div> -->
+</div>
 </div>

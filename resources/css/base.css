@@ -884,6 +884,7 @@ header .login_sec {
 	top: 50px;
 	color: #e50054;
 	width: 90px;
+	z-index: 100;
 }
 
 header .login_sec .img {
@@ -907,6 +908,7 @@ header .concierge_sec {
 	top: 40px;
 	color: #e50054;
 	width: 160px;
+	z-index: 100;
 }
 
 
@@ -1333,6 +1335,7 @@ table.table_style td.btn_td {
 	bottom: 110px;
 	right: 10%;
 	width: 220px;
+	z-index: 100;
 }
 
 /* icon */

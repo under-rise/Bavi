@@ -303,9 +303,9 @@
 
                             <h3>九州・沖縄エリア</h3>
 
-                            <div class="none">
-                                まだ、こちらのエリアの掲載はありません。
-                            </div>
+                            <ul class="none">
+                                <li>まだ、こちらのエリアの掲載はありません。</li>
+                            </ul>
 
                             <div class="btn2">
                                 <a href="venue_list.php">九州・沖縄エリアのBBQ場を探す</a>
@@ -505,9 +505,9 @@
 
                             <h3>九州・沖縄エリア</h3>
 
-                            <div class="none">
-                                まだ、こちらのエリアの掲載はありません。
-                            </div>
+                            <ul  class="none">
+                                <li>まだ、こちらのエリアの掲載はありません。</li>
+                            </ul>
 
                             <div class="btn2">
                                 <a href="shop_list.php">九州・沖縄エリアの飲食店を探す</a>

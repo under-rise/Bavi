@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <title>飲食店一覧</title>
     <link rel="stylesheet" href="resources/css/sanitize.css">
-    <link rel="stylesheet" href="resources/css/base.css?1.5">
+    <link rel="stylesheet" href="resources/css/base.css?1.6">
     <link rel="stylesheet" href="resources/css/base_sp.css?1.3">
     <link rel="stylesheet" href="resources/css/venue_list.css?2.4">
     <link rel="stylesheet" href="resources/css/venue_list_sp.css?2.15">

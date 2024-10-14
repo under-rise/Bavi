@@ -143,8 +143,8 @@
   font-size: min(3.5vw, 20px);
   margin-bottom: 20px;
 }
-.pickup_sec .pickup_list_sec .area_sec .none {
-  padding: 50px 0;
+.pickup_sec .pickup_list_sec .area_sec ul {
+  margin-bottom: 30px;
 }
 .pickup_sec .pickup_list_sec .area_sec ul li {
   display: flex;
@@ -184,6 +184,13 @@
 .pickup_sec .pickup_list_sec .area_sec ul li .info dl dt, .pickup_sec .pickup_list_sec .area_sec ul li .info dl dd {
   border-bottom: 1px solid #999;
   padding: 3px;
+}
+.pickup_sec .pickup_list_sec .area_sec ul.none {
+  padding: 30px 0;
+}
+.pickup_sec .pickup_list_sec .area_sec ul.none li {
+  display: block;
+  text-align: center;
 }
 .pickup_sec .top {
   margin-top: 30px;
