@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="assets/css/calendar.css?4.0">
 
-    <link rel="stylesheet" href="resources/css/order.css?3.3">
+    <link rel="stylesheet" href="resources/css/order.css?3.4">
     <link rel="stylesheet" href="resources/css/order_sp.css?3.1">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
