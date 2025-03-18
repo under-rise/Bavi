@@ -1,0 +1,120 @@
+.form input[type=date],
+.form input[type=number],
+.form input[type=password],
+.form input[type=text],
+.form input[type=email],
+.form input[type=tel],
+.form select,
+.form textarea {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+.form input[type=date].w100,
+.form input[type=number].w100,
+.form input[type=password].w100,
+.form input[type=text].w100,
+.form input[type=email].w100,
+.form input[type=tel].w100,
+.form select.w100,
+.form textarea.w100 {
+  width: 100%;
+}
+.form input:disabled,
+.form button:disabled {
+  opacity: 0.3;
+}
+.form select {
+  width: 100%;
+  padding: 12px;
+  border: 0 !important;
+  /* needed */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* SVG background image */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-size: 0.6em;
+  background-position: calc(100% - 1.3em) center;
+  background-repeat: no-repeat;
+}
+.form select::-ms-expand {
+  display: none;
+}
+.form button {
+  display: block;
+  padding: 10px;
+  min-width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  background-color: #db0e45;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form button.green {
+  background-color: #0aa972;
+}
+.form .calendar input[type=date] {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form .calendar input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.form input[type=checkbox] {
+  display: none;
+}
+.form .checkbox {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  width: auto;
+}
+.form .checkbox::before {
+  background: #fff;
+  border: 1px solid #231815;
+  content: "";
+  display: block;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  width: 5vw;
+  height: 5vw;
+  left: 0;
+  max-width: 40px;
+  max-height: 40px;
+}
+.form .checkbox::after {
+  background-color: #db0e45;
+  content: "";
+  display: block;
+  width: calc(8vw - 6px);
+  height: calc(8vw - 6px);
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 0;
+  clip-path: polygon(15% 60%, 35% 80%, 85% 20%, 100% 30%, 35% 100%, 0% 65%);
+  max-width: 40px;
+  max-height: 40px;
+}
+.form input[type=checkbox]:checked + .checkbox::after {
+  opacity: 1;
+}
+.form input[type=checkbox]:checked + label > p {
+  color: #db0e45;
+}
+
+@media screen and (max-width: 780px) {
+  .form button {
+    width: 100%;
+    padding: 15px 0;
+  }
+}

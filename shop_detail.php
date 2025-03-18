@@ -132,8 +132,8 @@
         <article class="detail">
             <nav>
                 <ul>
-                    <li><a href="#venue">店舗詳細</a></li>
-                    <li><a href="#shop">メニュー</a></li>
+                    <li><a href="#venue">BBQ会場詳細</a></li>
+                    <li><a href="#qa_sec">よくある質問</a></li>
                     <li><a href="#campaign">キャンペーン</a></li>
                     <li><a href="#access">アクセス</a></li>
                     <li><a href="#spot">周辺SPOT</a></li>
