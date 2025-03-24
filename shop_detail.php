@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="resources/css/venue_detail.css?2.41">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?15.3">
 
-    <link rel="stylesheet" href="assets/css/add_style.css?2.2">
+    <link rel="stylesheet" href="assets/css/add_style.css?2.3">
 
 
 
@@ -133,7 +133,7 @@
             <nav>
                 <ul>
                     <li><a href="#venue">BBQ会場詳細</a></li>
-                    <li><a href="#qa_sec">よくある質問</a></li>
+                    <li><a href="#qa_sec" class="icon_flash">よくある質問</a></li>
                     <li><a href="#campaign">キャンペーン</a></li>
                     <li><a href="#access">アクセス</a></li>
                     <li><a href="#spot">周辺SPOT</a></li>

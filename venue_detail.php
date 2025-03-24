@@ -714,6 +714,8 @@
                                 });
                             });
 
+                            plan_obj.reverse();
+
                             if (plan_obj.length) {
                                 $.each(plan_obj, function(index, element) {
 
@@ -731,8 +733,8 @@
 									<div class="modal_close" data-izimodal-close="">×</div>
 
 									<ul>
-									<li><span data-izimodal-prev=""><</span></li>
 									<li><span data-izimodal-next="">></span></li>
+									<li><span data-izimodal-prev=""><</span></li>
 									</ul>
 									
 									<a href="/venue_order.php" class="link_btn reserve"><span>予約する</span></a>
