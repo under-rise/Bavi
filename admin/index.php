@@ -68,6 +68,23 @@
     <link type="text/css" rel="stylesheet" href="https://bavi.jp/assets/css/bootstrap.css?1616644533" />
     <script type="text/javascript" src="https://bavi.jp/assets/js/bootstrap.js?1616644536"></script>
     <style>
+         /*************************/
+        /* 20250417追加 */
+        /*************************/
+        .icon.facility {
+            background-color:rgb(36, 114, 203);
+            font-size: 10px;
+            line-height: 1.5;
+            margin: 5px 0;
+        }
+        .icon.chat {
+            background-color:rgb(45, 164, 26);
+            font-size: 10px;
+            line-height: 1.5;
+            margin: 5px 0;
+            letter-spacing: -1px;
+        }
+
         /*************************/
         /* 20240313追加 */
         /*************************/
@@ -479,19 +496,23 @@
                         <tr>
                             <th>
                                 フリー検索<br>
-                                (名前/電話番号/メールアドレス)
+                                <span style="font-size: 10px; font-weight: normal;">(名前/電話番号/メールアドレス)</span>
                             </th>
                             <td><input type="text" placeholder="フリー検索" value=""></td>
-                            <!--
-                        <th>会員</th>
-                        <td>
-                            <select type="checkbox">
-                                <option>全て</option>
-                                <option>会員</option>
-                                <option>非会員</option>
-                            </select>
+                            
+                        <th>未読</th>
+                        <td style="text-align: left;">
+                            <label for="chat" style="margin-right: 20px; font-weight: normal;">
+                            <input type="checkbox" name="unread[]" value="チャット" id="chat">
+                            チャット
+                            </label>
+
+                            <label for="facility"  style="font-weight: normal;">
+                            <input type="checkbox" name="unread[]" value="チャット" id="facility">
+                            施設
+                            </label>
                         </td>
-                        -->
+                       
                         </tr>
                         <tr>
                             <th>会場</th>
@@ -618,8 +639,8 @@
                             </td>
                             <td>1423-97</td>
                             <td>
-                                <span class="icon facility">施設<br>未読</span>
-                                <span class="icon chat">チャット<br>未読</span>
+                                <span class="icon facility">施設未読</span>
+                                <span class="icon chat">チャット未読</span>
                             </td>
                             <td>2025-04-17 10:32:16</td>
                            
@@ -661,6 +682,9 @@
                                 <input type="checkbox" name="order_id[]" value="1719" data-status="90" style="transform: scale(1.5);">
                             </td>
                             <td>1358-234</td>
+                            <td>
+                                <span class="icon chat">チャット未読</span>
+                            </td>
                             <td>2025-04-16 19:17:22</td>
                             <td>
                                 <span class="icon decision">決定</span>
@@ -699,6 +723,9 @@
                                 <input type="checkbox" name="order_id[]" value="1718" data-status="90" style="transform: scale(1.5);">
                             </td>
                             <td>1423-96</td>
+                            <td>
+                                <span class="icon facility">施設未読</span>
+                            </td>
                             <td>2025-04-16 18:24:07</td>
                             <td>
                                 <span class="icon decision">決定</span>
@@ -737,6 +764,8 @@
                                 <input type="checkbox" name="order_id[]" value="1718" data-status="90" style="transform: scale(1.5);">
                             </td>
                             <td>1423-96</td>
+                            <td>
+                            </td>
                             <td>2025-04-16 18:24:07</td>
                             <td>
                                 <span class="icon decision">決定</span>
