@@ -47,6 +47,7 @@
                         <li><a href="/customer/order/create">BBQ会場 案件登録</a></li>
                     </ul>
                 </li>
+                <li><a href="/admin/calendar.php">予約カレンダー</a></li>
                 <li><a href="/customer/contacts/">問合せ一覧</a></li>
                 <li><a href="/customer/info/edit"><i class="fas fa-id-card"></i>オーナー情報</a></li>
                 <li><a href="mailto:info@bavi.jp"><i class="fas fa-envelope"></i>お問合せ</a></li>

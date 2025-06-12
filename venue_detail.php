@@ -18,7 +18,7 @@
     <title>しい茸ランドかさや | 日本最大級のBBQプラットフォーム Bavi</title>
 
     <?php include __DIR__ . '/tpl/head.php'; ?>
-    <link rel="stylesheet" href="resources/css/venue_detail.css?2.5">
+    <link rel="stylesheet" href="resources/css/venue_detail.css?2.6">
     <link rel="stylesheet" href="resources/css/venue_detail_sp.css?15.3">
 
     <link rel="stylesheet" href="assets/css/add_style.css?2.2">
@@ -714,7 +714,7 @@
                                 });
                             });
 
-                            
+                            plan_obj.reverse();
 
                             if (plan_obj.length) {
                                 $.each(plan_obj, function(index, element) {
