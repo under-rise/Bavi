@@ -901,11 +901,13 @@
                                     <!--                                <span class="num">5</span><span class="discount">%OFF</span>-->
                                     ソフトドリンク1杯無料クーポン
                                 </p>
+                                <div class="cupon_no">クーポン番号: <span>ADJEYK9184AD</span></div>
                                 <div class="expiration">
                                     有効期限：2022年02月14日〜2023年02月13日 </div>
                             </div>
-                            <p class="info">クーポン条件：こちらの画面を受付時ご提示ください。</p>
-                            <a class="modal link_btn modal-show" data-id="3">クーポンを表示する</a>
+
+                            <p class="info">こちらのクーポンコードを予約ページにて入力ください。<br>下記、ボタンクリックにてコピー頂けます。</p>
+                            <a class="copy_btn link_btn" data-id="3">クーポン番号をコピーする</a>
                         </li>
                         <li>
                             <div class="discount ticket">
@@ -914,11 +916,13 @@
                                     <!--                                <span class="num">5</span><span class="discount">%OFF</span>-->
                                     Bavi【5％OFF】クーポン
                                 </p>
+                                <div class="cupon_no">クーポン番号: <span>ADJEYK9184AD</span></div>
                                 <div class="expiration">
                                     有効期限：2022年02月13日〜2023年02月12日 </div>
                             </div>
-                            <p class="info">クーポン条件：クーポン画面を受付時ご提示ください。</p>
-                            <a class="modal link_btn modal-show" data-id="2">クーポンを表示する</a>
+                            <p class="info">こちらのクーポンコードを予約ページにて入力ください。<br>下記、ボタンクリックにてコピー頂けます。</p>
+                            <a class="copy_btn link_btn" data-id="3">クーポン番号をコピーする</a>
+                            <!-- <a class="modal link_btn modal-show" data-id="2">クーポンを表示する</a> -->
                         </li>
                     </ul>
                 </div>
@@ -953,6 +957,34 @@
                 </div>
             </div>
 
+            <script>
+                $(document).on('click', '.copy_btn', function(e) {
+                    e.preventDefault();
+
+                    const code = $(this).closest('li').find('.cupon_no span').text();
+
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(code)
+                            .then(() => {
+                                alert('クーポン番号をコピーしました: ' + code);
+                            })
+                            .catch(err => {
+                                console.error('コピーに失敗しました:', err);
+                            });
+                    } else {
+                        // fallback（古いブラウザや file:// 対応）
+                        const textarea = $('<textarea>').val(code).appendTo('body').select();
+                        try {
+                            document.execCommand('copy');
+                            alert('クーポン番号をコピーしました。: ' + code);
+                        } catch (err) {
+                            alert('コピーに対応していません。');
+                            console.error(err);
+                        }
+                        textarea.remove();
+                    }
+                });
+            </script>
             <section id="qa_sec" class="cont">
 
                 <div class="inr">

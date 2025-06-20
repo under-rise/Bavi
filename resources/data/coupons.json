@@ -1,0 +1,20 @@
+[
+  {
+    "coupon_code": "AAAA",
+    "coupon_name": "OPEN記念割引！",
+    "type": "percentage",
+    "value": 10
+  },
+  {
+    "coupon_code": "BBBB",
+    "coupon_name": "現金1000円キャッシュバック！",
+    "type": "amount",
+    "value": 1000
+  },
+  {
+    "coupon_code": "CCCC",
+    "coupon_name": "スペシャルクーポン！！",
+    "type": "percentage",
+    "value": 95
+  }
+]

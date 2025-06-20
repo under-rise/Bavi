@@ -12,8 +12,8 @@
 <script type="text/javascript" src="/resources/js/jquery.rwdImageMaps.js"></script>
 <script type="text/javascript" src="/resources/slick/slick.min.js"></script>
 
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+ <!-- alpine -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/resources/js/html5shiv.js"></script>

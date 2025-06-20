@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="assets/css/calendar.css?4.0">
 
-    <link rel="stylesheet" href="resources/css/order.css?3.4">
+    <link rel="stylesheet" href="resources/css/order.css?3.14">
     <link rel="stylesheet" href="resources/css/order_sp.css?3.1">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -28,8 +28,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 
-    <!-- alpine -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   
+
 
     <style>
     #bottom_line_btn {
@@ -408,6 +408,25 @@
 
                     </dl>
 
+                    <div x-data="couponLogic('shop_id_1111')" style="margin-bottom: 30px;"> 
+                        <h3>クーポン</h3>
+
+                        <dl class="coupon_sec"  x-show="!registeredCoupon">
+                            <dt><span>◯</span>クーポンコード</dt>
+                            <dd><input type="text" name="cupon_code" placeholder="クーポンコードを入力してください。" x-model="couponCode" ></dd>
+                            <dd x-show="couponCode.length > 3" x-transition><button type="button" @click="registerCoupon()">クーポン登録</button></dd>
+                        </dl>
+
+                        <dl x-show="registeredCoupon" class="register_coupon_sec" style="display: none;" x-transition>
+                            <dt><span>◯</span>適用クーポン</dt>
+                            <dd>
+                                <p x-text="couponDisplay()"></p>
+                                <div class="delete" @click="deleteCoupon()">×</div>
+                            </dd>
+                        </dl>
+
+                    </div>
+
                     <h3>お客様情報</h3>
                     <dl id="user_information_form">
                         <dt><span>◯</span>お名前</dt>
@@ -584,16 +603,23 @@
         <!-- calendar_modal -->
 
         <!-- 合計金額 -->
-        <div class="total_price_sec">
+        <div class="total_price_sec" x-data>
             <dl>
                 <dt>合計金額</dt>
-                <dd x-data><strong x-text="$store.alpinePrice.format()" ></strong><span>円（税込）</span></dd>
+                <dd><strong x-text="$store.alpinePrice.format()" ></strong><span>円（税込）</span></dd>
+                <span x-show="$store.alpinePrice.coupon.text">
+                <dt style="border-top: 1px dashed ;padding-top: 10px; margin-top: 10px;">クーポン割引適用後</dt>
+                <dd><strong x-text="$store.alpinePrice.display_price_format()" ></strong><span>円（税込）</span>
+                <p x-text="$store.alpinePrice.coupon.text ? $store.alpinePrice.coupon.text :''"></p>
+                </span>
+                </dd>
             </dl>
         </div>
 
-        <script src="./resources/js/order_confirm.js?1.3"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js" integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+         <script src="./resources/js/order_confirm.js?1.3"></script>
+        <script src="./resources/js/order.js?1.2"></script>
+        
         <script>
         function getParam(name, url) {
             if (!url) url = window.location.href;
@@ -671,51 +697,7 @@
             });
         });
 
-        // 子供・ペットフォーム
-        document.addEventListener('alpine:init', () => {
-            
-            Alpine.data('child_pet_use', () => ({
-                flag: false,
-                open: false,
-                num: {
-                    adult: 0,
-                    child: 0,
-                    preschooler: 0,
-                    infants: 0,
-                    pet: 0,
-                },
-                modalOpen() {
-                    this.open = !this.open
-                },
-                init() {
-                    this.$watch('open', (value) => {
-                        // true 確認
-                        if (!value) {
-                            this.flag = false;
-                            Object.keys(this.num).map((e) => {
-                                if (parseInt(this.num[e]) !== 0) {
-                                    this.flag = true;
-                                    return;
-                                }
-
-                            });
-                        }
-                    });
-                },
-            }))
-        });
-
-        //ーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-        // 数量追加ボタン
-        
-        document.addEventListener('alpine:init', () => {
-            Alpine.store('alpinePrice', {
-                total_price:0,
-                format(){
-                   return this.total_price.toLocaleString('ja-JP');
-                }
-            });
-        });
+ 
         
         $(function() {
             $('.input_btn').on('click',function(){
@@ -747,6 +729,7 @@
                     total += t * p;
                 });
                 Alpine.store('alpinePrice').total_price = total;
+                Alpine.store('alpinePrice').applyDiscount();
             };
             
         });
